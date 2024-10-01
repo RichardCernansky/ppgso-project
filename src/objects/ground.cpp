@@ -17,7 +17,7 @@ public:
     Ground()
     {
         if (!texture) {
-            auto image = ppgso::image::loadBMP("scrub-ground.bmp");
+            auto image = ppgso::image::loadBMP("ground.bmp");
             if (image.width == 0 || image.height == 0) {
                 std::cerr << "Failed to load image: scrub-ground.bmp" << std::endl;
                 return;
