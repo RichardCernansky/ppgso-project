@@ -8,6 +8,11 @@ ppgso::Texture::Texture(int width, int height) : image{width, height} {
 }
 
 ppgso::Texture::Texture(Image&& image) : image{std::move(image)} {
+  // Ensure image is valid before initializing OpenGL
+  if (this->image.width == 0 || this->image.height == 0) {
+    std::cerr << "Invalid image loaded, cannot create texture" << std::endl;
+    return;
+  }
   initGL();
   update();
 }

@@ -53,8 +53,6 @@ public:
 	// render function
 	void render()
 	{
-		// ambient light - move according to player
-		light_positions.at(1) = player_position + glm::vec3(0, 2, 2);
 
 		for (auto &object : objects)
 		{

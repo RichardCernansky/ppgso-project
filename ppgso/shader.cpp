@@ -78,7 +78,7 @@ ppgso::Shader::Shader(const std::string &vertex_shader_code, const std::string &
 }
 
 ppgso::Shader::~Shader() {
-  glDeleteProgram( program );
+  glDeleteProgram(program);
 }
 
 void ppgso::Shader::use() const {

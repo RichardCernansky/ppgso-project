@@ -84,7 +84,7 @@ add_library(ppgso STATIC
         ppgso/image_raw.cpp
         ppgso/texture.cpp
         ppgso/window.cpp
-        )
+)
 
 # Make sure GLM uses radians and GLEW is a static library
 target_compile_definitions(ppgso PUBLIC -DGLM_FORCE_RADIANS -DGLEW_STATIC)
@@ -112,7 +112,7 @@ add_executable(project
         src/scene.cpp
         src/camera.h
         src/renderable.h
-        src/main.cpp
+        src/objects/ground.cpp
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)
