@@ -141,7 +141,7 @@ public:
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		auto quadViewMatrix = glm::mat4{1.0f};
-		quadViewMatrix = glm::lookAt(glm::vec3{0.0f, 1.0f, -1.0f}, scene.camera->help - glm::vec3{0.0f, 1.0f, -1.0f}, {0.0f, 1.0f, 0.0f});
+		quadViewMatrix = glm::lookAt(glm::vec3{0.0f, 0.0f, -1.0f}, scene.camera->help - glm::vec3{0.0f, 1.0f, -1.0f}, {0.0f, -1.0f, 0.0f});
 
 		// Animate rotation of the quad
 		auto quadModelMatrix = glm::mat4{1.0f};
@@ -177,30 +177,27 @@ public:
 		{
 			switch (scanCode)
 			{
-			case 38:
-			case 113:
-				// left
+			case 113: // left
 				scene.move_left = true;
 				break;
 			case 40:
-			case 114:
-				// right
+			case 114: // right
 				scene.move_right = true;
 				break;
-			case 65:
-				// spacebar
+			case 49: //probably deprecated
 				if (!scene.jump)
 					scene.jump = true;
 				break;
-			case 77:
+			case 124: //right arrow
 				scene.camera->go_boundary_right = true;
 				scene.camera->go_boundary_left = false;
 				break;
-			case 75:
+			case 123: //left arrow
 				scene.camera->go_boundary_left = true;
 				scene.camera->go_boundary_right = false;
 				break;
-			case 76:
+
+			case 76: // go player
 				scene.camera->go_boundary_left = false;
 				scene.camera->go_boundary_right = false;
 				scene.camera->go_player = true;
