@@ -141,7 +141,7 @@ public:
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		auto quadViewMatrix = glm::mat4{1.0f};
-		quadViewMatrix = glm::lookAt(glm::vec3{0.0f, 0.0f, -0.8f}, scene.camera->help - glm::vec3{0.0f, 1.0f, -1.0f}, {0.0f, -1.0f, 0.0f});
+		quadViewMatrix = glm::lookAt(glm::vec3{0.0f, 1.0f, -1.0f}, scene.camera->help - glm::vec3{0.0f, 1.0f, -1.0f}, {0.0f, 1.0f, 0.0f});
 
 		// Animate rotation of the quad
 		auto quadModelMatrix = glm::mat4{1.0f};
@@ -158,6 +158,15 @@ public:
 	void onIdle()
 	{
 		buffer_set();
+
+		// Track time
+		static auto time = (float)glfwGetTime();
+		float dTime = (float)glfwGetTime() - time;
+		time = (float)glfwGetTime();
+
+		// update
+		scene.update(dTime);
+
 		scene.render();
 		buffer_show();
 	}
