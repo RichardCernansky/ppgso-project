@@ -113,6 +113,7 @@ add_executable(project
         src/camera.h
         src/renderable.h
         src/objects/ground.cpp
+        src/objects/tree.cpp
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

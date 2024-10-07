@@ -4,6 +4,7 @@
 #include "renderable.h"
 #include "camera.h"
 
+
 #ifndef SCENE
 #define SCENE
 

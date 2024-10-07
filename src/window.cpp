@@ -15,8 +15,13 @@
 #include <shaders/texture_frag_glsl.h>
 
 //my files
+#include <random>
+#include <__random/random_device.h>
+
 #include "scene.cpp"
 #include "objects/ground.cpp"
+#include "objects/tree.cpp"
+
 
 
 class ProjectWindow : public ppgso::Window
@@ -35,6 +40,33 @@ private:
 	GLuint fbo = 1;
 	GLuint rbo = 1;
 
+	float randomFloat(float min, float max) {
+		static std::random_device rd;  // Random device
+		static std::mt19937 gen(rd()); // Seed generator with random device
+		std::uniform_real_distribution<> dis(min, max); // Distribution range [min, max]
+		return dis(gen);
+	}
+
+	void generateRandomTrees(Scene &scene, int numTrees) {
+		for (int i = 0; i < numTrees; ++i) {
+			// Generate random positions for each tree
+			float x = randomFloat(-10.0f, 10.0f);  // X position range from -10 to 10
+			float z = randomFloat(-10.0f, 10.0f);  // Z position range from -10 to 10
+			float y = 0.0f;                        // Y position (ground level)
+
+			// Random scale (size) for the tree
+			float scale = randomFloat(0.05f, 0.3f); // Random scale factor
+
+			// Create the tree with random position and scale
+			auto tree = std::make_unique<Tree>();
+			tree->position = {x, y, z};
+			tree->scale = {scale, scale, scale};
+
+			// Add the tree to the scene
+			scene.objects.push_back(std::move(tree));
+		}
+	}
+
 	void initBase() {
 		// camera
 		auto camera = std::make_unique<Camera>(100.0f, (float)width / (float)height, 0.1f, 100.0f);
@@ -42,6 +74,9 @@ private:
 
 		//add objects to the scene
 		scene.objects.push_back(std::make_unique<Ground>());
+		generateRandomTrees(scene, 50);
+		//scene.objects.push_back(std::make_unique<Tree>());
+
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
 		scene.shader = std::move(shader);
