@@ -1,60 +1,65 @@
-#include <ppgso/ppgso.h>
-#include "../scene.cpp"
-#include "../renderable.h"
+#include "tree.h"
 
-class Tree final : public Renderable
-{
-    glm::mat4 modelMatrix{1.0f};
+// Define the static members
+std::unique_ptr<ppgso::Mesh> Tree::mesh;
+std::unique_ptr<ppgso::Texture> Tree::texture;
 
-    // Static resources
-    std::unique_ptr<ppgso::Mesh> mesh;
-    std::unique_ptr<ppgso::Texture> texture;
-
-public:
-    glm::vec3 position{0, 0, -4};
-    glm::vec3 scale{0.1, 0.1, 0.1};
-
-    Tree()
-    {
-        if (!texture) {
-            auto image = ppgso::image::loadBMP("camp_fire.bmp");
-            if (image.width == 0 || image.height == 0) {
-                std::cerr << "Failed to load image: scrub-ground.bmp" << std::endl;
-                return;
-            }
-            texture = std::make_unique<ppgso::Texture>(std::move(image));
+Tree::Tree() {
+    if (!texture) {
+        auto image = ppgso::image::loadBMP("camp_fire.bmp");
+        if (image.width == 0 || image.height == 0) {
+            std::cerr << "Failed to load image: camp_fire.bmp" << std::endl;
+            return;
         }
-        if (!mesh)
-            mesh = std::make_unique<ppgso::Mesh>("tree.obj");
+        texture = std::make_unique<ppgso::Texture>(std::move(image));
     }
-
-    bool update(float dTime, Scene &scene) override
-    {
-        modelMatrix = glm::mat4{1.0f};
-        modelMatrix = glm::translate(modelMatrix, position);
-        modelMatrix = glm::rotate(modelMatrix, glm::radians(0.0f), glm::vec3{-1, 0, 0});
-        modelMatrix = glm::scale(modelMatrix, scale);
-
-        return true;
+    if (!mesh) {
+        mesh = std::make_unique<ppgso::Mesh>("tree.obj");
+        if (!mesh) {
+            std::cerr << "Failed to load mesh: tree.obj" << std::endl;
+        }
     }
+}
 
-    void render(Scene &scene) override
-    {
-        // Render the object
-        scene.shader->use();
-        scene.shader->setUniform("ModelMatrix", modelMatrix);
-        scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
-        scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
-        scene.shader->setUniform("Texture", *texture);
+bool Tree::update(float dTime, Scene &scene) {
+    modelMatrix = glm::mat4{1.0f};
+    modelMatrix = glm::translate(modelMatrix, position);
+    modelMatrix = glm::rotate(modelMatrix, glm::radians(0.0f), glm::vec3{-1, 0, 0});
+    modelMatrix = glm::scale(modelMatrix, scale);
+    return true;
+}
 
-        // light
-        setLightShader(scene);
+// Implement the correct render method
+void Tree::render(Scene &scene) {
+    scene.shader->use();
+    scene.shader->setUniform("ModelMatrix", modelMatrix);
+    scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
+    scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
+    scene.shader->setUniform("Texture", *texture);
+    mesh->render();
+}
 
+//bruno pridal
+// Optional instanced rendering method
+void Tree::renderInstanced(Scene &scene, const std::vector<glm::mat4> &instanceTransforms) {
+    scene.shader->use();
+    scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
+    scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
+    scene.shader->setUniform("Texture", *texture);
+
+    setLightShader(scene);
+
+    // Render each instance with its own transform
+    for (const auto& transform : instanceTransforms) {
+        scene.shader->setUniform("ModelMatrix", transform);
         mesh->render();
     }
+}
 
-    void setLightShader(Scene &scene) const
-    {
-        //
-    }
-};
+bool Tree::update_child(float d, Scene &scene, glm::mat4 ParentModelMatrix) {
+    return false;
+}
+
+void Tree::setLightShader(Scene &scene) const {
+    // Set up lighting here if needed
+}

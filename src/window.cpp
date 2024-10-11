@@ -20,12 +20,15 @@
 
 #include "scene.cpp"
 #include "objects/ground.cpp"
-#include "objects/tree.cpp"
-
-
+#include "objects/tree.h"
 
 class ProjectWindow : public ppgso::Window
 {
+
+public:
+	std::vector<glm::mat4> instanceTransforms;
+
+
 private:
 	Scene scene;
 	int current_scene = 0;
@@ -39,6 +42,58 @@ private:
 	// OpenGL object ids for framebuffer and render buffer
 	GLuint fbo = 1;
 	GLuint rbo = 1;
+	GLuint instanceVBO;
+
+
+	//4x4 matrices for storing the location, transformation and scale of the trees
+
+
+	// [ m1 m2 m3 Tx ]
+	// [ m4 m5 m6 Ty ]
+	// [ m7 m8 m9 Tz ]
+	// [  0  0  0  1 ]
+	//
+	//  - m1-m9: Rotation and scale components.
+	//  - Tx, Ty, Tz: Translation components (position in x, y, z).
+	//  - The last row [ 0 0 0 1 ] is for perspective and remains unchanged here.
+
+	void generateRandomTrees(Scene& scene, int numTrees) {
+		instanceTransforms.clear();  // Clear any existing transforms
+
+		for (int i = 0; i < numTrees; ++i) {
+			// Generate random position for the tree
+			float x = randomFloat(-10.0f, 10.0f);
+			float z = randomFloat(-10.0f, 10.0f);
+			float y = 0.0f;
+
+			// Generate random scale for the tree
+			float scale = randomFloat(0.05f, 0.3f);
+
+			// Create transformation matrix
+			glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(x, y, z));
+			model = glm::scale(model, glm::vec3(scale, scale, scale));
+
+			// Add the matrix to the list
+			instanceTransforms.push_back(model);
+		}
+	}
+
+	void printInstanceTransforms(const std::vector<glm::mat4>& transforms) {
+		for (size_t i = 0; i < transforms.size(); ++i) {
+			const glm::mat4& mat = transforms[i];
+			std::cout << "Transform " << i << ":\n";
+			// Loop over the 4 rows of the matrix
+			for (int row = 0; row < 4; ++row) {
+				std::cout << "[ ";
+				// Loop over the 4 columns of the matrix
+				for (int col = 0; col < 4; ++col) {
+					std::cout << mat[row][col] << " ";
+				}
+				std::cout << "]\n";
+			}
+			std::cout << "\n";
+		}
+	}
 
 	float randomFloat(float min, float max) {
 		static std::random_device rd;  // Random device
@@ -47,40 +102,28 @@ private:
 		return dis(gen);
 	}
 
-	void generateRandomTrees(Scene &scene, int numTrees) {
-		for (int i = 0; i < numTrees; ++i) {
-			// Generate random positions for each tree
-			float x = randomFloat(-10.0f, 10.0f);  // X position range from -10 to 10
-			float z = randomFloat(-10.0f, 10.0f);  // Z position range from -10 to 10
-			float y = 0.0f;                        // Y position (ground level)
-
-			// Random scale (size) for the tree
-			float scale = randomFloat(0.05f, 0.3f); // Random scale factor
-
-			// Create the tree with random position and scale
-			auto tree = std::make_unique<Tree>();
-			tree->position = {x, y, z};
-			tree->scale = {scale, scale, scale};
-
-			// Add the tree to the scene
-			scene.objects.push_back(std::move(tree));
-		}
-	}
-
 	void initBase() {
-		// camera
+		// Camera setup
 		auto camera = std::make_unique<Camera>(100.0f, (float)width / (float)height, 0.1f, 100.0f);
-		scene.camera= move(camera);
+		scene.camera = std::move(camera);
 
-		//add objects to the scene
+		// Add ground object to the scene
 		scene.objects.push_back(std::make_unique<Ground>());
+
+		// Generate random tree positions and transformations
 		generateRandomTrees(scene, 50);
-		//scene.objects.push_back(std::make_unique<Tree>());
+
+		// Create a single Tree object (for rendering all instances) and add it to the scene
+		auto tree = std::make_unique<Tree>();
+		scene.objects.push_back(std::move(tree));
 
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
 		scene.shader = std::move(shader);
 	}
+
+
+
 
 	void initCommon()
 	{
@@ -190,8 +233,7 @@ public:
 		quadMesh.render();
 	}
 
-	void onIdle()
-	{
+	void onIdle() override {
 		buffer_set();
 
 		// Track time
@@ -199,12 +241,22 @@ public:
 		float dTime = (float)glfwGetTime() - time;
 		time = (float)glfwGetTime();
 
-		// update
+		// Update the scene
 		scene.update(dTime);
 
-		scene.render();
+		// Render the scene
+		for (auto& obj : scene.objects) {
+			// If the object is a Tree, call renderInstanced with instanceTransforms
+			if (auto tree = dynamic_cast<Tree*>(obj.get())) {
+				tree->renderInstanced(scene, instanceTransforms);  // Render all tree instances
+			} else {
+				obj->render(scene);  // Render other objects normally
+			}
+		}
+
 		buffer_show();
 	}
+
 
 	void onKey(int key, int scanCode, int action, int mods) override
 	{

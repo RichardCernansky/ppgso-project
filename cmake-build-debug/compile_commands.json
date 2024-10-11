@@ -1,49 +1,49 @@
 [
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o"
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o"
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o"
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o"
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o"
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o"
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o"
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o"
 },

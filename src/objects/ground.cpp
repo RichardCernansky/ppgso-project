@@ -38,20 +38,17 @@ public:
         return true;
     }
 
-    void render(Scene &scene) override
-    {
-        // Render the object
+    void render(Scene &scene) {
         scene.shader->use();
         scene.shader->setUniform("ModelMatrix", modelMatrix);
         scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
         scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
+
+        // Assuming you have a texture for the ground
         scene.shader->setUniform("Texture", *texture);
-
-        // light
-        setLightShader(scene);
-
         mesh->render();
     }
+
 
     void setLightShader(Scene &scene) const
     {
