@@ -49,9 +49,6 @@ private:
 		// Add ground object to the scene
 		scene.objects.push_back(std::make_unique<Ground>());
 
-		// Generate random tree positions and transformations
-
-
 		// Create a single Tree object (for rendering all instances) and add it to the scene
 		auto tree = std::make_unique<Tree>();
 		generateRandomTrees(scene, 100, *tree);
