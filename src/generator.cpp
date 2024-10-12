@@ -23,8 +23,8 @@ void generateRandomTrees(Scene& scene, int numTrees, Tree& tree) {
 
     for (int i = 0; i < numTrees; ++i) {
         // Generate random position for the tree
-        float x = randomFloat(-10.0f, 10.0f);
-        float z = randomFloat(-10.0f, 10.0f);
+        float x = randomFloat(-20.0f, 20.0f);
+        float z = randomFloat(-20.0f, 20.0f);
         float y = 0.0f;
 
         // Generate random scale for the tree

@@ -19,6 +19,7 @@
 #include "objects/ground.cpp"
 #include "objects/tree.h"
 #include "generator.h"
+#include "objects/pig.h"
 
 class ProjectWindow : public ppgso::Window
 {
@@ -41,6 +42,10 @@ private:
 		auto camera = std::make_unique<Camera>(100.0f, (float)width / (float)height, 0.1f, 100.0f);
 		scene.camera = std::move(camera);
 
+		//create pig
+		// auto pig = std::make_unique<Pig>();
+		// scene.objects.push_back(std::move(pig));
+
 		// Add ground object to the scene
 		scene.objects.push_back(std::make_unique<Ground>());
 
@@ -49,8 +54,12 @@ private:
 
 		// Create a single Tree object (for rendering all instances) and add it to the scene
 		auto tree = std::make_unique<Tree>();
-		generateRandomTrees(scene, 50, *tree);
+		generateRandomTrees(scene, 100, *tree);
 		scene.objects.push_back(std::move(tree));
+
+		//create pig
+		auto pig = std::make_unique<Pig>();
+		scene.objects.push_back(std::move(pig));
 
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
