@@ -117,6 +117,8 @@ add_executable(project
         src/objects/tree.cpp
         src/objects/tree.h
         src/objects/tree.h
+        src/generator.cpp
+        src/generator.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

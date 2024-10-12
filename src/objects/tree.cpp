@@ -3,6 +3,7 @@
 // Define the static members
 std::unique_ptr<ppgso::Mesh> Tree::mesh;
 std::unique_ptr<ppgso::Texture> Tree::texture;
+std::vector<glm::mat4> instanceTransforms;
 
 Tree::Tree() {
     if (!texture) {
@@ -30,18 +31,11 @@ bool Tree::update(float dTime, Scene &scene) {
 }
 
 // Implement the correct render method
-void Tree::render(Scene &scene) {
-    scene.shader->use();
-    scene.shader->setUniform("ModelMatrix", modelMatrix);
-    scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
-    scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
-    scene.shader->setUniform("Texture", *texture);
-    mesh->render();
-}
+
 
 //bruno pridal
 // Optional instanced rendering method
-void Tree::renderInstanced(Scene &scene, const std::vector<glm::mat4> &instanceTransforms) {
+void Tree::render(Scene &scene) {
     scene.shader->use();
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
