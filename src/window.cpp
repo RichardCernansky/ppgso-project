@@ -42,10 +42,6 @@ private:
 		auto camera = std::make_unique<Camera>(100.0f, (float)width / (float)height, 0.1f, 100.0f);
 		scene.camera = std::move(camera);
 
-		//create pig
-		// auto pig = std::make_unique<Pig>();
-		// scene.objects.push_back(std::move(pig));
-
 		// Add ground object to the scene
 		scene.objects.push_back(std::make_unique<Ground>());
 
