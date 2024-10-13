@@ -1,8 +1,8 @@
-# Install script for directory: /Users/richardcernansky/Desktop/PPGSO/ppgso-project
+# Install script for directory: /Users/brunokristian/Documents/skola/ppgso-project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/_install")
+  set(CMAKE_INSTALL_PREFIX "/Users/brunokristian/Documents/skola/ppgso-project/_install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/project")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/project")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./project" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./project")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -48,11 +48,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/project.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
+  include("/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles/project.dir/install-cxx-module-bmi-Debug.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/data/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/brunokristian/Documents/skola/ppgso-project/data/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -63,5 +63,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

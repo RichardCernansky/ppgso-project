@@ -121,6 +121,8 @@ add_executable(project
         src/generator.h
         src/objects/pig.cpp
         src/objects/pig.h
+        src/objects/gas.cpp
+        src/objects/gas.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

@@ -584,6 +584,30 @@ shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
 
+src/generator.o: src/generator.cpp.o
+.PHONY : src/generator.o
+
+# target to build an object file
+src/generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/generator.cpp.o
+.PHONY : src/generator.cpp.o
+
+src/generator.i: src/generator.cpp.i
+.PHONY : src/generator.i
+
+# target to preprocess a source file
+src/generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/generator.cpp.i
+.PHONY : src/generator.cpp.i
+
+src/generator.s: src/generator.cpp.s
+.PHONY : src/generator.s
+
+# target to generate assembly for a file
+src/generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/generator.cpp.s
+.PHONY : src/generator.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -608,6 +632,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/objects/gas.o: src/objects/gas.cpp.o
+.PHONY : src/objects/gas.o
+
+# target to build an object file
+src/objects/gas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/gas.cpp.o
+.PHONY : src/objects/gas.cpp.o
+
+src/objects/gas.i: src/objects/gas.cpp.i
+.PHONY : src/objects/gas.i
+
+# target to preprocess a source file
+src/objects/gas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/gas.cpp.i
+.PHONY : src/objects/gas.cpp.i
+
+src/objects/gas.s: src/objects/gas.cpp.s
+.PHONY : src/objects/gas.s
+
+# target to generate assembly for a file
+src/objects/gas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/gas.cpp.s
+.PHONY : src/objects/gas.cpp.s
+
 src/objects/ground.o: src/objects/ground.cpp.o
 .PHONY : src/objects/ground.o
 
@@ -631,6 +679,30 @@ src/objects/ground.s: src/objects/ground.cpp.s
 src/objects/ground.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/ground.cpp.s
 .PHONY : src/objects/ground.cpp.s
+
+src/objects/pig.o: src/objects/pig.cpp.o
+.PHONY : src/objects/pig.o
+
+# target to build an object file
+src/objects/pig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/pig.cpp.o
+.PHONY : src/objects/pig.cpp.o
+
+src/objects/pig.i: src/objects/pig.cpp.i
+.PHONY : src/objects/pig.i
+
+# target to preprocess a source file
+src/objects/pig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/pig.cpp.i
+.PHONY : src/objects/pig.cpp.i
+
+src/objects/pig.s: src/objects/pig.cpp.s
+.PHONY : src/objects/pig.s
+
+# target to generate assembly for a file
+src/objects/pig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/pig.cpp.s
+.PHONY : src/objects/pig.cpp.s
 
 src/objects/tree.o: src/objects/tree.cpp.o
 .PHONY : src/objects/tree.o
@@ -767,12 +839,21 @@ help:
 	@echo "... shaders/texture_vert_glsl.o"
 	@echo "... shaders/texture_vert_glsl.i"
 	@echo "... shaders/texture_vert_glsl.s"
+	@echo "... src/generator.o"
+	@echo "... src/generator.i"
+	@echo "... src/generator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/objects/gas.o"
+	@echo "... src/objects/gas.i"
+	@echo "... src/objects/gas.s"
 	@echo "... src/objects/ground.o"
 	@echo "... src/objects/ground.i"
 	@echo "... src/objects/ground.s"
+	@echo "... src/objects/pig.o"
+	@echo "... src/objects/pig.i"
+	@echo "... src/objects/pig.s"
 	@echo "... src/objects/tree.o"
 	@echo "... src/objects/tree.i"
 	@echo "... src/objects/tree.s"
