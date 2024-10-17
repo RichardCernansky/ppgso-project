@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /Users/brunokristian/Documents/skola/ppgso-project -B /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project -B /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
 CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
   Compatibility with CMake < 3.5 will be removed from a future version of
   CMake.
@@ -7,13 +7,22 @@ CMake Deprecation Warning at CMakeLists.txt:5 (cmake_minimum_required):
   CMake that the project does not need compatibility with older versions.
 
 
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Found GLFW3: /opt/homebrew/lib/libglfw3.a;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/IOKit.framework;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreVideo.framework;/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/Cocoa.framework
 FIND_PATH /opt/homebrew/include
 -- Found GLEW: /opt/homebrew/include
+-- Found GLEW: /opt/homebrew/include
 -- GLEW_LIBRARIES: /opt/homebrew/lib/libGLEW.dylib
+-- Found GLM: /opt/homebrew/include
 -- GLM_INCLUDE_DIR = /opt/homebrew/include
+-- Found OpenGL: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework
 -- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
 -- Could NOT find OpenMP (missing: OpenMP_CXX_FOUND) 
--- Configuring done (0.3s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
+-- Configuring done (4.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug

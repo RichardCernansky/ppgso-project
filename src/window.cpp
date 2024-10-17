@@ -19,14 +19,12 @@
 #include "objects/ground.cpp"
 #include "objects/tree.h"
 #include "generator.h"
-#include "objects/pig.h"
 #include "objects/gas.h"
 
 class ProjectWindow : public ppgso::Window
 {
 private:
 	Scene scene;
-	int current_scene = 0;
 
 	// Objects to render the framebuffer on to
 	// ppgso::Shader quadShader = {convolution_vert_glsl, convolution_frag_glsl};
@@ -53,16 +51,14 @@ private:
 
 		//create pig
 		auto pig = std::make_unique<Pig>();
+		auto gas1 = std::make_unique<Gas>();
+		pig->children.push_back(std::move(gas1));
 		scene.objects.push_back(std::move(pig));
 
-		auto gas1 = std::make_unique<Gas>();
-		gas1->position = glm::vec3(0.0f, 0.0f, -5.0f); // Set position for gas1
-		scene.objects.push_back(std::move(gas1));
-
 		// Create second gas object
-		auto gas2 = std::make_unique<Gas>();
-		gas2->position = glm::vec3(2.0f, 0.0f, -5.0f); // Set position for gas2
-		scene.objects.push_back(std::move(gas2));
+		// auto gas2 = std::make_unique<Gas>();
+		// gas2->position = glm::vec3(2.0f, 0.0f, -5.0f); // Set position for gas2
+		// scene.objects.push_back(std::move(gas2));
 
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);

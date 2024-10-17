@@ -17,8 +17,11 @@ private:
 
 public:
     // Pig position and scale
-    glm::vec3 position{6.7, 0, -1.5};  // Initially placed at (0, 0, 0)
+    glm::vec3 position{5, 0, -5};  // Initially placed at (0, 0, 0)
     glm::vec3 scale{1, 1, 1};     // Default scale
+    std::vector<std::unique_ptr<Renderable>> children;  // Children objects
+    glm::vec3 globalDirection{0,0,1};
+    float timeInState = 0.0f;
 
     Pig();  // Constructor
 

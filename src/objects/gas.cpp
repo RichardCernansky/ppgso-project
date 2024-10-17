@@ -1,11 +1,11 @@
 #include "gas.h"
-
 // Static resources (shared among all instances of Pig)
 std::unique_ptr<ppgso::Mesh> Gas::mesh;
 std::unique_ptr<ppgso::Texture> Gas::texture;
 
 // Constructor
-Gas::Gas() {
+Gas::Gas(){
+
     if (!texture) {
         auto image = ppgso::image::loadBMP("green.bmp");  // Assuming a texture for boar
         if (image.width == 0 || image.height == 0) {
@@ -25,12 +25,20 @@ Gas::Gas() {
 
 // Update method
 bool Gas::update(float dTime, Scene &scene) {
-    // Initialize the model matrix
-    modelMatrix = glm::mat4{1.0f};
+    return true;
+}
 
-    // Apply transformations
-    modelMatrix = glm::translate(modelMatrix, position);  // Position at (0, 0, z)
-    modelMatrix = glm::scale(modelMatrix, scale);         // Apply scaling
+// Update method
+bool Gas::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
+    // Initialize the model matrix to identity matrix
+    modelMatrix = glm::mat4(1.0f);  // Identity matrix to reset transformations
+
+    // Apply the child's local transformations (relative to its parent)
+    modelMatrix = glm::translate(modelMatrix, position);  // Apply Gas's local position
+    modelMatrix = glm::scale(modelMatrix, scale);         // Apply Gas's local scale
+
+    // Combine the parent's transformation matrix with the child's local transformation
+    modelMatrix = parentModelMatrix * modelMatrix;
 
     return true;
 }
@@ -58,6 +66,7 @@ void Gas::render(Scene &scene) {
 
     // Disable blending
     glDisable(GL_BLEND);
+
 }
 
 
