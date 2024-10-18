@@ -209,6 +209,20 @@ CMakeFiles/project.dir/src/objects/apple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/apple.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp -o CMakeFiles/project.dir/src/objects/apple.cpp.s
 
+CMakeFiles/project.dir/src/objects/apple_tree.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/src/objects/apple_tree.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple_tree.cpp
+CMakeFiles/project.dir/src/objects/apple_tree.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project.dir/src/objects/apple_tree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/apple_tree.cpp.o -MF CMakeFiles/project.dir/src/objects/apple_tree.cpp.o.d -o CMakeFiles/project.dir/src/objects/apple_tree.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple_tree.cpp
+
+CMakeFiles/project.dir/src/objects/apple_tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/apple_tree.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple_tree.cpp > CMakeFiles/project.dir/src/objects/apple_tree.cpp.i
+
+CMakeFiles/project.dir/src/objects/apple_tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/apple_tree.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple_tree.cpp -o CMakeFiles/project.dir/src/objects/apple_tree.cpp.s
+
 # Object files for target project
 project_OBJECTS = \
 "CMakeFiles/project.dir/src/main.cpp.o" \
@@ -220,7 +234,8 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/src/objects/pig.cpp.o" \
 "CMakeFiles/project.dir/src/objects/gas.cpp.o" \
 "CMakeFiles/project.dir/src/objects/horseFly.cpp.o" \
-"CMakeFiles/project.dir/src/objects/apple.cpp.o"
+"CMakeFiles/project.dir/src/objects/apple.cpp.o" \
+"CMakeFiles/project.dir/src/objects/apple_tree.cpp.o"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
@@ -235,13 +250,14 @@ project: CMakeFiles/project.dir/src/objects/pig.cpp.o
 project: CMakeFiles/project.dir/src/objects/gas.cpp.o
 project: CMakeFiles/project.dir/src/objects/horseFly.cpp.o
 project: CMakeFiles/project.dir/src/objects/apple.cpp.o
+project: CMakeFiles/project.dir/src/objects/apple_tree.cpp.o
 project: CMakeFiles/project.dir/build.make
 project: libppgso.a
 project: libshaders.a
 project: /opt/homebrew/lib/libglfw3.a
 project: /opt/homebrew/lib/libGLEW.dylib
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_directory /Users/brunokristian/Documents/skola/ppgso-project/data/ /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 

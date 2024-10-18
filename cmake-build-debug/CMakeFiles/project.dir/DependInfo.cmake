@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/brunokristian/Documents/skola/ppgso-project/src/generator.cpp" "CMakeFiles/project.dir/src/generator.cpp.o" "gcc" "CMakeFiles/project.dir/src/generator.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp" "CMakeFiles/project.dir/src/main.cpp.o" "gcc" "CMakeFiles/project.dir/src/main.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp" "CMakeFiles/project.dir/src/objects/apple.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/apple.cpp.o.d"
+  "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple_tree.cpp" "CMakeFiles/project.dir/src/objects/apple_tree.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/apple_tree.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp" "CMakeFiles/project.dir/src/objects/gas.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/gas.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp" "CMakeFiles/project.dir/src/objects/ground.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/ground.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp" "CMakeFiles/project.dir/src/objects/horseFly.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/horseFly.cpp.o.d"

@@ -25,50 +25,47 @@ Apple::Apple() {
     }
 }
 
-
-// Update method
 bool Apple::update(float dTime, Scene &scene) {
-    //if (!landed) {
-        // Update the time step based on delta time
-        dt = dTime;
-
-        // Calculate the forces acting on the apple
-        glm::vec3 gravity_force = glm::vec3(0.0f, -gravity * mass, 0.0f);
-        glm::vec3 total_force = gravity_force + wind_force;
-
-        // Calculate acceleration (F = ma => a = F / m)
-        acceleration = total_force / mass;
-
-        // Update velocity
-        velocity += acceleration * dt;
-
-        // Update position
-        position += velocity * dt;
-
-        if (position.y < 0.2) {
-            position.y = 0.2;
-
-            // Apply the coefficient of restitution to simulate energy loss
-            velocity.y = -velocity.y * restitution;
-
-            // Optional: Apply a small threshold to stop bouncing when velocity is too low
-            if (abs(velocity.y) < 0.1f) {
-                velocity.y = 0.0f; // Stop bouncing
-                position = glm::vec3(3, 10, 0);
-                velocity = glm::vec3(0, 0, 0);
-                acceleration = glm::vec3(0, 0, 0);
-                //landed = true;
-            }
-        }
-
-        // Update the model matrix
-        modelMatrix = glm::translate(glm::mat4(1.0f), position);
-        modelMatrix = glm::scale(modelMatrix, scale);
-    //}
     return true;
 }
 
+bool Apple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) {
+
+    glm::vec3 parentPosition = glm::vec3(ParentModelMatrix[3]);
+
+    dt = dTime;
+    glm::vec3 gravity_force = glm::vec3(0.0f, -gravity * mass, 0.0f);
+    glm::vec3 total_force = gravity_force + wind_force;
+
+    acceleration = total_force / mass;
+    velocity += acceleration * dt;
+    position += velocity * dt;
+
+    // Ground collision detection and response
+    if (position.y < 0.1f) {
+        position.y = 0.1f;
+        velocity.y = -velocity.y * restitution;
+
+        if (abs(velocity.y) < 0.1f) {
+
+            position = glm::vec3(-1, 3, -1);
+            velocity =  glm::vec3(0, 0, 0);
+            acceleration = glm::vec3(0, 0, 0);
+        }
+    }
+    // Update the model matrix
+    glm::mat4 localModelMatrix = glm::translate(glm::mat4(1.0f), position);
+    localModelMatrix = glm::scale(localModelMatrix, scale);
+
+    // Combine with parent's model matrix
+    modelMatrix = ParentModelMatrix * localModelMatrix;
+
+    return true;
+}
+
+
 void Apple::render(Scene &scene) {
+
     // Use the shader program
     scene.shader->use();
 

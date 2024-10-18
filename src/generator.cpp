@@ -28,7 +28,7 @@ void generateRandomTrees(Scene& scene, int numTrees, Tree& tree) {
         float y = 0.0f;
 
         // Generate random scale for the tree
-        float scale = randomFloat(0.05f, 0.3f);
+        float scale = randomFloat(0.1f, 0.3f);
 
         // Create transformation matrix
         glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(x, y, z));

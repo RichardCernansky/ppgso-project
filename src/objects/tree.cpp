@@ -27,33 +27,20 @@ bool Tree::update(float dTime, Scene &scene) {
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::rotate(modelMatrix, glm::radians(0.0f), glm::vec3{-1, 0, 0});
     modelMatrix = glm::scale(modelMatrix, scale);
+
     return true;
 }
 
-// Implement the correct render method
-
-
-//bruno pridal
-// Optional instanced rendering method
 void Tree::render(Scene &scene) {
     scene.shader->use();
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.shader->setUniform("Texture", *texture);
 
-    setLightShader(scene);
-
     // Render each instance with its own transform
     for (const auto& transform : instanceTransforms) {
         scene.shader->setUniform("ModelMatrix", transform);
         mesh->render();
     }
-}
 
-bool Tree::update_child(float d, Scene &scene, glm::mat4 ParentModelMatrix) {
-    return false;
-}
-
-void Tree::setLightShader(Scene &scene) const {
-    // Set up lighting here if needed
 }

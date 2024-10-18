@@ -656,6 +656,30 @@ src/objects/apple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple.cpp.s
 .PHONY : src/objects/apple.cpp.s
 
+src/objects/apple_tree.o: src/objects/apple_tree.cpp.o
+.PHONY : src/objects/apple_tree.o
+
+# target to build an object file
+src/objects/apple_tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple_tree.cpp.o
+.PHONY : src/objects/apple_tree.cpp.o
+
+src/objects/apple_tree.i: src/objects/apple_tree.cpp.i
+.PHONY : src/objects/apple_tree.i
+
+# target to preprocess a source file
+src/objects/apple_tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple_tree.cpp.i
+.PHONY : src/objects/apple_tree.cpp.i
+
+src/objects/apple_tree.s: src/objects/apple_tree.cpp.s
+.PHONY : src/objects/apple_tree.s
+
+# target to generate assembly for a file
+src/objects/apple_tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple_tree.cpp.s
+.PHONY : src/objects/apple_tree.cpp.s
+
 src/objects/gas.o: src/objects/gas.cpp.o
 .PHONY : src/objects/gas.o
 
@@ -896,6 +920,9 @@ help:
 	@echo "... src/objects/apple.o"
 	@echo "... src/objects/apple.i"
 	@echo "... src/objects/apple.s"
+	@echo "... src/objects/apple_tree.o"
+	@echo "... src/objects/apple_tree.i"
+	@echo "... src/objects/apple_tree.s"
 	@echo "... src/objects/gas.o"
 	@echo "... src/objects/gas.i"
 	@echo "... src/objects/gas.s"

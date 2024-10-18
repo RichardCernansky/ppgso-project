@@ -54,8 +54,6 @@ bool HorseFly::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatr
 }
 
 void HorseFly::render(Scene &scene) {
-    // Define the transparency level
-    float transparency = 0.2f; // 50% transparency
 
     // Use the shader program
     scene.shader->use();
@@ -65,18 +63,8 @@ void HorseFly::render(Scene &scene) {
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.shader->setUniform("Texture", *texture);
-    scene.shader->setUniform("Transparency", transparency);
 
-    // Enable blending
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
-    // Render the mesh
     mesh->render();
-
-    // Disable blending
-    glDisable(GL_BLEND);
-
 }
 
 

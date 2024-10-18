@@ -1197,4 +1197,5 @@ CMakeFiles/project.dir/src/window.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.h
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple_tree.h

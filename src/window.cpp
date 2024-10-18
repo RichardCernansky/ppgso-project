@@ -23,6 +23,7 @@
 #include "objects/gas.h"
 #include "objects/horseFly.h"
 #include "src/objects/pig.h"
+#include "objects/apple_tree.h"
 
 class ProjectWindow : public ppgso::Window
 {
@@ -52,6 +53,12 @@ private:
 		generateRandomTrees(scene, 100, *tree);
 		scene.objects.push_back(std::move(tree));
 
+
+		auto apple_tree = std::make_unique<Apple_Tree>();
+		auto apple = std::make_unique<Apple>();
+		apple_tree->children.push_back(std::move(apple));
+		scene.objects.push_back(std::move(apple_tree));
+
 		//create pig
 		auto pig = std::make_unique<Pig>();
 		auto gas1 = std::make_unique<Gas>();
@@ -59,14 +66,6 @@ private:
 		gas1->children.push_back(std::move(horseFly));
 		pig->children.push_back(std::move(gas1));
 		scene.objects.push_back(std::move(pig));
-
-		auto apple = std::make_unique<Apple>();
-		scene.objects.push_back(std::move(apple));
-
-		// Create second gas object
-		// auto gas2 = std::make_unique<Gas>();
-		// gas2->position = glm::vec3(2.0f, 0.0f, -5.0f); // Set position for gas2
-		// scene.objects.push_back(std::move(gas2));
 
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);

@@ -1199,6 +1199,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple_tree.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
