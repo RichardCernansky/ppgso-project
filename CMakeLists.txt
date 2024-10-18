@@ -127,8 +127,10 @@ add_executable(project
         src/objects/horseFly.h
         src/objects/apple.cpp
         src/objects/apple.h
-        src/objects/apple_tree.cpp
-        src/objects/apple_tree.h
+        src/objects/AppleTree.cpp
+        src/objects/AppleTree.h
+        src/objects/goldenApple.cpp
+        src/objects/goldenApple.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

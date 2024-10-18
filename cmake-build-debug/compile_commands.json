@@ -157,8 +157,14 @@
 },
 {
   "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/apple_tree.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple_tree.cpp",
-  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple_tree.cpp",
-  "output": "CMakeFiles/project.dir/src/objects/apple_tree.cpp.o"
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/AppleTree.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp",
+  "output": "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o"
+},
+{
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/goldenApple.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp",
+  "output": "CMakeFiles/project.dir/src/objects/goldenApple.cpp.o"
 }
 ]

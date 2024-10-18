@@ -8,11 +8,11 @@ std::unique_ptr<ppgso::Texture> Apple::texture;
 // Constructor
 Apple::Apple() {
     // Generate a random position with each axis offset by a random value in the range [-1, 1]
-    float baseX = -1.0f, baseY = 3.0f, baseZ = -1.0f;
+    float baseX = -1.0f, baseY = 4.0f, baseZ = -1.0f;
     constructorPosition = glm::vec3{
-        baseX + randomFloat(-3.5f, 3.5f),  // Random offset from baseX
-        baseY + randomFloat(-3.5f, 3.5f),  // Random offset from baseY
-        baseZ + randomFloat(-3.5f, 3.5f)   // Random offset from baseZ
+        baseX + randomFloat(-2.0f, 2.0f),  // Random offset from baseX
+        baseY + randomFloat(-2.0f, 2.0f),  // Random offset from baseY
+        baseZ + randomFloat(-2.0f, 2.0f)   // Random offset from baseZ
     };
     position = constructorPosition;
 

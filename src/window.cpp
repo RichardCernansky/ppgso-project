@@ -20,7 +20,9 @@
 #include "objects/gas.h"
 #include "objects/horseFly.h"
 #include "src/objects/pig.h"
-#include "objects/apple_tree.h"
+#include "objects/AppleTree.h"
+#include "objects/goldenApple.h"
+
 
 class ProjectWindow : public ppgso::Window
 {
@@ -57,8 +59,12 @@ private:
 		}
 
 
-		auto apple_tree = std::make_unique<Apple_Tree>();
-		scene.objects.push_back(std::move(apple_tree));
+		auto tree_of_life = std::make_unique<AppleTree>();
+		for (int i = 0; i < 20; i++) { //generate and add 5 apple instances to the single tree
+			auto golden_apple = std::make_unique<GoldenApple>();
+			tree_of_life->children.push_back(std::move(golden_apple));
+		}
+		scene.objects.push_back(std::move(tree_of_life));
 
 		//create pig
 		auto pig = std::make_unique<Pig>();
