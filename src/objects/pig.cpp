@@ -29,7 +29,7 @@ Pig::Pig() {
     }
 }
 
-// Function to create a rotation matrix to align forward direction to target direction
+// function to create a rotation matrix to align forward direction to target direction
 glm::mat4 rotateToFaceDirection(const glm::vec3& currentForward, const glm::vec3& targetDirection) {
     // normalize the direction to make sure it is a unit vector
     glm::vec3 normalizedTarget = glm::normalize(targetDirection);

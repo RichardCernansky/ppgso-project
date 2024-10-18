@@ -35,10 +35,12 @@ bool Gas::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
 
     // Apply the child's local transformations (relative to its parent)
     modelMatrix = glm::translate(modelMatrix, position);  // Apply Gas's local position
+    modelMatrix = parentModelMatrix * modelMatrix;
+    for (auto& child : children) {
+        child->update_child(dTime,scene, modelMatrix);
+    }
     modelMatrix = glm::scale(modelMatrix, scale);         // Apply Gas's local scale
 
-    // Combine the parent's transformation matrix with the child's local transformation
-    modelMatrix = parentModelMatrix * modelMatrix;
 
     return true;
 }
@@ -67,6 +69,9 @@ void Gas::render(Scene &scene) {
     // Disable blending
     glDisable(GL_BLEND);
 
+    for (auto& child : children) {
+        child->render(scene);
+    }
 }
 
 

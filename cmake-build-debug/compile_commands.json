@@ -142,5 +142,11 @@
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/gas.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp",
   "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp",
   "output": "CMakeFiles/project.dir/src/objects/gas.cpp.o"
+},
+{
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/horseFly.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp",
+  "output": "CMakeFiles/project.dir/src/objects/horseFly.cpp.o"
 }
 ]

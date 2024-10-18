@@ -20,6 +20,8 @@
 #include "objects/tree.h"
 #include "generator.h"
 #include "objects/gas.h"
+#include "objects/horseFly.h"
+#include "src/objects/pig.h"
 
 class ProjectWindow : public ppgso::Window
 {
@@ -52,6 +54,8 @@ private:
 		//create pig
 		auto pig = std::make_unique<Pig>();
 		auto gas1 = std::make_unique<Gas>();
+		auto horseFly = std::make_unique<HorseFly>();
+		gas1->children.push_back(std::move(horseFly));
 		pig->children.push_back(std::move(gas1));
 		scene.objects.push_back(std::move(pig));
 
