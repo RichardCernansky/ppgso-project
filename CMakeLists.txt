@@ -125,6 +125,8 @@ add_executable(project
         src/objects/gas.h
         src/objects/horseFly.cpp
         src/objects/horseFly.h
+        src/objects/apple.cpp
+        src/objects/apple.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

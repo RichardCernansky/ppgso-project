@@ -19,6 +19,7 @@
 #include "objects/ground.cpp"
 #include "objects/tree.h"
 #include "generator.h"
+#include "objects/apple.h"
 #include "objects/gas.h"
 #include "objects/horseFly.h"
 #include "src/objects/pig.h"
@@ -58,6 +59,9 @@ private:
 		gas1->children.push_back(std::move(horseFly));
 		pig->children.push_back(std::move(gas1));
 		scene.objects.push_back(std::move(pig));
+
+		auto apple = std::make_unique<Apple>();
+		scene.objects.push_back(std::move(apple));
 
 		// Create second gas object
 		// auto gas2 = std::make_unique<Gas>();

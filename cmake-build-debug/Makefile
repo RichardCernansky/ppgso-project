@@ -632,6 +632,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/objects/apple.o: src/objects/apple.cpp.o
+.PHONY : src/objects/apple.o
+
+# target to build an object file
+src/objects/apple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple.cpp.o
+.PHONY : src/objects/apple.cpp.o
+
+src/objects/apple.i: src/objects/apple.cpp.i
+.PHONY : src/objects/apple.i
+
+# target to preprocess a source file
+src/objects/apple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple.cpp.i
+.PHONY : src/objects/apple.cpp.i
+
+src/objects/apple.s: src/objects/apple.cpp.s
+.PHONY : src/objects/apple.s
+
+# target to generate assembly for a file
+src/objects/apple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple.cpp.s
+.PHONY : src/objects/apple.cpp.s
+
 src/objects/gas.o: src/objects/gas.cpp.o
 .PHONY : src/objects/gas.o
 
@@ -679,6 +703,30 @@ src/objects/ground.s: src/objects/ground.cpp.s
 src/objects/ground.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/ground.cpp.s
 .PHONY : src/objects/ground.cpp.s
+
+src/objects/horseFly.o: src/objects/horseFly.cpp.o
+.PHONY : src/objects/horseFly.o
+
+# target to build an object file
+src/objects/horseFly.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/horseFly.cpp.o
+.PHONY : src/objects/horseFly.cpp.o
+
+src/objects/horseFly.i: src/objects/horseFly.cpp.i
+.PHONY : src/objects/horseFly.i
+
+# target to preprocess a source file
+src/objects/horseFly.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/horseFly.cpp.i
+.PHONY : src/objects/horseFly.cpp.i
+
+src/objects/horseFly.s: src/objects/horseFly.cpp.s
+.PHONY : src/objects/horseFly.s
+
+# target to generate assembly for a file
+src/objects/horseFly.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/horseFly.cpp.s
+.PHONY : src/objects/horseFly.cpp.s
 
 src/objects/pig.o: src/objects/pig.cpp.o
 .PHONY : src/objects/pig.o
@@ -845,12 +893,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/objects/apple.o"
+	@echo "... src/objects/apple.i"
+	@echo "... src/objects/apple.s"
 	@echo "... src/objects/gas.o"
 	@echo "... src/objects/gas.i"
 	@echo "... src/objects/gas.s"
 	@echo "... src/objects/ground.o"
 	@echo "... src/objects/ground.i"
 	@echo "... src/objects/ground.s"
+	@echo "... src/objects/horseFly.o"
+	@echo "... src/objects/horseFly.i"
+	@echo "... src/objects/horseFly.s"
 	@echo "... src/objects/pig.o"
 	@echo "... src/objects/pig.i"
 	@echo "... src/objects/pig.s"
