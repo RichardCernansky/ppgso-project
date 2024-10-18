@@ -7,6 +7,7 @@
 #include <random>
 #include "objects/tree.h"
 
+// Function to generate a random floating-point number in a given range [min, max]
 float randomFloat(float min, float max) {
     // Create a random number generator
     static std::random_device rd;  // Seed for random number engine
@@ -18,23 +19,20 @@ float randomFloat(float min, float max) {
     // Return a random floating-point number in the range [min, max]
     return dist(gen);
 }
-void generateRandomTrees(Scene& scene, int numTrees, Tree& tree) {
-    tree.instanceTransforms.clear();  // Clear any existing transforms
 
-    for (int i = 0; i < numTrees; ++i) {
-        // Generate random position for the tree
-        float x = randomFloat(-20.0f, 20.0f);
-        float z = randomFloat(-20.0f, 20.0f);
-        float y = 0.0f;
+// Function to generate random 3D position for the tree
+glm::mat4 generateRandomTreeModelMatrix() {
+    // Generate random position for the tree
+    float x = randomFloat(-20.0f, 20.0f);
+    float z = randomFloat(-20.0f, 20.0f);
+    float y = 0.0f;
 
-        // Generate random scale for the tree
-        float scale = randomFloat(0.1f, 0.3f);
+    // Generate random scale for the tree
+    float scale = randomFloat(0.1f, 0.3f);
 
-        // Create transformation matrix
-        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(x, y, z));
-        model = glm::scale(model, glm::vec3(scale, scale, scale));
-
-        // Add the matrix to the list
-        tree.instanceTransforms.push_back(model);
-    }
+    // Create transformation matrix
+    glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(x, y, z));
+    model = glm::scale(model, glm::vec3(scale, scale, scale));
+    return model;
 }
+

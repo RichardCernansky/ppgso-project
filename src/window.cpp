@@ -2,18 +2,15 @@
 #include <iostream>
 #include <vector>
 #include <list>
-
 //gl libs
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/glm.hpp>
 #include <glm/gtx/matrix_transform_2d.hpp>
 #include <glm/gtx/euler_angles.hpp>
 #include <ppgso/ppgso.h>
-
 //shaders
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
-
 //my files
 #include "scene.cpp"
 #include "objects/ground.cpp"
@@ -48,15 +45,19 @@ private:
 		// Add ground object to the scene
 		scene.objects.push_back(std::make_unique<Ground>());
 
-		// Create a single Tree object (for rendering all instances) and add it to the scene
-		auto tree = std::make_unique<Tree>();
-		generateRandomTrees(scene, 100, *tree);
-		scene.objects.push_back(std::move(tree));
+		auto tree = std::make_unique<Tree>(); //generate texture
+		for (int i = 0 ; i < 100; i++) { //generate and add 100 tree instances
+			auto tree_instance = std::make_unique<Tree>();
+			for (int i = 0; i < 3; i++) { //generate and add 5 apple instances to the single tree
+				auto apple = std::make_unique<Apple>();
+				tree_instance->children.push_back(std::move(apple));
+			}
+			tree_instance->modelMatrix = generateRandomTreeModelMatrix();
+			scene.objects.push_back(std::move(tree_instance));
+		}
 
 
 		auto apple_tree = std::make_unique<Apple_Tree>();
-		auto apple = std::make_unique<Apple>();
-		apple_tree->children.push_back(std::move(apple));
 		scene.objects.push_back(std::move(apple_tree));
 
 		//create pig

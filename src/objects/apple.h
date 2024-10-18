@@ -20,8 +20,9 @@ class Apple final : public Renderable {
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 scale{0.05f, 0.05f, 0.05}; // Adjust as needed
-    glm::vec3 position{-1, 3, -1};
+    glm::vec3 scale{0.1f, 0.1f, 0.1}; // Adjust as needed
+    glm::vec3 position{0, 0, 0};
+    glm::vec3 constructorPosition{0, 0, 0};
     glm::vec3 velocity{0.0f, 0.0f, 0.0f};
     glm::vec3 acceleration{0.0f, 0.0f, 0.0f};
     float mass = 0.2f;
@@ -29,6 +30,10 @@ public:
     glm::vec3 wind_force{0.1f, 0.0f, 0.0f};
     float dt = 0.016f;
     float restitution = 0.3f;
+
+    bool isFalling = false;
+    float respawnTime  = 0.0f;
+    float elapsedTime = 0.0f;
 
     //float timeSinceStopped = 0.0f;
     bool landed = false;
