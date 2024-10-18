@@ -35,6 +35,7 @@ Apple::Apple() {
     }
 }
 
+
 bool Apple::update(float dTime, Scene &scene) {
     return true;
 }
