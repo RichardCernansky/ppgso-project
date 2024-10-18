@@ -8,7 +8,7 @@ std::unique_ptr<ppgso::Texture> GoldenApple::texture;
 // Constructor
 GoldenApple::GoldenApple() {
     // Generate a random position with each axis offset by a random value in the range [-1, 1]
-    float baseX = -0.0f, baseY = 4.0f, baseZ = -0.0f;
+    float baseX = -0.0f, baseY = 3.0f, baseZ = -0.0f;
     constructorPosition = glm::vec3{
         baseX + randomFloat(-2.0f, 2.0f),  // Random offset from baseX
         baseY + randomFloat(-2.0f, 2.0f),  // Random offset from baseY
