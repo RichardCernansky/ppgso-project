@@ -6,17 +6,15 @@
 
 // Declare the Tree class
 class Tree final : public Renderable {
-    glm::mat4 modelMatrix{1.0f};
-
     // Static resources shared by all trees
     static std::unique_ptr<ppgso::Mesh> mesh;
     static std::unique_ptr<ppgso::Texture> texture;
 
-
 public:
-    glm::vec3 position{0, 0, -4};  // Position of the tree
+    std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects
+    glm::vec3 position{0, 0, 0};  // Position of the tree
     glm::vec3 scale{0.1f, 0.1f, 0.1f};  // Scale of the tree
-    std::vector<glm::mat4> instanceTransforms;
+    glm::mat4 modelMatrix{1.0f};
 
     Tree();
 

@@ -41,7 +41,6 @@ bool Gas::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
     }
     modelMatrix = glm::scale(modelMatrix, scale);         // Apply Gas's local scale
 
-
     return true;
 }
 

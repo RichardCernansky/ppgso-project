@@ -3,7 +3,6 @@
 // Define the static members
 std::unique_ptr<ppgso::Mesh> Tree::mesh;
 std::unique_ptr<ppgso::Texture> Tree::texture;
-std::vector<glm::mat4> instanceTransforms;
 
 Tree::Tree() {
     if (!texture) {
@@ -23,11 +22,9 @@ Tree::Tree() {
 }
 
 bool Tree::update(float dTime, Scene &scene) {
-    modelMatrix = glm::mat4{1.0f};
-    modelMatrix = glm::translate(modelMatrix, position);
-    modelMatrix = glm::rotate(modelMatrix, glm::radians(0.0f), glm::vec3{-1, 0, 0});
-    modelMatrix = glm::scale(modelMatrix, scale);
-
+    for (auto& child : children) {
+        child->update_child(dTime,scene, modelMatrix);
+    }
     return true;
 }
 
@@ -36,11 +33,10 @@ void Tree::render(Scene &scene) {
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.shader->setUniform("Texture", *texture);
+    scene.shader->setUniform("ModelMatrix", modelMatrix);
+    mesh->render();
 
-    // Render each instance with its own transform
-    for (const auto& transform : instanceTransforms) {
-        scene.shader->setUniform("ModelMatrix", transform);
-        mesh->render();
+    for (auto& child : children) {
+        child->render(scene);
     }
-
 }

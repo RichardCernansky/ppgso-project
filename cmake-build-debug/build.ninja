@@ -293,6 +293,30 @@ build CMakeFiles/project.dir/src/objects/horseFly.cpp.o: CXX_COMPILER__project_u
   OBJECT_DIR = CMakeFiles/project.dir
   OBJECT_FILE_DIR = CMakeFiles/project.dir/src/objects
 
+build CMakeFiles/project.dir/src/objects/apple.cpp.o: CXX_COMPILER__project_unscanned_Debug /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp || cmake_object_order_depends_target_project
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles/project.dir/src/objects/apple.cpp.o.d
+  FLAGS = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+  OBJECT_DIR = CMakeFiles/project.dir
+  OBJECT_FILE_DIR = CMakeFiles/project.dir/src/objects
+
+build CMakeFiles/project.dir/src/objects/AppleTree.cpp.o: CXX_COMPILER__project_unscanned_Debug /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp || cmake_object_order_depends_target_project
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles/project.dir/src/objects/AppleTree.cpp.o.d
+  FLAGS = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+  OBJECT_DIR = CMakeFiles/project.dir
+  OBJECT_FILE_DIR = CMakeFiles/project.dir/src/objects
+
+build CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: CXX_COMPILER__project_unscanned_Debug /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp || cmake_object_order_depends_target_project
+  DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
+  DEP_FILE = CMakeFiles/project.dir/src/objects/goldenApple.cpp.o.d
+  FLAGS = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+  OBJECT_DIR = CMakeFiles/project.dir
+  OBJECT_FILE_DIR = CMakeFiles/project.dir/src/objects
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target project
@@ -301,7 +325,7 @@ build CMakeFiles/project.dir/src/objects/horseFly.cpp.o: CXX_COMPILER__project_u
 #############################################
 # Link the executable project
 
-build project: CXX_EXECUTABLE_LINKER__project_Debug CMakeFiles/project.dir/src/main.cpp.o CMakeFiles/project.dir/src/window.cpp.o CMakeFiles/project.dir/src/scene.cpp.o CMakeFiles/project.dir/src/objects/ground.cpp.o CMakeFiles/project.dir/src/objects/tree.cpp.o CMakeFiles/project.dir/src/generator.cpp.o CMakeFiles/project.dir/src/objects/pig.cpp.o CMakeFiles/project.dir/src/objects/gas.cpp.o CMakeFiles/project.dir/src/objects/horseFly.cpp.o | libppgso.a libshaders.a /opt/homebrew/lib/libglfw3.a /opt/homebrew/lib/libGLEW.dylib || libppgso.a libshaders.a
+build project: CXX_EXECUTABLE_LINKER__project_Debug CMakeFiles/project.dir/src/main.cpp.o CMakeFiles/project.dir/src/window.cpp.o CMakeFiles/project.dir/src/scene.cpp.o CMakeFiles/project.dir/src/objects/ground.cpp.o CMakeFiles/project.dir/src/objects/tree.cpp.o CMakeFiles/project.dir/src/generator.cpp.o CMakeFiles/project.dir/src/objects/pig.cpp.o CMakeFiles/project.dir/src/objects/gas.cpp.o CMakeFiles/project.dir/src/objects/horseFly.cpp.o CMakeFiles/project.dir/src/objects/apple.cpp.o CMakeFiles/project.dir/src/objects/AppleTree.cpp.o CMakeFiles/project.dir/src/objects/goldenApple.cpp.o | libppgso.a libshaders.a /opt/homebrew/lib/libglfw3.a /opt/homebrew/lib/libGLEW.dylib || libppgso.a libshaders.a
   FLAGS = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_FLAGS = -L/opt/homebrew/opt/libomp/lib
   LINK_LIBRARIES = libppgso.a  libshaders.a  /opt/homebrew/lib/libglfw3.a  -framework IOKit  -framework CoreVideo  -framework Cocoa  /opt/homebrew/lib/libGLEW.dylib  -framework OpenGL

@@ -1,13 +1,9 @@
 #include <list>
 #include <memory>
-
 #include "renderable.h"
 #include "camera.h"
-
-
 #ifndef SCENE
 #define SCENE
-
 #define GRAVITACIA 0.1f
 #define VIETOR 0.03f
 
