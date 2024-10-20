@@ -22,10 +22,10 @@ CMAKE_AR:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
-//Enable colored diagnostics throughout.
-CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
+//Enable/Disable color output during build.
+CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/c++
@@ -278,6 +278,8 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=29
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=6
+//ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
+CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake
 //Path to cpack program executable.
