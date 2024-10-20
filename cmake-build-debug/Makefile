@@ -632,6 +632,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/objects/AppleTree.o: src/objects/AppleTree.cpp.o
+.PHONY : src/objects/AppleTree.o
+
+# target to build an object file
+src/objects/AppleTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/AppleTree.cpp.o
+.PHONY : src/objects/AppleTree.cpp.o
+
+src/objects/AppleTree.i: src/objects/AppleTree.cpp.i
+.PHONY : src/objects/AppleTree.i
+
+# target to preprocess a source file
+src/objects/AppleTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/AppleTree.cpp.i
+.PHONY : src/objects/AppleTree.cpp.i
+
+src/objects/AppleTree.s: src/objects/AppleTree.cpp.s
+.PHONY : src/objects/AppleTree.s
+
+# target to generate assembly for a file
+src/objects/AppleTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/AppleTree.cpp.s
+.PHONY : src/objects/AppleTree.cpp.s
+
 src/objects/apple.o: src/objects/apple.cpp.o
 .PHONY : src/objects/apple.o
 
@@ -656,30 +680,6 @@ src/objects/apple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple.cpp.s
 .PHONY : src/objects/apple.cpp.s
 
-src/objects/apple_tree.o: src/objects/apple_tree.cpp.o
-.PHONY : src/objects/apple_tree.o
-
-# target to build an object file
-src/objects/apple_tree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple_tree.cpp.o
-.PHONY : src/objects/apple_tree.cpp.o
-
-src/objects/apple_tree.i: src/objects/apple_tree.cpp.i
-.PHONY : src/objects/apple_tree.i
-
-# target to preprocess a source file
-src/objects/apple_tree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple_tree.cpp.i
-.PHONY : src/objects/apple_tree.cpp.i
-
-src/objects/apple_tree.s: src/objects/apple_tree.cpp.s
-.PHONY : src/objects/apple_tree.s
-
-# target to generate assembly for a file
-src/objects/apple_tree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple_tree.cpp.s
-.PHONY : src/objects/apple_tree.cpp.s
-
 src/objects/gas.o: src/objects/gas.cpp.o
 .PHONY : src/objects/gas.o
 
@@ -703,6 +703,30 @@ src/objects/gas.s: src/objects/gas.cpp.s
 src/objects/gas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/gas.cpp.s
 .PHONY : src/objects/gas.cpp.s
+
+src/objects/goldenApple.o: src/objects/goldenApple.cpp.o
+.PHONY : src/objects/goldenApple.o
+
+# target to build an object file
+src/objects/goldenApple.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/goldenApple.cpp.o
+.PHONY : src/objects/goldenApple.cpp.o
+
+src/objects/goldenApple.i: src/objects/goldenApple.cpp.i
+.PHONY : src/objects/goldenApple.i
+
+# target to preprocess a source file
+src/objects/goldenApple.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/goldenApple.cpp.i
+.PHONY : src/objects/goldenApple.cpp.i
+
+src/objects/goldenApple.s: src/objects/goldenApple.cpp.s
+.PHONY : src/objects/goldenApple.s
+
+# target to generate assembly for a file
+src/objects/goldenApple.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/goldenApple.cpp.s
+.PHONY : src/objects/goldenApple.cpp.s
 
 src/objects/ground.o: src/objects/ground.cpp.o
 .PHONY : src/objects/ground.o
@@ -917,15 +941,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/objects/AppleTree.o"
+	@echo "... src/objects/AppleTree.i"
+	@echo "... src/objects/AppleTree.s"
 	@echo "... src/objects/apple.o"
 	@echo "... src/objects/apple.i"
 	@echo "... src/objects/apple.s"
-	@echo "... src/objects/apple_tree.o"
-	@echo "... src/objects/apple_tree.i"
-	@echo "... src/objects/apple_tree.s"
 	@echo "... src/objects/gas.o"
 	@echo "... src/objects/gas.i"
 	@echo "... src/objects/gas.s"
+	@echo "... src/objects/goldenApple.o"
+	@echo "... src/objects/goldenApple.i"
+	@echo "... src/objects/goldenApple.s"
 	@echo "... src/objects/ground.o"
 	@echo "... src/objects/ground.i"
 	@echo "... src/objects/ground.s"

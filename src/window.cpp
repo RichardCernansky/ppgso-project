@@ -204,54 +204,48 @@ public:
 		buffer_show();
 	}
 
-	void onKey(int key, int scanCode, int action, int mods) override
-	{
-		if (action == GLFW_PRESS)
+	void onKey(int key, int scanCode, int action, int mods) override {
+		if (action == GLFW_PRESS || action == GLFW_REPEAT)  // Handle both press and repeat
 		{
-			switch (scanCode)
-			{
-			case 113: // left
-				scene.move_left = true;
-				break;
-			case 40:
-			case 114: // right
-				scene.move_right = true;
-				break;
-			case 49: //probably deprecated
-				if (!scene.jump)
-					scene.jump = true;
-				break;
-			case 124: //right arrow
-				scene.camera->go_boundary_right = true;
-				scene.camera->go_boundary_left = false;
-				break;
-			case 123: //left arrow
-				scene.camera->go_boundary_left = true;
-				scene.camera->go_boundary_right = false;
+			std::cout << "Key pressed, scanCode: " << scanCode << std::endl;
+
+			switch (scanCode) {
+				case 124: // Right arrow
+					scene.camera->turn_right = true;
+				scene.camera->turn_left = false;
+				scene.camera->go_player = false;
 				break;
 
-			case 76: // go player
-				scene.camera->go_boundary_left = false;
-				scene.camera->go_boundary_right = false;
+				case 123: // Left arrow
+					scene.camera->turn_left = true;
+				scene.camera->turn_right = false;
+				scene.camera->go_player = false;
+				break;
+
+				case 126: // Go player (Up arrow)
+					scene.camera->turn_left = false;
+				scene.camera->turn_right = false;
 				scene.camera->go_player = true;
 				break;
 			}
 		}
-		if (action == GLFW_RELEASE)
+
+		if (action == GLFW_RELEASE)  // Handle key release to stop turning or moving
 		{
-			switch (scanCode)
-			{
-			case 38:
-			case 113:
-				// left
-				scene.move_left = false;
+			switch (scanCode) {
+				case 124: // Right arrow release
+					scene.camera->turn_right = false;
 				break;
-			case 40:
-			case 114:
-				// right
-				scene.move_right = false;
+
+				case 123: // Left arrow release
+					scene.camera->turn_left = false;
+				break;
+
+				case 126: // Go player release
+					scene.camera->go_player = false;
 				break;
 			}
 		}
 	}
+
 };
