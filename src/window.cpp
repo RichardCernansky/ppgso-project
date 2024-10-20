@@ -207,7 +207,7 @@ public:
 	void onKey(int key, int scanCode, int action, int mods) override {
 		if (action == GLFW_PRESS || action == GLFW_REPEAT)  // Handle both press and hold
 		{
-
+			//halo pome
 			switch (scanCode) {
 				case 124: // Right arrow
 					scene.camera->turn_right = true;
