@@ -205,32 +205,25 @@ public:
 	}
 
 	void onKey(int key, int scanCode, int action, int mods) override {
-		if (action == GLFW_PRESS || action == GLFW_REPEAT)  // Handle both press and repeat
+		if (action == GLFW_PRESS || action == GLFW_REPEAT)  // Handle both press and hold
 		{
-			std::cout << "Key pressed, scanCode: " << scanCode << std::endl;
 
 			switch (scanCode) {
 				case 124: // Right arrow
 					scene.camera->turn_right = true;
-				scene.camera->turn_left = false;
-				scene.camera->go_player = false;
 				break;
 
 				case 123: // Left arrow
 					scene.camera->turn_left = true;
-				scene.camera->turn_right = false;
-				scene.camera->go_player = false;
 				break;
 
-				case 126: // Go player (Up arrow)
-					scene.camera->turn_left = false;
-				scene.camera->turn_right = false;
-				scene.camera->go_player = true;
+				case 126: // Up arrow (Go player)
+					scene.camera->go_player = true;
 				break;
 			}
 		}
 
-		if (action == GLFW_RELEASE)  // Handle key release to stop turning or moving
+		if (action == GLFW_RELEASE)  // Handle key release
 		{
 			switch (scanCode) {
 				case 124: // Right arrow release
@@ -241,11 +234,12 @@ public:
 					scene.camera->turn_left = false;
 				break;
 
-				case 126: // Go player release
+				case 126: // Up arrow release
 					scene.camera->go_player = false;
 				break;
 			}
 		}
 	}
+
 
 };
