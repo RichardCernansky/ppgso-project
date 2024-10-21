@@ -20,7 +20,7 @@ public:
 	glm::vec3 help{0.0f, 1.0f, 0.0f};
 
 
-	float speed = 0.05f;
+	float speed = 0.1f;
 	float sensitivity = 0.05f;
 
 	bool go_player = false;

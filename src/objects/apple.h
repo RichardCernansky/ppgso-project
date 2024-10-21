@@ -27,7 +27,7 @@ public:
     glm::vec3 acceleration{0.0f, 0.0f, 0.0f};
     float mass = 0.2f;
     float gravity = 9.8f;
-    glm::vec3 wind_force{0.1f, 0.0f, 0.0f};
+    glm::vec3 wind_force{0.5f, 0.0f, 0.0f};
     float dt = 0.016f;
     float restitution = 0.3f;
 

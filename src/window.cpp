@@ -48,7 +48,7 @@ private:
 		scene.objects.push_back(std::make_unique<Ground>());
 
 		auto tree = std::make_unique<Tree>(); //generate texture
-		for (int i = 0 ; i < 100; i++) { //generate and add 100 tree instances
+		for (int i = 0 ; i < 200; i++) { //generate and add 100 tree instances
 			auto tree_instance = std::make_unique<Tree>();
 			for (int i = 0; i < 3; i++) { //generate and add 5 apple instances to the single tree
 				auto apple = std::make_unique<Apple>();
