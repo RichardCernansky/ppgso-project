@@ -50,14 +50,10 @@ public:
 		// Handle left/right rotation.
 		if (turn_right)
 		{
-			std::cout << "doprava stlacene";
-
 			float angle = -sensitivity;  // Rotate right.
 			rotateCamera(angle);
 			rotateCamera(angle);
 
-			std::cout << "Front Vector after rotation: "
-			  << "x: " << front.x << ", y: " << front.y << ", z: " << front.z << std::endl;
 		}
 
 		if (turn_left)

@@ -21,7 +21,10 @@
 #include "objects/horseFly.h"
 #include "src/objects/pig.h"
 #include "objects/AppleTree.h"
+#include "objects/fire.h"
 #include "objects/goldenApple.h"
+#include "objects/fire.h"
+#include "objects/smoke.h"
 
 
 class ProjectWindow : public ppgso::Window
@@ -66,6 +69,14 @@ private:
 		}
 		scene.objects.push_back(std::move(tree_of_life));
 
+		auto fire = std::make_unique<Fire>();
+		scene.objects.push_back(std::move(fire));
+
+		// Create the first Smoke object and set its position
+		auto smoke = std::make_unique<Smoke>();
+		scene.objects.push_back(std::move(smoke));
+
+
 		//create pig
 		auto pig = std::make_unique<Pig>();
 		auto gas1 = std::make_unique<Gas>();
@@ -73,6 +84,8 @@ private:
 		gas1->children.push_back(std::move(horseFly));
 		pig->children.push_back(std::move(gas1));
 		scene.objects.push_back(std::move(pig));
+
+
 
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);

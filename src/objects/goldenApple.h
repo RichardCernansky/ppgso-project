@@ -14,7 +14,6 @@ class GoldenApple final : public Renderable {
     // Transformation matrices
     glm::mat4 modelMatrix{1.0f};
 
-
     // Static resources shared by all apples
     static std::unique_ptr<ppgso::Mesh> mesh;
     static std::unique_ptr<ppgso::Texture> texture;

@@ -45,10 +45,8 @@ bool Gas::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
 }
 
 void Gas::render(Scene &scene) {
-    // Define the transparency level
-    float transparency = 0.2f; // 50% transparency
+    float transparency = 0.05f; // Adjust as needed
 
-    // Use the shader program
     scene.shader->use();
 
     // Set shader uniforms
@@ -58,20 +56,17 @@ void Gas::render(Scene &scene) {
     scene.shader->setUniform("Texture", *texture);
     scene.shader->setUniform("Transparency", transparency);
 
-    // Enable blending
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glDepthMask(GL_FALSE);
 
     // Render the mesh
     mesh->render();
 
-    // Disable blending
+    glDepthMask(GL_TRUE);
     glDisable(GL_BLEND);
-
-    for (auto& child : children) {
-        child->render(scene);
-    }
 }
+
 
 
 

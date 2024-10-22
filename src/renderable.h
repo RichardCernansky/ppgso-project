@@ -24,5 +24,8 @@ public:
     virtual bool update_child(float d, Scene &scene, glm::mat4 ParetModelMatrix) {
         return false;
     }
+
+	virtual bool isTransparent() const { return false; }
+	virtual glm::vec3 getPosition() const { return glm::vec3(0.0f); }
 };
 #endif

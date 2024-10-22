@@ -21,4 +21,6 @@ public:
     // Update and render methods
     bool update_child(float dTime, Scene &scene, glm::mat4 ParetModelMatrix) override;
     void render(Scene &scene) override;
+    bool isTransparent() const override { return true; }
+    glm::vec3 getPosition() const override { return position; }
 };
