@@ -23,7 +23,6 @@
 #include "objects/AppleTree.h"
 #include "objects/fire.h"
 #include "objects/goldenApple.h"
-#include "objects/fire.h"
 #include "objects/smoke.h"
 
 
@@ -70,11 +69,9 @@ private:
 		scene.objects.push_back(std::move(tree_of_life));
 
 		auto fire = std::make_unique<Fire>();
-		scene.objects.push_back(std::move(fire));
-
-		// Create the first Smoke object and set its position
 		auto smoke = std::make_unique<Smoke>();
-		scene.objects.push_back(std::move(smoke));
+		fire->children.push_back(std::move(smoke));
+		scene.objects.push_back(std::move(fire));
 
 
 		//create pig

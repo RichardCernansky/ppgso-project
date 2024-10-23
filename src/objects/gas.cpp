@@ -57,6 +57,7 @@ void Gas::render(Scene &scene) {
     scene.shader->setUniform("Transparency", transparency);
 
     glEnable(GL_BLEND);
+    glEnable(GL_DEPTH_TEST);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glDepthMask(GL_FALSE);
 
@@ -65,6 +66,10 @@ void Gas::render(Scene &scene) {
 
     glDepthMask(GL_TRUE);
     glDisable(GL_BLEND);
+
+    for (auto& child : children) {
+        child->render(scene);
+    }
 }
 
 

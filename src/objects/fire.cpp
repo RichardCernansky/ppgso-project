@@ -33,6 +33,10 @@ bool Fire::update(float dTime, Scene &scene) {
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::scale(modelMatrix, scale);
 
+    for (auto& child : children) {
+        child->update_child(dTime,scene, modelMatrix);
+    }
+
     return true;
 }
 
@@ -47,6 +51,10 @@ void Fire::render(Scene &scene) {
 
     // Render the mesh
     mesh->render();
+
+    for (auto& child : children) {
+        child->render(scene);
+    }
 }
 
 

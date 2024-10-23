@@ -27,10 +27,15 @@ Smoke::Smoke(){
     }
 }
 
-// Update method
 bool Smoke::update(float dTime, Scene &scene) {
+    return true;
+}
+
+// Update method
+bool Smoke::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
 
     modelMatrix = glm::mat4{1.0f};
+    modelMatrix = parentModelMatrix * modelMatrix;
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3{0, 0, 1});
     modelMatrix = glm::scale(modelMatrix, scale);
@@ -50,11 +55,13 @@ void Smoke::render(Scene &scene) {
     scene.shader->setUniform("Transparency", transparency);
 
     glEnable(GL_BLEND);
+    glEnable(GL_DEPTH_TEST);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glDepthMask(GL_FALSE);
 
     // Render the mesh
     mesh->render();
+
 
     glDepthMask(GL_TRUE);
     glDisable(GL_BLEND);

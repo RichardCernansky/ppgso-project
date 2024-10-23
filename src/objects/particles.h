@@ -1,15 +1,14 @@
 //
-// Created by Bruno Kristián on 21/10/2024.
+// Created by Bruno Kristián on 23/10/2024.
 //
 
-#ifndef SMOKE_H
-#define SMOKE_H
+#ifndef PARTICLES_H
+#define PARTICLES_H
 
 #include <ppgso/ppgso.h>
 #include "../scene.cpp"
-#include "../renderable.h"
 
-class Smoke final : public Renderable {
+class Particles final : public Renderable {
     glm::mat4 modelMatrix{1.0f};
     std::vector<std::unique_ptr<Renderable>> children;
     glm::mat4 parentPos{0};
@@ -18,14 +17,14 @@ class Smoke final : public Renderable {
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 scale{100, 100, 100}; // Adjust as needed
-    glm::vec3 position{0, 500,-10};
+    glm::vec3 scale{0.1, 0.1, 0.1}; // Adjust as needed
+    glm::vec3 position{0, 0.5,-0.8};
 
-    Smoke();
+    Particles();
 
     void render(Scene &scene) override;
     bool update(float dTime, Scene &scene) override;
     bool update_child(float dTime, Scene &scene, glm::mat4 ParetModelMatrix) override;
 
 };
-#endif
+#endif //PARTICLES_H

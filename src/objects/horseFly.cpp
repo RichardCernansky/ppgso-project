@@ -66,6 +66,3 @@ void HorseFly::render(Scene &scene) {
 
     mesh->render();
 }
-
-
-
