@@ -1200,4 +1200,7 @@ CMakeFiles/project.dir/src/main.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h

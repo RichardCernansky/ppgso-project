@@ -680,6 +680,30 @@ src/objects/apple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple.cpp.s
 .PHONY : src/objects/apple.cpp.s
 
+src/objects/fire.o: src/objects/fire.cpp.o
+.PHONY : src/objects/fire.o
+
+# target to build an object file
+src/objects/fire.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fire.cpp.o
+.PHONY : src/objects/fire.cpp.o
+
+src/objects/fire.i: src/objects/fire.cpp.i
+.PHONY : src/objects/fire.i
+
+# target to preprocess a source file
+src/objects/fire.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fire.cpp.i
+.PHONY : src/objects/fire.cpp.i
+
+src/objects/fire.s: src/objects/fire.cpp.s
+.PHONY : src/objects/fire.s
+
+# target to generate assembly for a file
+src/objects/fire.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fire.cpp.s
+.PHONY : src/objects/fire.cpp.s
+
 src/objects/gas.o: src/objects/gas.cpp.o
 .PHONY : src/objects/gas.o
 
@@ -776,6 +800,30 @@ src/objects/horseFly.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/horseFly.cpp.s
 .PHONY : src/objects/horseFly.cpp.s
 
+src/objects/particles.o: src/objects/particles.cpp.o
+.PHONY : src/objects/particles.o
+
+# target to build an object file
+src/objects/particles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/particles.cpp.o
+.PHONY : src/objects/particles.cpp.o
+
+src/objects/particles.i: src/objects/particles.cpp.i
+.PHONY : src/objects/particles.i
+
+# target to preprocess a source file
+src/objects/particles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/particles.cpp.i
+.PHONY : src/objects/particles.cpp.i
+
+src/objects/particles.s: src/objects/particles.cpp.s
+.PHONY : src/objects/particles.s
+
+# target to generate assembly for a file
+src/objects/particles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/particles.cpp.s
+.PHONY : src/objects/particles.cpp.s
+
 src/objects/pig.o: src/objects/pig.cpp.o
 .PHONY : src/objects/pig.o
 
@@ -799,6 +847,30 @@ src/objects/pig.s: src/objects/pig.cpp.s
 src/objects/pig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/pig.cpp.s
 .PHONY : src/objects/pig.cpp.s
+
+src/objects/smoke.o: src/objects/smoke.cpp.o
+.PHONY : src/objects/smoke.o
+
+# target to build an object file
+src/objects/smoke.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/smoke.cpp.o
+.PHONY : src/objects/smoke.cpp.o
+
+src/objects/smoke.i: src/objects/smoke.cpp.i
+.PHONY : src/objects/smoke.i
+
+# target to preprocess a source file
+src/objects/smoke.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/smoke.cpp.i
+.PHONY : src/objects/smoke.cpp.i
+
+src/objects/smoke.s: src/objects/smoke.cpp.s
+.PHONY : src/objects/smoke.s
+
+# target to generate assembly for a file
+src/objects/smoke.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/smoke.cpp.s
+.PHONY : src/objects/smoke.cpp.s
 
 src/objects/tree.o: src/objects/tree.cpp.o
 .PHONY : src/objects/tree.o
@@ -947,6 +1019,9 @@ help:
 	@echo "... src/objects/apple.o"
 	@echo "... src/objects/apple.i"
 	@echo "... src/objects/apple.s"
+	@echo "... src/objects/fire.o"
+	@echo "... src/objects/fire.i"
+	@echo "... src/objects/fire.s"
 	@echo "... src/objects/gas.o"
 	@echo "... src/objects/gas.i"
 	@echo "... src/objects/gas.s"
@@ -959,9 +1034,15 @@ help:
 	@echo "... src/objects/horseFly.o"
 	@echo "... src/objects/horseFly.i"
 	@echo "... src/objects/horseFly.s"
+	@echo "... src/objects/particles.o"
+	@echo "... src/objects/particles.i"
+	@echo "... src/objects/particles.s"
 	@echo "... src/objects/pig.o"
 	@echo "... src/objects/pig.i"
 	@echo "... src/objects/pig.s"
+	@echo "... src/objects/smoke.o"
+	@echo "... src/objects/smoke.i"
+	@echo "... src/objects/smoke.s"
 	@echo "... src/objects/tree.o"
 	@echo "... src/objects/tree.i"
 	@echo "... src/objects/tree.s"

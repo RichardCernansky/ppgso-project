@@ -1200,7 +1200,10 @@ CMakeFiles/project.dir/src/generator.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
