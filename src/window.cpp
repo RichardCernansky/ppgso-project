@@ -70,6 +70,7 @@ private:
 		scene.objects.push_back(std::move(tree_of_life));
 
 		//fire
+		//new comment to push
 		auto fire = std::make_unique<Fire>();
 		//auto smoke = std::make_unique<Smoke>();
 		for (int i = 0; i < 50; i++) {
