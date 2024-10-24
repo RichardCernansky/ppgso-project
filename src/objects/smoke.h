@@ -19,7 +19,7 @@ class Smoke final : public Renderable {
 
 public:
     glm::vec3 scale{100, 100, 100}; // Adjust as needed
-    glm::vec3 position{0, 500,-10};
+    glm::vec3 position{0, 500,300};
 
     Smoke();
 
