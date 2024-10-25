@@ -74,6 +74,9 @@ bool Wolf::update(float dTime, Scene &scene) {
         // Calculate the direction vector towards the pig (in the XZ plane)
         glm::vec3 direction = glm::normalize(glm::vec3(pig_pos.x - position.x, 0.0f, pig_pos.z - position.z));
 
+        // Calculate the distance between the wolf and the pig
+        float distanceToPig = glm::distance(glm::vec3(position.x, 0.0f, position.z), glm::vec3(pig_pos.x, 0.0f, pig_pos.z));
+
         // Calculate the angle between the wolf's current forward direction and the direction to the pig
         glm::vec3 forward = glm::vec3(0.0f, 0.0f, 1.0f); // Assuming the wolf's initial forward direction is along Z-axis
         float angle = atan2(direction.x, direction.z); // Angle in radians around the Y-axis
@@ -88,8 +91,21 @@ bool Wolf::update(float dTime, Scene &scene) {
         modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3{-1, 0, 0});
         modelMatrix = glm::scale(modelMatrix, scale);
 
+        // Determine the speed of the wolf based on its distance to the pig
+        float maxSpeed = 5.0f;  // Maximum speed the wolf can reach
+        float minDistanceToStartSlowing = 4.0f;  // Distance at which the wolf starts slowing down
+        float speed;
+
+        if (distanceToPig > minDistanceToStartSlowing) {
+            // Accelerate towards the maximum speed
+            speed = glm::min(maxSpeed, speed + (dTime * 0.001f)); // Accelerate smoothly to the max speed
+        } else {
+            // Decelerate as the wolf gets closer to the pig
+            float decelerationFactor = distanceToPig / minDistanceToStartSlowing * 0.5; // Factor goes from 1 to 0
+            speed = glm::max(0.5f, decelerationFactor * maxSpeed); // Decelerate smoothly
+        }
+
         // Update the wolf’s position towards the pig
-        float speed = 1.0f;
         velocity = direction * speed;
         position += velocity * dTime;
     }

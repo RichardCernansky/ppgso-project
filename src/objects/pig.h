@@ -21,9 +21,17 @@ public:
     // Initially placed at (0, 0, 0)
     glm::vec3 scale{1, 1, 1};     // Default scale
     glm::vec3 globalDirection{0,0,1};
+
+
     float timeInState = 0.0f;
     float changeDirectionTime = 0.0f;
-    float wolfCollisionThreshold = 0.5f;
+    float wolfCollisionThreshold = 2.0f;
+
+    float runDuration = 0.0f;       // The current time elapsed during the run-off phase
+    float maxRunDuration = 4.0f;    // Random duration between 3 to 5 seconds for each run-off
+    float currentSpeed = 0.0f;      // Current speed of the pig during run-off
+    glm::vec3 runDirection;         // The direction in which the pig is running off
+    bool isRunningOff = false;      // Flag to indicate if the pig is in the run-off phase
 
     Pig();  // Constructor
 
@@ -31,5 +39,6 @@ public:
     bool update(float dTime, Scene &scene) override;
     void render(Scene &scene) override;
     bool isCollided(const Scene &scene) const;
+    void run_off();
 };
 

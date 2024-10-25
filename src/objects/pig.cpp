@@ -53,39 +53,76 @@ bool Pig::isCollided(const Scene &scene) const {
     return false;
 }
 
+void Pig::run_off() {
+    // Randomly select a new run duration between 3 to 5 seconds
+    maxRunDuration = randomFloat(5.0f, 10.0f);
+
+    // Choose a random direction in the XZ plane
+    float randomAngle = glm::radians(randomFloat(0.0f, 360.0f));
+    glm::mat4 rotationMatrix = glm::rotate(glm::mat4(1.0f), randomAngle, glm::vec3(0.0f, 1.0f, 0.0f));
+    runDirection = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, 1.0f, 0.0f))); // Rotate forward direction (0, 0, 1)
+
+    // Reset the running state
+    isRunningOff = true;
+    runDuration = 0.0f;
+    currentSpeed = 0.0f;
+}
 
 bool Pig::update(float dTime, Scene &scene) {
-    if (isCollided(scene)) {
-        position = glm::vec3(0, 0, 0);
+    // If a collision is detected, switch to run-off behavior
+    if (isCollided(scene) && !isRunningOff) {
+        run_off(); // Initiate the run-off state
     }
 
-    // Update the elapsed time in the current state
-    timeInState += dTime;
+    if (isRunningOff) {
+        // Handle the run-off behavior
+        runDuration += dTime;
 
-    // Check if it's time to change direction
-    if (timeInState >= changeDirectionTime) {
-        // Reset the time in the current state
-        timeInState = 0.0f;
+        // Calculate acceleration based on elapsed time
+        float accelerationFactor = glm::min(1.0f, runDuration / maxRunDuration); // Gradually accelerate over the duration
+        currentSpeed = accelerationFactor * 10.0f; // Maximum speed the pig can reach
 
-        // Randomly pick a new change direction time between 2 and 5 seconds
-        changeDirectionTime = randomFloat(2.0f, 5.0f); // You'll need to implement or have a randomFloat() function
+        // Update the pig's position based on the run direction and current speed
+        position += runDirection * currentSpeed * dTime;
 
-        // Randomly select a new direction in the XZ plane
-        float randomAngle = randomFloat(0.0f, 360.0f); // Random angle in degrees
-        glm::mat4 rotationMatrix = glm::rotate(glm::mat4(1.0f), glm::radians(randomAngle), glm::vec3(0.0f, 1.0f, 0.0f));
+        // Update the model matrix to reflect the new position and direction
+        modelMatrix = glm::mat4{1.0f};
+        modelMatrix = glm::translate(modelMatrix, position);
+        modelMatrix *= rotateToFaceDirection({0, 0, 1}, runDirection); // Rotate to face the run direction
+        modelMatrix = glm::scale(modelMatrix, scale);
 
-        // Apply the rotation to the forward direction
-        globalDirection = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, 1.0f, 0.0f))); // Rotate the default forward direction (0,0,1)
+        if (runDuration >= maxRunDuration) {
+            isRunningOff = false;
+        }
+    } else {
+        // Normal behavior: randomly change direction every 2-5 seconds
+        timeInState += dTime;
+
+        // Check if it's time to change direction
+        if (timeInState >= changeDirectionTime) {
+            // Reset the time in the current state
+            timeInState = 0.0f;
+
+            // Randomly pick a new change direction time between 2 and 5 seconds
+            changeDirectionTime = randomFloat(2.0f, 5.0f); // You'll need to implement or have a randomFloat() function
+
+            // Randomly select a new direction in the XZ plane
+            float randomAngle = randomFloat(0.0f, 360.0f); // Random angle in degrees
+            glm::mat4 rotationMatrix = glm::rotate(glm::mat4(1.0f), glm::radians(randomAngle), glm::vec3(0.0f, 1.0f, 0.0f));
+
+            // Apply the rotation to the forward direction
+            globalDirection = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, 1.0f, 0.0f))); // Rotate the default forward direction (0, 0, 1)
+        }
+
+        // Move the pig in the current direction
+        position += globalDirection * 1.0f * dTime;
+
+        // Update the model matrix to face the new direction
+        modelMatrix = glm::mat4{1.0f};
+        modelMatrix = glm::translate(modelMatrix, position);
+        modelMatrix *= rotateToFaceDirection({0, 0, 1}, globalDirection);
+        modelMatrix = glm::scale(modelMatrix, scale);
     }
-
-    // Move the pig in the current direction
-    position += globalDirection * 1.0f * dTime;
-
-    // Update the model matrix to face the new direction
-    modelMatrix = glm::mat4{1.0f};
-    modelMatrix = glm::translate(modelMatrix, position);
-    modelMatrix *= rotateToFaceDirection({0, 0, 1}, globalDirection);
-    modelMatrix = glm::scale(modelMatrix, scale);
 
     // Update children
     for (auto& child : children) {
