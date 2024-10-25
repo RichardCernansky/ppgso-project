@@ -12957,6 +12957,7 @@ CMakeFiles/project.dir/src/objects/pig.cpp.o: /Users/richardcernansky/Desktop/PP
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /opt/homebrew/include/GL/glew.h \
   /opt/homebrew/include/GLFW/glfw3.h \

@@ -22,11 +22,14 @@ public:
     glm::vec3 scale{1, 1, 1};     // Default scale
     glm::vec3 globalDirection{0,0,1};
     float timeInState = 0.0f;
+    float changeDirectionTime = 0.0f;
+    float wolfCollisionThreshold = 0.5f;
 
     Pig();  // Constructor
 
     // Update and render methods
     bool update(float dTime, Scene &scene) override;
     void render(Scene &scene) override;
+    bool isCollided(const Scene &scene) const;
 };
 

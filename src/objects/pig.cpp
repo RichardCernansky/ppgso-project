@@ -6,6 +6,7 @@
 #include "pig.h"
 #include "src/generator.h"
 #include <random>
+#include "wolf.h"
 
 // Static resources (shared among all instances of Pig)
 std::unique_ptr<ppgso::Mesh> Pig::mesh;
@@ -32,29 +33,63 @@ Pig::Pig() {
     }
 }
 
+bool Pig::isCollided(const Scene &scene) const {
+    // Loop through all objects in the scene
+    for (const auto& object : scene.objects) {
 
-// Update method
-bool Pig::update(float dTime, Scene &scene) {
-    timeInState += dTime;
+        // Check if the unique_ptr is pointing to a Wolf using typeid
+        if (typeid(*object) == typeid(Wolf)) {
+            // Calculate the distance between the pig and the wolf
+            float distance = glm::distance(this->getPosition(), object->getPosition());
 
-    if (timeInState <= 5) {
-        position += globalDirection * 1.0f * dTime;
-        modelMatrix = glm::mat4{1.0f};
-        modelMatrix = glm::translate(modelMatrix, position);
-        modelMatrix *= rotateToFaceDirection({0,0,1}, globalDirection);
-        modelMatrix = glm::scale(modelMatrix, scale);
-    } else {
-        float angle = glm::radians(90.0f);
-        modelMatrix = glm::mat4{1.0f};
-        modelMatrix = glm::rotate(modelMatrix, angle, glm::vec3(0.0f, 1.0f, 0.0f));
-        modelMatrix = glm::scale(modelMatrix, scale);
-        timeInState = 0.0f;
-        globalDirection = glm::vec4(globalDirection, 0.0f) * modelMatrix;
+            // Check if the distance is below the collision threshold
+            if (distance < wolfCollisionThreshold) {
+                return true; // Collision detected
+            }
+        }
     }
 
+    // No collision detected
+    return false;
+}
 
+
+bool Pig::update(float dTime, Scene &scene) {
+    if (isCollided(scene)) {
+        position = glm::vec3(0, 0, 0);
+    }
+
+    // Update the elapsed time in the current state
+    timeInState += dTime;
+
+    // Check if it's time to change direction
+    if (timeInState >= changeDirectionTime) {
+        // Reset the time in the current state
+        timeInState = 0.0f;
+
+        // Randomly pick a new change direction time between 2 and 5 seconds
+        changeDirectionTime = randomFloat(2.0f, 5.0f); // You'll need to implement or have a randomFloat() function
+
+        // Randomly select a new direction in the XZ plane
+        float randomAngle = randomFloat(0.0f, 360.0f); // Random angle in degrees
+        glm::mat4 rotationMatrix = glm::rotate(glm::mat4(1.0f), glm::radians(randomAngle), glm::vec3(0.0f, 1.0f, 0.0f));
+
+        // Apply the rotation to the forward direction
+        globalDirection = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, 1.0f, 0.0f))); // Rotate the default forward direction (0,0,1)
+    }
+
+    // Move the pig in the current direction
+    position += globalDirection * 1.0f * dTime;
+
+    // Update the model matrix to face the new direction
+    modelMatrix = glm::mat4{1.0f};
+    modelMatrix = glm::translate(modelMatrix, position);
+    modelMatrix *= rotateToFaceDirection({0, 0, 1}, globalDirection);
+    modelMatrix = glm::scale(modelMatrix, scale);
+
+    // Update children
     for (auto& child : children) {
-        child->update_child(dTime,scene, modelMatrix);
+        child->update_child(dTime, scene, modelMatrix);
     }
 
     return true;
