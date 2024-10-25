@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/brunokristian/Documents/skola/ppgso-project
+CMAKE_SOURCE_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -896,6 +896,30 @@ src/objects/tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/tree.cpp.s
 .PHONY : src/objects/tree.cpp.s
 
+src/objects/wolf.o: src/objects/wolf.cpp.o
+.PHONY : src/objects/wolf.o
+
+# target to build an object file
+src/objects/wolf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/wolf.cpp.o
+.PHONY : src/objects/wolf.cpp.o
+
+src/objects/wolf.i: src/objects/wolf.cpp.i
+.PHONY : src/objects/wolf.i
+
+# target to preprocess a source file
+src/objects/wolf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/wolf.cpp.i
+.PHONY : src/objects/wolf.cpp.i
+
+src/objects/wolf.s: src/objects/wolf.cpp.s
+.PHONY : src/objects/wolf.s
+
+# target to generate assembly for a file
+src/objects/wolf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/wolf.cpp.s
+.PHONY : src/objects/wolf.cpp.s
+
 src/scene.o: src/scene.cpp.o
 .PHONY : src/scene.o
 
@@ -1046,6 +1070,9 @@ help:
 	@echo "... src/objects/tree.o"
 	@echo "... src/objects/tree.i"
 	@echo "... src/objects/tree.s"
+	@echo "... src/objects/wolf.o"
+	@echo "... src/objects/wolf.i"
+	@echo "... src/objects/wolf.s"
 	@echo "... src/scene.o"
 	@echo "... src/scene.i"
 	@echo "... src/scene.s"

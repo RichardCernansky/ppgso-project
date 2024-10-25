@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o: \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_raw.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_raw.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -843,7 +843,7 @@ CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_fwd.h \

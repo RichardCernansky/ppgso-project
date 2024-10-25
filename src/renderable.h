@@ -11,6 +11,7 @@ public:
 	// Virtual destructor is needed for abstract interfaces
 	virtual ~Renderable() = default;
 
+	glm::vec3 position;
 	/// Render the object
 	/// \param camera - Camera to use for rendering
 	virtual void render(Scene &scene) = 0;
@@ -26,6 +27,10 @@ public:
     }
 
 	virtual bool isTransparent() const { return false; }
-	virtual glm::vec3 getPosition() const { return glm::vec3(0.0f); }
+	const glm::vec3& getPosition() const {
+    	return position;
+    }
+
+
 };
 #endif

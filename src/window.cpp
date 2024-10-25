@@ -25,6 +25,7 @@
 #include "objects/goldenApple.h"
 #include "objects/smoke.h"
 #include "objects/particles.h"
+#include "objects/wolf.h"
 
 
 class ProjectWindow : public ppgso::Window
@@ -50,6 +51,8 @@ private:
 		// Add ground object to the scene
 		scene.objects.push_back(std::make_unique<Ground>());
 
+		scene.objects.push_back(std::make_unique<Wolf>());
+
 		auto tree = std::make_unique<Tree>(); //generate texture
 		for (int i = 0 ; i < 200; i++) { //generate and add 100 tree instances
 			auto tree_instance = std::make_unique<Tree>();
@@ -71,14 +74,14 @@ private:
 
 		//fire
 		//new comment to push
-		auto fire = std::make_unique<Fire>();
-		//auto smoke = std::make_unique<Smoke>();
-		for (int i = 0; i < 50; i++) {
-			auto particles = std::make_unique<Particles>();
-			fire->children.push_back(std::move(particles));
-		}
-		//fire->children.push_back(std::move(smoke));
-		scene.objects.push_back(std::move(fire));
+		// auto fire = std::make_unique<Fire>();
+		// //auto smoke = std::make_unique<Smoke>();
+		// for (int i = 0; i < 50; i++) {
+		// 	auto particles = std::make_unique<Particles>();
+		// 	fire->children.push_back(std::move(particles));
+		// }
+		// //fire->children.push_back(std::move(smoke));
+		// scene.objects.push_back(std::move(fire));
 
 
 		//create pig

@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/image.cpp.o: \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/algorithm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -742,7 +742,7 @@ CMakeFiles/ppgso.dir/ppgso/image.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__ios/fpos.h \

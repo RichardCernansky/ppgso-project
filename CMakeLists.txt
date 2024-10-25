@@ -137,6 +137,8 @@ add_executable(project
         src/objects/smoke.cpp
         src/objects/particles.cpp
         src/objects/particles.h
+        src/objects/wolf.cpp
+        src/objects/wolf.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

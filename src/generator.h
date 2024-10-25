@@ -9,3 +9,4 @@
 
 float randomFloat(float min, float max);
 glm::mat4 generateRandomTreeModelMatrix();
+glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& targetDirection);

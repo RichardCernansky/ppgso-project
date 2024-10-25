@@ -18,7 +18,7 @@ private:
 public:
     std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects
     // Pig position and scale
-    glm::vec3 position{5, 0, -10};  // Initially placed at (0, 0, 0)
+    // Initially placed at (0, 0, 0)
     glm::vec3 scale{1, 1, 1};     // Default scale
     glm::vec3 globalDirection{0,0,1};
     float timeInState = 0.0f;

@@ -4,13 +4,16 @@
 
 // pig.cpp
 #include "pig.h"
+#include "src/generator.h"
 #include <random>
+
 // Static resources (shared among all instances of Pig)
 std::unique_ptr<ppgso::Mesh> Pig::mesh;
 std::unique_ptr<ppgso::Texture> Pig::texture;
 
 // Constructor
 Pig::Pig() {
+    position = glm::vec3 {5, 0, -10};
     // Load texture and mesh only once
     if (!texture) {
         auto image = ppgso::image::loadBMP("pink_prasa.bmp");  // Assuming a texture for boar
@@ -27,24 +30,6 @@ Pig::Pig() {
             std::cerr << "Failed to load mesh: boar.obj" << std::endl;
         }
     }
-}
-
-// function to create a rotation matrix to align forward direction to target direction
-glm::mat4 rotateToFaceDirection(const glm::vec3& currentForward, const glm::vec3& targetDirection) {
-    // normalize the direction to make sure it is a unit vector
-    glm::vec3 normalizedTarget = glm::normalize(targetDirection);
-    // calculate the rotation axis using the cross product
-    glm::vec3 rotationAxis = glm::normalize(glm::cross(currentForward, normalizedTarget));
-    // Calculate the rotation angle using the dot product
-    float dotProduct = glm::dot(currentForward, normalizedTarget);
-    float angle = acos(glm::clamp(dotProduct, -1.0f, 1.0f));  // Clamp to avoid precision issues
-    // If the direction vectors are nearly parallel, no rotation is needed
-    if (glm::length(rotationAxis) < 1e-6) {
-        return glm::mat4(1.0f);  // Identity matrix
-    }
-    // create a rotation matrix that rotates the object around the rotationAxis by the calculated angle
-    glm::mat4 rotationMatrix = glm::rotate(glm::mat4(1.0f), angle, rotationAxis);
-    return rotationMatrix;
 }
 
 

@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/src/objects/smoke.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/tree.cpp.o"
   "CMakeFiles/project.dir/src/objects/tree.cpp.o.d"
+  "CMakeFiles/project.dir/src/objects/wolf.cpp.o"
+  "CMakeFiles/project.dir/src/objects/wolf.cpp.o.d"
   "CMakeFiles/project.dir/src/scene.cpp.o"
   "CMakeFiles/project.dir/src/scene.cpp.o.d"
   "CMakeFiles/project.dir/src/window.cpp.o"
