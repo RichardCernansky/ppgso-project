@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/shader.cpp.o: \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -1083,7 +1083,7 @@ CMakeFiles/ppgso.dir/ppgso/shader.cpp.o: \
   /opt/homebrew/include/glm/gtc/../mat4x2.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x3.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_fwd.h \
@@ -1130,5 +1130,5 @@ CMakeFiles/ppgso.dir/ppgso/shader.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.h
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.h

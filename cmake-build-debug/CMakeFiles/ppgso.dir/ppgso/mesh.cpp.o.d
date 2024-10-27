@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o: \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/mesh.cpp \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cmath \
@@ -978,7 +978,7 @@ CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdarg \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/mesh.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \
@@ -1131,10 +1131,10 @@ CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o: \
   /opt/homebrew/include/glm/gtc/../mat4x2.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x3.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \

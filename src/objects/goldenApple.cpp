@@ -1,5 +1,6 @@
 #include "goldenApple.h"
 #include "src/generator.h"
+#include "../objects/stone.h"
 
 // Static resources (shared among all instances of Apple)
 std::unique_ptr<ppgso::Mesh> GoldenApple::mesh;
@@ -53,16 +54,57 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
         velocity += acceleration * dt;
         position += velocity * dt;
 
-        // Ground collision detection and response
-        if (position.y < 0.1f) {
-            position.y = 0.1f;
-            velocity.y = -velocity.y * restitution;
+        // position of the apple
+        for (auto &obj : scene.objects) {
+            stone = dynamic_cast<Stone*>(obj.get());
+        }
 
-            // When the apple comes to rest, despawn it if it's not bouncing anymore
+        //convert it into world position
+        glm::vec4 localPos = glm::vec4(position, 1.0f);
+        glm::vec4 worldPos = modelMatrix * localPos;
+        glm::vec3 globalPosition = glm::vec3(worldPos);
+
+        //calculate the difference between the apple and the rock
+        glm::vec3 diff = globalPosition - stone->position;
+        float distance = glm::length(diff);
+        float combinedRadius = radius + stone->radius;
+
+        //if they are touching
+        if (distance < combinedRadius) {
+            // Physics calculations for collision
+            glm::vec3 collisionNormal = glm::normalize(position - stone->position);
+            float perpendicularVelocity = glm::dot(velocity, collisionNormal);
+            glm::vec3 perpendicularComponent = perpendicularVelocity * collisionNormal;
+            glm::vec3 parallelComponent = velocity - perpendicularComponent;
+
+            // Reduce the bounce effect by using a lower restitution for the perpendicular component
+            float bounceRestitution = restitution * 0.7f;  // Lower than the original restitution
+            perpendicularComponent = -perpendicularComponent * bounceRestitution;
+
+            // Apply gravity and friction along the surface for sliding effect
+            glm::vec3 gravityAlongSurface = gravity * collisionNormal;
+            parallelComponent += gravityAlongSurface * 0.1f;  // Control sliding effect
+            float friction = 0.98f;  // Friction for sliding resistance
+            parallelComponent *= friction;
+            velocity = perpendicularComponent + parallelComponent;
+            position = stone->position + collisionNormal * combinedRadius;
+
+            //revert the position back to local
+            glm::vec3 referencePosition{10.0f, 0.0f, -5.0f};
+            position = position - referencePosition;
+        }
+
+
+        if (position.y < 0.1f) {
+            position.y = 0.1f + abs(velocity.y * 0.01f);
+            float variedRestitution = restitution * randomFloat(0.9f, 1.1f);
+            velocity.y = -velocity.y * variedRestitution;
+            float dampingFactor = 0.98f;
+            velocity *= dampingFactor;
+
             if (abs(velocity.y) < 0.1f) {
-                // Apple hits the ground and despawns
                 isFalling = false;
-                respawnTime = randomFloat(1.0f, 2.0f);  // Random delay between 2 and 5 seconds
+                respawnTime = randomFloat(1.0f, 2.0f);  // Random delay between 1 and 2 seconds
                 elapsedTime = 0.0f;  // Reset elapsed time for the respawn delay
 
                 position = constructorPosition;
@@ -70,6 +112,10 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
                 acceleration = glm::vec3(0, 0, 0);
             }
         }
+
+
+
+
     } else {
         // Waiting for respawn
         elapsedTime += dt;
@@ -89,6 +135,7 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
 
     return true;
 }
+
 
 void GoldenApple::render(Scene &scene) {
     // Use the shader program

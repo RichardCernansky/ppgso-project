@@ -9,6 +9,7 @@
 #include <ppgso/ppgso.h>
 #include "../scene.cpp"
 #include "../renderable.h"
+#include "../objects/stone.h"
 
 class GoldenApple final : public Renderable {
     // Transformation matrices
@@ -19,7 +20,7 @@ class GoldenApple final : public Renderable {
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 scale{0.05f, 0.05f, 0.05}; // Adjust as needed
+    glm::vec3 scale{0.02f, 0.02f, 0.02f}; // Adjust as needed
     glm::vec3 position{0, 0, 0};
     glm::vec3 constructorPosition{0, 0, 0};
     glm::vec3 velocity{0.0f, 0.0f, 0.0f};
@@ -28,11 +29,13 @@ public:
     float gravity = 9.8f;
     glm::vec3 wind_force{0.1f, 0.0f, 0.0f};
     float dt = 0.016f;
-    float restitution = 0.3f;
-
+    float restitution = 0.5f;
     bool isFalling = false;
     float respawnTime  = 0.0f;
     float elapsedTime = 0.0f;
+    float radius = 0.2f;
+
+    Stone* stone = nullptr;
 
     //float timeSinceStopped = 0.0f;
     bool landed = false;

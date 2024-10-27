@@ -84,6 +84,7 @@ add_library(ppgso STATIC
         ppgso/image_raw.cpp
         ppgso/texture.cpp
         ppgso/window.cpp
+        src/window.cpp
 )
 
 # Make sure GLM uses radians and GLEW is a static library
@@ -139,6 +140,9 @@ add_executable(project
         src/objects/particles.h
         src/objects/wolf.cpp
         src/objects/wolf.h
+        src/window.cpp
+        src/objects/stone.cpp
+        src/objects/stone.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

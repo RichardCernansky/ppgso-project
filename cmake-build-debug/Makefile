@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project
+CMAKE_SOURCE_DIR = /Users/brunokristian/Documents/skola/ppgso-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -872,6 +872,30 @@ src/objects/smoke.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/smoke.cpp.s
 .PHONY : src/objects/smoke.cpp.s
 
+src/objects/stone.o: src/objects/stone.cpp.o
+.PHONY : src/objects/stone.o
+
+# target to build an object file
+src/objects/stone.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/stone.cpp.o
+.PHONY : src/objects/stone.cpp.o
+
+src/objects/stone.i: src/objects/stone.cpp.i
+.PHONY : src/objects/stone.i
+
+# target to preprocess a source file
+src/objects/stone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/stone.cpp.i
+.PHONY : src/objects/stone.cpp.i
+
+src/objects/stone.s: src/objects/stone.cpp.s
+.PHONY : src/objects/stone.s
+
+# target to generate assembly for a file
+src/objects/stone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/stone.cpp.s
+.PHONY : src/objects/stone.cpp.s
+
 src/objects/tree.o: src/objects/tree.cpp.o
 .PHONY : src/objects/tree.o
 
@@ -949,6 +973,7 @@ src/window.o: src/window.cpp.o
 
 # target to build an object file
 src/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/window.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/window.cpp.o
 .PHONY : src/window.cpp.o
 
@@ -957,6 +982,7 @@ src/window.i: src/window.cpp.i
 
 # target to preprocess a source file
 src/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/window.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/window.cpp.i
 .PHONY : src/window.cpp.i
 
@@ -965,6 +991,7 @@ src/window.s: src/window.cpp.s
 
 # target to generate assembly for a file
 src/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/window.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/window.cpp.s
 .PHONY : src/window.cpp.s
 
@@ -1067,6 +1094,9 @@ help:
 	@echo "... src/objects/smoke.o"
 	@echo "... src/objects/smoke.i"
 	@echo "... src/objects/smoke.s"
+	@echo "... src/objects/stone.o"
+	@echo "... src/objects/stone.i"
+	@echo "... src/objects/stone.s"
 	@echo "... src/objects/tree.o"
 	@echo "... src/objects/tree.i"
 	@echo "... src/objects/tree.s"

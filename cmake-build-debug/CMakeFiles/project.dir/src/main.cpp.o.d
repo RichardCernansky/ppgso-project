@@ -1,6 +1,6 @@
 CMakeFiles/project.dir/src/main.cpp.o: \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -1117,13 +1117,13 @@ CMakeFiles/project.dir/src/main.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtc/../vector_relational.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../common.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/ppgso.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/ppgso.h \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../ext/scalar_int_sized.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../ext/scalar_uint_sized.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/random.inl \
   /opt/homebrew/include/glm/gtx/../gtc/../detail/type_vec1.hpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/mesh.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -1175,33 +1175,35 @@ CMakeFiles/project.dir/src/main.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtc/../mat4x2.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../mat4x3.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/type_ptr.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tree \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_raw.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_bmp.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_raw.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.h \
   /opt/homebrew/include/GLFW/glfw3.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../scene.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../renderable.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.h
+  /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../scene.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../renderable.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/stone.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.h

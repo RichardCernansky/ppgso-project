@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.o: \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_bmp.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -844,8 +844,8 @@ CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_bmp.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_fwd.h \

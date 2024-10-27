@@ -25,6 +25,7 @@
 #include "objects/goldenApple.h"
 #include "objects/smoke.h"
 #include "objects/particles.h"
+#include "objects/stone.h"
 #include "objects/wolf.h"
 
 
@@ -73,15 +74,14 @@ private:
 		scene.objects.push_back(std::move(tree_of_life));
 
 		//fire
-		//new comment to push
-		// auto fire = std::make_unique<Fire>();
-		// //auto smoke = std::make_unique<Smoke>();
-		// for (int i = 0; i < 50; i++) {
-		// 	auto particles = std::make_unique<Particles>();
-		// 	fire->children.push_back(std::move(particles));
-		// }
-		// //fire->children.push_back(std::move(smoke));
-		// scene.objects.push_back(std::move(fire));
+		 auto fire = std::make_unique<Fire>();
+		 //auto smoke = std::make_unique<Smoke>();
+		 for (int i = 0; i < 50; i++) {
+		 	auto particles = std::make_unique<Particles>();
+		 	fire->children.push_back(std::move(particles));
+		 }
+		 //fire->children.push_back(std::move(smoke));
+		 scene.objects.push_back(std::move(fire));
 
 
 		//create pig
@@ -91,6 +91,10 @@ private:
 		gas1->children.push_back(std::move(horseFly));
 		pig->children.push_back(std::move(gas1));
 		scene.objects.push_back(std::move(pig));
+
+
+		auto stone = std::make_unique<Stone>();
+		scene.objects.push_back(std::move(stone));
 
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);

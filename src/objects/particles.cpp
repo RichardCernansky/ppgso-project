@@ -53,22 +53,18 @@ bool Particles::update_child(float dTime, Scene &scene, glm::mat4 parentModelMat
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::scale(modelMatrix, scale);
 
-    // Move particle upwards and add side-to-side movement
     position.y += speed.y * age;
     position.x += sin(age * 2.0f);
     position.z += cos(age * 2.0f);
 
-    // Update transparency based on height
     transparency = 0.5f - (position.y / 2000.0f);
     if (transparency < 0.0f) transparency = 0.0f;
 
-    // Remove particle if it reaches a certain height
     if (position.y > 1000.0f) {
         reset();
     }
 
     age += dTime;
-
     return true;
 }
 

@@ -1,7 +1,7 @@
 CMakeFiles/project.dir/src/objects/gas.cpp.o: \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/ppgso.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/ppgso.h \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cmath \
@@ -469,7 +469,7 @@ CMakeFiles/project.dir/src/objects/gas.cpp.o: \
   /opt/homebrew/include/glm/gtc/../vector_relational.hpp \
   /opt/homebrew/include/glm/gtc/../common.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/mesh.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__fwd/ios.h \
@@ -1141,10 +1141,10 @@ CMakeFiles/project.dir/src/objects/gas.cpp.o: \
   /opt/homebrew/include/glm/gtc/../mat4x2.hpp \
   /opt/homebrew/include/glm/gtc/../mat4x3.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
@@ -1173,14 +1173,14 @@ CMakeFiles/project.dir/src/objects/gas.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_raw.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_bmp.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_raw.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.h \
   /opt/homebrew/include/GLFW/glfw3.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../scene.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../scene.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/list \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../renderable.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../camera.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../renderable.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../camera.h \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/../mat3x3.hpp \
   /opt/homebrew/include/glm/gtx/../vec2.hpp \
@@ -1188,4 +1188,4 @@ CMakeFiles/project.dir/src/objects/gas.cpp.o: \
   /opt/homebrew/include/glm/gtx/../trigonometric.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h
+  /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h
