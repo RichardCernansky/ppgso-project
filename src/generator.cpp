@@ -55,3 +55,23 @@ glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& 
     return rotationMatrix;
 }
 
+
+void addGrassPatches(Scene &scene, glm::vec3 initControlPoints[4][4]) {
+    srand(static_cast<unsigned int>(time(nullptr)));  // Seed for random number generation
+
+    for (int i = 0; i < 50; i++) {
+        // Generate a random offset in the range of ±0.2
+        float offsetX = (static_cast<float>(rand()) / RAND_MAX) * 0.4f - 0.2f;
+        float offsetY = 0;
+        float offsetZ = (static_cast<float>(rand()) / RAND_MAX) * 0.4f - 0.2f;
+
+        // Create a new GrassPatch with the initial control points
+        auto grass = std::make_unique<GrassPatch>(initControlPoints);
+        // Set its position to the default position plus the random offset
+        grass->position += glm::vec3(offsetX, offsetY, offsetZ);
+
+        // Add the grass object to the scene
+        scene.objects.push_back(std::move(grass));
+    }
+}
+

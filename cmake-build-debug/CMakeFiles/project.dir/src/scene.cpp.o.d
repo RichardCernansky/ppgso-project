@@ -1,5 +1,5 @@
 CMakeFiles/project.dir/src/scene.cpp.o: \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -872,8 +872,8 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
   /opt/homebrew/include/glm/detail/setup.hpp \
@@ -1114,13 +1114,13 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtc/../vector_relational.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../common.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/ppgso.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/ppgso.h \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../ext/scalar_int_sized.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../ext/scalar_uint_sized.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/random.inl \
   /opt/homebrew/include/glm/gtx/../gtc/../detail/type_vec1.hpp \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/mesh.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
@@ -1176,13 +1176,13 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtc/../mat4x2.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../mat4x3.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/type_ptr.inl \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__tree \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_bmp.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_raw.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_raw.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
   /opt/homebrew/include/GLFW/glfw3.h

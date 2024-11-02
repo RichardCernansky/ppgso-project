@@ -143,6 +143,11 @@ add_executable(project
         src/window.cpp
         src/objects/stone.cpp
         src/objects/stone.h
+        src/objects/fireFly.cpp
+        src/objects/fireFly.h
+        src/InstancedMesh.cpp
+        src/InstancedMesh.h
+        src/objects/grass.cpp
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

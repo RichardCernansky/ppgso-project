@@ -1,6 +1,6 @@
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o: \
-  /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp \
-  /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp.h \

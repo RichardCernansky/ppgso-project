@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o: \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdlib \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -899,4 +899,4 @@ CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h

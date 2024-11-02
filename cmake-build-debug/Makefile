@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/brunokristian/Documents/skola/ppgso-project
+CMAKE_SOURCE_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -584,6 +584,30 @@ shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
 
+src/InstancedMesh.o: src/InstancedMesh.cpp.o
+.PHONY : src/InstancedMesh.o
+
+# target to build an object file
+src/InstancedMesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/InstancedMesh.cpp.o
+.PHONY : src/InstancedMesh.cpp.o
+
+src/InstancedMesh.i: src/InstancedMesh.cpp.i
+.PHONY : src/InstancedMesh.i
+
+# target to preprocess a source file
+src/InstancedMesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/InstancedMesh.cpp.i
+.PHONY : src/InstancedMesh.cpp.i
+
+src/InstancedMesh.s: src/InstancedMesh.cpp.s
+.PHONY : src/InstancedMesh.s
+
+# target to generate assembly for a file
+src/InstancedMesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/InstancedMesh.cpp.s
+.PHONY : src/InstancedMesh.cpp.s
+
 src/generator.o: src/generator.cpp.o
 .PHONY : src/generator.o
 
@@ -704,6 +728,30 @@ src/objects/fire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fire.cpp.s
 .PHONY : src/objects/fire.cpp.s
 
+src/objects/fireFly.o: src/objects/fireFly.cpp.o
+.PHONY : src/objects/fireFly.o
+
+# target to build an object file
+src/objects/fireFly.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fireFly.cpp.o
+.PHONY : src/objects/fireFly.cpp.o
+
+src/objects/fireFly.i: src/objects/fireFly.cpp.i
+.PHONY : src/objects/fireFly.i
+
+# target to preprocess a source file
+src/objects/fireFly.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fireFly.cpp.i
+.PHONY : src/objects/fireFly.cpp.i
+
+src/objects/fireFly.s: src/objects/fireFly.cpp.s
+.PHONY : src/objects/fireFly.s
+
+# target to generate assembly for a file
+src/objects/fireFly.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fireFly.cpp.s
+.PHONY : src/objects/fireFly.cpp.s
+
 src/objects/gas.o: src/objects/gas.cpp.o
 .PHONY : src/objects/gas.o
 
@@ -751,6 +799,30 @@ src/objects/goldenApple.s: src/objects/goldenApple.cpp.s
 src/objects/goldenApple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/goldenApple.cpp.s
 .PHONY : src/objects/goldenApple.cpp.s
+
+src/objects/grass.o: src/objects/grass.cpp.o
+.PHONY : src/objects/grass.o
+
+# target to build an object file
+src/objects/grass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/grass.cpp.o
+.PHONY : src/objects/grass.cpp.o
+
+src/objects/grass.i: src/objects/grass.cpp.i
+.PHONY : src/objects/grass.i
+
+# target to preprocess a source file
+src/objects/grass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/grass.cpp.i
+.PHONY : src/objects/grass.cpp.i
+
+src/objects/grass.s: src/objects/grass.cpp.s
+.PHONY : src/objects/grass.s
+
+# target to generate assembly for a file
+src/objects/grass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/grass.cpp.s
+.PHONY : src/objects/grass.cpp.s
 
 src/objects/ground.o: src/objects/ground.cpp.o
 .PHONY : src/objects/ground.o
@@ -1058,6 +1130,9 @@ help:
 	@echo "... shaders/texture_vert_glsl.o"
 	@echo "... shaders/texture_vert_glsl.i"
 	@echo "... shaders/texture_vert_glsl.s"
+	@echo "... src/InstancedMesh.o"
+	@echo "... src/InstancedMesh.i"
+	@echo "... src/InstancedMesh.s"
 	@echo "... src/generator.o"
 	@echo "... src/generator.i"
 	@echo "... src/generator.s"
@@ -1073,12 +1148,18 @@ help:
 	@echo "... src/objects/fire.o"
 	@echo "... src/objects/fire.i"
 	@echo "... src/objects/fire.s"
+	@echo "... src/objects/fireFly.o"
+	@echo "... src/objects/fireFly.i"
+	@echo "... src/objects/fireFly.s"
 	@echo "... src/objects/gas.o"
 	@echo "... src/objects/gas.i"
 	@echo "... src/objects/gas.s"
 	@echo "... src/objects/goldenApple.o"
 	@echo "... src/objects/goldenApple.i"
 	@echo "... src/objects/goldenApple.s"
+	@echo "... src/objects/grass.o"
+	@echo "... src/objects/grass.i"
+	@echo "... src/objects/grass.s"
 	@echo "... src/objects/ground.o"
 	@echo "... src/objects/ground.i"
 	@echo "... src/objects/ground.s"

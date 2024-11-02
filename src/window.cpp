@@ -16,17 +16,23 @@
 #include "objects/ground.cpp"
 #include "objects/tree.h"
 #include "generator.h"
+#include "InstancedMesh.h"
 #include "objects/apple.h"
 #include "objects/gas.h"
 #include "objects/horseFly.h"
 #include "src/objects/pig.h"
 #include "objects/AppleTree.h"
 #include "objects/fire.h"
+#include "objects/Firefly.h"
 #include "objects/goldenApple.h"
 #include "objects/smoke.h"
 #include "objects/particles.h"
 #include "objects/stone.h"
 #include "objects/wolf.h"
+#include "objects/Firefly.h"
+#include "objects/grass.cpp"
+#include "generator.h"
+
 
 
 class ProjectWindow : public ppgso::Window
@@ -39,10 +45,16 @@ private:
 	ppgso::Shader quadShader = {texture_vert_glsl, texture_frag_glsl};
 	ppgso::Mesh quadMesh = {"quad.obj"};
 	ppgso::Texture quadTexture = {1024, 1024};
-
-	// OpenGL object ids for framebuffer and render buffer
+	// ppenGL object ids for framebuffer and render buffer
 	GLuint fbo = 1;
 	GLuint rbo = 1;
+	glm::vec3 initControlPoints[4][4]{
+		{ {-0.1, 0.1, 0}, {-0.05, 0.1, 0}, {0.05, 0.1, 0}, {0.1, 0.1, 0} },
+		{ {-0.1, 0.05, 0}, {-0.05, 0.05, 0}, {0.05, 0.05, 0}, {0.1, 0.05, 0} },
+		{ {-0.1, -0.05, 0}, {-0.05, -0.05, 0}, {0.05, -0.05, 0}, {0.1, -0.05, 0} },
+		{ {-0.1, -0.1, 0}, {-0.05, -0.1, 0}, {0.05, -0.1, 0}, {0.1, -0.1, 0} }
+	};
+
 
 	void initBase() {
 		// Camera setup
@@ -54,8 +66,13 @@ private:
 
 		scene.objects.push_back(std::make_unique<Wolf>());
 
+		//todo
+		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
+		addGrassPatches(scene, initControlPoints);
+		scene.objects.push_back(std::make_unique<Firefly>(20));
+
 		auto tree = std::make_unique<Tree>(); //generate texture
-		for (int i = 0 ; i < 200; i++) { //generate and add 100 tree instances
+		for (int i = 0 ; i < 50; i++) { //generate and add 100 tree instances
 			auto tree_instance = std::make_unique<Tree>();
 			for (int i = 0; i < 3; i++) { //generate and add 5 apple instances to the single tree
 				auto apple = std::make_unique<Apple>();
@@ -99,40 +116,16 @@ private:
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
 		scene.shader = std::move(shader);
-	}
 
-	void initCommon()
-	{
-
-		// moonlight
-
-		// ambient
-
-		// third light
-
-		// player
-
-		// backgrounds
 
 	}
+
 
 	void scene1_init() // scene 1
 	{
 		initBase();
 
-		initCommon();
-
      	//...
-	}
-
-	void scene2_init()
-	{
-		scene.objects.clear();
-
-		initCommon();
-
-
-        //...
 	}
 
 public:
@@ -262,6 +255,5 @@ public:
 			}
 		}
 	}
-
 
 };

@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/window.cpp.o: \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdlib \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -830,7 +830,7 @@ CMakeFiles/ppgso.dir/ppgso/window.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/os/availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
   /opt/homebrew/include/GLFW/glfw3.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \

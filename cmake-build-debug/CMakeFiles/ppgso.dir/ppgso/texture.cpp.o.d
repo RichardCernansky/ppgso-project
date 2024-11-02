@@ -1,5 +1,5 @@
 CMakeFiles/ppgso.dir/ppgso/texture.cpp.o: \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__config \
@@ -823,7 +823,7 @@ CMakeFiles/ppgso.dir/ppgso/texture.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cstdarg \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/format_fwd.h \
@@ -875,4 +875,4 @@ CMakeFiles/ppgso.dir/ppgso/texture.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/os/availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h

@@ -21,6 +21,7 @@ namespace ppgso {
       GLuint vao, vbo, tbo, nbo, ibo = 0;
       GLsizei size = 0;
     };
+
     std::vector<tinyobj::shape_t> shapes;
     std::vector<tinyobj::material_t> materials;
     std::vector<gl_buffer> buffers;
