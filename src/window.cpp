@@ -127,7 +127,7 @@ private:
 	{
 		initBase();
 
-     	//...
+     	//toto sem absolutne nepotrebujeme
 	}
 
 public:
