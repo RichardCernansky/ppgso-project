@@ -59,7 +59,7 @@ glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& 
 void addGrassPatches(Scene &scene, glm::vec3 initControlPoints[4][4]) {
     srand(static_cast<unsigned int>(time(nullptr)));  // Seed for random number generation
 
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 10; i++) {
         // Generate a random offset in the range of ±0.2
         float offsetX = (static_cast<float>(rand()) / RAND_MAX) * 0.4f - 0.2f;
         float offsetY = 0;
