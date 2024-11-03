@@ -58,8 +58,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS"
-      binary: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS"
+      source: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h"
+      binary: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -70,18 +70,18 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS'
+        Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4bb18/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4bb18.dir/build.make CMakeFiles/cmTC_4bb18.dir/build
-        Building CXX object CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d1496/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d1496.dir/build.make CMakeFiles/cmTC_d1496.dir/build
+        Building CXX object CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
@@ -93,14 +93,14 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_4bb18
-        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bb18.dir/link.txt --verbose=1
-        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/libomp/lib -v -Wl,-v CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4bb18
+        Linking CXX executable cmTC_d1496
+        /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1496.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/libomp/lib -v -Wl,-v CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d1496
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_4bb18 -L/opt/homebrew/opt/libomp/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_d1496 -L/opt/homebrew/opt/libomp/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1053.12
         BUILD 15:45:29 Feb  3 2024
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -147,18 +147,18 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS']
+        ignore line: [Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h']
         ignore line: []
-        ignore line: [Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4bb18/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4bb18.dir/build.make CMakeFiles/cmTC_4bb18.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d1496/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d1496.dir/build.make CMakeFiles/cmTC_d1496.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
         ignore line: [Target: arm64-apple-darwin23.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kJiezS -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MRZN3h -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"]
@@ -170,14 +170,14 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_4bb18]
-        ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bb18.dir/link.txt --verbose=1]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -L/opt/homebrew/opt/libomp/lib -v -Wl -v CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4bb18]
+        ignore line: [Linking CXX executable cmTC_d1496]
+        ignore line: [/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1496.dir/link.txt --verbose=1]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names -L/opt/homebrew/opt/libomp/lib -v -Wl -v CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d1496]
         ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
         ignore line: [Target: arm64-apple-darwin23.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_4bb18 -L/opt/homebrew/opt/libomp/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.4 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o cmTC_d1496 -L/opt/homebrew/opt/libomp/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -192,12 +192,12 @@ events:
           arg [-syslibroot] ==> ignore
           arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_4bb18] ==> ignore
+          arg [cmTC_d1496] ==> ignore
           arg [-L/opt/homebrew/opt/libomp/lib] ==> dir [/opt/homebrew/opt/libomp/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_4bb18.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_d1496.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
@@ -240,8 +240,8 @@ events:
       - "CMakeLists.txt:55 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG"
-      binary: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG"
+      source: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7"
+      binary: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake"
@@ -252,17 +252,17 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG'
+        Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c2e18/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c2e18.dir/build.make CMakeFiles/cmTC_c2e18.dir/build
-        Building CXX object CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG/OpenMPTryFlag.cpp
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d27d2/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d27d2.dir/build.make CMakeFiles/cmTC_d27d2.dir/build
+        Building CXX object CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7/OpenMPTryFlag.cpp
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG/OpenMPTryFlag.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7/OpenMPTryFlag.cpp
         clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
@@ -274,12 +274,12 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sjLIwG/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+        /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NBGRt7/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
         #include <omp.h>
                  ^~~~~~~
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_c2e18.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_c2e18/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_d27d2.dir/OpenMPTryFlag.cpp.o] Error 1
+        make: *** [cmTC_d27d2/fast] Error 2
         
       exitCode: 2
   -
@@ -290,8 +290,8 @@ events:
       - "CMakeLists.txt:55 (find_package)"
     description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
     directories:
-      source: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W"
-      binary: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W"
+      source: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7"
+      binary: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake"
@@ -302,17 +302,17 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W'
+        Change Dir: '/Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_78a76/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_78a76.dir/build.make CMakeFiles/cmTC_78a76.dir/build
-        Building CXX object CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W/OpenMPTryFlag.cpp
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5d2d7/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5d2d7.dir/build.make CMakeFiles/cmTC_5d2d7.dir/build
+        Building CXX object CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7/OpenMPTryFlag.cpp
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W/OpenMPTryFlag.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7/OpenMPTryFlag.cpp
         clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
@@ -324,12 +324,12 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JRul3W/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+        /Users/richardcernansky/Desktop/ppgso/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uV14L7/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
         #include <omp.h>
                  ^~~~~~~
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_78a76.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_78a76/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_5d2d7.dir/OpenMPTryFlag.cpp.o] Error 1
+        make: *** [cmTC_5d2d7/fast] Error 2
         
       exitCode: 2
 ...
@@ -344,8 +344,8 @@ events:
       - "CMakeLists.txt:55 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq"
+      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z"
+      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
@@ -356,17 +356,17 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq'
+        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7323a/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7323a.dir/build.make CMakeFiles/cmTC_7323a.dir/build
-        Building CXX object CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq/OpenMPTryFlag.cpp
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_70c2e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_70c2e.dir/build.make CMakeFiles/cmTC_70c2e.dir/build
+        Building CXX object CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z/OpenMPTryFlag.cpp
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq/OpenMPTryFlag.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z/OpenMPTryFlag.cpp
         clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
@@ -378,12 +378,12 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-WLFHQq/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
+        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-QKNN8z/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
         #include <omp.h>
         \x1b[0;1;32m         ^~~~~~~
         \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_7323a.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_7323a/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_70c2e.dir/OpenMPTryFlag.cpp.o] Error 1
+        make: *** [cmTC_70c2e/fast] Error 2
         
       exitCode: 2
   -
@@ -394,8 +394,8 @@ events:
       - "CMakeLists.txt:55 (find_package)"
     description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
     directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G"
+      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS"
+      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
@@ -406,17 +406,17 @@ events:
       variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
       cached: true
       stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G'
+        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS'
         
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2afc6/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2afc6.dir/build.make CMakeFiles/cmTC_2afc6.dir/build
-        Building CXX object CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G/OpenMPTryFlag.cpp
+        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d4d59/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d4d59.dir/build.make CMakeFiles/cmTC_d4d59.dir/build
+        Building CXX object CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS/OpenMPTryFlag.cpp
         Apple clang version 15.0.0 (clang-1500.3.9.4)
         Target: arm64-apple-darwin23.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G/OpenMPTryFlag.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS/OpenMPTryFlag.cpp
         clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
@@ -428,844 +428,12 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mPUH0G/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
+        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1hfKWS/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
         #include <omp.h>
         \x1b[0;1;32m         ^~~~~~~
         \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_2afc6.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_2afc6/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_98b46/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_98b46.dir/build.make CMakeFiles/cmTC_98b46.dir/build
-        Building CXX object CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kFcnVW/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_98b46.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_98b46/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d55c7/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d55c7.dir/build.make CMakeFiles/cmTC_d55c7.dir/build
-        Building CXX object CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2gEfgk/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_d55c7.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_d55c7/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c1413/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c1413.dir/build.make CMakeFiles/cmTC_c1413.dir/build
-        Building CXX object CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1s4Goq/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_c1413.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_c1413/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c6987/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c6987.dir/build.make CMakeFiles/cmTC_c6987.dir/build
-        Building CXX object CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qU9JzP/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_c6987.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_c6987/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf882/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cf882.dir/build.make CMakeFiles/cmTC_cf882.dir/build
-        Building CXX object CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-GJUq5K/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_cf882.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_cf882/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a73e3/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a73e3.dir/build.make CMakeFiles/cmTC_a73e3.dir/build
-        Building CXX object CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Kr6xYs/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_a73e3.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_a73e3/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6d7c7/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6d7c7.dir/build.make CMakeFiles/cmTC_6d7c7.dir/build
-        Building CXX object CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mcoK6G/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_6d7c7.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_6d7c7/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_11b92/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_11b92.dir/build.make CMakeFiles/cmTC_11b92.dir/build
-        Building CXX object CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-2xzTyI/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_11b92.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_11b92/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_11764/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_11764.dir/build.make CMakeFiles/cmTC_11764.dir/build
-        Building CXX object CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-P2J5mA/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_11764.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_11764/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f161f/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f161f.dir/build.make CMakeFiles/cmTC_f161f.dir/build
-        Building CXX object CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-CifRhd/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_f161f.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_f161f/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4ce12/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4ce12.dir/build.make CMakeFiles/cmTC_4ce12.dir/build
-        Building CXX object CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-lENXRi/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_4ce12.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_4ce12/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5fb98/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5fb98.dir/build.make CMakeFiles/cmTC_5fb98.dir/build
-        Building CXX object CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-NfLglk/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_5fb98.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_5fb98/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e13b5/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e13b5.dir/build.make CMakeFiles/cmTC_e13b5.dir/build
-        Building CXX object CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rRNJ8K/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
-        #include <omp.h>
-                 ^~~~~~~
-        1 error generated.
-        make[2]: *** [CMakeFiles/cmTC_e13b5.dir/OpenMPTryFlag.cpp.o] Error 1
-        make[1]: *** [cmTC_e13b5/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f4fbd/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f4fbd.dir/build.make CMakeFiles/cmTC_f4fbd.dir/build
-        Building CXX object CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -MD -MT CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EVr357/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
-        #include <omp.h>
-                 ^~~~~~~
-        1 error generated.
-        make[2]: *** [CMakeFiles/cmTC_f4fbd.dir/OpenMPTryFlag.cpp.o] Error 1
-        make[1]: *** [cmTC_f4fbd/fast] Error 2
-        
-      exitCode: 2
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:219 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ec525/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ec525.dir/build.make CMakeFiles/cmTC_ec525.dir/build
-        Building CXX object CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-HlIIBQ/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_ec525.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_ec525/fast] Error 2
-        
-      exitCode: 2
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:317 (try_compile)"
-      - "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/FindOpenMP.cmake:487 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:55 (find_package)"
-    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/libomp/lib/libomp.dylib'"
-    directories:
-      source: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e"
-      binary: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: ""
-      CMAKE_MODULE_PATH: "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e'
-        
-        Run Build Command(s): /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_91cc7/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_91cc7.dir/build.make CMakeFiles/cmTC_91cc7.dir/build
-        Building CXX object CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o
-        /Library/Developer/CommandLineTools/usr/bin/c++   -Xclang -fopenmp -v -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e/OpenMPTryFlag.cpp
-        Apple clang version 15.0.0 (clang-1500.3.9.4)
-        Target: arm64-apple-darwin23.6.0
-        Thread model: posix
-        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.4 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fcolor-diagnostics -fopenmp -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o -x c++ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e/OpenMPTryFlag.cpp
-        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.6.0
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/local/include"
-        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/Library/Frameworks"
-        #include "..." search starts here:
-        #include <...> search starts here:
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1
-         /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include
-         /Library/Developer/CommandLineTools/usr/include
-         /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks (framework directory)
-        End of search list.
-        \x1b[1m/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rYQm2e/OpenMPTryFlag.cpp:2:10: \x1b[0m\x1b[0;1;31mfatal error: \x1b[0m\x1b[1m'omp.h' file not found\x1b[0m
-        #include <omp.h>
-        \x1b[0;1;32m         ^~~~~~~
-        \x1b[0m1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_91cc7.dir/OpenMPTryFlag.cpp.o] Error 1
-        make: *** [cmTC_91cc7/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_d4d59.dir/OpenMPTryFlag.cpp.o] Error 1
+        make: *** [cmTC_d4d59/fast] Error 2
         
       exitCode: 2
 ...

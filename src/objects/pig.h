@@ -21,7 +21,7 @@ public:
     // Initially placed at (0, 0, 0)
     glm::vec3 scale{1, 1, 1};     // Default scale
     glm::vec3 globalDirection{0,0,1};
-
+    glm::vec3 initialPosition{0, 0, 0};
 
     float timeInState = 0.0f;
     float changeDirectionTime = 0.0f;

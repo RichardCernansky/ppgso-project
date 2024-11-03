@@ -14,7 +14,8 @@ std::unique_ptr<ppgso::Texture> Pig::texture;
 
 // Constructor
 Pig::Pig() {
-    position = glm::vec3 {5, 0, -10};
+    position = glm::vec3 {0, 0, -5};
+    initialPosition = position;
     // Load texture and mesh only once
     if (!texture) {
         auto image = ppgso::image::loadBMP("pink_prasa.bmp");  // Assuming a texture for boar
@@ -68,8 +69,32 @@ void Pig::run_off() {
     currentSpeed = 0.0f;
 }
 
+// pig.cpp
+
 bool Pig::update(float dTime, Scene &scene) {
-    // If a collision is detected, switch to run-off behavior
+    // Calculate distance from initial position
+    float distanceFromInitial = glm::distance(position, initialPosition);
+
+    // Check if Pig is more than 30 units away from its initial position
+    if (distanceFromInitial > 20.0f) {
+        // Set direction toward the initial position
+        runDirection = glm::normalize(initialPosition - position);
+        currentSpeed = 5.0f; // Set a speed to move back
+
+        // Update position to move toward the initial position
+        position += runDirection * currentSpeed * dTime;
+
+        // Update model matrix to face the initial position
+        modelMatrix = glm::mat4{1.0f};
+        modelMatrix = glm::translate(modelMatrix, position);
+        modelMatrix *= rotateToFaceDirection({0, 0, 1}, runDirection);
+        modelMatrix = glm::scale(modelMatrix, scale);
+
+        // Skip regular behavior if Pig is returning
+        return true;
+    }
+
+    // If not returning to initial position, proceed with regular update logic
     if (isCollided(scene) && !isRunningOff) {
         run_off(); // Initiate the run-off state
     }
@@ -104,14 +129,14 @@ bool Pig::update(float dTime, Scene &scene) {
             timeInState = 0.0f;
 
             // Randomly pick a new change direction time between 2 and 5 seconds
-            changeDirectionTime = randomFloat(2.0f, 5.0f); // You'll need to implement or have a randomFloat() function
+            changeDirectionTime = randomFloat(2.0f, 5.0f);
 
             // Randomly select a new direction in the XZ plane
-            float randomAngle = randomFloat(0.0f, 360.0f); // Random angle in degrees
+            float randomAngle = randomFloat(0.0f, 360.0f);
             glm::mat4 rotationMatrix = glm::rotate(glm::mat4(1.0f), glm::radians(randomAngle), glm::vec3(0.0f, 1.0f, 0.0f));
 
             // Apply the rotation to the forward direction
-            globalDirection = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, 1.0f, 0.0f))); // Rotate the default forward direction (0, 0, 1)
+            globalDirection = glm::normalize(glm::vec3(rotationMatrix * glm::vec4(0.0f, 0.0f, 1.0f, 0.0f)));
         }
 
         // Move the pig in the current direction
@@ -131,6 +156,7 @@ bool Pig::update(float dTime, Scene &scene) {
 
     return true;
 }
+
 
 // Render method
 void Pig::render(Scene &scene) {
