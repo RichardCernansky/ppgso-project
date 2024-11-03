@@ -10,6 +10,7 @@ std::unique_ptr<ppgso::Texture> Bee::texture;
 
 // Constructor
 Bee::Bee() {
+    position = {0, 0,-2.5};
     if (!texture) {
         auto image = ppgso::image::loadBMP("bee2.bmp");
         if (image.width == 0 || image.height == 0) {
@@ -49,7 +50,7 @@ bool Bee::update(float dTime, Scene &scene) {
     Keyframe end = waypoints[(currentWaypoint + 1) % waypoints.size()];
 
     // Interpolate position between start and end keyframes
-    position = glm::mix(start.position, end.position, journeyProgress);
+    auto j_position = glm::mix(start.position, end.position, journeyProgress);
 
     // Interpolate rotation between start and end keyframes
     glm::vec3 interpolatedRotation = glm::mix(start.rotation, end.rotation, journeyProgress);
@@ -62,7 +63,9 @@ bool Bee::update(float dTime, Scene &scene) {
 
     // Create model transformation matrix for the bee
     modelMatrix = glm::mat4{1.0f};
+    modelMatrix = glm::translate(modelMatrix, j_position);
     modelMatrix = glm::translate(modelMatrix, position);
+
 
     // Apply rotation based on interpolated rotation values
     modelMatrix *= glm::yawPitchRoll(

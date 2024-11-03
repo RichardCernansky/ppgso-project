@@ -26,7 +26,6 @@ private:
     float journeyProgress = 0.0f;  // Interpolation progress between waypoints
     float speed = 1.0f;  // Flying speed of the bee
 
-    glm::vec3 position{0.0f, 0.0f, 0.0f};  // Current position of the bee
     glm::mat4 modelMatrix{1.0f};  // Transformation matrix for rendering
 
 public:
