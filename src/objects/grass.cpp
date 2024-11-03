@@ -127,7 +127,7 @@ public:
     static float accumulatedTime = 0.0f;  // Accumulate total time over frames
     accumulatedTime += dTime;  // Update accumulated time with delta time
 
-    float frequency = .15f;
+    float frequency = .5f;
     float amplitude = 0.01f;
     float spatialFrequency = 3.0f; // Controls the number of oscillations along the j-axis
 
