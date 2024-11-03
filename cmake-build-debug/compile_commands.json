@@ -103,6 +103,12 @@
 },
 {
   "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/src/objects/bee.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp",
+  "output": "CMakeFiles/ppgso.dir/src/objects/bee.cpp.o"
+},
+{
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/main.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp",
   "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp",
   "output": "CMakeFiles/project.dir/src/main.cpp.o"

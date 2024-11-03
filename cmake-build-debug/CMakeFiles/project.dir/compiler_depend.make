@@ -2020,6 +2020,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/richardcernansky/Desktop/PPGS
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/Firefly.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.h \
@@ -3235,6 +3236,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/Firefly.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.h \
@@ -23554,6 +23556,7 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/p
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/Firefly.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.h \
@@ -23935,6 +23938,8 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/p
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h:
 
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp:
+
+/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h:
 
 /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl:
 

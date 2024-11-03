@@ -704,6 +704,30 @@ src/objects/apple.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/apple.cpp.s
 .PHONY : src/objects/apple.cpp.s
 
+src/objects/bee.o: src/objects/bee.cpp.o
+.PHONY : src/objects/bee.o
+
+# target to build an object file
+src/objects/bee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/objects/bee.cpp.o
+.PHONY : src/objects/bee.cpp.o
+
+src/objects/bee.i: src/objects/bee.cpp.i
+.PHONY : src/objects/bee.i
+
+# target to preprocess a source file
+src/objects/bee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/objects/bee.cpp.i
+.PHONY : src/objects/bee.cpp.i
+
+src/objects/bee.s: src/objects/bee.cpp.s
+.PHONY : src/objects/bee.s
+
+# target to generate assembly for a file
+src/objects/bee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/objects/bee.cpp.s
+.PHONY : src/objects/bee.cpp.s
+
 src/objects/fire.o: src/objects/fire.cpp.o
 .PHONY : src/objects/fire.o
 
@@ -1145,6 +1169,9 @@ help:
 	@echo "... src/objects/apple.o"
 	@echo "... src/objects/apple.i"
 	@echo "... src/objects/apple.s"
+	@echo "... src/objects/bee.o"
+	@echo "... src/objects/bee.i"
+	@echo "... src/objects/bee.s"
 	@echo "... src/objects/fire.o"
 	@echo "... src/objects/fire.i"
 	@echo "... src/objects/fire.s"

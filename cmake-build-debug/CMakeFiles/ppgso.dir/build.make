@@ -195,6 +195,20 @@ CMakeFiles/ppgso.dir/src/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/src/window.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp -o CMakeFiles/ppgso.dir/src/window.cpp.s
 
+CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: CMakeFiles/ppgso.dir/flags.make
+CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp
+CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: CMakeFiles/ppgso.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ppgso.dir/src/objects/bee.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ppgso.dir/src/objects/bee.cpp.o -MF CMakeFiles/ppgso.dir/src/objects/bee.cpp.o.d -o CMakeFiles/ppgso.dir/src/objects/bee.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp
+
+CMakeFiles/ppgso.dir/src/objects/bee.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ppgso.dir/src/objects/bee.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp > CMakeFiles/ppgso.dir/src/objects/bee.cpp.i
+
+CMakeFiles/ppgso.dir/src/objects/bee.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ppgso.dir/src/objects/bee.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp -o CMakeFiles/ppgso.dir/src/objects/bee.cpp.s
+
 # Object files for target ppgso
 ppgso_OBJECTS = \
 "CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o" \
@@ -205,7 +219,8 @@ ppgso_OBJECTS = \
 "CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o" \
 "CMakeFiles/ppgso.dir/ppgso/texture.cpp.o" \
 "CMakeFiles/ppgso.dir/ppgso/window.cpp.o" \
-"CMakeFiles/ppgso.dir/src/window.cpp.o"
+"CMakeFiles/ppgso.dir/src/window.cpp.o" \
+"CMakeFiles/ppgso.dir/src/objects/bee.cpp.o"
 
 # External object files for target ppgso
 ppgso_EXTERNAL_OBJECTS =
@@ -219,9 +234,10 @@ libppgso.a: CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/ppgso/texture.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/ppgso/window.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/src/window.cpp.o
+libppgso.a: CMakeFiles/ppgso.dir/src/objects/bee.cpp.o
 libppgso.a: CMakeFiles/ppgso.dir/build.make
 libppgso.a: CMakeFiles/ppgso.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libppgso.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libppgso.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/ppgso.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ppgso.dir/link.txt --verbose=$(VERBOSE)
 

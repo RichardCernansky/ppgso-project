@@ -1187,12 +1187,13 @@ CMakeFiles/project.dir/src/main.cpp.o: \
   /opt/homebrew/include/GLFW/glfw3.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../renderable.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../scene.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/InstancedMesh.h \

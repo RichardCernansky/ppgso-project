@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.cpp" "CMakeFiles/ppgso.dir/ppgso/texture.cpp.o" "gcc" "CMakeFiles/ppgso.dir/ppgso/texture.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.cpp" "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o" "gcc" "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.cpp" "CMakeFiles/ppgso.dir/ppgso/window.cpp.o" "gcc" "CMakeFiles/ppgso.dir/ppgso/window.cpp.o.d"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp" "CMakeFiles/ppgso.dir/src/objects/bee.cpp.o" "gcc" "CMakeFiles/ppgso.dir/src/objects/bee.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp" "CMakeFiles/ppgso.dir/src/window.cpp.o" "gcc" "CMakeFiles/ppgso.dir/src/window.cpp.o.d"
   )
 

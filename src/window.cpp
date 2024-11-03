@@ -12,6 +12,7 @@
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
 //my files
+#include "objects/bee.h"
 #include "scene.cpp"
 #include "objects/ground.cpp"
 #include "objects/tree.h"
@@ -67,20 +68,21 @@ private:
 		scene.objects.push_back(std::make_unique<Wolf>());
 
 		//todo
+		scene.objects.push_back(std::make_unique<Bee>());
 		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
 		addGrassPatches(scene, initControlPoints);
-		scene.objects.push_back(std::make_unique<Firefly>(20));
+		// scene.objects.push_back(std::make_unique<Firefly>(20));
 
 		auto tree = std::make_unique<Tree>(); //generate texture
-		for (int i = 0 ; i < 50; i++) { //generate and add 100 tree instances
-			auto tree_instance = std::make_unique<Tree>();
-			for (int i = 0; i < 3; i++) { //generate and add 5 apple instances to the single tree
-				auto apple = std::make_unique<Apple>();
-				tree_instance->children.push_back(std::move(apple));
-			}
-			tree_instance->modelMatrix = generateRandomTreeModelMatrix();
-			scene.objects.push_back(std::move(tree_instance));
-		}
+		// for (int i = 0 ; i < 50; i++) { //generate and add 100 tree instances
+		// 	auto tree_instance = std::make_unique<Tree>();
+		// 	for (int i = 0; i < 3; i++) { //generate and add 5 apple instances to the single tree
+		// 		auto apple = std::make_unique<Apple>();
+		// 		tree_instance->children.push_back(std::move(apple));
+		// 	}
+		// 	tree_instance->modelMatrix = generateRandomTreeModelMatrix();
+		// 	scene.objects.push_back(std::move(tree_instance));
+		// }
 
 
 		auto tree_of_life = std::make_unique<AppleTree>();
@@ -93,7 +95,7 @@ private:
 		//fire
 		 auto fire = std::make_unique<Fire>();
 		 //auto smoke = std::make_unique<Smoke>();
-		 for (int i = 0; i < 50; i++) {
+		 for (int i = 0; i < 30; i++) {
 		 	auto particles = std::make_unique<Particles>();
 		 	fire->children.push_back(std::move(particles));
 		 }

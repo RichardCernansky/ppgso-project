@@ -85,6 +85,8 @@ add_library(ppgso STATIC
         ppgso/texture.cpp
         ppgso/window.cpp
         src/window.cpp
+        src/objects/bee.cpp
+        src/objects/bee.h
 )
 
 # Make sure GLM uses radians and GLEW is a static library
