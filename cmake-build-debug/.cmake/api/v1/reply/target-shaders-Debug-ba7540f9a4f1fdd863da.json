@@ -28,7 +28,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 75,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
@@ -51,7 +51,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
+					"fragment" : "-g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics"
 				}
 			],
 			"includes" : 
@@ -79,7 +79,8 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -104,21 +105,23 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				8,
 				9,
 				10,
 				11,
 				12,
 				13,
 				14,
-				15
+				15,
+				16,
+				17
 			]
 		}
 	],
@@ -181,6 +184,13 @@
 			"sourceGroupIndex" : 0
 		},
 		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/shaders/instanced_glsl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/shaders/color_vert_glsl.cpp.rule",
@@ -226,6 +236,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/shaders/texture_frag_glsl.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "cmake-build-debug/shaders/instanced_glsl.cpp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

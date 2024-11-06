@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/project.dir/src/InstancedMesh.cpp.o"
-  "CMakeFiles/project.dir/src/InstancedMesh.cpp.o.d"
   "CMakeFiles/project.dir/src/generator.cpp.o"
   "CMakeFiles/project.dir/src/generator.cpp.o.d"
   "CMakeFiles/project.dir/src/main.cpp.o"
@@ -11,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/src/objects/apple.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/fire.cpp.o"
   "CMakeFiles/project.dir/src/objects/fire.cpp.o.d"
-  "CMakeFiles/project.dir/src/objects/fireFly.cpp.o"
-  "CMakeFiles/project.dir/src/objects/fireFly.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/gas.cpp.o"
   "CMakeFiles/project.dir/src/objects/gas.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/goldenApple.cpp.o"

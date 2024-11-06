@@ -307,38 +307,10 @@ CMakeFiles/project.dir/src/objects/stone.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/stone.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp -o CMakeFiles/project.dir/src/objects/stone.cpp.s
 
-CMakeFiles/project.dir/src/objects/fireFly.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/fireFly.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fireFly.cpp
-CMakeFiles/project.dir/src/objects/fireFly.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project.dir/src/objects/fireFly.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/fireFly.cpp.o -MF CMakeFiles/project.dir/src/objects/fireFly.cpp.o.d -o CMakeFiles/project.dir/src/objects/fireFly.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fireFly.cpp
-
-CMakeFiles/project.dir/src/objects/fireFly.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/fireFly.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fireFly.cpp > CMakeFiles/project.dir/src/objects/fireFly.cpp.i
-
-CMakeFiles/project.dir/src/objects/fireFly.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/fireFly.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fireFly.cpp -o CMakeFiles/project.dir/src/objects/fireFly.cpp.s
-
-CMakeFiles/project.dir/src/InstancedMesh.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/InstancedMesh.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/InstancedMesh.cpp
-CMakeFiles/project.dir/src/InstancedMesh.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project.dir/src/InstancedMesh.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/InstancedMesh.cpp.o -MF CMakeFiles/project.dir/src/InstancedMesh.cpp.o.d -o CMakeFiles/project.dir/src/InstancedMesh.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/InstancedMesh.cpp
-
-CMakeFiles/project.dir/src/InstancedMesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/InstancedMesh.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/InstancedMesh.cpp > CMakeFiles/project.dir/src/InstancedMesh.cpp.i
-
-CMakeFiles/project.dir/src/InstancedMesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/InstancedMesh.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/InstancedMesh.cpp -o CMakeFiles/project.dir/src/InstancedMesh.cpp.s
-
 CMakeFiles/project.dir/src/objects/grass.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/objects/grass.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp
 CMakeFiles/project.dir/src/objects/grass.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/project.dir/src/objects/grass.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project.dir/src/objects/grass.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/grass.cpp.o -MF CMakeFiles/project.dir/src/objects/grass.cpp.o.d -o CMakeFiles/project.dir/src/objects/grass.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp
 
 CMakeFiles/project.dir/src/objects/grass.cpp.i: cmake_force
@@ -368,8 +340,6 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/src/objects/particles.cpp.o" \
 "CMakeFiles/project.dir/src/objects/wolf.cpp.o" \
 "CMakeFiles/project.dir/src/objects/stone.cpp.o" \
-"CMakeFiles/project.dir/src/objects/fireFly.cpp.o" \
-"CMakeFiles/project.dir/src/InstancedMesh.cpp.o" \
 "CMakeFiles/project.dir/src/objects/grass.cpp.o"
 
 # External object files for target project
@@ -392,8 +362,6 @@ project: CMakeFiles/project.dir/src/objects/smoke.cpp.o
 project: CMakeFiles/project.dir/src/objects/particles.cpp.o
 project: CMakeFiles/project.dir/src/objects/wolf.cpp.o
 project: CMakeFiles/project.dir/src/objects/stone.cpp.o
-project: CMakeFiles/project.dir/src/objects/fireFly.cpp.o
-project: CMakeFiles/project.dir/src/InstancedMesh.cpp.o
 project: CMakeFiles/project.dir/src/objects/grass.cpp.o
 project: CMakeFiles/project.dir/build.make
 project: libppgso.a
@@ -401,7 +369,7 @@ project: libshaders.a
 project: /opt/homebrew/lib/libglfw3.a
 project: /opt/homebrew/lib/libGLEW.dylib
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_directory /Users/richardcernansky/Desktop/PPGSO/ppgso-project/data/ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
 

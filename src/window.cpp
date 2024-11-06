@@ -17,20 +17,17 @@
 #include "objects/ground.cpp"
 #include "objects/tree.h"
 #include "generator.h"
-#include "InstancedMesh.h"
 #include "objects/apple.h"
 #include "objects/gas.h"
 #include "objects/horseFly.h"
 #include "src/objects/pig.h"
 #include "objects/AppleTree.h"
 #include "objects/fire.h"
-#include "objects/Firefly.h"
 #include "objects/goldenApple.h"
 #include "objects/smoke.h"
 #include "objects/particles.h"
 #include "objects/stone.h"
 #include "objects/wolf.h"
-#include "objects/Firefly.h"
 #include "objects/grass.cpp"
 #include "generator.h"
 
@@ -70,8 +67,6 @@ private:
 		//todo
 		scene.objects.push_back(std::make_unique<Bee>());
 		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
-		addGrassPatches(scene, initControlPoints);
-		// scene.objects.push_back(std::make_unique<Firefly>(20));
 
 		auto tree = std::make_unique<Tree>(); //generate texture
 		for (int i = 0 ; i < 50; i++) { //generate and add 100 tree instances

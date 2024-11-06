@@ -8,13 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/InstancedMesh.cpp" "CMakeFiles/project.dir/src/InstancedMesh.cpp.o" "gcc" "CMakeFiles/project.dir/src/InstancedMesh.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp" "CMakeFiles/project.dir/src/generator.cpp.o" "gcc" "CMakeFiles/project.dir/src/generator.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp" "CMakeFiles/project.dir/src/main.cpp.o" "gcc" "CMakeFiles/project.dir/src/main.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp" "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp" "CMakeFiles/project.dir/src/objects/apple.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/apple.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp" "CMakeFiles/project.dir/src/objects/fire.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/fire.cpp.o.d"
-  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fireFly.cpp" "CMakeFiles/project.dir/src/objects/fireFly.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/fireFly.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp" "CMakeFiles/project.dir/src/objects/gas.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/gas.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp" "CMakeFiles/project.dir/src/objects/goldenApple.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/goldenApple.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp" "CMakeFiles/project.dir/src/objects/grass.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/grass.cpp.o.d"

@@ -536,6 +536,30 @@ shaders/diffuse_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s
 .PHONY : shaders/diffuse_vert_glsl.cpp.s
 
+shaders/instanced_glsl.o: shaders/instanced_glsl.cpp.o
+.PHONY : shaders/instanced_glsl.o
+
+# target to build an object file
+shaders/instanced_glsl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o
+.PHONY : shaders/instanced_glsl.cpp.o
+
+shaders/instanced_glsl.i: shaders/instanced_glsl.cpp.i
+.PHONY : shaders/instanced_glsl.i
+
+# target to preprocess a source file
+shaders/instanced_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.i
+.PHONY : shaders/instanced_glsl.cpp.i
+
+shaders/instanced_glsl.s: shaders/instanced_glsl.cpp.s
+.PHONY : shaders/instanced_glsl.s
+
+# target to generate assembly for a file
+shaders/instanced_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.s
+.PHONY : shaders/instanced_glsl.cpp.s
+
 shaders/texture_frag_glsl.o: shaders/texture_frag_glsl.cpp.o
 .PHONY : shaders/texture_frag_glsl.o
 
@@ -583,30 +607,6 @@ shaders/texture_vert_glsl.s: shaders/texture_vert_glsl.cpp.s
 shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
-
-src/InstancedMesh.o: src/InstancedMesh.cpp.o
-.PHONY : src/InstancedMesh.o
-
-# target to build an object file
-src/InstancedMesh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/InstancedMesh.cpp.o
-.PHONY : src/InstancedMesh.cpp.o
-
-src/InstancedMesh.i: src/InstancedMesh.cpp.i
-.PHONY : src/InstancedMesh.i
-
-# target to preprocess a source file
-src/InstancedMesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/InstancedMesh.cpp.i
-.PHONY : src/InstancedMesh.cpp.i
-
-src/InstancedMesh.s: src/InstancedMesh.cpp.s
-.PHONY : src/InstancedMesh.s
-
-# target to generate assembly for a file
-src/InstancedMesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/InstancedMesh.cpp.s
-.PHONY : src/InstancedMesh.cpp.s
 
 src/generator.o: src/generator.cpp.o
 .PHONY : src/generator.o
@@ -751,30 +751,6 @@ src/objects/fire.s: src/objects/fire.cpp.s
 src/objects/fire.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fire.cpp.s
 .PHONY : src/objects/fire.cpp.s
-
-src/objects/fireFly.o: src/objects/fireFly.cpp.o
-.PHONY : src/objects/fireFly.o
-
-# target to build an object file
-src/objects/fireFly.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fireFly.cpp.o
-.PHONY : src/objects/fireFly.cpp.o
-
-src/objects/fireFly.i: src/objects/fireFly.cpp.i
-.PHONY : src/objects/fireFly.i
-
-# target to preprocess a source file
-src/objects/fireFly.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fireFly.cpp.i
-.PHONY : src/objects/fireFly.cpp.i
-
-src/objects/fireFly.s: src/objects/fireFly.cpp.s
-.PHONY : src/objects/fireFly.s
-
-# target to generate assembly for a file
-src/objects/fireFly.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/fireFly.cpp.s
-.PHONY : src/objects/fireFly.cpp.s
 
 src/objects/gas.o: src/objects/gas.cpp.o
 .PHONY : src/objects/gas.o
@@ -1148,15 +1124,15 @@ help:
 	@echo "... shaders/diffuse_vert_glsl.o"
 	@echo "... shaders/diffuse_vert_glsl.i"
 	@echo "... shaders/diffuse_vert_glsl.s"
+	@echo "... shaders/instanced_glsl.o"
+	@echo "... shaders/instanced_glsl.i"
+	@echo "... shaders/instanced_glsl.s"
 	@echo "... shaders/texture_frag_glsl.o"
 	@echo "... shaders/texture_frag_glsl.i"
 	@echo "... shaders/texture_frag_glsl.s"
 	@echo "... shaders/texture_vert_glsl.o"
 	@echo "... shaders/texture_vert_glsl.i"
 	@echo "... shaders/texture_vert_glsl.s"
-	@echo "... src/InstancedMesh.o"
-	@echo "... src/InstancedMesh.i"
-	@echo "... src/InstancedMesh.s"
 	@echo "... src/generator.o"
 	@echo "... src/generator.i"
 	@echo "... src/generator.s"
@@ -1175,9 +1151,6 @@ help:
 	@echo "... src/objects/fire.o"
 	@echo "... src/objects/fire.i"
 	@echo "... src/objects/fire.s"
-	@echo "... src/objects/fireFly.o"
-	@echo "... src/objects/fireFly.i"
-	@echo "... src/objects/fireFly.s"
 	@echo "... src/objects/gas.o"
 	@echo "... src/objects/gas.i"
 	@echo "... src/objects/gas.s"

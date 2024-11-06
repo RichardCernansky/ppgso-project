@@ -26,25 +26,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 112,
+				"line" : 113,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 155,
+				"line" : 152,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 154,
+				"line" : 151,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 96,
+				"line" : 97,
 				"parent" : 0
 			}
 		]
@@ -55,7 +55,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
+					"fragment" : "-g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics"
 				}
 			],
 			"defines" : 
@@ -73,7 +73,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework"
+					"path" : "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks/OpenGL.framework"
 				}
 			],
 			"includes" : 
@@ -123,9 +123,7 @@
 				26,
 				28,
 				30,
-				32,
-				34,
-				36
+				32
 			]
 		}
 	],
@@ -133,11 +131,11 @@
 	[
 		{
 			"backtrace" : 3,
-			"id" : "shaders::@6890427a1f51a3e7e1df"
+			"id" : "ppgso::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 3,
-			"id" : "ppgso::@6890427a1f51a3e7e1df"
+			"id" : "shaders::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "project::@6890427a1f51a3e7e1df",
@@ -236,9 +234,7 @@
 				26,
 				28,
 				30,
-				32,
-				34,
-				36
+				32
 			]
 		},
 		{
@@ -259,9 +255,7 @@
 				24,
 				27,
 				29,
-				31,
-				33,
-				35
+				31
 			]
 		}
 	],
@@ -442,28 +436,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/objects/stone.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/objects/fireFly.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/objects/fireFly.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/InstancedMesh.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "src/InstancedMesh.h",
 			"sourceGroupIndex" : 1
 		},
 		{
