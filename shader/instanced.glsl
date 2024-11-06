@@ -5,11 +5,12 @@ layout(location = 2) in vec3 instancePosition; // New instance position input
 
 uniform mat4 ProjectionMatrix;
 uniform mat4 ViewMatrix;
+uniform mat4 ModelMatrix;
 
 out vec2 texCoord;
 
 void main() {
     texCoord = TexCoord;
     // Add instance position to vertex position
-    gl_Position = ProjectionMatrix * ViewMatrix * vec4(Position + instancePosition, 1.0);
+    gl_Position = ProjectionMatrix * ViewMatrix * ModelMatrix * vec4(Position + instancePosition, 1.0);
 }

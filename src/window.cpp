@@ -66,8 +66,8 @@ private:
 
 		//todo
 		scene.objects.push_back(std::make_unique<Bee>());
-		scene.objects.push_back(std::make_unique<GrassPatch>());
-		// scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
+		// scene.objects.push_back(std::make_unique<GrassPatch>());
+		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
 
 		auto tree = std::make_unique<Tree>(); //generate texture
 		for (int i = 0 ; i < 50; i++) { //generate and add 100 tree instances
