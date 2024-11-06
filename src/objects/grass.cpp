@@ -129,11 +129,12 @@ public:
   void generateInstances() {
     instancePositions.resize(INSTANCE_COUNT);
     std::default_random_engine generator;
-    std::uniform_real_distribution<float> distribution(-1.0f, 1.0f);
+    std::uniform_real_distribution<float> distribution_x(3.0f, 5.0f); //distribution for the x direction
+    std::uniform_real_distribution<float> distribution_z(0.0f, 2.0f); //distribution for the z direction
 
     // Generate random positions for each instance
     for (int i = 0; i < INSTANCE_COUNT; ++i) {
-      glm::vec3 randomPos{0.0 ,distribution(generator)*10,  distribution(generator)/5};
+      glm::vec3 randomPos{0.0 ,distribution_x(generator)*10,  distribution_z(generator)/5};
       instancePositions[i] = randomPos;
     }
 
