@@ -1,21 +1,15 @@
-#version 330
-// The inputs will be fed by the vertex buffer objects
+#version 330 core
 layout(location = 0) in vec3 Position;
 layout(location = 1) in vec2 TexCoord;
-layout(location = 3) in mat4 instanceMatrix;
+layout(location = 2) in vec3 instancePosition; // New instance position input
 
-// Matrices as program attributes
 uniform mat4 ProjectionMatrix;
 uniform mat4 ViewMatrix;
-uniform mat4 ModelMatrix;
 
-// This will be passed to the fragment shader
 out vec2 texCoord;
 
 void main() {
-  // Copy the input to the fragment shader
-  texCoord = TexCoord;
-
-  // Calculate the final position on screen
-  gl_Position = ProjectionMatrix * ViewMatrix * instanceMatrix * vec4(Position, 1.0);
+    texCoord = TexCoord;
+    // Add instance position to vertex position
+    gl_Position = ProjectionMatrix * ViewMatrix * vec4(Position + instancePosition, 1.0);
 }

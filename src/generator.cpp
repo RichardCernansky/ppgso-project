@@ -66,7 +66,7 @@ void addGrassPatches(Scene &scene, glm::vec3 initControlPoints[4][4]) {
         float offsetZ = (static_cast<float>(rand()) / RAND_MAX) * 0.4f - 0.2f;
 
         // Create a new GrassPatch with the initial control points
-        auto grass = std::make_unique<GrassPatch>(initControlPoints);
+        auto grass = std::make_unique<GrassPatch>();
         // Set its position to the default position plus the random offset
         grass->position += glm::vec3(offsetX, offsetY, offsetZ);
 
