@@ -15,8 +15,9 @@ private:
 
 public:
     glm::vec3 position{10, 0, -6};
-    glm::vec3 scale{0.03, 0.03, 0.03};
-    float radius = 0.4f;
+    glm::vec3 scale{0.04, 0.04, 0.04};
+    float radius = 20*scale.x;
+
 
     Stone();
     bool update(float dTime, Scene &scene) override;

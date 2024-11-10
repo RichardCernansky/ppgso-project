@@ -33,7 +33,7 @@ public:
     bool isFalling = false;
     float respawnTime  = 0.0f;
     float elapsedTime = 0.0f;
-    float radius = 0.2f;
+    float radius = scale.x;
 
     Stone* stone = nullptr;
 

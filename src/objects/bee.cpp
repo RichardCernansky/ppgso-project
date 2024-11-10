@@ -30,7 +30,7 @@ Bee::Bee() {
     // Define waypoints for the bee's flight path with both position and rotation
     waypoints = {
         {{1.0f, 0.5f, 2.0f}, {0.0f, 0.0f, 0.0f}},
-{{0.0f, 1.0f, 1.5f}, {0.0f, 90.0f, 0.0f}},
+        {{0.0f, 1.0f, 1.5f}, {0.0f, 90.0f, 0.0f}},
         {{0.0f, 1.0f, 0.0f}, {0.0f, 180.0f, 0.0f}},       // Position and rotation
         {{1.0f, 1.5f, 0.5f}, {0.0f, 80.0f, 0.0f}},
         {{2.0f, 1.0f, 1.0f}, {0.0f, 0.0f, 0.0f}}

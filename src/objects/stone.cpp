@@ -38,15 +38,17 @@ bool Stone::update(float dTime, Scene &scene) {
 }
 
 void Stone::render(Scene &scene) {
-
     // Use the shader program
     scene.shader->use();
 
+    glActiveTexture(GL_TEXTURE0);
+    texture->bind();
     // Set shader uniforms
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
-    scene.shader->setUniform("Texture", *texture);
+    scene.shader->setUniform("Texture", 0);      // Set the sampler to texture unit 0
 
+    // Render the mesh
     mesh->render();
 }

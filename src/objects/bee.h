@@ -11,7 +11,7 @@ private:
     // Struct to represent each waypoint with position and rotation
     struct Keyframe {
         glm::vec3 position;
-        glm::vec3 rotation;  // Rotation angles in degrees (yaw, pitch, roll)
+        glm::vec3 rotation;
     };
 
     // Static resources shared among all instances of Bee

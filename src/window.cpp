@@ -122,8 +122,6 @@ private:
 	void scene1_init() // scene 1
 	{
 		initBase();
-
-     	//toto sem absolutne nepotrebujeme
 	}
 
 public:
@@ -187,7 +185,7 @@ public:
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		auto quadViewMatrix = glm::mat4{1.0f};
-		quadViewMatrix = glm::lookAt(glm::vec3{0.0f, 0.0f, -1.0f}, scene.camera->help - glm::vec3{0.0f, 1.0f, -1.0f}, {0.0f, -1.0f, 0.0f});
+		quadViewMatrix = glm::lookAt(glm::vec3{0.0f, 0.0f, -1.0f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec3{0.0f, -1.0f, -1.0f});
 
 		// Animate rotation of the quad
 		auto quadModelMatrix = glm::mat4{1.0f};
@@ -210,48 +208,8 @@ public:
 		float dTime = (float)glfwGetTime() - time;
 		time = (float)glfwGetTime();
 
-		// update
 		scene.update(dTime);
-
 		scene.render();
 		buffer_show();
 	}
-
-	void onKey(int key, int scanCode, int action, int mods) override {
-		if (action == GLFW_PRESS || action == GLFW_REPEAT)  // Handle both press and hold
-		{
-			//halo pome
-			switch (scanCode) {
-				case 124: // Right arrow
-					scene.camera->turn_right = true;
-				break;
-
-				case 123: // Left arrow
-					scene.camera->turn_left = true;
-				break;
-
-				case 126: // Up arrow (Go player)
-					scene.camera->go_player = true;
-				break;
-			}
-		}
-
-		if (action == GLFW_RELEASE)  // Handle key release
-		{
-			switch (scanCode) {
-				case 124: // Right arrow release
-					scene.camera->turn_right = false;
-				break;
-
-				case 123: // Left arrow release
-					scene.camera->turn_left = false;
-				break;
-
-				case 126: // Up arrow release
-					scene.camera->go_player = false;
-				break;
-			}
-		}
-	}
-
 };

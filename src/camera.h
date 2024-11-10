@@ -11,74 +11,83 @@
 class Camera
 {
 public:
-	glm::mat4 perspective;
-	glm::mat4 viewMatrix{1.0f};
+    glm::mat4 perspective;
+    glm::mat4 viewMatrix{1.0f};
 
-	glm::vec3 position{0.01f, 0.2f, 0.01};
-	glm::vec3 front{0.5f, 0.0f, -1.0f};
-	glm::vec3 up{0.0f, 1.0f, 0.0f};
-	glm::vec3 help{0.0f, 1.0f, 0.0f};
+    glm::vec3 position{0.01f, 0.2f, 0.01f};
+    glm::vec3 front{0.0f, 0.0f, -1.0f};
+    glm::vec3 up{0.0f, 1.0f, 0.0f};
 
+    struct Keyframe {
+        glm::vec3 position;
+        glm::vec3 eulerAngles;
+        float duration;
+    };
 
-	float speed = 0.1f;
-	float sensitivity = 0.05f;
+    size_t currentKeyframeIndex = 0;
+    float currentTime = 0.0f;
 
-	bool go_player = false;
-	bool turn_right = false;
-	bool turn_left = false;
+    std::vector<Keyframe> keyframes = {
+        {{1.0f, 0.5f, 2.0f}, {0.0f, 0.0f, 0.0f}, 1.0f},
+        {{0.0f, 1.0f, 1.5f}, {0.0f, 90.0f, 0.0f}, 1.5f},
+        {{0.0f, 1.0f, 0.0f}, {0.0f, 180.0f, 0.0f}, 2.0f},
+        {{1.0f, 1.5f, 0.5f}, {0.0f, 80.0f, 0.0f}, 1.2f},
+        {{2.0f, 1.0f, 1.0f}, {0.0f, 0.0f, 0.0f}, 1.0f}
+    };
 
-	/// Representaiton of
-	/// \param fov - Field of view (in degrees)
-	/// \param ratio - Viewport ratio (width/height)
-	/// \param near - Distance of the near clipping plane
-	/// \param far - Distance of the far clipping plane
-	Camera(float fov = 45.0f, float ratio = 1.0f, float near = 0.1f, float far = 10.0f)
-	{
-		perspective = glm::perspective((ppgso::PI / 180.f) * fov, ratio, near, far);
-	}
+    // Constructor
+    Camera(float fov = 45.0f, float ratio = 1.0f, float near = 0.1f, float far = 10.0f)
+    {
+        perspective = glm::perspective(glm::radians(fov), ratio, near, far);
+    }
 
+    void update(float deltaTime) {
+        if (currentKeyframeIndex >= keyframes.size() - 1) {
+            Keyframe& lastFrame = keyframes.back();
+            position = lastFrame.position;
+            glm::vec3 eulerAnglesRad = glm::radians(lastFrame.eulerAngles);
+            glm::quat orientation = glm::quat(eulerAnglesRad);
+            front = orientation * glm::vec3(0.0f, 0.0f, -1.0f);
+            viewMatrix = glm::lookAt(position, position + front, up);
+            return;
+        }
 
-	void update(glm::vec3 player_position)
-	{
-		// Handle forward movement.
-		if (go_player)
-		{
-			position += front * speed;
-		}
+        Keyframe& startFrame = keyframes[currentKeyframeIndex];
+        Keyframe& endFrame = keyframes[currentKeyframeIndex + 1];
 
+        // Update current time
+        currentTime += deltaTime;
 
-		// Handle left/right rotation.
-		if (turn_right)
-		{
-			float angle = -sensitivity;  // Rotate right.
-			rotateCamera(angle);
-			rotateCamera(angle);
+        // Calculate interpolation factor t
+        float t = currentTime / startFrame.duration;
+        t = glm::clamp(t, 0.0f, 1.0f);
 
-		}
+        // Interpolate position
+        position = glm::mix(startFrame.position, endFrame.position, t);
 
-		if (turn_left)
-		{
-			float angle = sensitivity;   // Rotate left.
-			rotateCamera(angle);
-		}
+        // Convert Euler angles to radians
+        glm::vec3 startEulerRad = glm::radians(startFrame.eulerAngles);
+        glm::vec3 endEulerRad = glm::radians(endFrame.eulerAngles);
 
-		// Update view matrix to reflect the new position and direction.
-		viewMatrix = glm::lookAt(position, position + front, up);
+        // Convert Euler angles to quaternions
+        glm::quat startQuat = glm::quat(startEulerRad);
+        glm::quat endQuat = glm::quat(endEulerRad);
 
-		go_player = false;
-		turn_right = false;
-		turn_left = false;
-	}
+        // Interpolate quaternions
+        glm::quat interpolatedQuat = glm::slerp(startQuat, endQuat, t);
 
-private:
-	void rotateCamera(float angle)
-	{
-		// Rotate the 'front' vector around the 'up' axis.
-		glm::mat4 rotation = glm::rotate(glm::mat4(1.0f), angle, up);
-		front = glm::vec3(rotation * glm::vec4(front, 0.0f));  // Apply rotation to 'front'.
-		front = glm::normalize(front);  // Ensure 'front' remains normalized.
-	}
+        // Update front vector
+        front = interpolatedQuat * glm::vec3(0.0f, 0.0f, -1.0f);
+
+        // Update view matrix
+        viewMatrix = glm::lookAt(position, position + front, up);
+
+        // If duration reached, move to next keyframe
+        if (currentTime >= startFrame.duration) {
+            currentTime = 0.0f;
+            currentKeyframeIndex++;
+        }
+    }
 };
-
 
 #endif

@@ -4,9 +4,9 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -DGLEW_STATIC -DGLM_FORCE_RADIANS
 
-CXX_INCLUDES = -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+CXX_INCLUDES = -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 
-CXX_FLAGSarm64 = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics
+CXX_FLAGSarm64 = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
 
-CXX_FLAGS = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics
+CXX_FLAGS = -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
 

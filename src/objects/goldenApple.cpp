@@ -44,77 +44,102 @@ bool GoldenApple::update(float dTime, Scene &scene) {
 bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) {
     dt = dTime;
 
-    // Handle the state of the apple: falling or waiting to respawn
     if (isFalling) {
-        // Falling phase
+        // Apply gravity and wind forces
         glm::vec3 gravity_force = glm::vec3(0.0f, -gravity * mass, 0.0f);
         glm::vec3 total_force = gravity_force + wind_force;
 
+        // Update acceleration, velocity, and position
         acceleration = total_force / mass;
         velocity += acceleration * dt;
         position += velocity * dt;
 
-        // position of the apple
-        for (auto &obj : scene.objects) {
-            stone = dynamic_cast<Stone*>(obj.get());
-        }
+        // Update the model matrix to get the current world position
+        glm::mat4 localModelMatrix = glm::translate(glm::mat4(1.0f), position);
+        localModelMatrix = glm::scale(localModelMatrix, scale);
+        modelMatrix = ParentModelMatrix * localModelMatrix;
 
-        //convert it into world position
-        glm::vec4 localPos = glm::vec4(position, 1.0f);
-        glm::vec4 worldPos = modelMatrix * localPos;
+        glm::vec4 worldPos = modelMatrix * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
         glm::vec3 globalPosition = glm::vec3(worldPos);
 
-        //calculate the difference between the apple and the rock
-        glm::vec3 diff = globalPosition - stone->position;
-        float distance = glm::length(diff);
-        float combinedRadius = radius + stone->radius;
+        // Iterate through all stones in the scene and handle collisions
+        for (auto &obj : scene.objects) {
+            Stone* stone = dynamic_cast<Stone*>(obj.get());
+            if (stone) {
+                // Calculate the vector between apple and stone
+                glm::vec3 diff = globalPosition - stone->position;
+                float distance = glm::length(diff);
+                float combinedRadius = radius + stone->radius;
 
-        //if they are touching
-        if (distance < combinedRadius) {
-            // Physics calculations for collision
-            glm::vec3 collisionNormal = glm::normalize(position - stone->position);
-            float perpendicularVelocity = glm::dot(velocity, collisionNormal);
-            glm::vec3 perpendicularComponent = perpendicularVelocity * collisionNormal;
-            glm::vec3 parallelComponent = velocity - perpendicularComponent;
+                // Check for collision
+                if (distance < combinedRadius) {
+                    // Normalize the collision normal
+                    glm::vec3 collisionNormal = glm::normalize(diff);
 
-            // Reduce the bounce effect by using a lower restitution for the perpendicular component
-            float bounceRestitution = restitution * 0.7f;  // Lower than the original restitution
-            perpendicularComponent = -perpendicularComponent * bounceRestitution;
+                    // Calculate relative velocity
+                    glm::vec3 relativeVelocity = velocity*0.2f;
 
-            // Apply gravity and friction along the surface for sliding effect
-            glm::vec3 gravityAlongSurface = gravity * collisionNormal;
-            parallelComponent += gravityAlongSurface * 0.1f;  // Control sliding effect
-            float friction = 0.98f;  // Friction for sliding resistance
-            parallelComponent *= friction;
-            velocity = perpendicularComponent + parallelComponent;
-            position = stone->position + collisionNormal * combinedRadius;
+                    // Calculate velocity along the normal
+                    float velocityAlongNormal = glm::dot(relativeVelocity, collisionNormal);
 
-            //revert the position back to local
-            glm::vec3 referencePosition{10.0f, 0.0f, -5.0f};
-            position = position - referencePosition;
+                    // If velocities are separating, do not resolve
+                    if (velocityAlongNormal > 0)
+                        continue;
+
+                    // Calculate restitution
+                    float e = restitution;
+
+                    // Calculate impulse scalar
+                    float j = -(1.0f + e) * velocityAlongNormal;;
+
+                    // Apply impulse
+                    glm::vec3 impulse = j * collisionNormal;
+                    velocity += impulse / mass;
+                    // Positional correction to prevent sinking
+                    const float percent = 0.8f; // Penetration percentage to correct
+                    const float slop = 0.01f;   // Penetration allowance
+                    float penetration = combinedRadius - distance;
+                    float correctionMagnitude = std::max(penetration - slop, 0.0f) / (1.0f / mass) * percent;
+                    glm::vec3 correction = correctionMagnitude * collisionNormal;
+                    position += correction / mass;;
+
+                    // Optional: Apply friction
+                    glm::vec3 tangent = relativeVelocity - (glm::dot(relativeVelocity, collisionNormal) * collisionNormal);
+                    if (glm::length(tangent) > 0.0001f)
+                        tangent = glm::normalize(tangent);
+
+                    // Calculate friction scalar
+                    float mu = 0.5f; // Friction coefficient
+                    float jt = -glm::dot(relativeVelocity, tangent);
+
+                    // Clamp friction impulse
+                    float frictionImpulseMagnitude = (std::abs(jt) < j * mu) ? jt : -j * mu;
+                    glm::vec3 frictionImpulse = frictionImpulseMagnitude * tangent;
+
+                    // Apply friction impulse
+                    velocity += frictionImpulse / mass;
+                }
+            }
         }
 
-
+        // Ground collision handling
         if (position.y < 0.1f) {
-            position.y = 0.1f + abs(velocity.y * 0.01f);
+            position.y = 0.1f + std::abs(velocity.y * 0.01f);
             float variedRestitution = restitution * randomFloat(0.9f, 1.1f);
             velocity.y = -velocity.y * variedRestitution;
             float dampingFactor = 0.98f;
             velocity *= dampingFactor;
 
-            if (abs(velocity.y) < 0.1f) {
+            if (std::abs(velocity.y) < 0.1f) {
                 isFalling = false;
                 respawnTime = randomFloat(1.0f, 2.0f);  // Random delay between 1 and 2 seconds
                 elapsedTime = 0.0f;  // Reset elapsed time for the respawn delay
 
                 position = constructorPosition;
-                velocity = glm::vec3(0, 0, 0);
-                acceleration = glm::vec3(0, 0, 0);
+                velocity = glm::vec3(0.0f);
+                acceleration = glm::vec3(0.0f);
             }
         }
-
-
-
 
     } else {
         // Waiting for respawn
@@ -126,11 +151,9 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
         }
     }
 
-    // Update the model matrix
+    // Update the model matrix after position changes
     glm::mat4 localModelMatrix = glm::translate(glm::mat4(1.0f), position);
     localModelMatrix = glm::scale(localModelMatrix, scale);
-
-    // Combine with parent's model matrix
     modelMatrix = ParentModelMatrix * localModelMatrix;
 
     return true;

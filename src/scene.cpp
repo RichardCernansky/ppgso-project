@@ -22,12 +22,6 @@ public:
 	std::vector<glm::vec3> light_positions;
 	int LIGHT_COUNT = 3;
 
-	// player
-	bool jump = false;
-	bool move_left = false;
-	bool move_right = false;
-	glm::vec3 player_position{0, 0, 0};
-
 	float Dtime;
 
 	// update function
@@ -44,18 +38,17 @@ public:
 			else
 				++i;
 		}
+
+		camera->update(Dtime);
 	}
 
 	// render function
 	void render()
 	{
-
 		for (auto &object : objects)
 		{
 			object->render(*this);
 		}
-
-		camera->update(player_position);
 	}
 };
 

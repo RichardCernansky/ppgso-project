@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project
+CMAKE_SOURCE_DIR = /Users/brunokristian/Documents/skola/ppgso-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/shaders.dir/depend.make
@@ -69,65 +69,65 @@ include CMakeFiles/shaders.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/shaders.dir/flags.make
 
-shaders/color_vert_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/color_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/color_vert.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.h -DSYMBOL=color_vert_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/color_vert.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/color_vert_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/color_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/color_vert.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.h -DSYMBOL=color_vert_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/color_vert.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/color_vert_glsl.h: shaders/color_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/color_vert_glsl.h
 
-shaders/color_frag_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/color_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/color_frag.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.h -DSYMBOL=color_frag_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/color_frag.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/color_frag_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/color_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/color_frag.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.h -DSYMBOL=color_frag_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/color_frag.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/color_frag_glsl.h: shaders/color_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/color_frag_glsl.h
 
-shaders/convolution_vert_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/convolution_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/convolution_vert.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.h -DSYMBOL=convolution_vert_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/convolution_vert.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/convolution_vert_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/convolution_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/convolution_vert.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.h -DSYMBOL=convolution_vert_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/convolution_vert.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/convolution_vert_glsl.h: shaders/convolution_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/convolution_vert_glsl.h
 
-shaders/convolution_frag_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/convolution_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/convolution_frag.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.h -DSYMBOL=convolution_frag_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/convolution_frag.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/convolution_frag_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/convolution_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/convolution_frag.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.h -DSYMBOL=convolution_frag_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/convolution_frag.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/convolution_frag_glsl.h: shaders/convolution_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/convolution_frag_glsl.h
 
-shaders/diffuse_vert_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/diffuse_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/diffuse_vert.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.h -DSYMBOL=diffuse_vert_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/diffuse_vert.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/diffuse_vert_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/diffuse_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/diffuse_vert.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.h -DSYMBOL=diffuse_vert_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/diffuse_vert.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/diffuse_vert_glsl.h: shaders/diffuse_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/diffuse_vert_glsl.h
 
-shaders/diffuse_frag_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/diffuse_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/diffuse_frag.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.h -DSYMBOL=diffuse_frag_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/diffuse_frag.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/diffuse_frag_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/diffuse_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/diffuse_frag.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.h -DSYMBOL=diffuse_frag_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/diffuse_frag.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/diffuse_frag_glsl.h: shaders/diffuse_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/diffuse_frag_glsl.h
 
-shaders/texture_vert_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/texture_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/texture_vert.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h -DSYMBOL=texture_vert_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/texture_vert.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/texture_vert_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/texture_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/texture_vert.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h -DSYMBOL=texture_vert_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/texture_vert.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/texture_vert_glsl.h: shaders/texture_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/texture_vert_glsl.h
 
-shaders/texture_frag_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/texture_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/texture_frag.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h -DSYMBOL=texture_frag_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/texture_frag.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/texture_frag_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/texture_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/texture_frag.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h -DSYMBOL=texture_frag_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/texture_frag.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/texture_frag_glsl.h: shaders/texture_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/texture_frag_glsl.h
 
-shaders/instanced_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/instanced.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/instanced.glsl"
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.h -DSYMBOL=instanced_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/instanced.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+shaders/instanced_glsl.cpp: /Users/brunokristian/Documents/skola/ppgso-project/shader/instanced.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating resource from /Users/brunokristian/Documents/skola/ppgso-project/shader/instanced.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp -DOUTPUT_H=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/instanced_glsl.h -DSYMBOL=instanced_glsl -DINPUT_FILE=/Users/brunokristian/Documents/skola/ppgso-project/shader/instanced.glsl -P /Users/brunokristian/Documents/skola/ppgso-project/cmake/bin2c.cmake
 
 shaders/instanced_glsl.h: shaders/instanced_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/instanced_glsl.h
@@ -135,128 +135,128 @@ shaders/instanced_glsl.h: shaders/instanced_glsl.cpp
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o: shaders/color_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o: shaders/color_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o: shaders/convolution_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o: shaders/convolution_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o: shaders/diffuse_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o: shaders/diffuse_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o: shaders/texture_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o: shaders/texture_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp > CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o: shaders/instanced_glsl.cpp
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp > CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp > CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.i
 
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp -o CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp -o CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.s
 
 # Object files for target shaders
 shaders_OBJECTS = \
@@ -284,7 +284,7 @@ libshaders.a: CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o
 libshaders.a: CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o
 libshaders.a: CMakeFiles/shaders.dir/build.make
 libshaders.a: CMakeFiles/shaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libshaders.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libshaders.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/shaders.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shaders.dir/link.txt --verbose=$(VERBOSE)
 
@@ -314,6 +314,6 @@ CMakeFiles/shaders.dir/depend: shaders/texture_frag_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/texture_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/texture_vert_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/texture_vert_glsl.h
-	cd /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/richardcernansky/Desktop/PPGSO/ppgso-project /Users/richardcernansky/Desktop/PPGSO/ppgso-project /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/shaders.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/brunokristian/Documents/skola/ppgso-project /Users/brunokristian/Documents/skola/ppgso-project /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles/shaders.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/shaders.dir/depend
 
