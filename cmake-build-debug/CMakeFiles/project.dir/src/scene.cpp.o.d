@@ -1114,6 +1114,21 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtc/../vector_relational.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../common.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/../gtc/constants.hpp \
+  /opt/homebrew/include/glm/gtx/../ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/./ext/quaternion_exponential.inl \
+  /opt/homebrew/include/glm/gtx/../gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/../geometric.hpp \
+  /opt/homebrew/include/glm/gtx/../gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/../gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/../detail/setup.hpp \
+  /opt/homebrew/include/glm/gtx/../detail/qualifier.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
+  /opt/homebrew/include/glm/gtx/../ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/./ext/scalar_common.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /Users/brunokristian/Documents/skola/ppgso-project/ppgso/ppgso.h \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/../ext/scalar_int_sized.hpp \

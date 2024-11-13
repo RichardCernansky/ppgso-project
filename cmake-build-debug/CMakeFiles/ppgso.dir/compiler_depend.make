@@ -8585,10 +8585,12 @@ CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: /Users/brunokristian/Documents/skola
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -8745,17 +8747,30 @@ CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: /Users/brunokristian/Documents/skola
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -9843,10 +9858,12 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -9941,6 +9958,11 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/common.hpp \
   /opt/homebrew/include/glm/detail/qualifier.hpp \
@@ -9997,6 +10019,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/vec3.hpp \
   /opt/homebrew/include/glm/vec4.hpp \
   /opt/homebrew/include/glm/vector_relational.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/constants.inl \
   /opt/homebrew/include/glm/gtc/epsilon.hpp \
   /opt/homebrew/include/glm/gtc/epsilon.inl \
@@ -10006,15 +10029,22 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/gtc/quaternion.inl \
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/gtx/transform.hpp \
   /opt/homebrew/include/glm/gtx/transform.inl \
   /opt/homebrew/include/glm/integer.hpp \
@@ -10116,9 +10146,21 @@ shaders/texture_frag_glsl.h:
 
 /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp:
 
+/opt/homebrew/include/glm/gtx/component_wise.inl:
+
 /opt/homebrew/include/glm/gtx/compatibility.inl:
 
+/opt/homebrew/include/glm/gtx/quaternion.hpp:
+
+/opt/homebrew/include/glm/gtx/component_wise.hpp:
+
+/opt/homebrew/include/glm/ext/scalar_common.hpp:
+
 /opt/homebrew/include/glm/gtc/random.inl:
+
+/opt/homebrew/include/glm/ext/scalar_common.inl:
+
+/opt/homebrew/include/glm/ext/quaternion_exponential.inl:
 
 /opt/homebrew/include/glm/gtx/euler_angles.inl:
 
@@ -10133,6 +10175,8 @@ shaders/texture_frag_glsl.h:
 /opt/homebrew/include/GLFW/glfw3.h:
 
 /Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.cpp:
+
+/opt/homebrew/include/glm/gtx/quaternion.inl:
 
 /opt/homebrew/include/glm/packing.hpp:
 
@@ -10890,6 +10934,8 @@ shaders/texture_frag_glsl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/stdio.h:
 
+/opt/homebrew/include/glm/gtx/norm.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
@@ -10971,6 +11017,8 @@ shaders/texture_frag_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h:
+
+/opt/homebrew/include/glm/ext/quaternion_exponential.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_copy.h:
 
@@ -11341,6 +11389,8 @@ shaders/texture_frag_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/copyable.h:
+
+/opt/homebrew/include/glm/gtx/norm.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
 

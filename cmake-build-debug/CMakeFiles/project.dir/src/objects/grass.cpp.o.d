@@ -1239,4 +1239,19 @@ CMakeFiles/project.dir/src/objects/grass.cpp.o: \
   /opt/homebrew/include/glm/gtx/../mat3x3.hpp \
   /opt/homebrew/include/glm/gtx/../vec2.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
-  /opt/homebrew/include/glm/gtx/../trigonometric.hpp
+  /opt/homebrew/include/glm/gtx/../trigonometric.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/../gtc/constants.hpp \
+  /opt/homebrew/include/glm/gtx/../ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/./ext/quaternion_exponential.inl \
+  /opt/homebrew/include/glm/gtx/../gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/../geometric.hpp \
+  /opt/homebrew/include/glm/gtx/../gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/../gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/../detail/setup.hpp \
+  /opt/homebrew/include/glm/gtx/../detail/qualifier.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
+  /opt/homebrew/include/glm/gtx/../ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/./ext/scalar_common.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.inl

@@ -8,7 +8,7 @@ std::unique_ptr<ppgso::Texture> Particles::texture;
 
 Particles::Particles() {
     if (!texture) {
-        auto image = ppgso::image::loadBMP("rock.bmp");
+        auto image = ppgso::image::loadBMP("grey.bmp");
         if (image.width == 0 || image.height == 0) {
             std::cerr << "Failed to load texture: grey.bmp" << std::endl;
             return;
@@ -17,7 +17,7 @@ Particles::Particles() {
     }
 
     if (!mesh) {
-        mesh = std::make_unique<ppgso::Mesh>("sphere.obj");  // Load the sphere model
+        mesh = std::make_unique<ppgso::Mesh>("particles.obj");  // Load the sphere model
         if (!mesh) {
             std::cerr << "Failed to load mesh: sphere.obj" << std::endl;
         }

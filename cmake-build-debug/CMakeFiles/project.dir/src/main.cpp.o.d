@@ -1190,6 +1190,21 @@ CMakeFiles/project.dir/src/main.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/bee.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/../gtc/constants.hpp \
+  /opt/homebrew/include/glm/gtx/../ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/./ext/quaternion_exponential.inl \
+  /opt/homebrew/include/glm/gtx/../gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/../geometric.hpp \
+  /opt/homebrew/include/glm/gtx/../gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/../gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/../detail/setup.hpp \
+  /opt/homebrew/include/glm/gtx/../detail/qualifier.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
+  /opt/homebrew/include/glm/gtx/../ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/./ext/scalar_common.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \

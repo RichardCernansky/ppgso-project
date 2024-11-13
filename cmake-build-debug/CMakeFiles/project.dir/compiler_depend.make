@@ -1071,10 +1071,12 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/brunokristian/Documents/skola
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -1169,6 +1171,11 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/brunokristian/Documents/skola
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/common.hpp \
   /opt/homebrew/include/glm/detail/qualifier.hpp \
@@ -1225,6 +1232,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/brunokristian/Documents/skola
   /opt/homebrew/include/glm/vec3.hpp \
   /opt/homebrew/include/glm/vec4.hpp \
   /opt/homebrew/include/glm/vector_relational.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/constants.inl \
   /opt/homebrew/include/glm/gtc/epsilon.hpp \
   /opt/homebrew/include/glm/gtc/epsilon.inl \
@@ -1234,15 +1242,22 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/brunokristian/Documents/skola
   /opt/homebrew/include/glm/gtc/quaternion.inl \
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/gtx/transform.hpp \
   /opt/homebrew/include/glm/gtx/transform.inl \
   /opt/homebrew/include/glm/integer.hpp \
@@ -2333,10 +2348,12 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -2431,6 +2448,11 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/common.hpp \
   /opt/homebrew/include/glm/detail/qualifier.hpp \
@@ -2487,6 +2509,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/vec3.hpp \
   /opt/homebrew/include/glm/vec4.hpp \
   /opt/homebrew/include/glm/vector_relational.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/constants.inl \
   /opt/homebrew/include/glm/gtc/epsilon.hpp \
   /opt/homebrew/include/glm/gtc/epsilon.inl \
@@ -2496,15 +2519,22 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /opt/homebrew/include/glm/gtc/quaternion.inl \
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/gtx/transform.hpp \
   /opt/homebrew/include/glm/gtx/transform.inl \
   /opt/homebrew/include/glm/integer.hpp \
@@ -3527,10 +3557,12 @@ CMakeFiles/project.dir/src/objects/AppleTree.cpp.o: /Users/brunokristian/Documen
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -3687,17 +3719,30 @@ CMakeFiles/project.dir/src/objects/AppleTree.cpp.o: /Users/brunokristian/Documen
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -4718,10 +4763,12 @@ CMakeFiles/project.dir/src/objects/apple.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -4878,17 +4925,30 @@ CMakeFiles/project.dir/src/objects/apple.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -5908,10 +5968,12 @@ CMakeFiles/project.dir/src/objects/fire.cpp.o: /Users/brunokristian/Documents/sk
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -6068,17 +6130,30 @@ CMakeFiles/project.dir/src/objects/fire.cpp.o: /Users/brunokristian/Documents/sk
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -7099,10 +7174,12 @@ CMakeFiles/project.dir/src/objects/gas.cpp.o: /Users/brunokristian/Documents/sko
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -7259,17 +7336,30 @@ CMakeFiles/project.dir/src/objects/gas.cpp.o: /Users/brunokristian/Documents/sko
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -8292,10 +8382,12 @@ CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: /Users/brunokristian/Docum
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -8452,17 +8544,30 @@ CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: /Users/brunokristian/Docum
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -9531,10 +9636,12 @@ CMakeFiles/project.dir/src/objects/grass.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -9691,18 +9798,31 @@ CMakeFiles/project.dir/src/objects/grass.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/gtx/transform.hpp \
   /opt/homebrew/include/glm/gtx/transform.inl \
   /opt/homebrew/include/glm/integer.hpp \
@@ -10723,10 +10843,12 @@ CMakeFiles/project.dir/src/objects/ground.cpp.o: /Users/brunokristian/Documents/
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -10883,17 +11005,30 @@ CMakeFiles/project.dir/src/objects/ground.cpp.o: /Users/brunokristian/Documents/
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -11914,10 +12049,12 @@ CMakeFiles/project.dir/src/objects/horseFly.cpp.o: /Users/brunokristian/Document
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -12074,17 +12211,30 @@ CMakeFiles/project.dir/src/objects/horseFly.cpp.o: /Users/brunokristian/Document
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -13105,10 +13255,12 @@ CMakeFiles/project.dir/src/objects/particles.cpp.o: /Users/brunokristian/Documen
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -13265,17 +13417,30 @@ CMakeFiles/project.dir/src/objects/particles.cpp.o: /Users/brunokristian/Documen
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -14345,10 +14510,12 @@ CMakeFiles/project.dir/src/objects/pig.cpp.o: /Users/brunokristian/Documents/sko
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -14505,17 +14672,30 @@ CMakeFiles/project.dir/src/objects/pig.cpp.o: /Users/brunokristian/Documents/sko
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -15535,10 +15715,12 @@ CMakeFiles/project.dir/src/objects/smoke.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -15695,17 +15877,30 @@ CMakeFiles/project.dir/src/objects/smoke.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -16726,10 +16921,12 @@ CMakeFiles/project.dir/src/objects/stone.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -16886,17 +17083,30 @@ CMakeFiles/project.dir/src/objects/stone.cpp.o: /Users/brunokristian/Documents/s
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -17916,10 +18126,12 @@ CMakeFiles/project.dir/src/objects/tree.cpp.o: /Users/brunokristian/Documents/sk
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -18076,17 +18288,30 @@ CMakeFiles/project.dir/src/objects/tree.cpp.o: /Users/brunokristian/Documents/sk
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -19109,10 +19334,12 @@ CMakeFiles/project.dir/src/objects/wolf.cpp.o: /Users/brunokristian/Documents/sk
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -19269,17 +19496,30 @@ CMakeFiles/project.dir/src/objects/wolf.cpp.o: /Users/brunokristian/Documents/sk
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -20297,10 +20537,12 @@ CMakeFiles/project.dir/src/scene.cpp.o: /Users/brunokristian/Documents/skola/ppg
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -20395,6 +20637,11 @@ CMakeFiles/project.dir/src/scene.cpp.o: /Users/brunokristian/Documents/skola/ppg
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/common.hpp \
   /opt/homebrew/include/glm/detail/qualifier.hpp \
@@ -20451,6 +20698,7 @@ CMakeFiles/project.dir/src/scene.cpp.o: /Users/brunokristian/Documents/skola/ppg
   /opt/homebrew/include/glm/vec3.hpp \
   /opt/homebrew/include/glm/vec4.hpp \
   /opt/homebrew/include/glm/vector_relational.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/constants.inl \
   /opt/homebrew/include/glm/gtc/epsilon.hpp \
   /opt/homebrew/include/glm/gtc/epsilon.inl \
@@ -20459,15 +20707,22 @@ CMakeFiles/project.dir/src/scene.cpp.o: /Users/brunokristian/Documents/skola/ppg
   /opt/homebrew/include/glm/gtc/quaternion.inl \
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/integer.hpp \
   /opt/homebrew/include/glm/mat2x2.hpp \
   /opt/homebrew/include/glm/mat2x3.hpp \
@@ -21555,10 +21810,12 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
   /opt/homebrew/include/glm/ext/matrix_projection.inl \
   /opt/homebrew/include/glm/ext/matrix_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_common.inl \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.inl \
   /opt/homebrew/include/glm/ext/quaternion_geometric.inl \
   /opt/homebrew/include/glm/ext/quaternion_relational.inl \
   /opt/homebrew/include/glm/ext/quaternion_transform.inl \
   /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl \
+  /opt/homebrew/include/glm/ext/scalar_common.inl \
   /opt/homebrew/include/glm/ext/scalar_constants.hpp \
   /opt/homebrew/include/glm/ext/scalar_constants.inl \
   /opt/homebrew/include/glm/ext/vector_bool2.hpp \
@@ -21653,6 +21910,11 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
   /opt/homebrew/include/glm/gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtc/random.hpp \
   /opt/homebrew/include/glm/gtc/type_ptr.hpp \
+  /opt/homebrew/include/glm/detail/qualifier.hpp \
+  /opt/homebrew/include/glm/detail/setup.hpp \
+  /opt/homebrew/include/glm/ext/quaternion_exponential.hpp \
+  /opt/homebrew/include/glm/ext/scalar_common.hpp \
+  /opt/homebrew/include/glm/geometric.hpp \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/common.hpp \
   /opt/homebrew/include/glm/detail/qualifier.hpp \
@@ -21709,6 +21971,7 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
   /opt/homebrew/include/glm/vec3.hpp \
   /opt/homebrew/include/glm/vec4.hpp \
   /opt/homebrew/include/glm/vector_relational.hpp \
+  /opt/homebrew/include/glm/gtc/constants.hpp \
   /opt/homebrew/include/glm/gtc/constants.inl \
   /opt/homebrew/include/glm/gtc/epsilon.hpp \
   /opt/homebrew/include/glm/gtc/epsilon.inl \
@@ -21718,15 +21981,22 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
   /opt/homebrew/include/glm/gtc/quaternion.inl \
   /opt/homebrew/include/glm/gtc/random.inl \
   /opt/homebrew/include/glm/gtc/type_ptr.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.hpp \
+  /opt/homebrew/include/glm/gtx/norm.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
   /opt/homebrew/include/glm/mat3x3.hpp \
   /opt/homebrew/include/glm/trigonometric.hpp \
   /opt/homebrew/include/glm/vec2.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.hpp \
   /opt/homebrew/include/glm/gtx/compatibility.inl \
+  /opt/homebrew/include/glm/gtx/component_wise.inl \
   /opt/homebrew/include/glm/gtx/euler_angles.hpp \
   /opt/homebrew/include/glm/gtx/euler_angles.inl \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp \
   /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl \
+  /opt/homebrew/include/glm/gtx/norm.inl \
+  /opt/homebrew/include/glm/gtx/quaternion.hpp \
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
   /opt/homebrew/include/glm/gtx/transform.hpp \
   /opt/homebrew/include/glm/gtx/transform.inl \
   /opt/homebrew/include/glm/integer.hpp \
@@ -21756,17 +22026,25 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
 
 /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.cpp:
 
-/opt/homebrew/include/glm/packing.hpp:
-
 /opt/homebrew/include/glm/integer.hpp:
 
 /opt/homebrew/include/glm/gtx/transform.hpp:
+
+/opt/homebrew/include/glm/packing.hpp:
+
+/opt/homebrew/include/glm/gtx/quaternion.inl:
 
 /opt/homebrew/include/glm/gtx/matrix_transform_2d.inl:
 
 /opt/homebrew/include/glm/gtx/matrix_transform_2d.hpp:
 
+/opt/homebrew/include/glm/gtx/component_wise.inl:
+
 /opt/homebrew/include/glm/gtx/compatibility.inl:
+
+/opt/homebrew/include/glm/gtx/quaternion.hpp:
+
+/opt/homebrew/include/glm/gtx/component_wise.hpp:
 
 /opt/homebrew/include/glm/gtc/type_ptr.inl:
 
@@ -21815,6 +22093,8 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
 /opt/homebrew/include/glm/ext/matrix_transform.hpp:
 
 /opt/homebrew/include/glm/ext/matrix_projection.hpp:
+
+/opt/homebrew/include/glm/ext/scalar_common.hpp:
 
 /opt/homebrew/include/glm/gtc/type_ptr.hpp:
 
@@ -21880,11 +22160,15 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
 
 /opt/homebrew/include/glm/ext/scalar_constants.inl:
 
+/opt/homebrew/include/glm/ext/scalar_common.inl:
+
 /opt/homebrew/include/glm/ext/quaternion_trigonometric.inl:
 
 /opt/homebrew/include/glm/ext/quaternion_relational.inl:
 
 /opt/homebrew/include/glm/ext/quaternion_geometric.inl:
+
+/opt/homebrew/include/glm/ext/quaternion_exponential.inl:
 
 /opt/homebrew/include/glm/ext/matrix_transform.inl:
 
@@ -22470,6 +22754,8 @@ shaders/texture_frag_glsl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_array.h:
 
+/opt/homebrew/include/glm/gtx/norm.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/class_or_enum.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
@@ -22539,6 +22825,8 @@ shaders/texture_frag_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/alignment_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
+
+/opt/homebrew/include/glm/ext/quaternion_exponential.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_copy.h:
 
@@ -23043,6 +23331,8 @@ shaders/texture_frag_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/copyable.h:
+
+/opt/homebrew/include/glm/gtx/norm.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
 
