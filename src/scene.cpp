@@ -12,6 +12,9 @@ public:
 	// list of objects
 	std::list<std::unique_ptr<Renderable>> objects;
 
+
+
+
 	// camera
 	std::unique_ptr<Camera> camera;
 
@@ -42,14 +45,50 @@ public:
 		camera->update(Dtime);
 	}
 
+	template <typename T>
+	auto checkTransparency(T* object) -> decltype(object->isTransparent(), bool()) {
+		return object->isTransparent();
+	}
+
+	// Fallback helper function if isTransparent() does not exist
+	template <typename T>
+	bool checkTransparency(...) {
+		return false; // Default to opaque
+	}
+
 	// render function
 	void render()
 	{
-		for (auto &object : objects)
-		{
+		// Temporary lists holding raw pointers to Renderable objects
+		std::list<Renderable*> transparentObjects;
+		std::list<Renderable*> opaqueObjects;
+
+		// Categorize objects without transferring ownership
+		for (const auto &object : objects) {
+			if (checkTransparency(object.get())) {
+				transparentObjects.push_back(object.get());
+			} else {
+				opaqueObjects.push_back(object.get());
+			}
+		}
+
+		// Render opaque objects first
+		for (const auto &object : opaqueObjects) {
+			object->render(*this);
+		}
+
+		// Sort transparent objects by depth from the camera (furthest first)
+		glm::vec3 cameraPosition = camera->position;
+		transparentObjects.sort([cameraPosition](const Renderable* a, const Renderable* b) {
+			return a->calculateDepthFromCamera(cameraPosition) > b->calculateDepthFromCamera(cameraPosition);
+		});
+
+		// Render transparent objects in sorted order
+		for (const auto &object : transparentObjects) {
 			object->render(*this);
 		}
 	}
+
 };
 
 #endif

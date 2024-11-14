@@ -27,9 +27,15 @@ public:
     }
 
 	virtual bool isTransparent() const { return false; }
+
 	const glm::vec3& getPosition() const {
     	return position;
     }
+
+	virtual float calculateDepthFromCamera(const glm::vec3& cameraPosition) const {
+    	return 0.0f;
+    }
+
 
 
 };

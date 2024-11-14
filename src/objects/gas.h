@@ -14,10 +14,16 @@ public:
     std::vector<std::unique_ptr<Renderable>> children;
     glm::vec3 position{0, 0, -0.7};
     glm::vec3 scale{0.008, 0.008, 0.008};
+    float transparency = 0.5f;
+
 
     Gas();
 
     bool update(float dTime, Scene &scene) override;
     bool update_child(float dTime, Scene &scene, glm::mat4 ParetModelMatrix) override;
     void render(Scene &scene) override;
+    bool isTransparent() const override;
+    glm::vec3 getGlobalPosition() const;
+
+    float calculateDepthFromCamera(const glm::vec3& cameraPosition) const override;
 };

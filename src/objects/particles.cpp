@@ -45,6 +45,20 @@ void Particles::reset() {
     transparency = 0.5f;
 }
 
+bool Particles::isTransparent() const {
+    return transparency < 1.0f;
+}
+
+glm::vec3 Particles::getGlobalPosition() const {
+    return glm::vec3(modelMatrix[3].x, modelMatrix[3].y, modelMatrix[3].z);
+}
+
+float Particles::calculateDepthFromCamera(const glm::vec3& cameraPosition) const {
+    glm::vec3 globalPosition = getGlobalPosition();
+    return glm::length(cameraPosition - globalPosition);
+}
+
+
 // Update method for each particle (child update)
 bool Particles::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
 

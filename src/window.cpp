@@ -114,8 +114,6 @@ private:
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
 		scene.shader = std::move(shader);
-
-
 	}
 
 

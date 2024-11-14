@@ -31,6 +31,9 @@ public:
     bool update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix);
     void render(Scene &scene) override;
     void reset();
+    bool isTransparent() const override;
+    glm::vec3 getGlobalPosition() const;
+    float calculateDepthFromCamera(const glm::vec3& cameraPosition) const override;
 };
 
 #endif // PARTICLES_H

@@ -23,6 +23,19 @@ Gas::Gas(){
     }
 }
 
+bool Gas::isTransparent() const {
+    return transparency < 1.0f;
+}
+
+glm::vec3 Gas::getGlobalPosition() const {
+    return glm::vec3(modelMatrix[3].x, modelMatrix[3].y, modelMatrix[3].z);
+}
+
+float Gas::calculateDepthFromCamera(const glm::vec3& cameraPosition) const {
+    glm::vec3 globalPosition = getGlobalPosition();
+    return glm::length(cameraPosition - globalPosition);
+}
+
 // Update method
 bool Gas::update(float dTime, Scene &scene) {
     return true;
@@ -39,14 +52,12 @@ bool Gas::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
     for (auto& child : children) {
         child->update_child(dTime,scene, modelMatrix);
     }
-    modelMatrix = glm::scale(modelMatrix, scale);         // Apply Gas's local scale
+    modelMatrix = glm::scale(modelMatrix, scale);
 
     return true;
 }
 
 void Gas::render(Scene &scene) {
-    float transparency = 0.05f; // Adjust as needed
-
     scene.shader->use();
 
     // Set shader uniforms
