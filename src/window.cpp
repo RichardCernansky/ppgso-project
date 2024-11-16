@@ -11,6 +11,7 @@
 //shaders
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
+// #include <shaders/phong_frag_glsl.h>
 //my files
 #include "objects/bee.h"
 #include "scene.cpp"
@@ -30,8 +31,6 @@
 #include "objects/wolf.h"
 #include "objects/grass.cpp"
 #include "generator.h"
-
-
 
 class ProjectWindow : public ppgso::Window
 {
@@ -113,6 +112,7 @@ private:
 
 		// Use basic texture shader (no lighting)
 		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
+		GLuint lightUBO = set_up_lights(scene.shader->getProgram());
 		scene.shader = std::move(shader);
 	}
 

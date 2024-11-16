@@ -88,13 +88,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/Darwin.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.29/Modules/SelectLibraryConfigurations.cmake"
-  "/Users/brunokristian/Documents/skola/ppgso-project/CMakeLists.txt"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/CMakeLists.txt"
   "CMakeFiles/3.29.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.6/CMakeSystem.cmake"
-  "/Users/brunokristian/Documents/skola/ppgso-project/cmake/FindGLEW.cmake"
-  "/Users/brunokristian/Documents/skola/ppgso-project/cmake/FindGLFW3.cmake"
-  "/Users/brunokristian/Documents/skola/ppgso-project/cmake/FindGLM.cmake"
-  "/Users/brunokristian/Documents/skola/ppgso-project/cmake/add_resources.cmake"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/FindGLEW.cmake"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/FindGLFW3.cmake"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/FindGLM.cmake"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/add_resources.cmake"
   )
 
 # The corresponding makefile is:

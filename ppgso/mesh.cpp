@@ -80,6 +80,9 @@ ppgso::Mesh::~Mesh() {
 
 void ppgso::Mesh::render() {
   for(auto& buffer : buffers) {
+
+
+
     // Draw object
     glBindVertexArray(buffer.vao);
     glDrawElements(GL_TRIANGLES, buffer.size, GL_UNSIGNED_INT, nullptr);

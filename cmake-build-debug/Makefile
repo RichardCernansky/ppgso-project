@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/brunokristian/Documents/skola/ppgso-project
+CMAKE_SOURCE_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

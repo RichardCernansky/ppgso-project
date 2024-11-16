@@ -1,224 +1,224 @@
 [
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp",
   "output": "CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/mesh.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/mesh.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/tiny_obj_loader.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/tiny_obj_loader.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/shader.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/shader.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/shader.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/shader.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/shader.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/image.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/image.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/image.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/image.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_bmp.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_bmp.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/image_bmp.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_raw.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/image_raw.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_raw.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_raw.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/image_raw.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/texture.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/texture.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/texture.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/texture.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/window.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/ppgso/window.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/ppgso/window.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/window.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/src/window.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/src/window.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp",
   "output": "CMakeFiles/ppgso.dir/src/window.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/ppgso.dir/src/objects/bee.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/bee.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/bee.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/ppgso.dir/src/objects/bee.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.cpp",
   "output": "CMakeFiles/ppgso.dir/src/objects/bee.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/main.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/main.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp",
   "output": "CMakeFiles/project.dir/src/main.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/window.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/window.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp",
   "output": "CMakeFiles/project.dir/src/window.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/scene.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/scene.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp",
   "output": "CMakeFiles/project.dir/src/scene.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/ground.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/ground.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp",
   "output": "CMakeFiles/project.dir/src/objects/ground.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/tree.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/tree.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.cpp",
   "output": "CMakeFiles/project.dir/src/objects/tree.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/generator.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/generator.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/generator.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/generator.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp",
   "output": "CMakeFiles/project.dir/src/generator.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/pig.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/pig.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.cpp",
   "output": "CMakeFiles/project.dir/src/objects/pig.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/gas.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/gas.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp",
   "output": "CMakeFiles/project.dir/src/objects/gas.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/horseFly.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/horseFly.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp",
   "output": "CMakeFiles/project.dir/src/objects/horseFly.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/apple.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/apple.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp",
   "output": "CMakeFiles/project.dir/src/objects/apple.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/AppleTree.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/AppleTree.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp",
   "output": "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/goldenApple.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/goldenApple.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp",
   "output": "CMakeFiles/project.dir/src/objects/goldenApple.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/fire.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/fire.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp",
   "output": "CMakeFiles/project.dir/src/objects/fire.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/smoke.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/smoke.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.cpp",
   "output": "CMakeFiles/project.dir/src/objects/smoke.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/particles.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/particles.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.cpp",
   "output": "CMakeFiles/project.dir/src/objects/particles.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/wolf.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/wolf.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.cpp",
   "output": "CMakeFiles/project.dir/src/objects/wolf.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/stone.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/stone.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp",
   "output": "CMakeFiles/project.dir/src/objects/stone.cpp.o"
 },
 {
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/grass.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp",
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -o CMakeFiles/project.dir/src/objects/grass.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp",
   "output": "CMakeFiles/project.dir/src/objects/grass.cpp.o"
 }
 ]

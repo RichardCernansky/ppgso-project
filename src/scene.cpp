@@ -12,9 +12,6 @@ public:
 	// list of objects
 	std::list<std::unique_ptr<Renderable>> objects;
 
-
-
-
 	// camera
 	std::unique_ptr<Camera> camera;
 
@@ -23,7 +20,7 @@ public:
 
 	// lights
 	std::vector<glm::vec3> light_positions;
-	int LIGHT_COUNT = 3;
+	int LIGHT_COUNT = 1;
 
 	float Dtime;
 

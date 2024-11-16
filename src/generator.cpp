@@ -55,23 +55,56 @@ glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& 
     return rotationMatrix;
 }
 
+// Define the Light struct
+struct Light {
+    glm::vec3 position;
+    float padding1;        // Padding for std140 alignment
+    glm::vec3 color;
+    float ambientStrength;
+    float diffuseStrength;
+    float specularStrength;
+    float padding2;        // Padding for std140 alignment
+};
 
-// void addGrassPatches(Scene &scene, glm::vec3 initControlPoints[4][4]) {
-//     srand(static_cast<unsigned int>(time(nullptr)));  // Seed for random number generation
-//
-//     for (int i = 0; i < 10; i++) {
-//         // Generate a random offset in the range of ±0.2
-//         float offsetX = (static_cast<float>(rand()) / RAND_MAX) * 0.4f - 0.2f;
-//         float offsetY = 0;
-//         float offsetZ = (static_cast<float>(rand()) / RAND_MAX) * 0.4f - 0.2f;
-//
-//         // Create a new GrassPatch with the initial control points
-//         auto grass = std::make_unique<GrassPatch>();
-//         // Set its position to the default position plus the random offset
-//         grass->position += glm::vec3(offsetX, offsetY, offsetZ);
-//
-//         // Add the grass object to the scene
-//         scene.objects.push_back(std::move(grass));
-//     }
-// }
+const int NUM_LIGHTS = 1; // Define the number of lights
+
+// Function to set up lights and create UBO, linking it to the shader
+GLuint set_up_lights(GLuint shaderProgram) {
+    // Create and initialize the UBO
+    GLuint lightUBO;
+    glGenBuffers(1, &lightUBO);
+    glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);
+    glBufferData(GL_UNIFORM_BUFFER, sizeof(Light) * NUM_LIGHTS, NULL, GL_STATIC_DRAW);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+    // Bind the UBO to binding point 0
+    glBindBufferBase(GL_UNIFORM_BUFFER, 0, lightUBO);
+
+    // Define and initialize the light array with example data
+    Light lights[NUM_LIGHTS];
+    for (int i = 0; i < NUM_LIGHTS; ++i) {
+        lights[i].position = glm::vec3(1.0f * i, 1.0f, 1.0f); // Example positions
+        lights[i].color = glm::vec3(1.0f, 0.8f, 0.6f);         // Example colors (warm light)
+        lights[i].ambientStrength = 0.2f;                     // Example ambient strength
+        lights[i].diffuseStrength = 0.8f;                     // Example diffuse strength
+        lights[i].specularStrength = 1.0f;                    // Example specular strength
+    }
+
+    // Upload the light data to the UBO
+    glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(Light) * NUM_LIGHTS, &lights);
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+    // Link the UBO to the shader program (scene.shader)
+    GLuint uniformBlockIndex = glGetUniformBlockIndex(shaderProgram, "LightBlock");
+    if (uniformBlockIndex == GL_INVALID_INDEX) {
+        std::cerr << "Error: LightBlock not found in shader program." << std::endl;
+    } else {
+        glUniformBlockBinding(shaderProgram, uniformBlockIndex, 0);
+    }
+
+    // Return the UBO ID for potential future updates
+    return lightUBO;
+}
+
 

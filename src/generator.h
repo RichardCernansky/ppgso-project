@@ -6,8 +6,7 @@
 
 #include <glm/glm.hpp>  // Include necessary glm headers for transformation matrices
 
-
 float randomFloat(float min, float max);
 glm::mat4 generateRandomTreeModelMatrix();
 glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& targetDirection);
-void addGrassPatches(Scene &scene, glm::vec3 initControlPoints[4][4]);
+GLuint set_up_lights(GLuint shaderProgram);
