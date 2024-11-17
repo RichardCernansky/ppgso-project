@@ -1,11 +1,12 @@
 #version 330 core
 
-#define NUM_LIGHTS 1
+#define NUM_LIGHTS 2  // Adjust to the number of lights you have
 
 // Inputs from the vertex shader
 in vec3 FragPos;
 in vec3 NormalInterp;
 in vec2 texCoord;
+in vec3 ViewPos;
 
 // Output color
 out vec4 FragmentColor;
@@ -19,6 +20,10 @@ struct Light {
     float diffuseStrength;
     float specularStrength;
     float padding2;        // Padding for std140 alignment
+    vec3 direction;        // Direction for spotlight
+    float cutoffAngle;     // Spotlight cutoff angle (in degrees)
+    int flag;              // 0 for non-spotlight, 1 for spotlight
+    float padding3;        // Padding to maintain alignment
 };
 
 // Uniform block with a fixed-size array of light sources
@@ -27,7 +32,6 @@ layout(std140) uniform LightBlock {
 };
 
 // Uniforms for camera/view position and texture sampler
-uniform vec3 viewPos;
 uniform sampler2D Texture;
 uniform float Transparency;
 uniform vec2 TextureOffset;
@@ -49,21 +53,42 @@ void main() {
     // Normalize the normal vector
     vec3 norm = normalize(NormalInterp);
 
-    // Iterate over each light source (only one in this case)
+    // Iterate over each light source
     for (int i = 0; i < NUM_LIGHTS; ++i) {
         // Ambient component
         ambient += lights[i].ambientStrength * lights[i].color;
 
-        // Diffuse component
+        // Calculate the light direction
         vec3 lightDir = normalize(lights[i].position - FragPos);
         float diff = max(dot(norm, lightDir), 0.0);
-        diffuse += lights[i].diffuseStrength * diff * lights[i].color;
 
-        // Specular component
-        vec3 viewDir = normalize(viewPos - FragPos);
-        vec3 reflectDir = reflect(-lightDir, norm);
-        float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
-        specular += lights[i].specularStrength * spec * lights[i].color;
+        // Check if the light is a spotlight
+        if (lights[i].flag == 1) {
+            // Spotlight calculations
+            float theta = dot(lightDir, normalize(-lights[i].direction));
+            float epsilon = cos(radians(lights[i].cutoffAngle));
+
+            // Implement spotlight intensity falloff
+            if (theta > epsilon) {
+                float intensity = smoothstep(epsilon, 1.0, theta);
+                diffuse += intensity * lights[i].diffuseStrength * diff * lights[i].color;
+
+                // Specular component
+                vec3 viewDir = normalize(ViewPos - FragPos);
+                vec3 reflectDir = reflect(-lightDir, norm);
+                float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
+                specular += intensity * lights[i].specularStrength * spec * lights[i].color;
+            }
+        } else {
+            // Non-spotlight light calculations
+            diffuse += lights[i].diffuseStrength * diff * lights[i].color;
+
+            // Specular component
+            vec3 viewDir = normalize(ViewPos - FragPos);
+            vec3 reflectDir = reflect(-lightDir, norm);
+            float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
+            specular += lights[i].specularStrength * spec * lights[i].color;
+        }
     }
 
     // Combine all lighting components and apply the texture color

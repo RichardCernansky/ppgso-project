@@ -20,7 +20,7 @@ class Apple final : public Renderable {
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 scale{0.1f, 0.1f, 0.1}; // Adjust as needed
+    glm::vec3 scale{0.05f, 0.05f, 0.05}; // Adjust as needed
     glm::vec3 position{0, 0, 0};
     glm::vec3 constructorPosition{0, 0, 0};
     glm::vec3 velocity{0.0f, 0.0f, 0.0f};

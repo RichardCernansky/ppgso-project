@@ -15,6 +15,7 @@ public:
     glm::vec3 position{0, 0, 0};  // Position of the tree
     glm::vec3 scale{0.1f, 0.1f, 0.1f};  // Scale of the tree
     glm::mat4 modelMatrix{1.0f};
+    glm::mat4 childModelMatrix{1.0f};
 
     Tree();
 

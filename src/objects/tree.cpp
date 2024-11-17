@@ -14,16 +14,16 @@ Tree::Tree() {
         texture = std::make_unique<ppgso::Texture>(std::move(image));
     }
     if (!mesh) {
-        mesh = std::make_unique<ppgso::Mesh>("tree.obj");
+        mesh = std::make_unique<ppgso::Mesh>("pine_tree.obj");
         if (!mesh) {
-            std::cerr << "Failed to load mesh: tree.obj" << std::endl;
+            std::cerr << "Failed to load mesh: tree2.obj" << std::endl;
         }
     }
 }
 
 bool Tree::update(float dTime, Scene &scene) {
     for (auto& child : children) {
-        child->update_child(dTime,scene, modelMatrix);
+        child->update_child(dTime,scene, childModelMatrix);
     }
     return true;
 }

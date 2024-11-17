@@ -67,16 +67,18 @@ private:
 		scene.objects.push_back(std::make_unique<Bee>());
 		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
 
-		auto tree = std::make_unique<Tree>(); //generate texture
-		for (int i = 0 ; i < 50; i++) {
-			auto tree_instance = std::make_unique<Tree>();
-			for (int i = 0; i < 3; i++) { //generate and add 4 apple instances to the single tree
-				auto apple = std::make_unique<Apple>();
-				tree_instance->children.push_back(std::move(apple));
-			}
-			tree_instance->modelMatrix = generateRandomTreeModelMatrix();
-			scene.objects.push_back(std::move(tree_instance));
-		}
+		// auto tree = std::make_unique<Tree>(); //generate texture
+		// for (int i = 0 ; i < 50; i++) {
+		// 	auto tree_instance = std::make_unique<Tree>();
+		// 	for (int i = 0; i < 3; i++) { //generate and add 4 apple instances to the single tree
+		// 		auto apple = std::make_unique<Apple>();
+		// 		tree_instance->children.push_back(std::move(apple));
+		// 	}
+		// 	std::pair<glm::mat4, glm::mat4> tree_matrices = generateRandomTreeModelMatrix();
+		// 	tree_instance->modelMatrix = tree_matrices.first;
+		// 	tree_instance->childModelMatrix = tree_matrices.second;
+		// 	scene.objects.push_back(std::move(tree_instance));
+		// }
 
 
 		auto tree_of_life = std::make_unique<AppleTree>();
