@@ -73,6 +73,7 @@ set(PPGSO_SHADER_SRC
         shader/texture_vert.glsl shader/texture_frag.glsl
         shader/instanced.glsl
         shader/phong_frag.glsl
+        shader/phong_vert.glsl
         )
 add_resources(shaders ${PPGSO_SHADER_SRC})
 

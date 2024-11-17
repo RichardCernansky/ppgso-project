@@ -1043,6 +1043,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/richardcernansky/Desktop/PPGS
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   shaders/instanced_glsl.h \
   shaders/phong_frag_glsl.h \
+  shaders/phong_vert_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -2465,6 +2466,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   shaders/instanced_glsl.h \
   shaders/phong_frag_glsl.h \
+  shaders/phong_vert_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -24185,6 +24187,7 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/p
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   shaders/instanced_glsl.h \
   shaders/phong_frag_glsl.h \
+  shaders/phong_vert_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -26528,6 +26531,8 @@ shaders/texture_vert_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/sys/_types/_sigset_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__algorithm/ranges_equal_range.h:
+
+shaders/phong_vert_glsl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__algorithm/ranges_contains.h:
 

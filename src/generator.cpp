@@ -36,7 +36,6 @@ glm::mat4 generateRandomTreeModelMatrix() {
     return model;
 }
 
-
 // function to create a rotation matrix to align forward direction to target direction
 glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& targetDirection) {
     // normalize the direction to make sure it is a unit vector
@@ -80,14 +79,14 @@ GLuint set_up_lights(GLuint shaderProgram) {
     // Bind the UBO to binding point 0
     glBindBufferBase(GL_UNIFORM_BUFFER, 0, lightUBO);
 
-    // Define and initialize the light array with example data
+    // Define and initialize the light array to simulate moonlight
     Light lights[NUM_LIGHTS];
     for (int i = 0; i < NUM_LIGHTS; ++i) {
-        lights[i].position = glm::vec3(1.0f * i, 1.0f, 1.0f); // Example positions
-        lights[i].color = glm::vec3(1.0f, 0.8f, 0.6f);         // Example colors (warm light)
-        lights[i].ambientStrength = 0.2f;                     // Example ambient strength
-        lights[i].diffuseStrength = 0.8f;                     // Example diffuse strength
-        lights[i].specularStrength = 1.0f;                    // Example specular strength
+        lights[i].position = glm::vec3(0.0f, 50.0f, 0.0f);  // High position to simulate the moon in the sky
+        lights[i].color = glm::vec3(0.6f, 0.6f, 0.8f);      // Cool light blue color for moonlight
+        lights[i].ambientStrength = 0.7f;                   // Low ambient strength for soft general illumination
+        lights[i].diffuseStrength = 0.7f;                   // Medium diffuse strength for realistic moonlight shading
+        lights[i].specularStrength = 0.5f;                  // Moderate specular for subtle highlights
     }
 
     // Upload the light data to the UBO
@@ -106,5 +105,6 @@ GLuint set_up_lights(GLuint shaderProgram) {
     // Return the UBO ID for potential future updates
     return lightUBO;
 }
+
 
 

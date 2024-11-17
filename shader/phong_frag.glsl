@@ -1,24 +1,24 @@
 #version 330 core
 
-// Define the number of lights
 #define NUM_LIGHTS 1
 
 // Inputs from the vertex shader
-in vec3 FragPos;       // Position of the fragment in world space
-in vec3 NormalInterp;  // Interpolated normal for lighting calculations
-in vec2 texCoord;      // Texture coordinates
+in vec3 FragPos;
+in vec3 NormalInterp;
+in vec2 texCoord;
 
 // Output color
 out vec4 FragmentColor;
 
-// Light source struct
+// Define the Light struct
 struct Light {
     vec3 position;
-    float ambientStrength; // Padding for std140 alignment
+    float padding1;        // Padding for std140 alignment
     vec3 color;
+    float ambientStrength;
     float diffuseStrength;
     float specularStrength;
-    float padding;         // Additional padding for std140 alignment
+    float padding2;        // Padding for std140 alignment
 };
 
 // Uniform block with a fixed-size array of light sources
@@ -27,17 +27,19 @@ layout(std140) uniform LightBlock {
 };
 
 // Uniforms for camera/view position and texture sampler
-uniform vec3 viewPos;             // Camera/view position
-uniform sampler2D texture1;       // Texture sampler
+uniform vec3 viewPos;
+uniform sampler2D Texture;
+uniform float Transparency;
+uniform vec2 TextureOffset;
 
-// Static material properties
-const vec3 materialDiffuse = vec3(1.0, 1.0, 1.0);    // Static diffuse color
-const vec3 materialSpecular = vec3(0.5, 0.5, 0.5);   // Static specular color
-const float materialShininess = 32.0;                // Static shininess factor
+// Material properties for ordinary objects
+const vec3 materialDiffuse = vec3(0.8, 0.3, 0.3);    // A reddish color for an apple
+const vec3 materialSpecular = vec3(0.5, 0.5, 0.5);   // Moderate specular reflection
+const float materialShininess = 16.0;                // Medium shininess for a smooth surface
 
 void main() {
-    // Sample the texture color
-    vec3 texColor = texture(texture1, texCoord).rgb;
+    // Sample the texture color with offset and vertical inversion for OBJ compatibility
+    vec3 texColor = texture(Texture, vec2(texCoord.x, 1.0 - texCoord.y) + TextureOffset).rgb;
 
     // Initialize lighting components
     vec3 ambient = vec3(0.0);
@@ -64,7 +66,9 @@ void main() {
         specular += lights[i].specularStrength * spec * lights[i].color;
     }
 
-    // Combine all lighting components
+    // Combine all lighting components and apply the texture color
     vec3 result = (ambient + diffuse + specular) * texColor;
-    FragmentColor = vec4(result, 1.0);
+
+    // Set the final color with transparency applied
+    FragmentColor = vec4(result, Transparency);
 }

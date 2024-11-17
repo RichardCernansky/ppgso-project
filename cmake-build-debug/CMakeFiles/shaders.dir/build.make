@@ -139,10 +139,17 @@ shaders/phong_frag_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project
 shaders/phong_frag_glsl.h: shaders/phong_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders/phong_frag_glsl.h
 
+shaders/phong_vert_glsl.cpp: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/phong_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating resource from /Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/phong_vert.glsl"
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DOUTPUT_C=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_vert_glsl.cpp -DOUTPUT_H=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_vert_glsl.h -DSYMBOL=phong_vert_glsl -DINPUT_FILE=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/shader/phong_vert.glsl -P /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake/bin2c.cmake
+
+shaders/phong_vert_glsl.h: shaders/phong_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders/phong_vert_glsl.h
+
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o: shaders/color_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i: cmake_force
@@ -156,7 +163,7 @@ CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o: shaders/color_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i: cmake_force
@@ -170,7 +177,7 @@ CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o: shaders/convolution_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i: cmake_force
@@ -184,7 +191,7 @@ CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o: shaders/convolution_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/convolution_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i: cmake_force
@@ -198,7 +205,7 @@ CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o: shaders/diffuse_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i: cmake_force
@@ -212,7 +219,7 @@ CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o: shaders/diffuse_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i: cmake_force
@@ -226,7 +233,7 @@ CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o: shaders/texture_vert_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i: cmake_force
@@ -240,7 +247,7 @@ CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o: shaders/texture_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i: cmake_force
@@ -254,7 +261,7 @@ CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o: shaders/instanced_glsl.cpp
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.i: cmake_force
@@ -268,7 +275,7 @@ CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o: shaders/phong_frag_glsl.cpp
 CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.i: cmake_force
@@ -278,6 +285,20 @@ CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.i: cmake_force
 CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_frag_glsl.cpp -o CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.s
+
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o: shaders/phong_vert_glsl.cpp
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o: CMakeFiles/shaders.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o -MF CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o.d -o CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_vert_glsl.cpp
+
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_vert_glsl.cpp > CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.i
+
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_vert_glsl.cpp -o CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.s
 
 # Object files for target shaders
 shaders_OBJECTS = \
@@ -290,7 +311,8 @@ shaders_OBJECTS = \
 "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o" \
 "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o" \
 "CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o" \
-"CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o"
+"CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o" \
+"CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o"
 
 # External object files for target shaders
 shaders_EXTERNAL_OBJECTS =
@@ -305,9 +327,10 @@ libshaders.a: CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o
 libshaders.a: CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o
 libshaders.a: CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o
 libshaders.a: CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o
+libshaders.a: CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.o
 libshaders.a: CMakeFiles/shaders.dir/build.make
 libshaders.a: CMakeFiles/shaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX static library libshaders.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libshaders.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/shaders.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shaders.dir/link.txt --verbose=$(VERBOSE)
 
@@ -335,6 +358,8 @@ CMakeFiles/shaders.dir/depend: shaders/instanced_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/instanced_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/phong_frag_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/phong_frag_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/phong_vert_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/phong_vert_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/texture_frag_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/texture_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/texture_vert_glsl.cpp

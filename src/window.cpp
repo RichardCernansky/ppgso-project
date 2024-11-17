@@ -12,6 +12,7 @@
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
 #include <shaders/phong_frag_glsl.h>
+#include <shaders/phong_vert_glsl.h>
 //my files
 #include "objects/bee.h"
 #include "scene.cpp"
@@ -38,7 +39,6 @@ private:
 	Scene scene;
 
 	// Objects to render the framebuffer on to
-	// ppgso::Shader quadShader = {convolution_vert_glsl, convolution_frag_glsl};
 	ppgso::Shader quadShader = {texture_vert_glsl, texture_frag_glsl};
 	ppgso::Mesh quadMesh = {"quad.obj"};
 	ppgso::Texture quadTexture = {1024, 1024};
@@ -65,13 +65,12 @@ private:
 
 		//todo
 		scene.objects.push_back(std::make_unique<Bee>());
-		// scene.objects.push_back(std::make_unique<GrassPatch>());
 		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
 
 		auto tree = std::make_unique<Tree>(); //generate texture
-		for (int i = 0 ; i < 50; i++) { //generate and add 100 tree instances
+		for (int i = 0 ; i < 50; i++) {
 			auto tree_instance = std::make_unique<Tree>();
-			for (int i = 0; i < 3; i++) { //generate and add 5 apple instances to the single tree
+			for (int i = 0; i < 3; i++) { //generate and add 4 apple instances to the single tree
 				auto apple = std::make_unique<Apple>();
 				tree_instance->children.push_back(std::move(apple));
 			}
@@ -106,13 +105,11 @@ private:
 		pig->children.push_back(std::move(gas1));
 		scene.objects.push_back(std::move(pig));
 
-
 		auto stone = std::make_unique<Stone>();
 		scene.objects.push_back(std::move(stone));
 
-		// Use basic texture shader (no lighting)
-		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, phong_frag_glsl);
-		GLuint lightUBO = set_up_lights(shader->getProgram());
+		auto shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
+		set_up_lights(shader->getProgram());
 		scene.shader = std::move(shader);
 	}
 

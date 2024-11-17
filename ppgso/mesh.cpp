@@ -83,9 +83,8 @@ void ppgso::Mesh::render() {
     // Bind the VAO for the current buffer
     glBindVertexArray(buffer.vao);
 
-    // Bind the normal buffer if needed (usually part of VAO state)
     glBindBuffer(GL_ARRAY_BUFFER, buffer.nbo);
-    glEnableVertexAttribArray(2); // Ensure the "Normal" attribute is enabled
+    glEnableVertexAttribArray(2);
 
     // Draw the elements using the bound VAO
     glDrawElements(GL_TRIANGLES, buffer.size, GL_UNSIGNED_INT, nullptr);
