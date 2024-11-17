@@ -1,9 +1,12 @@
 #version 330 core
 
+// Define the number of lights
+#define NUM_LIGHTS 1
+
 // Inputs from the vertex shader
-in vec3 FragPos;       // Fragment position in world space
-in vec3 Normal;        // Interpolated normal from the vertex shader
-in vec2 TexCoords;     // Texture coordinates
+in vec3 FragPos;       // Position of the fragment in world space
+in vec3 NormalInterp;  // Interpolated normal for lighting calculations
+in vec2 texCoord;      // Texture coordinates
 
 // Output color
 out vec4 FragmentColor;
@@ -18,9 +21,9 @@ struct Light {
     float padding;         // Additional padding for std140 alignment
 };
 
-// Uniform block to hold the array of light sources
+// Uniform block with a fixed-size array of light sources
 layout(std140) uniform LightBlock {
-    Light lights[]; // Access the data stored in the UBO
+    Light lights[NUM_LIGHTS]; // Fixed-size array for light sources
 };
 
 // Uniforms for camera/view position and texture sampler
@@ -34,7 +37,7 @@ const float materialShininess = 32.0;                // Static shininess factor
 
 void main() {
     // Sample the texture color
-    vec3 texColor = texture(texture1, TexCoords).rgb;
+    vec3 texColor = texture(texture1, texCoord).rgb;
 
     // Initialize lighting components
     vec3 ambient = vec3(0.0);
@@ -42,10 +45,10 @@ void main() {
     vec3 specular = vec3(0.0);
 
     // Normalize the normal vector
-    vec3 norm = normalize(Normal);
+    vec3 norm = normalize(NormalInterp);
 
-    // Iterate over each active light source
-    for (int i = 0; i < numActiveLights; ++i) {
+    // Iterate over each light source (only one in this case)
+    for (int i = 0; i < NUM_LIGHTS; ++i) {
         // Ambient component
         ambient += lights[i].ambientStrength * lights[i].color;
 
@@ -61,7 +64,7 @@ void main() {
         specular += lights[i].specularStrength * spec * lights[i].color;
     }
 
-    // Combine all lighting components using the provided equation
+    // Combine all lighting components
     vec3 result = (ambient + diffuse + specular) * texColor;
     FragmentColor = vec4(result, 1.0);
 }

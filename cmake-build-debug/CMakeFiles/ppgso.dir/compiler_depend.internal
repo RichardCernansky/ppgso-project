@@ -10857,6 +10857,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h
  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.h
+ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_frag_glsl.h
  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h
  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h
  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h

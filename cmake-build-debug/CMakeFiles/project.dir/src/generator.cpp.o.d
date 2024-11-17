@@ -1321,6 +1321,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: \
   /opt/homebrew/include/GLFW/glfw3.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_frag_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../camera.h \

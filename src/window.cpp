@@ -11,7 +11,7 @@
 //shaders
 #include <shaders/texture_vert_glsl.h>
 #include <shaders/texture_frag_glsl.h>
-// #include <shaders/phong_frag_glsl.h>
+#include <shaders/phong_frag_glsl.h>
 //my files
 #include "objects/bee.h"
 #include "scene.cpp"
@@ -111,8 +111,8 @@ private:
 		scene.objects.push_back(std::move(stone));
 
 		// Use basic texture shader (no lighting)
-		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
-		GLuint lightUBO = set_up_lights(scene.shader->getProgram());
+		auto shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, phong_frag_glsl);
+		GLuint lightUBO = set_up_lights(shader->getProgram());
 		scene.shader = std::move(shader);
 	}
 

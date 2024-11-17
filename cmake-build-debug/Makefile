@@ -560,6 +560,30 @@ shaders/instanced_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.s
 .PHONY : shaders/instanced_glsl.cpp.s
 
+shaders/phong_frag_glsl.o: shaders/phong_frag_glsl.cpp.o
+.PHONY : shaders/phong_frag_glsl.o
+
+# target to build an object file
+shaders/phong_frag_glsl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o
+.PHONY : shaders/phong_frag_glsl.cpp.o
+
+shaders/phong_frag_glsl.i: shaders/phong_frag_glsl.cpp.i
+.PHONY : shaders/phong_frag_glsl.i
+
+# target to preprocess a source file
+shaders/phong_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.i
+.PHONY : shaders/phong_frag_glsl.cpp.i
+
+shaders/phong_frag_glsl.s: shaders/phong_frag_glsl.cpp.s
+.PHONY : shaders/phong_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/phong_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.s
+.PHONY : shaders/phong_frag_glsl.cpp.s
+
 shaders/texture_frag_glsl.o: shaders/texture_frag_glsl.cpp.o
 .PHONY : shaders/texture_frag_glsl.o
 
@@ -1127,6 +1151,9 @@ help:
 	@echo "... shaders/instanced_glsl.o"
 	@echo "... shaders/instanced_glsl.i"
 	@echo "... shaders/instanced_glsl.s"
+	@echo "... shaders/phong_frag_glsl.o"
+	@echo "... shaders/phong_frag_glsl.i"
+	@echo "... shaders/phong_frag_glsl.s"
 	@echo "... shaders/texture_frag_glsl.o"
 	@echo "... shaders/texture_frag_glsl.i"
 	@echo "... shaders/texture_frag_glsl.s"

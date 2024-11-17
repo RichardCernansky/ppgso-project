@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp" "CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o" "gcc" "CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp" "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o" "gcc" "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp" "CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o" "gcc" "CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o.d"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_frag_glsl.cpp" "CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o" "gcc" "CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp" "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o" "gcc" "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp" "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o" "gcc" "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o.d"
   )
@@ -28,6 +29,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.h" "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_frag_glsl.cpp"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.h" "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/diffuse_vert_glsl.cpp"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.h" "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.cpp"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_frag_glsl.h" "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_frag_glsl.cpp"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.h" "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_frag_glsl.cpp"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.h" "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/texture_vert_glsl.cpp"
   )

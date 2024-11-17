@@ -10847,6 +10847,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   shaders/instanced_glsl.h \
+  shaders/phong_frag_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -13238,6 +13239,8 @@ shaders/texture_vert_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__algorithm/push_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__functional/unary_negate.h:
+
+shaders/phong_frag_glsl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/_types/_uintmax_t.h:
 
