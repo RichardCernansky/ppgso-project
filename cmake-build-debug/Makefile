@@ -920,6 +920,30 @@ src/objects/horseFly.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/horseFly.cpp.s
 .PHONY : src/objects/horseFly.cpp.s
 
+src/objects/lighthouse.o: src/objects/lighthouse.cpp.o
+.PHONY : src/objects/lighthouse.o
+
+# target to build an object file
+src/objects/lighthouse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/objects/lighthouse.cpp.o
+.PHONY : src/objects/lighthouse.cpp.o
+
+src/objects/lighthouse.i: src/objects/lighthouse.cpp.i
+.PHONY : src/objects/lighthouse.i
+
+# target to preprocess a source file
+src/objects/lighthouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/objects/lighthouse.cpp.i
+.PHONY : src/objects/lighthouse.cpp.i
+
+src/objects/lighthouse.s: src/objects/lighthouse.cpp.s
+.PHONY : src/objects/lighthouse.s
+
+# target to generate assembly for a file
+src/objects/lighthouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/objects/lighthouse.cpp.s
+.PHONY : src/objects/lighthouse.cpp.s
+
 src/objects/particles.o: src/objects/particles.cpp.o
 .PHONY : src/objects/particles.o
 
@@ -1220,6 +1244,9 @@ help:
 	@echo "... src/objects/horseFly.o"
 	@echo "... src/objects/horseFly.i"
 	@echo "... src/objects/horseFly.s"
+	@echo "... src/objects/lighthouse.o"
+	@echo "... src/objects/lighthouse.i"
+	@echo "... src/objects/lighthouse.s"
 	@echo "... src/objects/particles.o"
 	@echo "... src/objects/particles.i"
 	@echo "... src/objects/particles.s"

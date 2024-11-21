@@ -1,6 +1,6 @@
 #version 330 core
 
-#define NUM_LIGHTS 2  // Adjust to the number of lights you have
+#define NUM_LIGHTS 3  // Adjust to the number of lights you have
 
 // Inputs from the vertex shader
 in vec3 FragPos;
@@ -53,13 +53,37 @@ void main() {
     // Normalize the normal vector
     vec3 norm = normalize(NormalInterp);
 
-    // Iterate over each light source
+    // Spotlight attenuation factors
+    const float k_c = 1.0;  // Constant attenuation
+    const float k_l = 0.09; // Linear attenuation
+    const float k_q = 0.032; // Quadratic attenuation
+
+    // Visibility radius for the light source
+    const float lightSourceVisibilityRadius = 1.0;
+
+    // Check if the fragment is close to any light source
+    bool isLightSource = false;
+    vec3 lightSourceColor = vec3(0.0);
+
     for (int i = 0; i < NUM_LIGHTS; ++i) {
+        // Calculate distance between the fragment and the light source position
+        float distanceToLight = length(FragPos - lights[i].position);
+
+        // If the fragment is close to the light source, make it emit light
+        if (distanceToLight < lightSourceVisibilityRadius) {
+            isLightSource = true;
+            lightSourceColor = lights[i].color; // Use the light's color for the emission
+            break; // No need to check other lights
+        }
+
         // Ambient component
         ambient += lights[i].ambientStrength * lights[i].color;
 
-        // Calculate the light direction
+        // Calculate the light direction and distance
         vec3 lightDir = normalize(lights[i].position - FragPos);
+        float distance = length(lights[i].position - FragPos);
+        float attenuation = 1.0 / (k_c + k_l * distance + k_q * (distance * distance));
+
         float diff = max(dot(norm, lightDir), 0.0);
 
         // Check if the light is a spotlight
@@ -70,15 +94,28 @@ void main() {
 
             // Implement spotlight intensity falloff
             if (theta > epsilon) {
+                ambient = vec3(0.0);
+                diffuse = vec3(0.0);
+                specular = vec3(0.0);
                 float intensity = smoothstep(epsilon, 1.0, theta);
-                diffuse += intensity * lights[i].diffuseStrength * diff * lights[i].color;
+                diffuse += attenuation * intensity * lights[i].diffuseStrength * diff * lights[i].color;
 
                 // Specular component
-                vec3 viewDir = normalize(ViewPos - FragPos);
                 vec3 reflectDir = reflect(-lightDir, norm);
-                float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
-                specular += intensity * lights[i].specularStrength * spec * lights[i].color;
+                vec3 targetDir = normalize(FragPos - lights[i].position);
+                float spec = pow(max(dot(targetDir, reflectDir), 0.0), materialShininess);
+                specular += attenuation * intensity * lights[i].specularStrength * spec * lights[i].color;
+                break;
             }
+        } else if (lights[i].flag == 2) {
+            // Point light calculations with attenuation
+            diffuse += attenuation * lights[i].diffuseStrength * diff * lights[i].color;
+
+            // Specular component
+            vec3 viewDir = normalize(ViewPos - FragPos);
+            vec3 reflectDir = reflect(-lightDir, norm);
+            float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
+            specular += attenuation * lights[i].specularStrength * spec * lights[i].color;
         } else {
             // Non-spotlight light calculations
             diffuse += lights[i].diffuseStrength * diff * lights[i].color;
@@ -89,6 +126,12 @@ void main() {
             float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
             specular += lights[i].specularStrength * spec * lights[i].color;
         }
+    }
+
+    // If this fragment is part of the light source, make it emit light
+    if (isLightSource) {
+        FragmentColor = vec4(lightSourceColor, 1.0); // Emit the light source color
+        return; // Skip further lighting calculations
     }
 
     // Combine all lighting components and apply the texture color

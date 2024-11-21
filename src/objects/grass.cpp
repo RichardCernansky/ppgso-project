@@ -17,7 +17,7 @@
 #include "src/scene.cpp"
 #include "src/renderable.h"
 
-#define INSTANCE_COUNT 500
+#define INSTANCE_COUNT 30000
 
 
 // Object to represent Bezier patch
@@ -129,12 +129,20 @@ public:
   void generateInstances() {
     instancePositions.resize(INSTANCE_COUNT);
     std::default_random_engine generator;
-    std::uniform_real_distribution<float> distribution_x(3.0f, 5.0f); //distribution for the x direction
-    std::uniform_real_distribution<float> distribution_z(0.0f, 2.0f); //distribution for the z direction
 
-    // Generate random positions for each instance
+    // Distributions for x and z coordinates within the square
+    std::uniform_real_distribution<float> distribution_x(20.0f, 40.0f);
+    std::uniform_real_distribution<float> distribution_z(-20.0f, 20.0f);
+
+    // Generate random positions within the square
     for (int i = 0; i < INSTANCE_COUNT; ++i) {
-      glm::vec3 randomPos{0.0 ,distribution_x(generator)*10,  distribution_z(generator)/5};
+      // Randomly generate x and z within the range [-20, 20]
+      float x = distribution_x(generator);
+      float z = distribution_z(generator);
+      float y = 0.0f; // Assuming ground level
+
+      // Store the position
+      glm::vec3 randomPos{y, x, z};
       instancePositions[i] = randomPos;
     }
 
@@ -153,6 +161,7 @@ public:
 
     glBindVertexArray(0); // Unbind the VAO to prevent accidental changes
   }
+
 
 
   bool update(float dTime, Scene &scene) override  {

@@ -1071,6 +1071,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/richardcernansky/Desktop/PPGS
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/lighthouse.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.h \
@@ -2494,6 +2495,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/lighthouse.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.h \
@@ -24215,6 +24217,7 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/p
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/lighthouse.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.h \
@@ -26195,6 +26198,8 @@ shaders/instanced_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__atomic/fence.h:
 
 /opt/homebrew/include/glm/gtc/quaternion.hpp:
+
+/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/lighthouse.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__memory/ranges_construct_at.h:
 

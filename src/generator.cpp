@@ -7,26 +7,25 @@
 #include <random>
 #include "objects/tree.h"
 
-// Function to generate a random floating-point number in a given range [min, max]
+// Function to generate a random float between min and max
 float randomFloat(float min, float max) {
-    // Create a random number generator
-    static std::random_device rd;  // Seed for random number engine
-    static std::mt19937 gen(rd());  // Mersenne Twister engine for generating random numbers
-
-    // Create a uniform real distribution for floating-point numbers in the given range
-    std::uniform_real_distribution<float> dist(min, max);
-
-    // Return a random floating-point number in the range [min, max]
-    return dist(gen);
+    return min + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (max - min)));
 }
 
+// Generate a random tree position within a circular ring (radius between 30 and 40)
 std::pair<glm::mat4, glm::mat4> generateRandomTreeModelMatrix() {
-    // Generate random position for the tree
-    float x = randomFloat(-20.0f, 20.0f);
-    float z = randomFloat(-20.0f, 20.0f);
-    float y = 0.0f;
+    // Generate a random radius within the range 30 to 40
+    float radius = randomFloat(15.0f, 20.0f);
 
-    // Generate random scale for the tree
+    // Generate a random angle in radians
+    float angle = randomFloat(0.0f, 2.0f * M_PI);
+
+    // Compute random position within the circle
+    float x = radius * cos(angle);
+    float z = radius * sin(angle);
+    float y = 0.0f; // Assuming ground level
+
+    // Generate a random scale for the tree
     float scale = randomFloat(0.01f, 0.014f);
 
     // Create transformation matrices
@@ -35,7 +34,36 @@ std::pair<glm::mat4, glm::mat4> generateRandomTreeModelMatrix() {
 
     // Return as a pair
     return std::make_pair(model_tree, model_child);
-}// function to create a rotation matrix to align forward direction to target direction
+}
+
+std::pair<glm::mat4, glm::mat4> generateRandomTreeModelMatrixAlternative() {
+    // Center of the circle
+    glm::vec3 circleCenter = glm::vec3(-25.0f, 0.0f, -17.0f);
+
+    // Generate a random radius within the range 10 to 15
+    float radius = randomFloat(10.0f, 15.0f);
+
+    // Generate a random angle in radians
+    float angle = randomFloat(0.0f, 2.0f * M_PI);
+
+    // Compute random position within the circle
+    float x = circleCenter.x + radius * cos(angle);
+    float z = circleCenter.z + radius * sin(angle);
+    float y = circleCenter.y; // Assuming ground level
+
+    // Generate a random scale for the tree
+    float scale = randomFloat(0.01f, 0.014f);
+
+    // Create transformation matrices
+    glm::mat4 model_child = glm::translate(glm::mat4(1.0f), glm::vec3(x, y, z));
+    glm::mat4 model_tree = glm::scale(model_child, glm::vec3(scale, scale, scale));
+
+    // Return as a pair
+    return std::make_pair(model_tree, model_child);
+}
+
+
+
 glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& targetDirection) {
     // normalize the direction to make sure it is a unit vector
     glm::vec3 normalizedTarget = glm::normalize(targetDirection);
@@ -64,12 +92,12 @@ struct Light {
     float padding2;          // Padding for std140 alignment
     glm::vec3 direction;     // Direction for reflector lights
     float cutoffAngle;       // Spotlight cutoff angle in degrees
-    int flag;                // 0 for non-spotlight, 1 for spotlight
+    int flag;                // 0 for non-spotlight, 1 for spotlight, 2 for bodové svetlo
     float padding3;          // Padding to maintain alignment (std140)
 };
 
-// Update the number of lights to include the reflector light
-const int NUM_LIGHTS = 2; // Adjust as needed for multiple lights
+// Update the number of lights to include the new light type
+const int NUM_LIGHTS = 4; // Adjust for the new bodové svetlo light
 
 // Function to set up lights and create UBO, linking it to the shader
 GLuint set_up_lights(GLuint shaderProgram) {
@@ -83,28 +111,38 @@ GLuint set_up_lights(GLuint shaderProgram) {
     // Bind the UBO to binding point 0
     glBindBufferBase(GL_UNIFORM_BUFFER, 0, lightUBO);
 
-    // Define and initialize the light array to simulate moonlight and reflector light
+    // Define and initialize the light array
     Light lights[NUM_LIGHTS];
 
     // Moonlight setup (light 0)
     lights[0].position = glm::vec3(0.0f, 50.0f, 0.0f);  // High position to simulate the moon
     lights[0].color = glm::vec3(0.6f, 0.6f, 0.8f);      // Cool light blue color
-    lights[0].ambientStrength = 0.7f;
-    lights[0].diffuseStrength = 0.7f;
+    lights[0].ambientStrength = 0.9f;
+    lights[0].diffuseStrength = 0.5f;
     lights[0].specularStrength = 0.5f;
-    lights[0].direction = glm::vec3(0.0f, -1.0f, 0.0f); // Not relevant for non-reflector
+    lights[0].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // Not relevant for non-reflector
     lights[0].cutoffAngle = 180.0f;                     // Full spread (no cutoff)
     lights[0].flag = 0;                                 // Non-spotlight
 
     // Reflector light setup (light 1)
-    lights[1].position = glm::vec3(0.0f, 2.0f, -1.0f); // Position for reflector light
-    lights[1].color = glm::vec3(1.0f, 0.9f, 0.7f);      // Warm light color
-    lights[1].ambientStrength = 10.f;
-    lights[1].diffuseStrength = 100.0f;
-    lights[1].specularStrength = 10.f;
-    lights[1].direction = glm::vec3(0, -1.0f, -1); // Direction for reflector
-    lights[1].cutoffAngle = 30.0f;                       // Spotlight angle (in degrees)
-    lights[1].flag = 1;                                  // Spotlight
+    lights[1].position = glm::vec3(-5.0f, 4.0f, 5.0f);  // Position for reflector light
+    lights[1].color = glm::vec3(1.0f, 1.0f, 1.0f);      // Warm light color
+    lights[1].ambientStrength = 0.3f;
+    lights[1].diffuseStrength = .8f;
+    lights[1].specularStrength = 1.0f;
+    lights[1].direction = glm::vec3(0, -1.0f, 0.0f);   // Direction for reflector
+    lights[1].cutoffAngle = 70.0f;                      // Spotlight angle (in degrees)
+    lights[1].flag = 1;                                 // Spotlight
+
+    // Bodové svetlo (light 2)
+    // lights[2].position = glm::vec3(3.0f, 2.0f, 2.0f); // Position for bodové svetlo
+    // lights[2].color = glm::vec3(1.0f, 1.0f, 1.0f);       // Neutral white light
+    // lights[2].ambientStrength = 0.5f;
+    // lights[2].diffuseStrength = 1.f;
+    // lights[2].specularStrength = 1.f;
+    // lights[2].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // No specific direction for point light
+    // lights[2].cutoffAngle = 0.0f;                       // Not relevant for bodové svetlo
+    // lights[2].flag = 2;                                      // Flag for bodové svetlo
 
     // Upload the light data to the UBO
     glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);

@@ -1420,4 +1420,5 @@ CMakeFiles/project.dir/src/generator.cpp.o: \
   /opt/homebrew/include/glm/gtx/transform.hpp \
   /opt/homebrew/include/glm/gtx/../gtc/matrix_transform.hpp \
   /opt/homebrew/include/glm/gtx/transform.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/lighthouse.cpp

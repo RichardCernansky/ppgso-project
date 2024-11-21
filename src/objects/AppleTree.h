@@ -19,7 +19,7 @@ private:
 
 public:
     std::vector<std::unique_ptr<Renderable>> children;
-    glm::vec3 position{10, 0, -5};
+    glm::vec3 position{5, 0, 7.5};
     glm::vec3 scale{1, 1, 1};
 
     AppleTree();  // Constructor

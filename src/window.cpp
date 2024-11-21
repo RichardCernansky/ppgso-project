@@ -31,6 +31,7 @@
 #include "objects/stone.h"
 #include "objects/wolf.h"
 #include "objects/grass.cpp"
+#include "objects/lighthouse.cpp"
 #include "generator.h"
 
 class ProjectWindow : public ppgso::Window
@@ -63,22 +64,40 @@ private:
 
 		scene.objects.push_back(std::make_unique<Wolf>());
 
-		//todo
 		scene.objects.push_back(std::make_unique<Bee>());
 		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
 
-		// auto tree = std::make_unique<Tree>(); //generate texture
-		// for (int i = 0 ; i < 50; i++) {
-		// 	auto tree_instance = std::make_unique<Tree>();
-		// 	for (int i = 0; i < 3; i++) { //generate and add 4 apple instances to the single tree
-		// 		auto apple = std::make_unique<Apple>();
-		// 		tree_instance->children.push_back(std::move(apple));
-		// 	}
-		// 	std::pair<glm::mat4, glm::mat4> tree_matrices = generateRandomTreeModelMatrix();
-		// 	tree_instance->modelMatrix = tree_matrices.first;
-		// 	tree_instance->childModelMatrix = tree_matrices.second;
-		// 	scene.objects.push_back(std::move(tree_instance));
-		// }
+		//lighthouse
+		auto lighthouse = std::make_unique<Lighthouse>();
+		scene.objects.push_back(std::move(lighthouse));
+
+		auto tree = std::make_unique<Tree>(); //generate texture
+		for (int i = 0 ; i < 100; i++) {
+			auto tree_instance = std::make_unique<Tree>();
+			for (int i = 0; i < 3; i++) { //generate and add 4 apple instances to the single tree
+				auto apple = std::make_unique<Apple>();
+				tree_instance->children.push_back(std::move(apple));
+			}
+			std::pair<glm::mat4, glm::mat4> tree_matrices = generateRandomTreeModelMatrix();
+			tree_instance->modelMatrix = tree_matrices.first;
+			tree_instance->childModelMatrix = tree_matrices.second;
+			scene.objects.push_back(std::move(tree_instance));
+		}
+
+
+		for (int i = 0 ; i < 100; i++) {
+			auto tree_instance = std::make_unique<Tree>();
+			for (int i = 0; i < 3; i++) { //generate and add 4 apple instances to the single tree
+				auto apple = std::make_unique<Apple>();
+				tree_instance->children.push_back(std::move(apple));
+			}
+			std::pair<glm::mat4, glm::mat4> tree_matrices = generateRandomTreeModelMatrixAlternative();
+			tree_instance->modelMatrix = tree_matrices.first;
+			tree_instance->childModelMatrix = tree_matrices.second;
+			scene.objects.push_back(std::move(tree_instance));
+		}
+
+
 
 
 		auto tree_of_life = std::make_unique<AppleTree>();
@@ -100,12 +119,18 @@ private:
 
 
 		//create pig
-		auto pig = std::make_unique<Pig>();
+		auto pig1 = std::make_unique<Pig>();
+		auto pig2 = std::make_unique<Pig>();
+		auto pig3 = std::make_unique<Pig>();
+		auto pig4 = std::make_unique<Pig>();
 		auto gas1 = std::make_unique<Gas>();
 		auto horseFly = std::make_unique<HorseFly>();
 		gas1->children.push_back(std::move(horseFly));
-		pig->children.push_back(std::move(gas1));
-		scene.objects.push_back(std::move(pig));
+		pig1->children.push_back(std::move(gas1));
+		scene.objects.push_back(std::move(pig1));
+		scene.objects.push_back(std::move(pig2));
+		scene.objects.push_back(std::move(pig3));
+		scene.objects.push_back(std::move(pig4));
 
 		auto stone = std::make_unique<Stone>();
 		scene.objects.push_back(std::move(stone));

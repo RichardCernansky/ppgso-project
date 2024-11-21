@@ -90,6 +90,8 @@ add_library(ppgso STATIC
         src/window.cpp
         src/objects/bee.cpp
         src/objects/bee.h
+        src/objects/lighthouse.cpp
+        src/objects/lighthouse.h
 )
 
 # Make sure GLM uses radians and GLEW is a static library
