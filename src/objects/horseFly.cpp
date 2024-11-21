@@ -7,7 +7,7 @@ std::unique_ptr<ppgso::Texture> HorseFly::texture;
 // Constructor
 HorseFly::HorseFly() {
     if (!texture) {
-        auto image = ppgso::image::loadBMP("pink_prasa.bmp");  // Assuming a texture for boar
+        auto image = ppgso::image::loadBMP("bricks.bmp");  // Assuming a texture for boar
         if (image.width == 0 || image.height == 0) {
             std::cerr << "Failed to load texture: boar_texture.bmp" << std::endl;
             return;

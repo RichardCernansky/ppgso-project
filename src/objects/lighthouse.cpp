@@ -27,7 +27,7 @@ public:
             texture = std::make_unique<ppgso::Texture>(std::move(image));
         }
         if (!mesh)
-            mesh = std::make_unique<ppgso::Mesh>("LIGHTHOUSE1.obj");
+            mesh = std::make_unique<ppgso::Mesh>("lighthouse1.obj");
     }
 
     // Update the lighthouse's transformation matrix

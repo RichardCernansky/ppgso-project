@@ -59,7 +59,7 @@ void main() {
     const float k_q = 0.032; // Quadratic attenuation
 
     // Visibility radius for the light source
-    const float lightSourceVisibilityRadius = 1.0;
+    const float lightSourceVisibilityRadius = 0.5;
 
     // Check if the fragment is close to any light source
     bool isLightSource = false;
