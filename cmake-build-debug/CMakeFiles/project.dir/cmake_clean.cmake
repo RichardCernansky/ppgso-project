@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/src/main.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o"
   "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o.d"
+  "CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
+  "CMakeFiles/project.dir/src/objects/MySphere.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/apple.cpp.o"
   "CMakeFiles/project.dir/src/objects/apple.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/fire.cpp.o"

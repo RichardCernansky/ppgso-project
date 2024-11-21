@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp" "CMakeFiles/project.dir/src/generator.cpp.o" "gcc" "CMakeFiles/project.dir/src/generator.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp" "CMakeFiles/project.dir/src/main.cpp.o" "gcc" "CMakeFiles/project.dir/src/main.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp" "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o.d"
+  "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp" "CMakeFiles/project.dir/src/objects/MySphere.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/MySphere.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp" "CMakeFiles/project.dir/src/objects/apple.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/apple.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp" "CMakeFiles/project.dir/src/objects/fire.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/fire.cpp.o.d"
   "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp" "CMakeFiles/project.dir/src/objects/gas.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/gas.cpp.o.d"

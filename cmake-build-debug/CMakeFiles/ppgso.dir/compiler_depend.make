@@ -12213,6 +12213,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.h \
@@ -12596,6 +12597,8 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/weibull_distribution.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/shuffle_order_engine.h:
+
+/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/ranlux.h:
 

@@ -67,6 +67,12 @@
 },
 {
   "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics -o CMakeFiles/shaders.dir/shaders/point_frag_glsl.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/point_frag_glsl.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/point_frag_glsl.cpp",
+  "output": "CMakeFiles/shaders.dir/shaders/point_frag_glsl.cpp.o"
+},
+{
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics -o CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.cpp",
   "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/mesh.cpp",
   "output": "CMakeFiles/ppgso.dir/ppgso/mesh.cpp.o"
@@ -238,5 +244,11 @@
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/grass.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp",
   "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp",
   "output": "CMakeFiles/project.dir/src/objects/grass.cpp.o"
+},
+{
+  "directory": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project -I/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.7 -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/MySphere.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp",
+  "file": "/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp",
+  "output": "CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
 }
 ]

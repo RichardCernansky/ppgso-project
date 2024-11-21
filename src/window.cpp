@@ -32,6 +32,7 @@
 #include "objects/wolf.h"
 #include "objects/grass.cpp"
 #include "objects/lighthouse.cpp"
+#include "objects/MySphere.h"
 #include "generator.h"
 
 class ProjectWindow : public ppgso::Window
@@ -70,6 +71,8 @@ private:
 		//lighthouse
 		auto lighthouse = std::make_unique<Lighthouse>();
 		scene.objects.push_back(std::move(lighthouse));
+		auto sphere = std::make_unique<MySphere>();
+		scene.objects.push_back(std::move(sphere));
 
 		auto tree = std::make_unique<Tree>(); //generate texture
 		for (int i = 0 ; i < 100; i++) {
@@ -132,8 +135,14 @@ private:
 		scene.objects.push_back(std::move(pig3));
 		scene.objects.push_back(std::move(pig4));
 
-		auto stone = std::make_unique<Stone>();
-		scene.objects.push_back(std::move(stone));
+		auto stone1 = std::make_unique<Stone>();
+		scene.objects.push_back(std::move(stone1));
+
+		auto stone2 = std::make_unique<Stone>();
+		stone2->position = glm::vec3(-3,0,-3);
+		scene.objects.push_back(std::move(stone2));
+
+
 
 		auto shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
 		set_up_lights(shader->getProgram());

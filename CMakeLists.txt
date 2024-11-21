@@ -74,6 +74,7 @@ set(PPGSO_SHADER_SRC
         shader/instanced.glsl
         shader/phong_frag.glsl
         shader/phong_vert.glsl
+        shader/point_frag.glsl
         )
 add_resources(shaders ${PPGSO_SHADER_SRC})
 
@@ -151,6 +152,8 @@ add_executable(project
         src/objects/stone.cpp
         src/objects/stone.h
         src/objects/grass.cpp
+        src/objects/MySphere.cpp
+        src/objects/MySphere.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

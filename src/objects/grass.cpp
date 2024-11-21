@@ -131,7 +131,7 @@ public:
     std::default_random_engine generator;
 
     // Distributions for x and z coordinates within the square
-    std::uniform_real_distribution<float> distribution_x(20.0f, 40.0f);
+    std::uniform_real_distribution<float> distribution_x(50.0f, 70.0f);
     std::uniform_real_distribution<float> distribution_z(-20.0f, 20.0f);
 
     // Generate random positions within the square

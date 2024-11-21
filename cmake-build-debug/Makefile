@@ -608,6 +608,30 @@ shaders/phong_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.s
 .PHONY : shaders/phong_vert_glsl.cpp.s
 
+shaders/point_frag_glsl.o: shaders/point_frag_glsl.cpp.o
+.PHONY : shaders/point_frag_glsl.o
+
+# target to build an object file
+shaders/point_frag_glsl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/point_frag_glsl.cpp.o
+.PHONY : shaders/point_frag_glsl.cpp.o
+
+shaders/point_frag_glsl.i: shaders/point_frag_glsl.cpp.i
+.PHONY : shaders/point_frag_glsl.i
+
+# target to preprocess a source file
+shaders/point_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/point_frag_glsl.cpp.i
+.PHONY : shaders/point_frag_glsl.cpp.i
+
+shaders/point_frag_glsl.s: shaders/point_frag_glsl.cpp.s
+.PHONY : shaders/point_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/point_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/point_frag_glsl.cpp.s
+.PHONY : shaders/point_frag_glsl.cpp.s
+
 shaders/texture_frag_glsl.o: shaders/texture_frag_glsl.cpp.o
 .PHONY : shaders/texture_frag_glsl.o
 
@@ -727,6 +751,30 @@ src/objects/AppleTree.s: src/objects/AppleTree.cpp.s
 src/objects/AppleTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/AppleTree.cpp.s
 .PHONY : src/objects/AppleTree.cpp.s
+
+src/objects/MySphere.o: src/objects/MySphere.cpp.o
+.PHONY : src/objects/MySphere.o
+
+# target to build an object file
+src/objects/MySphere.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/MySphere.cpp.o
+.PHONY : src/objects/MySphere.cpp.o
+
+src/objects/MySphere.i: src/objects/MySphere.cpp.i
+.PHONY : src/objects/MySphere.i
+
+# target to preprocess a source file
+src/objects/MySphere.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/MySphere.cpp.i
+.PHONY : src/objects/MySphere.cpp.i
+
+src/objects/MySphere.s: src/objects/MySphere.cpp.s
+.PHONY : src/objects/MySphere.s
+
+# target to generate assembly for a file
+src/objects/MySphere.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/MySphere.cpp.s
+.PHONY : src/objects/MySphere.cpp.s
 
 src/objects/apple.o: src/objects/apple.cpp.o
 .PHONY : src/objects/apple.o
@@ -1205,6 +1253,9 @@ help:
 	@echo "... shaders/phong_vert_glsl.o"
 	@echo "... shaders/phong_vert_glsl.i"
 	@echo "... shaders/phong_vert_glsl.s"
+	@echo "... shaders/point_frag_glsl.o"
+	@echo "... shaders/point_frag_glsl.i"
+	@echo "... shaders/point_frag_glsl.s"
 	@echo "... shaders/texture_frag_glsl.o"
 	@echo "... shaders/texture_frag_glsl.i"
 	@echo "... shaders/texture_frag_glsl.s"
@@ -1220,6 +1271,9 @@ help:
 	@echo "... src/objects/AppleTree.o"
 	@echo "... src/objects/AppleTree.i"
 	@echo "... src/objects/AppleTree.s"
+	@echo "... src/objects/MySphere.o"
+	@echo "... src/objects/MySphere.i"
+	@echo "... src/objects/MySphere.s"
 	@echo "... src/objects/apple.o"
 	@echo "... src/objects/apple.i"
 	@echo "... src/objects/apple.s"

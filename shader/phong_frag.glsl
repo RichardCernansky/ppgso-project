@@ -1,6 +1,5 @@
 #version 330 core
-
-#define NUM_LIGHTS 3  // Adjust to the number of lights you have
+#define NUM_LIGHTS 3  // Total number of lights
 
 // Inputs from the vertex shader
 in vec3 FragPos;
@@ -8,22 +7,23 @@ in vec3 NormalInterp;
 in vec2 texCoord;
 in vec3 ViewPos;
 
+
 // Output color
 out vec4 FragmentColor;
 
 // Define the Light struct
 struct Light {
     vec3 position;
-    float padding1;        // Padding for std140 alignment
+    float padding1;         // Padding for std140 alignment
     vec3 color;
     float ambientStrength;
     float diffuseStrength;
     float specularStrength;
-    float padding2;        // Padding for std140 alignment
-    vec3 direction;        // Direction for spotlight
-    float cutoffAngle;     // Spotlight cutoff angle (in degrees)
-    int flag;              // 0 for non-spotlight, 1 for spotlight
-    float padding3;        // Padding to maintain alignment
+    float padding2;         // Padding for std140 alignment
+    vec3 direction;         // Direction for spotlight
+    float cutoffAngle;      // Spotlight cutoff angle (in degrees)
+    int flag;               // 0: Directional, 1: Spotlight, 2: Point light
+    float padding3;         // Padding to maintain alignment
 };
 
 // Uniform block with a fixed-size array of light sources
@@ -36,107 +36,66 @@ uniform sampler2D Texture;
 uniform float Transparency;
 uniform vec2 TextureOffset;
 
+// Attenuation coefficients (static in the shader)
+const float kc = 1.0;      // Constant attenuation factor
+const float kl = 0.9;     // Linear attenuation factor
+const float kq = 0.32;    // Quadratic attenuation factor
+
 // Material properties for ordinary objects
 const vec3 materialDiffuse = vec3(0.8, 0.3, 0.3);    // A reddish color for an apple
-const vec3 materialSpecular = vec3(0.5, 0.5, 0.5);   // Moderate specular reflection
-const float materialShininess = 16.0;                // Medium shininess for a smooth surface
+const vec3 materialSpecular = vec3(0.1, 0.1, 0.1);   // Moderate specular reflection
+const float materialShininess = 4.0;                 // Medium shininess for a smooth surface
 
 void main() {
-    // Sample the texture color with offset and vertical inversion for OBJ compatibility
+    vec3 result = vec3(0.0); // Final color
     vec3 texColor = texture(Texture, vec2(texCoord.x, 1.0 - texCoord.y) + TextureOffset).rgb;
 
-    // Initialize lighting components
-    vec3 ambient = vec3(0.0);
-    vec3 diffuse = vec3(0.0);
-    vec3 specular = vec3(0.0);
+    for (int i = 0; i < NUM_LIGHTS; i++) {
+        Light light = lights[i];
 
-    // Normalize the normal vector
-    vec3 norm = normalize(NormalInterp);
+        // Calculate distance to the current light
+        float distance = length(light.position - FragPos);
 
-    // Spotlight attenuation factors
-    const float k_c = 1.0;  // Constant attenuation
-    const float k_l = 0.09; // Linear attenuation
-    const float k_q = 0.032; // Quadratic attenuation
-
-    // Visibility radius for the light source
-    const float lightSourceVisibilityRadius = 0.5;
-
-    // Check if the fragment is close to any light source
-    bool isLightSource = false;
-    vec3 lightSourceColor = vec3(0.0);
-
-    for (int i = 0; i < NUM_LIGHTS; ++i) {
-        // Calculate distance between the fragment and the light source position
-        float distanceToLight = length(FragPos - lights[i].position);
-
-        // If the fragment is close to the light source, make it emit light
-        if (distanceToLight < lightSourceVisibilityRadius) {
-            isLightSource = true;
-            lightSourceColor = lights[i].color; // Use the light's color for the emission
-            break; // No need to check other lights
+        // Normal light processing
+        float attenuation = 1.0;
+        if (light.flag == 1 || light.flag == 2) { // Spotlight or Point Light
+            attenuation = 1.0 / (kc + kl * distance + kq * (distance * distance));
         }
 
         // Ambient component
-        ambient += lights[i].ambientStrength * lights[i].color;
+        vec3 ambient = light.ambientStrength * light.color * attenuation;
 
-        // Calculate the light direction and distance
-        vec3 lightDir = normalize(lights[i].position - FragPos);
-        float distance = length(lights[i].position - FragPos);
-        float attenuation = 1.0 / (k_c + k_l * distance + k_q * (distance * distance));
-
+        // Diffuse component
+        vec3 norm = normalize(NormalInterp);
+        vec3 lightDir;
+        if (light.flag == 1) { // Spotlight
+            lightDir = normalize(light.direction - FragPos);
+        } else {
+            lightDir = normalize(light.position - FragPos);
+        }
         float diff = max(dot(norm, lightDir), 0.0);
+        vec3 diffuse = light.diffuseStrength * diff * light.color * attenuation;
 
-        // Check if the light is a spotlight
-        if (lights[i].flag == 1) {
-            // Spotlight calculations
-            float theta = dot(lightDir, normalize(-lights[i].direction));
-            float epsilon = cos(radians(lights[i].cutoffAngle));
+        // Specular component
+        vec3 viewDir = normalize(ViewPos - FragPos);
+        vec3 reflectDir = reflect(-lightDir, norm);
+        float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
+        vec3 specular = light.specularStrength * spec * light.color * attenuation;
 
-            // Implement spotlight intensity falloff
-            if (theta > epsilon) {
-                ambient = vec3(0.0);
+        // Spotlight cutoff (only for spotlight)
+        if (light.flag == 1) {
+            vec3 spotDir = normalize(-light.direction); // Direction the spotlight is pointing
+            float theta = dot(lightDir, spotDir);
+            float epsilon = cos(radians(light.cutoffAngle));
+            if (theta < epsilon) {
+                // Outside the spotlight cone
                 diffuse = vec3(0.0);
                 specular = vec3(0.0);
-                float intensity = smoothstep(epsilon, 1.0, theta);
-                diffuse += attenuation * intensity * lights[i].diffuseStrength * diff * lights[i].color;
-
-                // Specular component
-                vec3 reflectDir = reflect(-lightDir, norm);
-                vec3 targetDir = normalize(FragPos - lights[i].position);
-                float spec = pow(max(dot(targetDir, reflectDir), 0.0), materialShininess);
-                specular += attenuation * intensity * lights[i].specularStrength * spec * lights[i].color;
-                break;
             }
-        } else if (lights[i].flag == 2) {
-            // Point light calculations with attenuation
-            diffuse += attenuation * lights[i].diffuseStrength * diff * lights[i].color;
-
-            // Specular component
-            vec3 viewDir = normalize(ViewPos - FragPos);
-            vec3 reflectDir = reflect(-lightDir, norm);
-            float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
-            specular += attenuation * lights[i].specularStrength * spec * lights[i].color;
-        } else {
-            // Non-spotlight light calculations
-            diffuse += lights[i].diffuseStrength * diff * lights[i].color;
-
-            // Specular component
-            vec3 viewDir = normalize(ViewPos - FragPos);
-            vec3 reflectDir = reflect(-lightDir, norm);
-            float spec = pow(max(dot(viewDir, reflectDir), 0.0), materialShininess);
-            specular += lights[i].specularStrength * spec * lights[i].color;
         }
+
+        result += ambient + diffuse + specular;
     }
 
-    // If this fragment is part of the light source, make it emit light
-    if (isLightSource) {
-        FragmentColor = vec4(lightSourceColor, 1.0); // Emit the light source color
-        return; // Skip further lighting calculations
-    }
-
-    // Combine all lighting components and apply the texture color
-    vec3 result = (ambient + diffuse + specular) * texColor;
-
-    // Set the final color with transparency applied
-    FragmentColor = vec4(result, Transparency);
+    FragmentColor = vec4(result * texColor, Transparency);
 }

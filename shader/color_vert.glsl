@@ -1,7 +1,7 @@
 #version 330
 // The inputs will be fed by the vertex buffer objects
-layout(location = 0) in vec3 Position;
-layout(location = 4) in vec3 Color;
+uniform vec3 Position;
+uniform vec3 Color;
 
 // Matrices as program attributes
 uniform mat4 ProjectionMatrix;

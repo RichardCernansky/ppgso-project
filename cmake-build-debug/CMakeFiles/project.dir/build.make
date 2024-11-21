@@ -321,6 +321,20 @@ CMakeFiles/project.dir/src/objects/grass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/grass.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp -o CMakeFiles/project.dir/src/objects/grass.cpp.s
 
+CMakeFiles/project.dir/src/objects/MySphere.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/src/objects/MySphere.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp
+CMakeFiles/project.dir/src/objects/MySphere.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/MySphere.cpp.o -MF CMakeFiles/project.dir/src/objects/MySphere.cpp.o.d -o CMakeFiles/project.dir/src/objects/MySphere.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp
+
+CMakeFiles/project.dir/src/objects/MySphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/MySphere.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp > CMakeFiles/project.dir/src/objects/MySphere.cpp.i
+
+CMakeFiles/project.dir/src/objects/MySphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/MySphere.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp -o CMakeFiles/project.dir/src/objects/MySphere.cpp.s
+
 # Object files for target project
 project_OBJECTS = \
 "CMakeFiles/project.dir/src/main.cpp.o" \
@@ -340,7 +354,8 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/src/objects/particles.cpp.o" \
 "CMakeFiles/project.dir/src/objects/wolf.cpp.o" \
 "CMakeFiles/project.dir/src/objects/stone.cpp.o" \
-"CMakeFiles/project.dir/src/objects/grass.cpp.o"
+"CMakeFiles/project.dir/src/objects/grass.cpp.o" \
+"CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
@@ -363,13 +378,14 @@ project: CMakeFiles/project.dir/src/objects/particles.cpp.o
 project: CMakeFiles/project.dir/src/objects/wolf.cpp.o
 project: CMakeFiles/project.dir/src/objects/stone.cpp.o
 project: CMakeFiles/project.dir/src/objects/grass.cpp.o
+project: CMakeFiles/project.dir/src/objects/MySphere.cpp.o
 project: CMakeFiles/project.dir/build.make
 project: libppgso.a
 project: libshaders.a
 project: /opt/homebrew/lib/libglfw3.a
 project: /opt/homebrew/lib/libGLEW.dylib
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_directory /Users/richardcernansky/Desktop/PPGSO/ppgso-project/data/ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
 

@@ -97,7 +97,7 @@ struct Light {
 };
 
 // Update the number of lights to include the new light type
-const int NUM_LIGHTS = 4; // Adjust for the new bodové svetlo light
+const int NUM_LIGHTS = 4;
 
 // Function to set up lights and create UBO, linking it to the shader
 GLuint set_up_lights(GLuint shaderProgram) {
@@ -116,33 +116,33 @@ GLuint set_up_lights(GLuint shaderProgram) {
 
     // Moonlight setup (light 0)
     lights[0].position = glm::vec3(0.0f, 50.0f, 0.0f);  // High position to simulate the moon
-    lights[0].color = glm::vec3(0.6f, 0.6f, 0.8f);      // Cool light blue color
-    lights[0].ambientStrength = 0.9f;
-    lights[0].diffuseStrength = 0.5f;
-    lights[0].specularStrength = 0.5f;
+    lights[0].color = glm::vec3(0.7f, 0.7f, 0.7f);      // Cool light blue color
+    lights[0].ambientStrength = 0.5f;
+    lights[0].diffuseStrength = 0.2f;
+    lights[0].specularStrength = 0.2f;
     lights[0].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // Not relevant for non-reflector
     lights[0].cutoffAngle = 180.0f;                     // Full spread (no cutoff)
     lights[0].flag = 0;                                 // Non-spotlight
 
     // Reflector light setup (light 1)
     lights[1].position = glm::vec3(-5.0f, 4.0f, 5.0f);  // Position for reflector light
-    lights[1].color = glm::vec3(1.0f, 1.0f, 1.0f);      // Warm light color
-    lights[1].ambientStrength = 0.3f;
-    lights[1].diffuseStrength = .8f;
-    lights[1].specularStrength = 1.0f;
-    lights[1].direction = glm::vec3(0, -1.0f, 0.0f);   // Direction for reflector
-    lights[1].cutoffAngle = 70.0f;                      // Spotlight angle (in degrees)
+    lights[1].color = glm::vec3(0.5f, 0.0f, 0.1f);      // Red color for reflector light
+    lights[1].ambientStrength = 0.2f;
+    lights[1].diffuseStrength = 0.7f;
+    lights[1].specularStrength = 0.5f;
+    lights[1].direction = glm::vec3(-0.0f, -1.0f, 0.0f); // Direction for reflector
+    lights[1].cutoffAngle = 80.0f;                      // Spotlight angle (in degrees)
     lights[1].flag = 1;                                 // Spotlight
 
     // Bodové svetlo (light 2)
-    // lights[2].position = glm::vec3(3.0f, 2.0f, 2.0f); // Position for bodové svetlo
-    // lights[2].color = glm::vec3(1.0f, 1.0f, 1.0f);       // Neutral white light
-    // lights[2].ambientStrength = 0.5f;
-    // lights[2].diffuseStrength = 1.f;
-    // lights[2].specularStrength = 1.f;
-    // lights[2].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // No specific direction for point light
-    // lights[2].cutoffAngle = 0.0f;                       // Not relevant for bodové svetlo
-    // lights[2].flag = 2;                                      // Flag for bodové svetlo
+    lights[2].position = glm::vec3(-3.0f, 1.0f, -3.0f); // Position for bodové svetlo
+    lights[2].color = glm::vec3(0.0f, 0.2f, 1.0f);       // Neutral white light
+    lights[2].ambientStrength = 0.2f;
+    lights[2].diffuseStrength = 1.0f;
+    lights[2].specularStrength = 0.8f;
+    lights[2].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // No specific direction for point light
+    lights[2].cutoffAngle = 0.0f;                       // Not relevant for bodové svetlo
+    lights[2].flag = 2;                                      // Flag for bodové svetlo
 
     // Upload the light data to the UBO
     glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);
