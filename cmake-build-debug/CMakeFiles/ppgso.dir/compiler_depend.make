@@ -12194,6 +12194,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   shaders/instanced_glsl.h \
   shaders/phong_frag_glsl.h \
   shaders/phong_vert_glsl.h \
+  shaders/point_frag_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -12593,6 +12594,8 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h:
 
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h:
+
+shaders/point_frag_glsl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/weibull_distribution.h:
 

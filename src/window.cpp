@@ -13,6 +13,7 @@
 #include <shaders/texture_frag_glsl.h>
 #include <shaders/phong_frag_glsl.h>
 #include <shaders/phong_vert_glsl.h>
+#include <shaders/point_frag_glsl.h>
 //my files
 #include "objects/bee.h"
 #include "scene.cpp"
@@ -145,8 +146,10 @@ private:
 
 
 		auto shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
+		auto colorShader = std::make_unique<ppgso::Shader>(phong_vert_glsl, point_frag_glsl);
 		set_up_lights(shader->getProgram());
 		scene.shader = std::move(shader);
+		scene.colorShader = std::move(colorShader);
 	}
 
 

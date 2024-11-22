@@ -17,6 +17,7 @@ public:
 
 	// shader
 	std::unique_ptr<ppgso::Shader> shader;
+	std::unique_ptr<ppgso::Shader> colorShader;
 
 	// lights
 	std::vector<glm::vec3> light_positions;

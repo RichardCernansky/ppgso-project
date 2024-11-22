@@ -9,11 +9,9 @@
 // Define static members
 std::unique_ptr<ppgso::Mesh> MySphere::mesh;
 std::unique_ptr<ppgso::Texture> MySphere::texture;
-std::unique_ptr<ppgso::Shader> shader;
 
 // Constructor
 MySphere::MySphere() {
-    shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, point_frag_glsl);
 
     if (!texture) {
         auto image = ppgso::image::loadBMP("grey.bmp");
@@ -48,15 +46,15 @@ bool MySphere::update(float dTime, Scene &scene) {
 void MySphere::render(Scene &scene) {
 
     // Use the scene's shader
-    shader->use();
+    scene.colorShader->use();
     // shader->setUniform("OverallColor", glm::vec3(1.0f, 1.0f, 1.0f));
-    shader->setUniform("ModelMatrix", modelMatrix);
-    shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
-    shader->setUniform("ProjectionMatrix", scene.camera->perspective);
-    shader->setUniform("Color",glm::vec3(1.0f, 1.0f, 1.0f));
+    scene.colorShader->setUniform("ModelMatrix", modelMatrix);
+    scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
+    scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
+    scene.colorShader->setUniform("Color",glm::vec3(1.0f, 1.0f, 1.0f));
 
     // Bind the texture
-    shader->setUniform("Texture", *texture);
+    scene.colorShader->setUniform("Texture", *texture);
 
     // Render the mesh
     mesh->render();

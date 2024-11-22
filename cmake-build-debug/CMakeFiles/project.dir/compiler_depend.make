@@ -1044,6 +1044,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/richardcernansky/Desktop/PPGS
   shaders/instanced_glsl.h \
   shaders/phong_frag_glsl.h \
   shaders/phong_vert_glsl.h \
+  shaders/point_frag_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -2469,6 +2470,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   shaders/instanced_glsl.h \
   shaders/phong_frag_glsl.h \
   shaders/phong_vert_glsl.h \
+  shaders/point_frag_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -25542,6 +25544,7 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/p
   shaders/instanced_glsl.h \
   shaders/phong_frag_glsl.h \
   shaders/phong_vert_glsl.h \
+  shaders/point_frag_glsl.h \
   shaders/texture_frag_glsl.h \
   shaders/texture_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h \
@@ -25930,8 +25933,6 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/p
 
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp:
 
-shaders/point_frag_glsl.h:
-
 shaders/color_vert_glsl.h:
 
 shaders/color_frag_glsl.h:
@@ -26219,6 +26220,8 @@ shaders/color_frag_glsl.h:
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp:
 
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image.h:
+
+shaders/point_frag_glsl.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h:
 
