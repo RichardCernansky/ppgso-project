@@ -5,6 +5,8 @@
 #include <shaders/phong_vert_glsl.h>
 #include <shaders/point_frag_glsl.h>
 
+#include "src/globals.h"
+
 
 // Define static members
 std::unique_ptr<ppgso::Mesh> MySphere::mesh;
@@ -27,8 +29,12 @@ MySphere::MySphere() {
         mesh = std::make_unique<ppgso::Mesh>("sphere.obj");
 }
 
-// Update the sphere's transformation matrix
 bool MySphere::update(float dTime, Scene &scene) {
+    // Change the Y position of the sphere over time
+    float speed = 1.5f;  // Adjust this to control how fast the sphere moves
+    position.y += speed * dTime;
+    position.z += speed * dTime;
+    moonLight_position = position;
     // Reset the model matrix
     modelMatrix = glm::mat4{1.0f};
 
@@ -47,14 +53,11 @@ void MySphere::render(Scene &scene) {
 
     // Use the scene's shader
     scene.colorShader->use();
-    // shader->setUniform("OverallColor", glm::vec3(1.0f, 1.0f, 1.0f));
     scene.colorShader->setUniform("ModelMatrix", modelMatrix);
     scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.colorShader->setUniform("Color",glm::vec3(1.0f, 1.0f, 1.0f));
 
-    // Bind the texture
-    scene.colorShader->setUniform("Texture", *texture);
 
     // Render the mesh
     mesh->render();

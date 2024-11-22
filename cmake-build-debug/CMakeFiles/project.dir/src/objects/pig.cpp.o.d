@@ -1344,6 +1344,7 @@ CMakeFiles/project.dir/src/objects/pig.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtx/norm.inl \
   /opt/homebrew/include/glm/gtx/../gtx/../detail/qualifier.hpp \
   /opt/homebrew/include/glm/gtx/quaternion.inl \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/random \
@@ -1394,4 +1395,5 @@ CMakeFiles/project.dir/src/objects/pig.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h

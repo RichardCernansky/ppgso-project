@@ -1344,7 +1344,9 @@ CMakeFiles/project.dir/src/objects/MySphere.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtx/norm.inl \
   /opt/homebrew/include/glm/gtx/../gtx/../detail/qualifier.hpp \
   /opt/homebrew/include/glm/gtx/quaternion.inl \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_frag_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/color_vert_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/phong_vert_glsl.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/point_frag_glsl.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/point_frag_glsl.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h

@@ -3,6 +3,7 @@
 //
 
 #include "stone.h"
+#include "src/globals.h"
 
 std::unique_ptr<ppgso::Mesh> Stone::mesh;
 std::unique_ptr<ppgso::Texture> Stone::texture;
@@ -42,7 +43,7 @@ void Stone::render(Scene &scene) {
     glActiveTexture(GL_TEXTURE0);
     texture->bind();
     // Use the shadow projection matrix
-    glm::mat4 shadowMatrix = calculateShadowMatrix(glm::vec3(-50.0f, 50.0f, 0.0f), glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+    glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
 
     scene.shader->use();
     scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);

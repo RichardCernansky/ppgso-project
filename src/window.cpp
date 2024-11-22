@@ -35,6 +35,7 @@
 #include "objects/lighthouse.cpp"
 #include "objects/MySphere.h"
 #include "generator.h"
+#include "objects/crystal.h"
 
 class ProjectWindow : public ppgso::Window
 {
@@ -143,11 +144,12 @@ private:
 		stone2->position = glm::vec3(-3,0,-3);
 		scene.objects.push_back(std::move(stone2));
 
+		auto crystal = std::make_unique<Crystal>();
+		scene.objects.push_back(std::move(crystal));
 
 
 		auto shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
 		auto colorShader = std::make_unique<ppgso::Shader>(phong_vert_glsl, point_frag_glsl);
-		set_up_lights(shader->getProgram());
 		scene.shader = std::move(shader);
 		scene.colorShader = std::move(colorShader);
 	}

@@ -1342,4 +1342,6 @@ CMakeFiles/ppgso.dir/src/objects/lighthouse.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtx/../gtx/../ext/scalar_common.inl \
   /opt/homebrew/include/glm/gtx/../gtx/norm.inl \
   /opt/homebrew/include/glm/gtx/../gtx/../detail/qualifier.hpp \
-  /opt/homebrew/include/glm/gtx/quaternion.inl
+  /opt/homebrew/include/glm/gtx/quaternion.inl \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../generator.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h

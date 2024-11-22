@@ -2,6 +2,7 @@
 #include <memory>
 #include "renderable.h"
 #include "camera.h"
+#include "generator.h"
 #ifndef SCENE
 #define SCENE
 
@@ -28,6 +29,7 @@ public:
 	// update function
 	void update(float time)
 	{
+		set_up_lights(shader->getProgram());
 		Dtime = time;
 		auto i = std::begin(objects);
 		while (i != std::end(objects))

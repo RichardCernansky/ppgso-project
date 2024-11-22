@@ -9460,6 +9460,7 @@ CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: /Users/richardcernansky/Desktop/PPGS
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
@@ -10807,7 +10808,9 @@ CMakeFiles/ppgso.dir/src/objects/lighthouse.cpp.o: /Users/richardcernansky/Deskt
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /opt/homebrew/include/GL/glew.h \
@@ -12208,6 +12211,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.h \
@@ -12217,6 +12221,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.h \
@@ -12594,6 +12599,8 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppg
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h:
 
 /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h:
+
+/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.h:
 
 shaders/point_frag_glsl.h:
 
@@ -13852,6 +13859,8 @@ shaders/instanced_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__fwd/pair.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:
+
+/Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__bit/countr.h:
 

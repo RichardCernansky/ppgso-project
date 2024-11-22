@@ -1,6 +1,6 @@
-CMakeFiles/project.dir/src/objects/stone.cpp.o: \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.h \
+CMakeFiles/project.dir/src/objects/crystal.cpp.o: \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.cpp \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/ppgso.h \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
@@ -1344,6 +1344,4 @@ CMakeFiles/project.dir/src/objects/stone.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtx/norm.inl \
   /opt/homebrew/include/glm/gtx/../gtx/../detail/qualifier.hpp \
   /opt/homebrew/include/glm/gtx/quaternion.inl \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../generator.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../generator.h

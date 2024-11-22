@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/project.dir/src/generator.cpp.o"
   "CMakeFiles/project.dir/src/generator.cpp.o.d"
+  "CMakeFiles/project.dir/src/globals.cpp.o"
+  "CMakeFiles/project.dir/src/globals.cpp.o.d"
   "CMakeFiles/project.dir/src/main.cpp.o"
   "CMakeFiles/project.dir/src/main.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/project.dir/src/objects/MySphere.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/apple.cpp.o"
   "CMakeFiles/project.dir/src/objects/apple.cpp.o.d"
+  "CMakeFiles/project.dir/src/objects/crystal.cpp.o"
+  "CMakeFiles/project.dir/src/objects/crystal.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/fire.cpp.o"
   "CMakeFiles/project.dir/src/objects/fire.cpp.o.d"
   "CMakeFiles/project.dir/src/objects/gas.cpp.o"

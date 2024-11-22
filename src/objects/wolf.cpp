@@ -2,6 +2,7 @@
 
 #include "pig.h"
 #include "src/generator.h"
+#include "src/globals.h"
 
 // Static resources (shared among all instances of Wolf)
 std::unique_ptr<ppgso::Mesh> Wolf::mesh;
@@ -118,7 +119,7 @@ bool Wolf::update(float dTime, Scene &scene) {
 
 void Wolf::render(Scene &scene) {
     // Use the shadow projection matrix
-    glm::mat4 shadowMatrix = calculateShadowMatrix(glm::vec3(-50.0f, 50.0f, 0.0f), glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+    glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
 
     // Render the shadow
     scene.colorShader->use();

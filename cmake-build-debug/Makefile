@@ -704,6 +704,30 @@ src/generator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/generator.cpp.s
 .PHONY : src/generator.cpp.s
 
+src/globals.o: src/globals.cpp.o
+.PHONY : src/globals.o
+
+# target to build an object file
+src/globals.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/globals.cpp.o
+.PHONY : src/globals.cpp.o
+
+src/globals.i: src/globals.cpp.i
+.PHONY : src/globals.i
+
+# target to preprocess a source file
+src/globals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/globals.cpp.i
+.PHONY : src/globals.cpp.i
+
+src/globals.s: src/globals.cpp.s
+.PHONY : src/globals.s
+
+# target to generate assembly for a file
+src/globals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/globals.cpp.s
+.PHONY : src/globals.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -823,6 +847,30 @@ src/objects/bee.s: src/objects/bee.cpp.s
 src/objects/bee.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ppgso.dir/build.make CMakeFiles/ppgso.dir/src/objects/bee.cpp.s
 .PHONY : src/objects/bee.cpp.s
+
+src/objects/crystal.o: src/objects/crystal.cpp.o
+.PHONY : src/objects/crystal.o
+
+# target to build an object file
+src/objects/crystal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/crystal.cpp.o
+.PHONY : src/objects/crystal.cpp.o
+
+src/objects/crystal.i: src/objects/crystal.cpp.i
+.PHONY : src/objects/crystal.i
+
+# target to preprocess a source file
+src/objects/crystal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/crystal.cpp.i
+.PHONY : src/objects/crystal.cpp.i
+
+src/objects/crystal.s: src/objects/crystal.cpp.s
+.PHONY : src/objects/crystal.s
+
+# target to generate assembly for a file
+src/objects/crystal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/crystal.cpp.s
+.PHONY : src/objects/crystal.cpp.s
 
 src/objects/fire.o: src/objects/fire.cpp.o
 .PHONY : src/objects/fire.o
@@ -1265,6 +1313,9 @@ help:
 	@echo "... src/generator.o"
 	@echo "... src/generator.i"
 	@echo "... src/generator.s"
+	@echo "... src/globals.o"
+	@echo "... src/globals.i"
+	@echo "... src/globals.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -1280,6 +1331,9 @@ help:
 	@echo "... src/objects/bee.o"
 	@echo "... src/objects/bee.i"
 	@echo "... src/objects/bee.s"
+	@echo "... src/objects/crystal.o"
+	@echo "... src/objects/crystal.i"
+	@echo "... src/objects/crystal.s"
 	@echo "... src/objects/fire.o"
 	@echo "... src/objects/fire.i"
 	@echo "... src/objects/fire.s"

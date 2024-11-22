@@ -1345,4 +1345,5 @@ CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/list \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h

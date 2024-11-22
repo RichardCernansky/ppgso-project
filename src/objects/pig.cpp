@@ -7,6 +7,7 @@
 #include "src/generator.h"
 #include <random>
 #include "wolf.h"
+#include "src/globals.h"
 
 // Static resources (shared among all instances of Pig)
 std::unique_ptr<ppgso::Mesh> Pig::mesh;
@@ -161,7 +162,7 @@ bool Pig::update(float dTime, Scene &scene) {
 // Render method
 void Pig::render(Scene &scene) {
     // Use the shadow projection matrix
-    glm::mat4 shadowMatrix = calculateShadowMatrix(glm::vec3(-50.0f, 50.0f, 0.0f), glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+    glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
 
     // Render the shadow
     scene.colorShader->use();

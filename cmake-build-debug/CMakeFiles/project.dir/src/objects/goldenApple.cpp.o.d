@@ -1344,6 +1344,7 @@ CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: \
   /opt/homebrew/include/glm/gtx/../gtx/norm.inl \
   /opt/homebrew/include/glm/gtx/../gtx/../detail/qualifier.hpp \
   /opt/homebrew/include/glm/gtx/quaternion.inl \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../objects/stone.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../objects/../scene.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \

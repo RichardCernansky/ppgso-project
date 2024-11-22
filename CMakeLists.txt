@@ -154,6 +154,10 @@ add_executable(project
         src/objects/grass.cpp
         src/objects/MySphere.cpp
         src/objects/MySphere.h
+        src/globals.cpp
+        src/globals.h
+        src/objects/crystal.cpp
+        src/objects/crystal.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

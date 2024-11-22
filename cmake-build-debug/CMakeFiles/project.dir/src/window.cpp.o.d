@@ -1351,10 +1351,10 @@ CMakeFiles/project.dir/src/window.cpp.o: \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/../scene.cpp \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.h \
@@ -1422,4 +1422,6 @@ CMakeFiles/project.dir/src/window.cpp.o: \
   /opt/homebrew/include/glm/gtx/transform.inl \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/shaders/instanced_glsl.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/lighthouse.cpp \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.h
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.h

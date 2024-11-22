@@ -6,6 +6,7 @@
 #include <glm/fwd.hpp>
 #include <random>
 #include "objects/tree.h"
+#include "globals.h"
 
 // Function to generate a random float between min and max
 float randomFloat(float min, float max) {
@@ -81,23 +82,23 @@ glm::mat4 rotateToFaceDirection(const glm::vec3& base_forward, const glm::vec3& 
     return rotationMatrix;
 }
 
-// Define the Light struct
 struct Light {
-    glm::vec3 position;
-    float padding1;          // Padding for std140 alignment
-    glm::vec3 color;
-    float ambientStrength;
-    float diffuseStrength;
-    float specularStrength;
-    float padding2;          // Padding for std140 alignment
-    glm::vec3 direction;     // Direction for reflector lights
-    float cutoffAngle;       // Spotlight cutoff angle in degrees
-    int flag;                // 0 for non-spotlight, 1 for spotlight, 2 for bodové svetlo
-    float padding3;          // Padding to maintain alignment (std140)
+    alignas(16) glm::vec3 position;  // vec3 requires 16-byte alignment, 12 bytes + 4 padding
+    alignas(4) float ambientStrength;
+
+    alignas(16) glm::vec3 color;     // vec3 requires 16-byte alignment
+    alignas(4) float diffuseStrength;
+
+    alignas(16) glm::vec3 direction; // vec3 requires 16-byte alignment
+    alignas(4) float specularStrength;
+
+    alignas(4) float cutoffAngle;    // Single float for cutoff
+    alignas(4) int flag;             // Integer for light type
+    alignas(8) int padding[2];       // Padding to align the struct to 16-byte multiples
 };
 
 // Update the number of lights to include the new light type
-const int NUM_LIGHTS = 4;
+const int NUM_LIGHTS = 3;
 
 // Function to set up lights and create UBO, linking it to the shader
 GLuint set_up_lights(GLuint shaderProgram) {
@@ -115,30 +116,30 @@ GLuint set_up_lights(GLuint shaderProgram) {
     Light lights[NUM_LIGHTS];
 
     // Moonlight setup (light 0)
-    lights[0].position = glm::vec3(-50.0f, 50.0f, 0.0f);  // High position to simulate the moon
+    lights[0].position = moonLight_position;  // High position to simulate the moon
     lights[0].color = glm::vec3(0.7f, 0.7f, 0.7f);      // Cool light blue color
     lights[0].ambientStrength = 0.5f;
-    lights[0].diffuseStrength = 0.2f;
-    lights[0].specularStrength = 0.2f;
+    lights[0].diffuseStrength = 0.5f;
+    lights[0].specularStrength = 0.5f;
     lights[0].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // Not relevant for non-reflector
     lights[0].cutoffAngle = 180.0f;                     // Full spread (no cutoff)
     lights[0].flag = 0;                                 // Non-spotlight
 
     // Reflector light setup (light 1)
-    lights[1].position = glm::vec3(-5.0f, 4.0f, 5.0f);  // Position for reflector light
-    lights[1].color = glm::vec3(0.5f, 0.0f, 0.1f);      // Red color for reflector light
+    lights[1].position = glm::vec3(-5.0f, 0.0f, 5.0f);  // Position for reflector light
+    lights[1].color = glm::vec3(1.0f, 0.0f, 0.0);      // Red color for reflector light
     lights[1].ambientStrength = 0.1f;
-    lights[1].diffuseStrength = 0.7f;
-    lights[1].specularStrength = 0.5f;
-    lights[1].direction = glm::vec3(-0.0f, -1.0f, 0.0f); // Direction for reflector
-    lights[1].cutoffAngle = 80.0f;                      // Spotlight angle (in degrees)
+    lights[1].diffuseStrength = 0.8f;
+    lights[1].specularStrength = 0.9f;
+    lights[1].direction = glm::vec3(11.0f, -1.0f, -6.0f); // Direction for reflector
+    lights[1].cutoffAngle = 25.0f;                      // Spotlight angle (in degrees)
     lights[1].flag = 1;                                 // Spotlight
 
     // Bodové svetlo (light 2)
     lights[2].position = glm::vec3(-3.0f, 1.0f, -3.0f); // Position for bodové svetlo
-    lights[2].color = glm::vec3(0.0f, 0.2f, 1.0f);       // Neutral white light
-    lights[2].ambientStrength = 0.1f;
-    lights[2].diffuseStrength = 1.0f;
+    lights[2].color = glm::vec3(0.0f, 1.0f, 0.0f);       // Neutral white light
+    lights[2].ambientStrength = 0.2f;
+    lights[2].diffuseStrength = 0.6f;
     lights[2].specularStrength = 0.8f;
     lights[2].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // No specific direction for point light
     lights[2].cutoffAngle = 0.0f;                       // Not relevant for bodové svetlo

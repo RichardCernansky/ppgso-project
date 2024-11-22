@@ -1341,4 +1341,5 @@ CMakeFiles/project.dir/src/scene.cpp.o: \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_bmp.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/image_raw.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
-  /opt/homebrew/include/GLFW/glfw3.h
+  /opt/homebrew/include/GLFW/glfw3.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h
