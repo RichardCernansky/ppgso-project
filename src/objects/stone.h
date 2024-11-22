@@ -14,13 +14,15 @@ private:
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 position{10, 0, -6};
+    glm::vec3 position{-3.0f, 3.0f, -3.0f};
     glm::vec3 scale{0.04, 0.04, 0.04};
     float radius = 20*scale.x;
+    std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects
 
 
     Stone();
     bool update(float dTime, Scene &scene) override;
     void render(Scene &scene) override;
+    bool update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) override;
 };
 #endif

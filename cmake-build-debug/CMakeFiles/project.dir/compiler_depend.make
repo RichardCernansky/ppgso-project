@@ -8159,6 +8159,7 @@ CMakeFiles/project.dir/src/objects/crystal.cpp.o: /Users/richardcernansky/Deskto
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
@@ -16292,6 +16293,7 @@ CMakeFiles/project.dir/src/objects/horseFly.cpp.o: /Users/richardcernansky/Deskt
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/texture.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
@@ -19037,7 +19039,6 @@ CMakeFiles/project.dir/src/objects/pig.cpp.o: /Users/richardcernansky/Desktop/PP
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
@@ -24431,7 +24432,6 @@ CMakeFiles/project.dir/src/objects/wolf.cpp.o: /Users/richardcernansky/Desktop/P
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/tiny_obj_loader.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
-  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \

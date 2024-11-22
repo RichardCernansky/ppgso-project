@@ -35,28 +35,28 @@ bool Stone::update(float dTime, Scene &scene) {
     modelMatrix = glm::rotate(modelMatrix, glm::radians(0.0f), glm::vec3{-1, 0, 0});
     modelMatrix = glm::scale(modelMatrix, scale);
 
+
+    return true;
+}
+
+// Update method
+bool Stone::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
+
+    modelMatrix = glm::mat4(1.0f);
+    modelMatrix = glm::translate(modelMatrix, position);
+    // Update children
+    for (auto& child : children) {
+        child->update_child(dTime, scene, modelMatrix);
+    }
+    modelMatrix = glm::rotate(modelMatrix, glm::radians(0.0f), glm::vec3{-1, 0, 0});
+    modelMatrix = glm::scale(modelMatrix, scale);
+    modelMatrix = parentModelMatrix * modelMatrix;
+
     return true;
 }
 
 void Stone::render(Scene &scene) {
 
-    glActiveTexture(GL_TEXTURE0);
-    texture->bind();
-    // Use the shadow projection matrix
-    glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
-
-    scene.shader->use();
-    scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);
-    scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
-    scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
-
-    // Render the pig's shadow as a black silhouette
-    glDisable(GL_DEPTH_TEST); // Prevent z-fighting
-    scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
-    mesh->render();
-    glEnable(GL_DEPTH_TEST);
-
-    // Render the pig
     scene.shader->use();
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
@@ -64,4 +64,8 @@ void Stone::render(Scene &scene) {
     scene.shader->setUniform("Texture", *texture);
 
     mesh->render();
+
+    for (auto& child : children) {
+        child->render(scene);
+    }
 }

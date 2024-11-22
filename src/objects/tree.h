@@ -19,7 +19,8 @@ public:
 
     Tree();
 
-    bool update(float dTime, Scene &scene) override;
+    bool update(float dTime, Scene &scene);
+    bool update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) override;
     void render(Scene &scene) override;
 };
 

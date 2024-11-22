@@ -31,7 +31,7 @@ MySphere::MySphere() {
 
 bool MySphere::update(float dTime, Scene &scene) {
     // Change the Y position of the sphere over time
-    float speed = 1.5f;  // Adjust this to control how fast the sphere moves
+    float speed = 1;  // Adjust this to control how fast the sphere moves
     position.y += speed * dTime;
     position.z += speed * dTime;
     moonLight_position = position;

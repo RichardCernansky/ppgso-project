@@ -162,9 +162,11 @@ public:
     glBindVertexArray(0); // Unbind the VAO to prevent accidental changes
   }
 
+  bool update(float dTime, Scene &scene) override{
+    return true;
+  }
 
-
-  bool update(float dTime, Scene &scene) override  {
+  bool update_child(float dTime, Scene &scene, glm::mat4 parentMatrix) override {
     static float accumulatedTime = 0.0f;  // Accumulate total time over frames
     accumulatedTime += dTime;  // Update accumulated time with delta time
 
@@ -185,6 +187,7 @@ public:
     modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3(0, -1, 0));
     modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3(0, 0, 1));
     modelMatrix = glm::scale(modelMatrix, scale);
+    modelMatrix = parentMatrix * modelMatrix;
     return true;
   }
 

@@ -62,20 +62,10 @@ private:
 		auto camera = std::make_unique<Camera>(100.0f, (float)width / (float)height, 0.1f, 100.0f);
 		scene.camera = std::move(camera);
 
-		// Add ground object to the scene
-		scene.objects.push_back(std::make_unique<Ground>());
-
-		scene.objects.push_back(std::make_unique<Wolf>());
-
-		scene.objects.push_back(std::make_unique<Bee>());
-		scene.objects.push_back(std::make_unique<GrassPatch>(initControlPoints));
-
-		//lighthouse
-		auto lighthouse = std::make_unique<Lighthouse>();
-		scene.objects.push_back(std::move(lighthouse));
-		auto sphere = std::make_unique<MySphere>();
-		scene.objects.push_back(std::move(sphere));
-
+		//SCENE GRAPH
+		//GROUND
+			//TREES
+		auto ground = std::make_unique<Ground>();
 		auto tree = std::make_unique<Tree>(); //generate texture
 		for (int i = 0 ; i < 100; i++) {
 			auto tree_instance = std::make_unique<Tree>();
@@ -86,67 +76,70 @@ private:
 			std::pair<glm::mat4, glm::mat4> tree_matrices = generateRandomTreeModelMatrix();
 			tree_instance->modelMatrix = tree_matrices.first;
 			tree_instance->childModelMatrix = tree_matrices.second;
-			scene.objects.push_back(std::move(tree_instance));
+			ground->children.push_back(std::move(tree_instance));
 		}
 
-
-		for (int i = 0 ; i < 100; i++) {
-			auto tree_instance = std::make_unique<Tree>();
-			for (int i = 0; i < 3; i++) { //generate and add 4 apple instances to the single tree
-				auto apple = std::make_unique<Apple>();
-				tree_instance->children.push_back(std::move(apple));
-			}
-			std::pair<glm::mat4, glm::mat4> tree_matrices = generateRandomTreeModelMatrixAlternative();
-			tree_instance->modelMatrix = tree_matrices.first;
-			tree_instance->childModelMatrix = tree_matrices.second;
-			scene.objects.push_back(std::move(tree_instance));
-		}
-
-
-
-
-		auto tree_of_life = std::make_unique<AppleTree>();
-		for (int i = 0; i < 20; i++) { //generate and add 5 apple instances to the single tree
-			auto golden_apple = std::make_unique<GoldenApple>();
-			tree_of_life->children.push_back(std::move(golden_apple));
-		}
-		scene.objects.push_back(std::move(tree_of_life));
-
-		//fire
-		 auto fire = std::make_unique<Fire>();
-		 //auto smoke = std::make_unique<Smoke>();
-		 for (int i = 0; i < 50; i++) {
-		 	auto particles = std::make_unique<Particles>();
-		 	fire->children.push_back(std::move(particles));
-		 }
-		 //fire->children.push_back(std::move(smoke));
-		 scene.objects.push_back(std::move(fire));
-
-
-		//create pig
-		auto pig1 = std::make_unique<Pig>();
-		auto pig2 = std::make_unique<Pig>();
-		auto pig3 = std::make_unique<Pig>();
-		auto pig4 = std::make_unique<Pig>();
-		auto gas1 = std::make_unique<Gas>();
-		auto horseFly = std::make_unique<HorseFly>();
-		gas1->children.push_back(std::move(horseFly));
-		pig1->children.push_back(std::move(gas1));
-		scene.objects.push_back(std::move(pig1));
-		scene.objects.push_back(std::move(pig2));
-		scene.objects.push_back(std::move(pig3));
-		scene.objects.push_back(std::move(pig4));
-
-		auto stone1 = std::make_unique<Stone>();
-		scene.objects.push_back(std::move(stone1));
-
-		auto stone2 = std::make_unique<Stone>();
-		stone2->position = glm::vec3(-3,0,-3);
-		scene.objects.push_back(std::move(stone2));
-
+			//CRYSTAL_STONE
+		auto crystal_stone = std::make_unique<Stone>();
+		auto levitating_stone = std::make_unique<Stone>();
+		auto back_stone = std::make_unique<Stone>();
+		crystal_stone->position = glm::vec3(-3,0,-3);
+		levitating_stone->position = glm::vec3(0,2,-0.15);
+		back_stone->position = glm::vec3(0,0,-1.2);
+		back_stone->scale = glm::vec3(0.07,0.2,0.07);
 		auto crystal = std::make_unique<Crystal>();
-		scene.objects.push_back(std::move(crystal));
+		crystal_stone->children.push_back(std::move(crystal));
+		crystal_stone->children.push_back(std::move(levitating_stone));
+		crystal_stone->children.push_back(std::move(back_stone));
+		ground->children.push_back(std::move(crystal_stone));
+			//GRASS
+		ground->children.push_back(std::make_unique<GrassPatch>(initControlPoints));
+			//LIGHTHOUSE
+		ground->children.push_back(std::move(std::make_unique<Lighthouse>()));
 
+		//PUSH THE BRANCH OF NODE GROUND TO THE SCENE
+		scene.objects.push_back(std::move(ground));
+		// MOON
+		auto sphere = std::make_unique<MySphere>();
+		scene.objects.push_back(std::move(sphere));
+		// BEE
+		scene.objects.push_back(std::make_unique<Bee>());
+		// PIGS
+		for (int i = 0; i < 8; ++i) {
+			auto pig = std::make_unique<Pig>();
+			if (i < 3) {
+				//WOLF
+				scene.objects.push_back(std::make_unique<Wolf>());
+				auto gas = std::make_unique<Gas>();
+				auto horseFly = std::make_unique<HorseFly>();
+				gas->children.push_back(std::move(horseFly));
+				pig->children.push_back(std::move(gas));
+			}
+			scene.objects.push_back(std::move(pig));
+		}
+//-------------------------------------------------------------------------
+
+		// BRUNO O TIETO ZAKOMENTOVANE SA POSTARAJ TY, to je ten strom zivota, kamen a tie jablka, co sa od neho odrazaju
+		// NOTE: pridavaj to do ground->children
+		// auto tree_of_life = std::make_unique<AppleTree>();
+		// for (int i = 0; i < 20; i++) { //generate and add 5 apple instances to the single tree
+		// 	auto golden_apple = std::make_unique<GoldenApple>();
+		// 	tree_of_life->children.push_back(std::move(golden_apple));
+		// }
+		// scene.objects.push_back(std::move(tree_of_life));
+		//
+		// //fire
+		//  auto fire = std::make_unique<Fire>();
+		//  //auto smoke = std::make_unique<Smoke>();
+		//  for (int i = 0; i < 50; i++) {
+		//  	auto particles = std::make_unique<Particles>();
+		//  	fire->children.push_back(std::move(particles));
+		//  }
+		//  //fire->children.push_back(std::move(smoke));
+		//  scene.objects.push_back(std::move(fire));
+		//
+		// auto stone1 = std::make_unique<Stone>();
+		// scene.objects.push_back(std::move(stone1));
 
 		auto shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
 		auto colorShader = std::make_unique<ppgso::Shader>(phong_vert_glsl, point_frag_glsl);

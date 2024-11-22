@@ -9461,6 +9461,7 @@ CMakeFiles/ppgso.dir/src/objects/bee.cpp.o: /Users/richardcernansky/Desktop/PPGS
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/ppgso/window.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.h \
+  /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/camera.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/renderable.h \
   /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/bee.h \

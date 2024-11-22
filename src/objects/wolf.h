@@ -26,8 +26,7 @@ public:
     Wolf();
 
     int findClosestPigIndex(const Scene &scene) const;
-
-    void render(Scene &scene) override;
     bool update(float dTime, Scene &scene) override;
+    void render(Scene &scene) override;
 };
 #endif // WOLF_H

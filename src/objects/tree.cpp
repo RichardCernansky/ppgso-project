@@ -22,6 +22,10 @@ Tree::Tree() {
 }
 
 bool Tree::update(float dTime, Scene &scene) {
+    return true;
+}
+
+bool Tree::update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) {
     for (auto& child : children) {
         child->update_child(dTime,scene, childModelMatrix);
     }

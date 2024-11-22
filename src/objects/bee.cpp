@@ -3,6 +3,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <iostream>
 #include "src/scene.cpp"
+#include "src/globals.h"
 
 // Static resources (shared among all instances of Bee)
 std::unique_ptr<ppgso::Mesh> Bee::mesh;
@@ -82,13 +83,27 @@ bool Bee::update(float dTime, Scene &scene) {
 
 // Render function
 void Bee::render(Scene &scene) {
-    // Use the shader from the scene and set uniform variables for the model
+    // Use the shadow projection matrix
+    glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+
+    // Render the shadow
+    scene.colorShader->use();
+    scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);
+    scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
+    scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
+
+    // Render the pig's shadow as a black silhouette
+    glDisable(GL_DEPTH_TEST); // Prevent z-fighting
+    scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
+    mesh->render();
+    glEnable(GL_DEPTH_TEST);
+
+    // Render the pig
     scene.shader->use();
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.shader->setUniform("Texture", *texture);
 
-    // Render the bee mesh
     mesh->render();
 }

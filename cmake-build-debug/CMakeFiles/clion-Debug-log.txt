@@ -15,5 +15,5 @@ FIND_PATH /opt/homebrew/include
 -- Could NOT find OpenMP_CXX (missing: OpenMP_CXX_FLAGS OpenMP_CXX_LIB_NAMES) 
 -- Could NOT find OpenMP (missing: OpenMP_CXX_FOUND) 
 -- Configuring done (2.2s)
--- Generating done (0.0s)
+-- Generating done (0.1s)
 -- Build files have been written to: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug

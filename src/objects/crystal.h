@@ -13,8 +13,8 @@ class Crystal final : public Renderable {
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 position{-3, 0.8, -2.85};  // Position of the crystal
-    glm::vec3 scale{.07, .07, .07};     // Scale of the crystal
+    glm::vec3 position{0, 0.8, 0.15};  // Position of the crystal
+    glm::vec3 scale{.08, .08, .08};     // Scale of the crystal
     glm::vec3 rotation{0, 0, 0};  // Rotation in radians
 
     // Constructor
@@ -22,12 +22,9 @@ public:
 
     // Update function
     bool update(float dTime, Scene &scene) override;
-
-    // Render function
     void render(Scene &scene) override;
+    bool update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) override;
 
-    // Optional: set light properties for the shader
-    void setLightShader(Scene &scene) const;
 };
 
 #endif // CRYSTAL_H

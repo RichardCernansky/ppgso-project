@@ -13,6 +13,7 @@ class Ground final : public Renderable
 public:
     glm::vec3 position{7, 0, -4};
     glm::vec3 scale{50, 50, 1};
+    std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects
 
     Ground()
     {
@@ -31,6 +32,9 @@ public:
     bool update(float dTime, Scene &scene) override
     {
         modelMatrix = glm::mat4{1.0f};
+        for (auto& child : children) {
+            child->update_child(dTime, scene, modelMatrix);
+        }
         modelMatrix = glm::translate(modelMatrix, position);
         modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3{-1, 0, 0});
         modelMatrix = glm::scale(modelMatrix, scale);
@@ -47,11 +51,12 @@ public:
         // Assuming you have a texture for the ground
         scene.shader->setUniform("Texture", *texture);
         mesh->render();
+
+        for (auto& child : children) {
+            child->render(scene);
+        }
     }
 
 
-    void setLightShader(Scene &scene) const
-    {
-        //
-    }
+
 };

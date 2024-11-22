@@ -32,11 +32,22 @@ public:
             mesh = std::make_unique<ppgso::Mesh>("lighthouse1.obj");
     }
 
+    bool update(float dTime, Scene &scene) override{
+        return true;
+    }
+
     // Update the lighthouse's transformation matrix
-    bool update(float dTime, Scene &scene) override {
-        float speed_dir = 3;
+    bool update_child(float dTime, Scene &scene, glm::mat4 parentMatrix) override {
+        float speed_dir = 4;
         float speed_col = 1;
-        if (reflector_direction.x < 0 || reflector_direction.x > 11){ sideFactor_dir *= -1;}
+        if (reflector_direction.x < 0 || reflector_direction.x > 11) {
+            if (reflector_direction.x < 0) {
+                reflector_direction.x = 0.01;
+            }else {
+                reflector_direction.x = 10.9;
+            }
+            sideFactor_dir *= -1;
+        }
         if (reflector_color.x < 0.3 || reflector_color.x > 0.9) {
             if (reflector_color.x < 0.3) {
                 reflector_color.x = 0.31;
@@ -52,6 +63,7 @@ public:
         modelMatrix = glm::mat4{1.0f};
         modelMatrix = glm::translate(modelMatrix, position);
         modelMatrix = glm::scale(modelMatrix, scale);
+        modelMatrix = parentMatrix * modelMatrix;
 
         return true;
     }

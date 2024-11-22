@@ -118,7 +118,7 @@ GLuint set_up_lights(GLuint shaderProgram) {
     // Moonlight setup (light 0)
     lights[0].position = moonLight_position;  // High position to simulate the moon
     lights[0].color = glm::vec3(0.7f, 0.7f, 0.7f);      // Cool light blue color
-    lights[0].ambientStrength = 0.5f;
+    lights[0].ambientStrength = 0.6f;
     lights[0].diffuseStrength = 0.5f;
     lights[0].specularStrength = 0.5f;
     lights[0].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // Not relevant for non-reflector
@@ -129,21 +129,21 @@ GLuint set_up_lights(GLuint shaderProgram) {
     lights[1].position = glm::vec3(-5.0f, 0.0f, 5.0f);  // Position for reflector light
     lights[1].color = reflector_color;      // Red color for reflector light
     lights[1].ambientStrength = 0.1f;
-    lights[1].diffuseStrength = 0.8f;
+    lights[1].diffuseStrength = 0.9f;;
     lights[1].specularStrength = 0.9f;
     lights[1].direction = reflector_direction; // Direction for reflector
     lights[1].cutoffAngle = 25.0f;                      // Spotlight angle (in degrees)
     lights[1].flag = 1;                                 // Spotlight
 
-    // Bodové svetlo (light 2)
-    lights[2].position = glm::vec3(-3.0f, 1.0f, -3.0f); // Position for bodové svetlo
-    lights[2].color = glm::vec3(0.1f, 1.0f, 0.5f);
+    // Point light (light 2)
+    lights[2].position = glm::vec3(-3.0f, 1.0f, -3.0f);
+    lights[2].color = crystal_color;
     lights[2].ambientStrength = 0.4f;
-    lights[2].diffuseStrength = 0.8f;
-    lights[2].specularStrength = 0.8f;
+    lights[2].diffuseStrength = 0.9f;
+    lights[2].specularStrength = 0.9f;
     lights[2].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // No specific direction for point light
-    lights[2].cutoffAngle = 0.0f;                       // Not relevant for bodové svetlo
-    lights[2].flag = 2;                                      // Flag for bodové svetlo
+    lights[2].cutoffAngle = 0.0f;
+    lights[2].flag = 2;
 
     // Upload the light data to the UBO
     glBindBuffer(GL_UNIFORM_BUFFER, lightUBO);
