@@ -32,15 +32,13 @@ bool Crystal::update(float dTime, Scene &scene) {
 void Crystal::render(Scene &scene) {
     // Calculate "breathing" effect for color intensity
     float time = (float)glfwGetTime(); // Get the global time
-    float intensity = (sin(time) * 0.5f) + 0.5f; // Sinusoidal intensity in range [0, 1]
+    float intensity = (sin(time*2) * 0.5f) + 0.5f; // Sinusoidal intensity in range [0, 1]
 
     // Base color of the crystal
-    glm::vec3 baseColor = glm::vec3(0.1f, 1.0f, 0.5f); // Greenish glow
+    glm::vec3 baseColor = glm::vec3(35/255,35/255,255/255); // Greenish glow
     glm::vec3 minColor = baseColor * 0.5f;             // Half-intensity dim color
     glm::vec3 breathingColor = minColor + (baseColor - minColor) * intensity;
     crystal_color = breathingColor;
-    // Use the scene's shader
-    // Use the shadow projection matrix
     glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
 
     // Render the shadow
