@@ -31,7 +31,7 @@ void Crystal::render(Scene &scene) {
     scene.colorShader->setUniform("ModelMatrix", modelMatrix);
     scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
-    scene.colorShader->setUniform("Color",glm::vec3(0.0f, 1.0f, 0.0f));
+    scene.colorShader->setUniform("Color",glm::vec3(0.1f, 1.0f, 0.5f));
 
     // Render the mesh
     mesh->render();

@@ -127,19 +127,19 @@ GLuint set_up_lights(GLuint shaderProgram) {
 
     // Reflector light setup (light 1)
     lights[1].position = glm::vec3(-5.0f, 0.0f, 5.0f);  // Position for reflector light
-    lights[1].color = glm::vec3(1.0f, 0.0f, 0.0);      // Red color for reflector light
+    lights[1].color = reflector_color;      // Red color for reflector light
     lights[1].ambientStrength = 0.1f;
     lights[1].diffuseStrength = 0.8f;
     lights[1].specularStrength = 0.9f;
-    lights[1].direction = glm::vec3(11.0f, -1.0f, -6.0f); // Direction for reflector
+    lights[1].direction = reflector_direction; // Direction for reflector
     lights[1].cutoffAngle = 25.0f;                      // Spotlight angle (in degrees)
     lights[1].flag = 1;                                 // Spotlight
 
     // Bodové svetlo (light 2)
     lights[2].position = glm::vec3(-3.0f, 1.0f, -3.0f); // Position for bodové svetlo
-    lights[2].color = glm::vec3(0.0f, 1.0f, 0.0f);       // Neutral white light
-    lights[2].ambientStrength = 0.2f;
-    lights[2].diffuseStrength = 0.6f;
+    lights[2].color = glm::vec3(0.1f, 1.0f, 0.5f);
+    lights[2].ambientStrength = 0.4f;
+    lights[2].diffuseStrength = 0.8f;
     lights[2].specularStrength = 0.8f;
     lights[2].direction = glm::vec3(0.0f, 0.0f, 0.0f);  // No specific direction for point light
     lights[2].cutoffAngle = 0.0f;                       // Not relevant for bodové svetlo

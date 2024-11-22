@@ -6,7 +6,8 @@
 
 class Lighthouse final : public Renderable {
     glm::mat4 modelMatrix{1.0f};
-
+    float sideFactor_dir = -1;
+    float sideFactor_col = 1;
     // Static resources
     std::unique_ptr<ppgso::Mesh> mesh;
     std::unique_ptr<ppgso::Texture> texture;
@@ -33,6 +34,21 @@ public:
 
     // Update the lighthouse's transformation matrix
     bool update(float dTime, Scene &scene) override {
+        float speed_dir = 3;
+        float speed_col = 1;
+        if (reflector_direction.x < 0 || reflector_direction.x > 11){ sideFactor_dir *= -1;}
+        if (reflector_color.x < 0.3 || reflector_color.x > 0.9) {
+            if (reflector_color.x < 0.3) {
+                reflector_color.x = 0.31;
+            }else {
+                reflector_color.x = 0.9;
+            }
+            sideFactor_col *= -1;
+        }
+
+        reflector_direction = glm::vec3(reflector_direction.x + sideFactor_dir*speed_dir*dTime, reflector_direction.y, reflector_direction.z);
+        reflector_color = glm::vec3(reflector_color.x + sideFactor_col*speed_col*dTime, reflector_color.y, reflector_color.z);
+
         modelMatrix = glm::mat4{1.0f};
         modelMatrix = glm::translate(modelMatrix, position);
         modelMatrix = glm::scale(modelMatrix, scale);

@@ -8,6 +8,8 @@
 
 
 extern glm::vec3 moonLight_position;
+extern glm::vec3 reflector_direction;
+extern glm::vec3 reflector_color;
 
 
 
