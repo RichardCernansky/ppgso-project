@@ -8,7 +8,7 @@
 
 class Wolf final : public Renderable {
     // Transformation matrices
-    glm::mat4 modelMatrix{1.0f};
+    glm::mat4 modelMatrix{1.0f};  // Model transformation matrix
 
     // Static resources shared by all wolves
     static std::unique_ptr<ppgso::Mesh> mesh;

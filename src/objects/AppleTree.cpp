@@ -3,6 +3,8 @@
 //
 
 #include "AppleTree.h"
+#include "src/globals.h"
+
 
 std::unique_ptr<ppgso::Mesh> AppleTree::mesh;
 std::unique_ptr<ppgso::Texture> AppleTree::texture;
@@ -26,8 +28,13 @@ AppleTree::AppleTree() {
     }
 }
 
-// Update method
 bool AppleTree::update(float dTime, Scene &scene) {
+    return true;
+}
+
+
+// Update method
+bool AppleTree::update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) {
 
     modelMatrix = glm::mat4(1.0f);
     modelMatrix = glm::translate(modelMatrix, position);
@@ -41,6 +48,20 @@ bool AppleTree::update(float dTime, Scene &scene) {
 }
 
 void AppleTree::render(Scene &scene) {
+
+    glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+
+    // Render the shadow
+    scene.colorShader->use();
+    scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);
+    scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
+    scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
+
+    // Render the pig's shadow as a black silhouette
+    glDisable(GL_DEPTH_TEST); // Prevent z-fighting
+    scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
+    mesh->render();
+    glEnable(GL_DEPTH_TEST);
 
     // Use the shader program
     scene.shader->use();

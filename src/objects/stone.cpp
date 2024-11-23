@@ -57,6 +57,7 @@ bool Stone::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix)
 
 void Stone::render(Scene &scene) {
 
+
     scene.shader->use();
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.o.d"
   "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o"
   "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.o.d"
+  "CMakeFiles/shaders.dir/shaders/horizontal_blur_frag_glsl.cpp.o"
+  "CMakeFiles/shaders.dir/shaders/horizontal_blur_frag_glsl.cpp.o.d"
   "CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o"
   "CMakeFiles/shaders.dir/shaders/instanced_glsl.cpp.o.d"
   "CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.o"
@@ -23,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.o.d"
   "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o"
   "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.o.d"
+  "CMakeFiles/shaders.dir/shaders/vertical_blur_frag_glsl.cpp.o"
+  "CMakeFiles/shaders.dir/shaders/vertical_blur_frag_glsl.cpp.o.d"
   "libshaders.a"
   "libshaders.pdb"
   "shaders/color_frag_glsl.cpp"
@@ -37,6 +41,8 @@ file(REMOVE_RECURSE
   "shaders/diffuse_frag_glsl.h"
   "shaders/diffuse_vert_glsl.cpp"
   "shaders/diffuse_vert_glsl.h"
+  "shaders/horizontal_blur_frag_glsl.cpp"
+  "shaders/horizontal_blur_frag_glsl.h"
   "shaders/instanced_glsl.cpp"
   "shaders/instanced_glsl.h"
   "shaders/phong_frag_glsl.cpp"
@@ -49,6 +55,8 @@ file(REMOVE_RECURSE
   "shaders/texture_frag_glsl.h"
   "shaders/texture_vert_glsl.cpp"
   "shaders/texture_vert_glsl.h"
+  "shaders/vertical_blur_frag_glsl.cpp"
+  "shaders/vertical_blur_frag_glsl.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -20,8 +20,9 @@ class GoldenApple final : public Renderable {
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 scale{0.02f, 0.02f, 0.02f}; // Adjust as needed
+    glm::vec3 scale{0.02f, 0.02f, 0.02f};
     glm::vec3 position{0, 0, 0};
+
     glm::vec3 constructorPosition{0, 0, 0};
     glm::vec3 velocity{0.0f, 0.0f, 0.0f};
     glm::vec3 acceleration{0.0f, 0.0f, 0.0f};

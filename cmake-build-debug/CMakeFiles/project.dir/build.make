@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project
+CMAKE_SOURCE_DIR = /Users/brunokristian/Documents/skola/ppgso-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project.dir/depend.make
@@ -70,298 +70,298 @@ include CMakeFiles/project.dir/progress.make
 include CMakeFiles/project.dir/flags.make
 
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/main.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp
+CMakeFiles/project.dir/src/main.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/main.cpp.o -MF CMakeFiles/project.dir/src/main.cpp.o.d -o CMakeFiles/project.dir/src/main.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/main.cpp.o -MF CMakeFiles/project.dir/src/main.cpp.o.d -o CMakeFiles/project.dir/src/main.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp
 
 CMakeFiles/project.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp > CMakeFiles/project.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp > CMakeFiles/project.dir/src/main.cpp.i
 
 CMakeFiles/project.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/main.cpp -o CMakeFiles/project.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/main.cpp -o CMakeFiles/project.dir/src/main.cpp.s
 
 CMakeFiles/project.dir/src/window.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/window.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp
+CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp
 CMakeFiles/project.dir/src/window.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/window.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/window.cpp.o -MF CMakeFiles/project.dir/src/window.cpp.o.d -o CMakeFiles/project.dir/src/window.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/window.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/window.cpp.o -MF CMakeFiles/project.dir/src/window.cpp.o.d -o CMakeFiles/project.dir/src/window.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp
 
 CMakeFiles/project.dir/src/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/window.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp > CMakeFiles/project.dir/src/window.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp > CMakeFiles/project.dir/src/window.cpp.i
 
 CMakeFiles/project.dir/src/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/window.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/window.cpp -o CMakeFiles/project.dir/src/window.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp -o CMakeFiles/project.dir/src/window.cpp.s
 
 CMakeFiles/project.dir/src/scene.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/scene.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp
+CMakeFiles/project.dir/src/scene.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp
 CMakeFiles/project.dir/src/scene.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/scene.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/scene.cpp.o -MF CMakeFiles/project.dir/src/scene.cpp.o.d -o CMakeFiles/project.dir/src/scene.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/scene.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/scene.cpp.o -MF CMakeFiles/project.dir/src/scene.cpp.o.d -o CMakeFiles/project.dir/src/scene.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp
 
 CMakeFiles/project.dir/src/scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/scene.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp > CMakeFiles/project.dir/src/scene.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp > CMakeFiles/project.dir/src/scene.cpp.i
 
 CMakeFiles/project.dir/src/scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/scene.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/scene.cpp -o CMakeFiles/project.dir/src/scene.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp -o CMakeFiles/project.dir/src/scene.cpp.s
 
 CMakeFiles/project.dir/src/objects/ground.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/ground.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp
+CMakeFiles/project.dir/src/objects/ground.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp
 CMakeFiles/project.dir/src/objects/ground.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/objects/ground.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/ground.cpp.o -MF CMakeFiles/project.dir/src/objects/ground.cpp.o.d -o CMakeFiles/project.dir/src/objects/ground.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/objects/ground.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/ground.cpp.o -MF CMakeFiles/project.dir/src/objects/ground.cpp.o.d -o CMakeFiles/project.dir/src/objects/ground.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp
 
 CMakeFiles/project.dir/src/objects/ground.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/ground.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp > CMakeFiles/project.dir/src/objects/ground.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp > CMakeFiles/project.dir/src/objects/ground.cpp.i
 
 CMakeFiles/project.dir/src/objects/ground.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/ground.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/ground.cpp -o CMakeFiles/project.dir/src/objects/ground.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp -o CMakeFiles/project.dir/src/objects/ground.cpp.s
 
 CMakeFiles/project.dir/src/objects/tree.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/tree.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.cpp
+CMakeFiles/project.dir/src/objects/tree.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.cpp
 CMakeFiles/project.dir/src/objects/tree.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/src/objects/tree.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/tree.cpp.o -MF CMakeFiles/project.dir/src/objects/tree.cpp.o.d -o CMakeFiles/project.dir/src/objects/tree.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/src/objects/tree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/tree.cpp.o -MF CMakeFiles/project.dir/src/objects/tree.cpp.o.d -o CMakeFiles/project.dir/src/objects/tree.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.cpp
 
 CMakeFiles/project.dir/src/objects/tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/tree.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.cpp > CMakeFiles/project.dir/src/objects/tree.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.cpp > CMakeFiles/project.dir/src/objects/tree.cpp.i
 
 CMakeFiles/project.dir/src/objects/tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/tree.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/tree.cpp -o CMakeFiles/project.dir/src/objects/tree.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.cpp -o CMakeFiles/project.dir/src/objects/tree.cpp.s
 
 CMakeFiles/project.dir/src/generator.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/generator.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp
+CMakeFiles/project.dir/src/generator.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/generator.cpp
 CMakeFiles/project.dir/src/generator.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/src/generator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/generator.cpp.o -MF CMakeFiles/project.dir/src/generator.cpp.o.d -o CMakeFiles/project.dir/src/generator.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project.dir/src/generator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/generator.cpp.o -MF CMakeFiles/project.dir/src/generator.cpp.o.d -o CMakeFiles/project.dir/src/generator.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/generator.cpp
 
 CMakeFiles/project.dir/src/generator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/generator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp > CMakeFiles/project.dir/src/generator.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/generator.cpp > CMakeFiles/project.dir/src/generator.cpp.i
 
 CMakeFiles/project.dir/src/generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/generator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/generator.cpp -o CMakeFiles/project.dir/src/generator.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/generator.cpp -o CMakeFiles/project.dir/src/generator.cpp.s
 
 CMakeFiles/project.dir/src/objects/pig.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/pig.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.cpp
+CMakeFiles/project.dir/src/objects/pig.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.cpp
 CMakeFiles/project.dir/src/objects/pig.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/src/objects/pig.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/pig.cpp.o -MF CMakeFiles/project.dir/src/objects/pig.cpp.o.d -o CMakeFiles/project.dir/src/objects/pig.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project.dir/src/objects/pig.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/pig.cpp.o -MF CMakeFiles/project.dir/src/objects/pig.cpp.o.d -o CMakeFiles/project.dir/src/objects/pig.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.cpp
 
 CMakeFiles/project.dir/src/objects/pig.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/pig.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.cpp > CMakeFiles/project.dir/src/objects/pig.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.cpp > CMakeFiles/project.dir/src/objects/pig.cpp.i
 
 CMakeFiles/project.dir/src/objects/pig.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/pig.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/pig.cpp -o CMakeFiles/project.dir/src/objects/pig.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.cpp -o CMakeFiles/project.dir/src/objects/pig.cpp.s
 
 CMakeFiles/project.dir/src/objects/gas.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/gas.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp
+CMakeFiles/project.dir/src/objects/gas.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp
 CMakeFiles/project.dir/src/objects/gas.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/src/objects/gas.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/gas.cpp.o -MF CMakeFiles/project.dir/src/objects/gas.cpp.o.d -o CMakeFiles/project.dir/src/objects/gas.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project.dir/src/objects/gas.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/gas.cpp.o -MF CMakeFiles/project.dir/src/objects/gas.cpp.o.d -o CMakeFiles/project.dir/src/objects/gas.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp
 
 CMakeFiles/project.dir/src/objects/gas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/gas.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp > CMakeFiles/project.dir/src/objects/gas.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp > CMakeFiles/project.dir/src/objects/gas.cpp.i
 
 CMakeFiles/project.dir/src/objects/gas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/gas.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/gas.cpp -o CMakeFiles/project.dir/src/objects/gas.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.cpp -o CMakeFiles/project.dir/src/objects/gas.cpp.s
 
 CMakeFiles/project.dir/src/objects/horseFly.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/horseFly.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp
+CMakeFiles/project.dir/src/objects/horseFly.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp
 CMakeFiles/project.dir/src/objects/horseFly.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project.dir/src/objects/horseFly.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/horseFly.cpp.o -MF CMakeFiles/project.dir/src/objects/horseFly.cpp.o.d -o CMakeFiles/project.dir/src/objects/horseFly.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project.dir/src/objects/horseFly.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/horseFly.cpp.o -MF CMakeFiles/project.dir/src/objects/horseFly.cpp.o.d -o CMakeFiles/project.dir/src/objects/horseFly.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp
 
 CMakeFiles/project.dir/src/objects/horseFly.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/horseFly.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp > CMakeFiles/project.dir/src/objects/horseFly.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp > CMakeFiles/project.dir/src/objects/horseFly.cpp.i
 
 CMakeFiles/project.dir/src/objects/horseFly.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/horseFly.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/horseFly.cpp -o CMakeFiles/project.dir/src/objects/horseFly.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp -o CMakeFiles/project.dir/src/objects/horseFly.cpp.s
 
 CMakeFiles/project.dir/src/objects/apple.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/apple.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp
+CMakeFiles/project.dir/src/objects/apple.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp
 CMakeFiles/project.dir/src/objects/apple.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project.dir/src/objects/apple.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/apple.cpp.o -MF CMakeFiles/project.dir/src/objects/apple.cpp.o.d -o CMakeFiles/project.dir/src/objects/apple.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project.dir/src/objects/apple.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/apple.cpp.o -MF CMakeFiles/project.dir/src/objects/apple.cpp.o.d -o CMakeFiles/project.dir/src/objects/apple.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp
 
 CMakeFiles/project.dir/src/objects/apple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/apple.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp > CMakeFiles/project.dir/src/objects/apple.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp > CMakeFiles/project.dir/src/objects/apple.cpp.i
 
 CMakeFiles/project.dir/src/objects/apple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/apple.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/apple.cpp -o CMakeFiles/project.dir/src/objects/apple.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp -o CMakeFiles/project.dir/src/objects/apple.cpp.s
 
 CMakeFiles/project.dir/src/objects/AppleTree.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/AppleTree.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp
+CMakeFiles/project.dir/src/objects/AppleTree.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.cpp
 CMakeFiles/project.dir/src/objects/AppleTree.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project.dir/src/objects/AppleTree.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/AppleTree.cpp.o -MF CMakeFiles/project.dir/src/objects/AppleTree.cpp.o.d -o CMakeFiles/project.dir/src/objects/AppleTree.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project.dir/src/objects/AppleTree.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/AppleTree.cpp.o -MF CMakeFiles/project.dir/src/objects/AppleTree.cpp.o.d -o CMakeFiles/project.dir/src/objects/AppleTree.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.cpp
 
 CMakeFiles/project.dir/src/objects/AppleTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/AppleTree.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp > CMakeFiles/project.dir/src/objects/AppleTree.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.cpp > CMakeFiles/project.dir/src/objects/AppleTree.cpp.i
 
 CMakeFiles/project.dir/src/objects/AppleTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/AppleTree.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/AppleTree.cpp -o CMakeFiles/project.dir/src/objects/AppleTree.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.cpp -o CMakeFiles/project.dir/src/objects/AppleTree.cpp.s
 
 CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp
+CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.cpp
 CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project.dir/src/objects/goldenApple.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/goldenApple.cpp.o -MF CMakeFiles/project.dir/src/objects/goldenApple.cpp.o.d -o CMakeFiles/project.dir/src/objects/goldenApple.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/project.dir/src/objects/goldenApple.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/goldenApple.cpp.o -MF CMakeFiles/project.dir/src/objects/goldenApple.cpp.o.d -o CMakeFiles/project.dir/src/objects/goldenApple.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.cpp
 
 CMakeFiles/project.dir/src/objects/goldenApple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/goldenApple.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp > CMakeFiles/project.dir/src/objects/goldenApple.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.cpp > CMakeFiles/project.dir/src/objects/goldenApple.cpp.i
 
 CMakeFiles/project.dir/src/objects/goldenApple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/goldenApple.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/goldenApple.cpp -o CMakeFiles/project.dir/src/objects/goldenApple.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.cpp -o CMakeFiles/project.dir/src/objects/goldenApple.cpp.s
 
 CMakeFiles/project.dir/src/objects/fire.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/fire.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp
+CMakeFiles/project.dir/src/objects/fire.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.cpp
 CMakeFiles/project.dir/src/objects/fire.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project.dir/src/objects/fire.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/fire.cpp.o -MF CMakeFiles/project.dir/src/objects/fire.cpp.o.d -o CMakeFiles/project.dir/src/objects/fire.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/project.dir/src/objects/fire.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/fire.cpp.o -MF CMakeFiles/project.dir/src/objects/fire.cpp.o.d -o CMakeFiles/project.dir/src/objects/fire.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.cpp
 
 CMakeFiles/project.dir/src/objects/fire.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/fire.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp > CMakeFiles/project.dir/src/objects/fire.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.cpp > CMakeFiles/project.dir/src/objects/fire.cpp.i
 
 CMakeFiles/project.dir/src/objects/fire.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/fire.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/fire.cpp -o CMakeFiles/project.dir/src/objects/fire.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.cpp -o CMakeFiles/project.dir/src/objects/fire.cpp.s
 
 CMakeFiles/project.dir/src/objects/smoke.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/smoke.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.cpp
+CMakeFiles/project.dir/src/objects/smoke.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp
 CMakeFiles/project.dir/src/objects/smoke.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project.dir/src/objects/smoke.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/smoke.cpp.o -MF CMakeFiles/project.dir/src/objects/smoke.cpp.o.d -o CMakeFiles/project.dir/src/objects/smoke.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project.dir/src/objects/smoke.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/smoke.cpp.o -MF CMakeFiles/project.dir/src/objects/smoke.cpp.o.d -o CMakeFiles/project.dir/src/objects/smoke.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp
 
 CMakeFiles/project.dir/src/objects/smoke.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/smoke.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.cpp > CMakeFiles/project.dir/src/objects/smoke.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp > CMakeFiles/project.dir/src/objects/smoke.cpp.i
 
 CMakeFiles/project.dir/src/objects/smoke.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/smoke.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/smoke.cpp -o CMakeFiles/project.dir/src/objects/smoke.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp -o CMakeFiles/project.dir/src/objects/smoke.cpp.s
 
 CMakeFiles/project.dir/src/objects/particles.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/particles.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.cpp
+CMakeFiles/project.dir/src/objects/particles.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp
 CMakeFiles/project.dir/src/objects/particles.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project.dir/src/objects/particles.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/particles.cpp.o -MF CMakeFiles/project.dir/src/objects/particles.cpp.o.d -o CMakeFiles/project.dir/src/objects/particles.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project.dir/src/objects/particles.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/particles.cpp.o -MF CMakeFiles/project.dir/src/objects/particles.cpp.o.d -o CMakeFiles/project.dir/src/objects/particles.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp
 
 CMakeFiles/project.dir/src/objects/particles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/particles.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.cpp > CMakeFiles/project.dir/src/objects/particles.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp > CMakeFiles/project.dir/src/objects/particles.cpp.i
 
 CMakeFiles/project.dir/src/objects/particles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/particles.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/particles.cpp -o CMakeFiles/project.dir/src/objects/particles.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp -o CMakeFiles/project.dir/src/objects/particles.cpp.s
 
 CMakeFiles/project.dir/src/objects/wolf.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/wolf.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.cpp
+CMakeFiles/project.dir/src/objects/wolf.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp
 CMakeFiles/project.dir/src/objects/wolf.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project.dir/src/objects/wolf.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/wolf.cpp.o -MF CMakeFiles/project.dir/src/objects/wolf.cpp.o.d -o CMakeFiles/project.dir/src/objects/wolf.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project.dir/src/objects/wolf.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/wolf.cpp.o -MF CMakeFiles/project.dir/src/objects/wolf.cpp.o.d -o CMakeFiles/project.dir/src/objects/wolf.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp
 
 CMakeFiles/project.dir/src/objects/wolf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/wolf.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.cpp > CMakeFiles/project.dir/src/objects/wolf.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp > CMakeFiles/project.dir/src/objects/wolf.cpp.i
 
 CMakeFiles/project.dir/src/objects/wolf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/wolf.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/wolf.cpp -o CMakeFiles/project.dir/src/objects/wolf.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp -o CMakeFiles/project.dir/src/objects/wolf.cpp.s
 
 CMakeFiles/project.dir/src/objects/stone.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/stone.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp
+CMakeFiles/project.dir/src/objects/stone.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp
 CMakeFiles/project.dir/src/objects/stone.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project.dir/src/objects/stone.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/stone.cpp.o -MF CMakeFiles/project.dir/src/objects/stone.cpp.o.d -o CMakeFiles/project.dir/src/objects/stone.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project.dir/src/objects/stone.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/stone.cpp.o -MF CMakeFiles/project.dir/src/objects/stone.cpp.o.d -o CMakeFiles/project.dir/src/objects/stone.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp
 
 CMakeFiles/project.dir/src/objects/stone.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/stone.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp > CMakeFiles/project.dir/src/objects/stone.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp > CMakeFiles/project.dir/src/objects/stone.cpp.i
 
 CMakeFiles/project.dir/src/objects/stone.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/stone.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/stone.cpp -o CMakeFiles/project.dir/src/objects/stone.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp -o CMakeFiles/project.dir/src/objects/stone.cpp.s
 
 CMakeFiles/project.dir/src/objects/grass.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/grass.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp
+CMakeFiles/project.dir/src/objects/grass.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp
 CMakeFiles/project.dir/src/objects/grass.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project.dir/src/objects/grass.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/grass.cpp.o -MF CMakeFiles/project.dir/src/objects/grass.cpp.o.d -o CMakeFiles/project.dir/src/objects/grass.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project.dir/src/objects/grass.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/grass.cpp.o -MF CMakeFiles/project.dir/src/objects/grass.cpp.o.d -o CMakeFiles/project.dir/src/objects/grass.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp
 
 CMakeFiles/project.dir/src/objects/grass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/grass.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp > CMakeFiles/project.dir/src/objects/grass.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp > CMakeFiles/project.dir/src/objects/grass.cpp.i
 
 CMakeFiles/project.dir/src/objects/grass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/grass.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/grass.cpp -o CMakeFiles/project.dir/src/objects/grass.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp -o CMakeFiles/project.dir/src/objects/grass.cpp.s
 
 CMakeFiles/project.dir/src/objects/MySphere.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/MySphere.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp
+CMakeFiles/project.dir/src/objects/MySphere.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/MySphere.cpp
 CMakeFiles/project.dir/src/objects/MySphere.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/MySphere.cpp.o -MF CMakeFiles/project.dir/src/objects/MySphere.cpp.o.d -o CMakeFiles/project.dir/src/objects/MySphere.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/MySphere.cpp.o -MF CMakeFiles/project.dir/src/objects/MySphere.cpp.o.d -o CMakeFiles/project.dir/src/objects/MySphere.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/MySphere.cpp
 
 CMakeFiles/project.dir/src/objects/MySphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/MySphere.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp > CMakeFiles/project.dir/src/objects/MySphere.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/MySphere.cpp > CMakeFiles/project.dir/src/objects/MySphere.cpp.i
 
 CMakeFiles/project.dir/src/objects/MySphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/MySphere.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/MySphere.cpp -o CMakeFiles/project.dir/src/objects/MySphere.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/MySphere.cpp -o CMakeFiles/project.dir/src/objects/MySphere.cpp.s
 
 CMakeFiles/project.dir/src/globals.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/globals.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.cpp
+CMakeFiles/project.dir/src/globals.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/globals.cpp
 CMakeFiles/project.dir/src/globals.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/project.dir/src/globals.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/globals.cpp.o -MF CMakeFiles/project.dir/src/globals.cpp.o.d -o CMakeFiles/project.dir/src/globals.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/project.dir/src/globals.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/globals.cpp.o -MF CMakeFiles/project.dir/src/globals.cpp.o.d -o CMakeFiles/project.dir/src/globals.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/globals.cpp
 
 CMakeFiles/project.dir/src/globals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/globals.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.cpp > CMakeFiles/project.dir/src/globals.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/globals.cpp > CMakeFiles/project.dir/src/globals.cpp.i
 
 CMakeFiles/project.dir/src/globals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/globals.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/globals.cpp -o CMakeFiles/project.dir/src/globals.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/globals.cpp -o CMakeFiles/project.dir/src/globals.cpp.s
 
 CMakeFiles/project.dir/src/objects/crystal.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/crystal.cpp.o: /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.cpp
+CMakeFiles/project.dir/src/objects/crystal.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/crystal.cpp
 CMakeFiles/project.dir/src/objects/crystal.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/project.dir/src/objects/crystal.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/crystal.cpp.o -MF CMakeFiles/project.dir/src/objects/crystal.cpp.o.d -o CMakeFiles/project.dir/src/objects/crystal.cpp.o -c /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/project.dir/src/objects/crystal.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/crystal.cpp.o -MF CMakeFiles/project.dir/src/objects/crystal.cpp.o.d -o CMakeFiles/project.dir/src/objects/crystal.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/crystal.cpp
 
 CMakeFiles/project.dir/src/objects/crystal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/crystal.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.cpp > CMakeFiles/project.dir/src/objects/crystal.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/crystal.cpp > CMakeFiles/project.dir/src/objects/crystal.cpp.i
 
 CMakeFiles/project.dir/src/objects/crystal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/crystal.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardcernansky/Desktop/PPGSO/ppgso-project/src/objects/crystal.cpp -o CMakeFiles/project.dir/src/objects/crystal.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/crystal.cpp -o CMakeFiles/project.dir/src/objects/crystal.cpp.s
 
 # Object files for target project
 project_OBJECTS = \
@@ -417,9 +417,9 @@ project: libshaders.a
 project: /opt/homebrew/lib/libglfw3.a
 project: /opt/homebrew/lib/libGLEW.dylib
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
-	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_directory /Users/richardcernansky/Desktop/PPGSO/ppgso-project/data/ /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_directory /Users/brunokristian/Documents/skola/ppgso-project/data/ /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 
 # Rule to build all files generated by this target.
 CMakeFiles/project.dir/build: project
@@ -430,6 +430,6 @@ CMakeFiles/project.dir/clean:
 .PHONY : CMakeFiles/project.dir/clean
 
 CMakeFiles/project.dir/depend:
-	cd /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/richardcernansky/Desktop/PPGSO/ppgso-project /Users/richardcernansky/Desktop/PPGSO/ppgso-project /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/brunokristian/Documents/skola/ppgso-project /Users/brunokristian/Documents/skola/ppgso-project /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles/project.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/project.dir/depend
 

@@ -14,7 +14,7 @@ private:
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    glm::vec3 position{-3.0f, 3.0f, -3.0f};
+    glm::vec3 position{1.0f, 0.0f, -1.0f};
     glm::vec3 scale{0.04, 0.04, 0.04};
     float radius = 20*scale.x;
     std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects

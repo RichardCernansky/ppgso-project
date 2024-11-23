@@ -26,8 +26,10 @@ Fire::Fire(){
     }
 }
 
+bool Fire::update(float dTime, Scene &scene) {};
+
 // Update method
-bool Fire::update(float dTime, Scene &scene) {
+bool Fire::update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) {
 
     modelMatrix = glm::mat4{1.0f};
     modelMatrix = glm::translate(modelMatrix, position);

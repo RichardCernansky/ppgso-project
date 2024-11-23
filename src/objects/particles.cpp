@@ -86,20 +86,20 @@ bool Particles::update_child(float dTime, Scene &scene, glm::mat4 parentModelMat
 
 // Render method
 void Particles::render(Scene &scene) {
-    // Use the shadow projection matrix
-    glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
-
-    // Render the shadow
-    scene.colorShader->use();
-    scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);
-    scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
-    scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
-
-    // Render the pig's shadow as a black silhouette
-    glDisable(GL_DEPTH_TEST); // Prevent z-fighting
-    scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
-    mesh->render();
-    glEnable(GL_DEPTH_TEST);
+    // // Use the shadow projection matrix
+    // glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+    //
+    // // Render the shadow
+    // scene.colorShader->use();
+    // scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);
+    // scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
+    // scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
+    //
+    // // Render the pig's shadow as a black silhouette
+    // glDisable(GL_DEPTH_TEST); // Prevent z-fighting
+    // scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
+    // mesh->render();
+    // glEnable(GL_DEPTH_TEST);
 
     // Render the pig
     scene.shader->use();

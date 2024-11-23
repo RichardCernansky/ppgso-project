@@ -19,14 +19,14 @@ private:
 
 public:
     std::vector<std::unique_ptr<Renderable>> children;
-    glm::vec3 position{5, 0, 7.5};
+    glm::vec3 position{0, 0, -10};
     glm::vec3 scale{1, 1, 1};
 
     AppleTree();  // Constructor
 
     // Update and render methods
     bool update(float dTime, Scene &scene) override;
-
+    bool update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) override;
     void render(Scene &scene) override;
 };
 

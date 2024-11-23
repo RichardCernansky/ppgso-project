@@ -75,6 +75,8 @@ set(PPGSO_SHADER_SRC
         shader/phong_frag.glsl
         shader/phong_vert.glsl
         shader/point_frag.glsl
+        shader/horizontal_blur_frag.glsl
+        shader/vertical_blur_frag.glsl
         )
 add_resources(shaders ${PPGSO_SHADER_SRC})
 

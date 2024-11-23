@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project
+CMAKE_SOURCE_DIR = /Users/brunokristian/Documents/skola/ppgso-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/richardcernansky/Desktop/PPGSO/ppgso-project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -536,6 +536,30 @@ shaders/diffuse_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s
 .PHONY : shaders/diffuse_vert_glsl.cpp.s
 
+shaders/horizontal_blur_frag_glsl.o: shaders/horizontal_blur_frag_glsl.cpp.o
+.PHONY : shaders/horizontal_blur_frag_glsl.o
+
+# target to build an object file
+shaders/horizontal_blur_frag_glsl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/horizontal_blur_frag_glsl.cpp.o
+.PHONY : shaders/horizontal_blur_frag_glsl.cpp.o
+
+shaders/horizontal_blur_frag_glsl.i: shaders/horizontal_blur_frag_glsl.cpp.i
+.PHONY : shaders/horizontal_blur_frag_glsl.i
+
+# target to preprocess a source file
+shaders/horizontal_blur_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/horizontal_blur_frag_glsl.cpp.i
+.PHONY : shaders/horizontal_blur_frag_glsl.cpp.i
+
+shaders/horizontal_blur_frag_glsl.s: shaders/horizontal_blur_frag_glsl.cpp.s
+.PHONY : shaders/horizontal_blur_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/horizontal_blur_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/horizontal_blur_frag_glsl.cpp.s
+.PHONY : shaders/horizontal_blur_frag_glsl.cpp.s
+
 shaders/instanced_glsl.o: shaders/instanced_glsl.cpp.o
 .PHONY : shaders/instanced_glsl.o
 
@@ -679,6 +703,30 @@ shaders/texture_vert_glsl.s: shaders/texture_vert_glsl.cpp.s
 shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
+
+shaders/vertical_blur_frag_glsl.o: shaders/vertical_blur_frag_glsl.cpp.o
+.PHONY : shaders/vertical_blur_frag_glsl.o
+
+# target to build an object file
+shaders/vertical_blur_frag_glsl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/vertical_blur_frag_glsl.cpp.o
+.PHONY : shaders/vertical_blur_frag_glsl.cpp.o
+
+shaders/vertical_blur_frag_glsl.i: shaders/vertical_blur_frag_glsl.cpp.i
+.PHONY : shaders/vertical_blur_frag_glsl.i
+
+# target to preprocess a source file
+shaders/vertical_blur_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/vertical_blur_frag_glsl.cpp.i
+.PHONY : shaders/vertical_blur_frag_glsl.cpp.i
+
+shaders/vertical_blur_frag_glsl.s: shaders/vertical_blur_frag_glsl.cpp.s
+.PHONY : shaders/vertical_blur_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/vertical_blur_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shaders.dir/build.make CMakeFiles/shaders.dir/shaders/vertical_blur_frag_glsl.cpp.s
+.PHONY : shaders/vertical_blur_frag_glsl.cpp.s
 
 src/generator.o: src/generator.cpp.o
 .PHONY : src/generator.o
@@ -1292,6 +1340,9 @@ help:
 	@echo "... shaders/diffuse_vert_glsl.o"
 	@echo "... shaders/diffuse_vert_glsl.i"
 	@echo "... shaders/diffuse_vert_glsl.s"
+	@echo "... shaders/horizontal_blur_frag_glsl.o"
+	@echo "... shaders/horizontal_blur_frag_glsl.i"
+	@echo "... shaders/horizontal_blur_frag_glsl.s"
 	@echo "... shaders/instanced_glsl.o"
 	@echo "... shaders/instanced_glsl.i"
 	@echo "... shaders/instanced_glsl.s"
@@ -1310,6 +1361,9 @@ help:
 	@echo "... shaders/texture_vert_glsl.o"
 	@echo "... shaders/texture_vert_glsl.i"
 	@echo "... shaders/texture_vert_glsl.s"
+	@echo "... shaders/vertical_blur_frag_glsl.o"
+	@echo "... shaders/vertical_blur_frag_glsl.i"
+	@echo "... shaders/vertical_blur_frag_glsl.s"
 	@echo "... src/generator.o"
 	@echo "... src/generator.i"
 	@echo "... src/generator.s"
