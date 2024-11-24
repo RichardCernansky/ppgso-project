@@ -32,13 +32,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 164,
+				"line" : 165,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 163,
+				"line" : 164,
 				"parent" : 0
 			},
 			{
@@ -264,7 +264,8 @@
 				31,
 				34,
 				36,
-				38
+				38,
+				39
 			]
 		}
 	],
@@ -484,6 +485,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/objects/crystal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/objects/ground.h",
 			"sourceGroupIndex" : 1
 		}
 	],

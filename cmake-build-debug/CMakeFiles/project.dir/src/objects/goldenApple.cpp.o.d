@@ -1206,4 +1206,7 @@ CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../generator.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/ground.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h

@@ -1,4 +1,6 @@
 #include "goldenApple.h"
+
+#include "apple.h"
 #include "src/generator.h"
 #include "../objects/stone.h"
 
@@ -61,63 +63,79 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
 
         glm::vec4 worldPos = modelMatrix * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
         glm::vec3 globalPosition = glm::vec3(worldPos);
+        //std::cout << globalPosition.x << ", " << globalPosition.z << std::endl;
 
-        // Iterate through all stones in the scene and handle collisions
-        for (auto &obj : scene.objects) {
-            Stone* stone = dynamic_cast<Stone*>(obj.get());
-            if (stone) {
-                // Calculate the vector between apple and stone
-                glm::vec3 diff = globalPosition - stone->position;
-                float distance = glm::length(diff);
-                float combinedRadius = radius + stone->radius;
 
-                // Check for collision
-                if (distance < combinedRadius) {
-                    // Normalize the collision normal
-                    glm::vec3 collisionNormal = glm::normalize(diff);
+        for (auto &object : scene.objects) {
+            Ground* ground = dynamic_cast<Ground*>(object.get());
+            if (ground) {
+                for (auto &obj : ground->children) {
+                    AppleTree* tree = dynamic_cast<AppleTree*>(obj.get());
+                    if (tree) {
+                         for (auto &obje : tree->children) {
+                            Stone* stone = dynamic_cast<Stone*>(obje.get());
+                            if (stone) {
+                                // Calculate the vector between apple and stone
+                                glm::vec3 diff = globalPosition - stone->position;
+                                float distance = glm::length(diff);
+                                float combinedRadius = radius + stone->radius;
 
-                    // Calculate relative velocity
-                    glm::vec3 relativeVelocity = velocity*0.2f;
 
-                    // Calculate velocity along the normal
-                    float velocityAlongNormal = glm::dot(relativeVelocity, collisionNormal);
+                                // Check for collision
+                                if (distance < combinedRadius) {
+                                    std::cout << "collision" << std::endl;
+                                    std::cout << "distance: " << distance << std::endl
+                                    << "combinedRadius: " << combinedRadius << std::endl;
+                                    // Normalize the collision normal
+                                    glm::vec3 collisionNormal = glm::normalize(diff);
 
-                    // If velocities are separating, do not resolve
-                    if (velocityAlongNormal > 0)
-                        continue;
+                                    // Calculate relative velocity
+                                    glm::vec3 relativeVelocity = velocity*0.2f;
 
-                    // Calculate restitution
-                    float e = restitution;
+                                    // Calculate velocity along the normal
+                                    float velocityAlongNormal = glm::dot(relativeVelocity, collisionNormal);
 
-                    // Calculate impulse scalar
-                    float j = -(1.0f + e) * velocityAlongNormal;;
+                                    // If velocities are separating, do not resolve
+                                    if (velocityAlongNormal > 0)
+                                        continue;
 
-                    // Apply impulse
-                    glm::vec3 impulse = j * collisionNormal;
-                    velocity += impulse / mass;
-                    // Positional correction to prevent sinking
-                    const float percent = 0.8f; // Penetration percentage to correct
-                    const float slop = 0.01f;   // Penetration allowance
-                    float penetration = combinedRadius - distance;
-                    float correctionMagnitude = std::max(penetration - slop, 0.0f) / (1.0f / mass) * percent;
-                    glm::vec3 correction = correctionMagnitude * collisionNormal;
-                    position += correction / mass;;
+                                    // Calculate restitution
+                                    float e = restitution;
 
-                    // Optional: Apply friction
-                    glm::vec3 tangent = relativeVelocity - (glm::dot(relativeVelocity, collisionNormal) * collisionNormal);
-                    if (glm::length(tangent) > 0.0001f)
-                        tangent = glm::normalize(tangent);
+                                    // Calculate impulse scalar
+                                    float j = -(1.0f + e) * velocityAlongNormal;;
 
-                    // Calculate friction scalar
-                    float mu = 0.5f; // Friction coefficient
-                    float jt = -glm::dot(relativeVelocity, tangent);
+                                    // Apply impulse
+                                    glm::vec3 impulse = j * collisionNormal;
+                                    velocity += impulse / mass;
+                                    // Positional correction to prevent sinking
+                                    const float percent = 0.8f; // Penetration percentage to correct
+                                    const float slop = 0.01f;   // Penetration allowance
+                                    float penetration = combinedRadius - distance;
+                                    float correctionMagnitude = std::max(penetration - slop, 0.0f) / (1.0f / mass) * percent;
+                                    glm::vec3 correction = correctionMagnitude * collisionNormal;
+                                    position += correction / mass;;
 
-                    // Clamp friction impulse
-                    float frictionImpulseMagnitude = (std::abs(jt) < j * mu) ? jt : -j * mu;
-                    glm::vec3 frictionImpulse = frictionImpulseMagnitude * tangent;
+                                    // Optional: Apply friction
+                                    glm::vec3 tangent = relativeVelocity - (glm::dot(relativeVelocity, collisionNormal) * collisionNormal);
+                                    if (glm::length(tangent) > 0.0001f)
+                                        tangent = glm::normalize(tangent);
 
-                    // Apply friction impulse
-                    velocity += frictionImpulse / mass;
+                                    // Calculate friction scalar
+                                    float mu = 0.5f; // Friction coefficient
+                                    float jt = -glm::dot(relativeVelocity, tangent);
+
+                                    // Clamp friction impulse
+                                    float frictionImpulseMagnitude = (std::abs(jt) < j * mu) ? jt : -j * mu;
+                                    glm::vec3 frictionImpulse = frictionImpulseMagnitude * tangent;
+
+                                    // Apply friction impulse
+                                    velocity += frictionImpulse / mass;
+                                }
+                            }
+                        }
+
+                    }
                 }
             }
         }

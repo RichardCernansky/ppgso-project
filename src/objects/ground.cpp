@@ -1,62 +1,58 @@
-#include <ppgso/ppgso.h>
-#include "../scene.cpp"
-#include "../renderable.h"
+// Ground.cpp
+#include "ground.h"
+#include <iostream> // For std::cerr
 
-class Ground final : public Renderable
-{
-    glm::mat4 modelMatrix{1.0f};
-
-    // Static resources
-    std::unique_ptr<ppgso::Mesh> mesh;
-    std::unique_ptr<ppgso::Texture> texture;
-
-public:
-    glm::vec3 position{7, 0, -4};
-    glm::vec3 scale{50, 50, 1};
-    std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects
-
-    Ground()
-    {
-        if (!texture) {
-            auto image = ppgso::image::loadBMP("ground.bmp");
-            if (image.width == 0 || image.height == 0) {
-                std::cerr << "Failed to load image: scrub-ground.bmp" << std::endl;
-                return;
-            }
-            texture = std::make_unique<ppgso::Texture>(std::move(image));
+Ground::Ground() {
+    // Initialize texture if not already initialized
+    if (!texture) {
+        auto image = ppgso::image::loadBMP("ground.bmp");
+        if (image.width == 0 || image.height == 0) {
+            std::cerr << "Failed to load image: ground.bmp" << std::endl;
+            return;
         }
-        if (!mesh)
-            mesh = std::make_unique<ppgso::Mesh>("quad.obj");
+        texture = std::make_unique<ppgso::Texture>(std::move(image));
     }
 
-    bool update(float dTime, Scene &scene) override
-    {
-        modelMatrix = glm::mat4{1.0f};
-        for (auto& child : children) {
-            child->update_child(dTime, scene, modelMatrix);
-        }
-        modelMatrix = glm::translate(modelMatrix, position);
-        modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3{-1, 0, 0});
-        modelMatrix = glm::scale(modelMatrix, scale);
+    // Initialize mesh if not already initialized
+    if (!mesh) {
+        mesh = std::make_unique<ppgso::Mesh>("quad.obj");
+    }
+}
 
-        return true;
+bool Ground::update(float dTime, Scene &scene) {
+    // Reset model matrix
+    modelMatrix = glm::mat4{1.0f};
+
+    // Update all children with the current model matrix
+    for (auto &child : children) {
+        child->update_child(dTime, scene, modelMatrix);
     }
 
-    void render(Scene &scene) {
-        scene.shader->use();
-        scene.shader->setUniform("ModelMatrix", modelMatrix);
-        scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
-        scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
+    // Apply transformations
+    modelMatrix = glm::translate(modelMatrix, position);
+    modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3{-1.0f, 0.0f, 0.0f});
+    modelMatrix = glm::scale(modelMatrix, scale);
 
-        // Assuming you have a texture for the ground
-        scene.shader->setUniform("Texture", *texture);
-        mesh->render();
+    return true;
+}
 
-        for (auto& child : children) {
-            child->render(scene);
-        }
+void Ground::render(Scene &scene) {
+    // Use the scene's shader
+    scene.shader->use();
+
+    // Set shader uniforms
+    scene.shader->setUniform("ModelMatrix", modelMatrix);
+    scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
+    scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
+
+    // Bind and set the texture
+    scene.shader->setUniform("Texture", *texture);
+
+    // Render the mesh
+    mesh->render();
+
+    // Render all children
+    for (auto &child : children) {
+        child->render(scene);
     }
-
-
-
-};
+}

@@ -21,7 +21,7 @@
 //my files
 #include "objects/bee.h"
 #include "scene.cpp"
-#include "objects/ground.cpp"
+#include "objects/ground.h"
 #include "objects/tree.h"
 #include "generator.h"
 #include "objects/apple.h"

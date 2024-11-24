@@ -10,6 +10,8 @@
 #include "../scene.cpp"
 #include "../renderable.h"
 #include "../objects/stone.h"
+#include "../objects/AppleTree.h"
+#include "../objects/ground.h"
 
 class GoldenApple final : public Renderable {
     // Transformation matrices

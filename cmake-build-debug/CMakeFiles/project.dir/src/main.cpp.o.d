@@ -1213,7 +1213,7 @@ CMakeFiles/project.dir/src/main.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../scene.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.h \
@@ -1224,6 +1224,8 @@ CMakeFiles/project.dir/src/main.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/stone.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \

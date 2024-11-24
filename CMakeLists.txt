@@ -159,6 +159,7 @@ add_executable(project
         src/globals.h
         src/objects/crystal.cpp
         src/objects/crystal.h
+        src/objects/ground.h
 )
 target_link_libraries(project ppgso shaders)
 install(TARGETS project DESTINATION .)

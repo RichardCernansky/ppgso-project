@@ -1,5 +1,6 @@
 CMakeFiles/project.dir/src/objects/ground.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/ppgso/ppgso.h \
   /opt/homebrew/include/glm/glm.hpp \
   /opt/homebrew/include/glm/detail/_fixes.hpp \
@@ -1202,4 +1203,5 @@ CMakeFiles/project.dir/src/objects/ground.cpp.o: \
   /opt/homebrew/include/glm/./ext/scalar_common.inl \
   /opt/homebrew/include/glm/gtx/norm.inl \
   /opt/homebrew/include/glm/gtx/quaternion.inl \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../generator.h
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../generator.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h

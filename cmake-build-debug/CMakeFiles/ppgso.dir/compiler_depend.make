@@ -10973,6 +10973,8 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/globals.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
@@ -10985,7 +10987,7 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/lighthouse.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
@@ -11284,8 +11286,6 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
 
 
 /opt/homebrew/include/glm/gtx/transform.hpp:
-
-/Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp:
 
 /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp:
 
@@ -12984,6 +12984,8 @@ shaders/texture_vert_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/blsr.h:
+
+/Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/set_symmetric_difference.h:
 

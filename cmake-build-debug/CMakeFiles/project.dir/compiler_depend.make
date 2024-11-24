@@ -977,6 +977,8 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/brunokristian/Documents/skola
   /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/globals.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
@@ -989,7 +991,7 @@ CMakeFiles/project.dir/src/generator.cpp.o: /Users/brunokristian/Documents/skola
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/lighthouse.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
@@ -2500,6 +2502,8 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/globals.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
@@ -2512,7 +2516,7 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/lighthouse.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
@@ -10977,9 +10981,12 @@ CMakeFiles/project.dir/src/objects/goldenApple.cpp.o: /Users/brunokristian/Docum
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /opt/homebrew/include/GL/glew.h \
@@ -13445,6 +13452,8 @@ CMakeFiles/project.dir/src/objects/ground.cpp.o: /Users/brunokristian/Documents/
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /opt/homebrew/include/GL/glew.h \
   /opt/homebrew/include/GLFW/glfw3.h \
   /opt/homebrew/include/glm/common.hpp \
@@ -24410,6 +24419,8 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
   /Users/brunokristian/Documents/skola/ppgso-project/src/camera.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/generator.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/globals.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/AppleTree.h \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/renderable.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/scene.cpp \
@@ -24422,7 +24433,7 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/gas.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/goldenApple.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp \
+  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/lighthouse.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
@@ -24724,6 +24735,8 @@ CMakeFiles/project.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/pp
 
 /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp:
 
+/Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp:
+
 /Users/brunokristian/Documents/skola/ppgso-project/src/objects/apple.cpp:
 
 shaders/color_vert_glsl.h:
@@ -24947,8 +24960,6 @@ shaders/color_vert_glsl.h:
 /opt/homebrew/include/glm/common.hpp:
 
 /Users/brunokristian/Documents/skola/ppgso-project/src/window.cpp:
-
-/Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.cpp:
 
 /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp:
 
@@ -26445,6 +26456,8 @@ shaders/texture_vert_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_polymorphic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__bit/blsr.h:
+
+/Users/brunokristian/Documents/skola/ppgso-project/src/objects/ground.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/set_symmetric_difference.h:
 
