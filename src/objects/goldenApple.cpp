@@ -63,7 +63,6 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
 
         glm::vec4 worldPos = modelMatrix * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
         glm::vec3 globalPosition = glm::vec3(worldPos);
-        //std::cout << globalPosition.x << ", " << globalPosition.z << std::endl;
 
 
         for (auto &object : scene.objects) {
@@ -76,16 +75,13 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
                             Stone* stone = dynamic_cast<Stone*>(obje.get());
                             if (stone) {
                                 // Calculate the vector between apple and stone
-                                glm::vec3 diff = globalPosition - stone->position;
+                                glm::vec3 diff = position - stone->position;
                                 float distance = glm::length(diff);
                                 float combinedRadius = radius + stone->radius;
 
 
                                 // Check for collision
                                 if (distance < combinedRadius) {
-                                    std::cout << "collision" << std::endl;
-                                    std::cout << "distance: " << distance << std::endl
-                                    << "combinedRadius: " << combinedRadius << std::endl;
                                     // Normalize the collision normal
                                     glm::vec3 collisionNormal = glm::normalize(diff);
 
