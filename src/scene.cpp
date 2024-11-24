@@ -64,8 +64,6 @@ public:
 		std::list<Renderable*> transparentObjects;
 		std::list<Renderable*> opaqueObjects;
 
-		std::cout << "Number of top-level objects: " << objects.size() << std::endl;
-
 		// Helper function to recursively traverse the tree
 		auto categorizeObjects = [&](Renderable* object, auto& self) -> void {
 			if (!object) return;
@@ -79,7 +77,6 @@ public:
 
 			// Recursively process children
 			const auto& children = object->getChildren();
-			std::cout << "Children count: " << children.size() << std::endl;
 			for (const auto& child : children) {
 				self(child.get(), self); // Recurse into children
 			}
