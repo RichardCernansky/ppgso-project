@@ -65,6 +65,7 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
         glm::vec3 globalPosition = glm::vec3(worldPos);
 
 
+        //traverse the scene graph
         for (auto &object : scene.objects) {
             Ground* ground = dynamic_cast<Ground*>(object.get());
             if (ground) {
