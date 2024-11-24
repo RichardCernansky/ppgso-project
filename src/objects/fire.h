@@ -18,8 +18,6 @@ class Fire final : public Renderable {
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    std::vector<std::unique_ptr<Renderable>> children;
-
     glm::vec3 scale{0.001f, 0.001f, 0.001f};
     glm::vec3 position{0, 0,-1};
 

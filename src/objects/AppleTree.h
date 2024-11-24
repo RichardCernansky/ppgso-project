@@ -18,7 +18,6 @@ private:
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    std::vector<std::unique_ptr<Renderable>> children;
     glm::vec3 position{0, 0, -10};
     glm::vec3 scale{1, 1, 1};
 

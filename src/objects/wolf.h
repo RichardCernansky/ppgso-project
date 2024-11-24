@@ -28,5 +28,9 @@ public:
     int findClosestPigIndex(const Scene &scene) const;
     bool update(float dTime, Scene &scene) override;
     void render(Scene &scene) override;
+
+    const std::vector<std::unique_ptr<Renderable>>& getChildren() const {
+        return children;
+    }
 };
 #endif // WOLF_H

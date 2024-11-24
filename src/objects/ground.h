@@ -17,7 +17,6 @@ private:
 public:
     glm::vec3 position{7.0f, 0.0f, -4.0f};
     glm::vec3 scale{50.0f, 50.0f, 1.0f};
-    std::vector<std::unique_ptr<Renderable>> children;  // Scene hierarchy children objects
 
     // Constructor
     Ground();
@@ -25,6 +24,8 @@ public:
     // Override virtual functions from Renderable
     bool update(float dTime, Scene &scene) override;
     void render(Scene &scene) override;
+
+
 };
 
 #endif // GROUND_H

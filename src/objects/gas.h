@@ -11,10 +11,9 @@ private:
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    std::vector<std::unique_ptr<Renderable>> children;
     glm::vec3 position{0, 0, -0.7};
     glm::vec3 scale{0.008, 0.008, 0.008};
-    float transparency = 0.5f;
+    float transparency = 0.2f;
 
 
     Gas();

@@ -4,7 +4,6 @@
 
 class HorseFly final : public Renderable {
 private:
-    std::vector<std::unique_ptr<Renderable>> children;
     glm::mat4 modelMatrix{1.0f};  // Model transformation matrix
     glm::mat4 parentPos{0};
     // Static resources (shared among all pigs)

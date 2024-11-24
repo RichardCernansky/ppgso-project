@@ -3,17 +3,19 @@
 #include "renderable.h"
 #include "camera.h"
 #include "generator.h"
+
+
+
 #ifndef SCENE
 #define SCENE
 
 
-class Scene
-{
+class Scene {
 public:
 	// list of objects
 	std::list<std::unique_ptr<Renderable>> objects;
 
-	// camera
+	// camerax
 	std::unique_ptr<Camera> camera;
 
 	// shader
@@ -57,23 +59,39 @@ public:
 	}
 
 	// render function
-	void render()
-	{
+	void render() {
 		// Temporary lists holding raw pointers to Renderable objects
 		std::list<Renderable*> transparentObjects;
 		std::list<Renderable*> opaqueObjects;
 
-		// Categorize objects without transferring ownership
-		for (const auto &object : objects) {
-			if (checkTransparency(object.get())) {
-				transparentObjects.push_back(object.get());
+		std::cout << "Number of top-level objects: " << objects.size() << std::endl;
+
+		// Helper function to recursively traverse the tree
+		auto categorizeObjects = [&](Renderable* object, auto& self) -> void {
+			if (!object) return;
+
+			// Categorize the current object
+			if (checkTransparency(object)) {
+				transparentObjects.push_back(object);
 			} else {
-				opaqueObjects.push_back(object.get());
+				opaqueObjects.push_back(object);
 			}
+
+			// Recursively process children
+			const auto& children = object->getChildren();
+			std::cout << "Children count: " << children.size() << std::endl;
+			for (const auto& child : children) {
+				self(child.get(), self); // Recurse into children
+			}
+		};
+
+		// Start traversal from top-level objects
+		for (const auto& object : objects) {
+			categorizeObjects(object.get(), categorizeObjects);
 		}
 
 		// Render opaque objects first
-		for (const auto &object : opaqueObjects) {
+		for (const auto& object : opaqueObjects) {
 			object->render(*this);
 		}
 
@@ -84,11 +102,10 @@ public:
 		});
 
 		// Render transparent objects in sorted order
-		for (const auto &object : transparentObjects) {
+		for (const auto& object : transparentObjects) {
 			object->render(*this);
 		}
-	}
-
+	};
 };
 
 #endif

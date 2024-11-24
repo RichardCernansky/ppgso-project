@@ -16,7 +16,6 @@ private:
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
-    std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects
     // Pig position and scale
     // Initially placed at (0, 0, 0)
     glm::vec3 scale{1, 1, 1};     // Default scale

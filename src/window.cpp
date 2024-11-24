@@ -284,96 +284,101 @@ public:
 		quadMesh.render();
 	}
 
+	void onKey(int key, int scanCode, int action, int mods) override {
+		// Toggle blur effect when 'B' key is pressed
+		if (key == GLFW_KEY_B && action == GLFW_PRESS) {
+			applyBlur = !applyBlur;
+		}
+	}
+
+
 	void onIdle()
-{
-    // Track time
-    static auto time = (float)glfwGetTime();
-    float dTime = (float)glfwGetTime() - time;
-    time = (float)glfwGetTime();
+	{
+	    // Track time
+	    static auto time = (float)glfwGetTime();
+	    float dTime = (float)glfwGetTime() - time;
+	    time = (float)glfwGetTime();
 
-    // ---- Step 1: Render the Scene to fbo ----
-    glViewport(0, 0, quadTexture.image.width, quadTexture.image.height);
-    glBindFramebuffer(GL_FRAMEBUFFER, fbo);
-    glClearColor(0.0f, 0.0f, 0.0f, 0);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	    // ---- Step 1: Render the Scene to fbo ----
+	    glViewport(0, 0, quadTexture.image.width, quadTexture.image.height);
+	    glBindFramebuffer(GL_FRAMEBUFFER, fbo);
+	    glClearColor(0.0f, 0.0f, 0.0f, 0);
+	    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    scene.update(dTime);
-    scene.render();
+	    scene.update(dTime);
+	    scene.render();
 
-    if (applyBlur)
-    {
-        // ---- Step 2: Horizontal Blur Pass ----
-        glBindFramebuffer(GL_FRAMEBUFFER, blurFbo1);
-        glClear(GL_COLOR_BUFFER_BIT);
+	    if (applyBlur)
+	    {
+	        // ---- Step 2: Horizontal Blur Pass ----
+	        glBindFramebuffer(GL_FRAMEBUFFER, blurFbo1);
+	        glClear(GL_COLOR_BUFFER_BIT);
 
-        horizontalBlurShader.use();
-        horizontalBlurShader.setUniform("image", 0);
+	        horizontalBlurShader.use();
+	        horizontalBlurShader.setUniform("image", 0);
 
-        // Set Gaussian weights
-        float weight[5] = {0.227027f, 0.1945946f, 0.1216216f, 0.054054f, 0.016216f};
-        for (int i = 0; i < 5; ++i)
-        {
-            horizontalBlurShader.setUniform(("weight[" + std::to_string(i) + "]").c_str(), weight[i]);
-        }
+	        // Set Gaussian weights
+	        float weight[5] = {0.227027f, 0.1945946f, 0.1216216f, 0.054054f, 0.016216f};
+	        for (int i = 0; i < 5; ++i)
+	        {
+	            horizontalBlurShader.setUniform(("weight[" + std::to_string(i) + "]").c_str(), weight[i]);
+	        }
 
-        // Set the matrix uniforms on the horizontal blur shader
-        horizontalBlurShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
-        horizontalBlurShader.setUniform("ViewMatrix", glm::mat4(1.0f));
-        horizontalBlurShader.setUniform("ModelMatrix", glm::mat4(1.0f));
+	        // Set the matrix uniforms on the horizontal blur shader
+	        horizontalBlurShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
+	        horizontalBlurShader.setUniform("ViewMatrix", glm::mat4(1.0f));
+	        horizontalBlurShader.setUniform("ModelMatrix", glm::mat4(1.0f));
 
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, quadTexture.getTexture());
+	        glActiveTexture(GL_TEXTURE0);
+	        glBindTexture(GL_TEXTURE_2D, quadTexture.getTexture());
 
-        quadMesh.render();
+	        quadMesh.render();
 
-        // ---- Step 3: Vertical Blur Pass ----
-        glBindFramebuffer(GL_FRAMEBUFFER, blurFbo2);
-        glClear(GL_COLOR_BUFFER_BIT);
+	        // ---- Step 3: Vertical Blur Pass ----
+	        glBindFramebuffer(GL_FRAMEBUFFER, blurFbo2);
+	        glClear(GL_COLOR_BUFFER_BIT);
 
-        verticalBlurShader.use();
-        verticalBlurShader.setUniform("image", 0);
+	        verticalBlurShader.use();
+	        verticalBlurShader.setUniform("image", 0);
 
-        // Set Gaussian weights
-        for (int i = 0; i < 5; ++i)
-        {
-            verticalBlurShader.setUniform(("weight[" + std::to_string(i) + "]").c_str(), weight[i]);
-        }
+	        // Set Gaussian weights
+	        for (int i = 0; i < 5; ++i)
+	        {
+	            verticalBlurShader.setUniform(("weight[" + std::to_string(i) + "]").c_str(), weight[i]);
+	        }
 
-        // Set the matrix uniforms on the vertical blur shader
-        verticalBlurShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
-        verticalBlurShader.setUniform("ViewMatrix", glm::mat4(1.0f));
-        verticalBlurShader.setUniform("ModelMatrix", glm::mat4(1.0f));
+	        // Set the matrix uniforms on the vertical blur shader
+	        verticalBlurShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
+	        verticalBlurShader.setUniform("ViewMatrix", glm::mat4(1.0f));
+	        verticalBlurShader.setUniform("ModelMatrix", glm::mat4(1.0f));
 
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, blurTexture1);
+	        glActiveTexture(GL_TEXTURE0);
+	        glBindTexture(GL_TEXTURE_2D, blurTexture1);
 
-        quadMesh.render();
-    }
+	        quadMesh.render();
+	    }
 
-    // ---- Step 4: Render to Screen ----
-    resetViewport();
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	    // ---- Step 4: Render to Screen ----
+	    resetViewport();
+	    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+	    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    quadShader.use();
-    quadShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
-    quadShader.setUniform("ViewMatrix", glm::mat4(1.0f));
-    quadShader.setUniform("ModelMatrix", glm::mat4(1.0f));
-    quadShader.setUniform("Texture", 0);
+	    quadShader.use();
+	    quadShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
+	    quadShader.setUniform("ViewMatrix", glm::mat4(1.0f));
+	    quadShader.setUniform("ModelMatrix", glm::mat4(1.0f));
+	    quadShader.setUniform("Texture", 0);
 
-    glActiveTexture(GL_TEXTURE0);
-    if (applyBlur)
-    {
-        glBindTexture(GL_TEXTURE_2D, blurTexture2); // Render blurred texture
-    }
-    else
-    {
-        glBindTexture(GL_TEXTURE_2D, quadTexture.getTexture()); // Render original scene texture
-    }
+	    glActiveTexture(GL_TEXTURE0);
+	    if (applyBlur)
+	    {
+	        glBindTexture(GL_TEXTURE_2D, blurTexture2); // Render blurred texture
+	    }
+	    else
+	    {
+	        glBindTexture(GL_TEXTURE_2D, quadTexture.getTexture()); // Render original scene texture
+	    }
 
-    quadMesh.render();
-}
-
-
-
+	    quadMesh.render();
+	}
 };
