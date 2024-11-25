@@ -121,6 +121,9 @@ void Wolf::render(Scene &scene) {
     // Use the shadow projection matrix
     glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
 
+    // Move the shadow 0.1 up on the Y-axis
+    shadowMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.1f, 0.0f)) * shadowMatrix;
+
     // Render the shadow
     scene.colorShader->use();
     scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);
@@ -128,20 +131,15 @@ void Wolf::render(Scene &scene) {
     scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
 
     // Render the pig's shadow as a black silhouette
-    glDisable(GL_DEPTH_TEST); // Prevent z-fighting
     scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
     mesh->render();
-    glEnable(GL_DEPTH_TEST);
-    // Use the shader program
-    scene.shader->use();
 
-    // Set shader uniforms
+    // Use the shader and set the transformation matrices
+    scene.shader->use();
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
-    if (texture) {
-        scene.shader->setUniform("Texture", *texture);
-    }
+    scene.shader->setUniform("Texture", *texture);
 
     // Render the mesh
     mesh->render();

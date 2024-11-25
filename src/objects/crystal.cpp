@@ -39,7 +39,10 @@ void Crystal::render(Scene &scene) {
     glm::vec3 minColor = baseColor * 0.5f;             // Half-intensity dim color
     glm::vec3 breathingColor = minColor + (baseColor - minColor) * intensity;
     crystal_color = breathingColor;
+
     glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
+    // Move the shadow 0.1 up on the Y-axis
+    shadowMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.02f, 0.0f)) * shadowMatrix;
 
     // Render the shadow
     scene.colorShader->use();
@@ -48,17 +51,16 @@ void Crystal::render(Scene &scene) {
     scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
 
     // Render the pig's shadow as a black silhouette
-    glDisable(GL_DEPTH_TEST); // Prevent z-fighting
     scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
     mesh->render();
-    glEnable(GL_DEPTH_TEST);
 
-    // Render the pig
+    // Use the shader and set the transformation matrices
     scene.colorShader->use();
     scene.colorShader->setUniform("ModelMatrix", modelMatrix);
     scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.colorShader->setUniform("Color", breathingColor);
 
+    // Render the mesh
     mesh->render();
 }
