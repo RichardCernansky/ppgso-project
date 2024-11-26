@@ -1,6 +1,5 @@
 #include "tree.h"
 
-// Define the static members
 std::unique_ptr<ppgso::Mesh> Tree::mesh;
 std::unique_ptr<ppgso::Texture> Tree::texture;
 

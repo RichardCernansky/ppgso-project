@@ -1,12 +1,7 @@
-//
-// Created by Bruno Kristián on 21/10/2024.
-//
 #include "fire.h"
-// Static resources (shared among all instances of Pig)
 std::unique_ptr<ppgso::Mesh> Fire::mesh;
 std::unique_ptr<ppgso::Texture> Fire::texture;
 
-// Constructor
 Fire::Fire(){
 
     if (!texture) {
@@ -19,7 +14,7 @@ Fire::Fire(){
     }
 
     if (!mesh) {
-        mesh = std::make_unique<ppgso::Mesh>("camp_fire.obj");  // Load the boar model
+        mesh = std::make_unique<ppgso::Mesh>("camp_fire.obj");
         if (!mesh) {
             std::cerr << "Failed to load mesh: camp_fire.obj" << std::endl;
         }
@@ -28,7 +23,6 @@ Fire::Fire(){
 
 bool Fire::update(float dTime, Scene &scene) {};
 
-// Update method
 bool Fire::update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) {
 
     modelMatrix = glm::mat4{1.0f};
@@ -43,15 +37,12 @@ bool Fire::update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) 
 }
 
 void Fire::render(Scene &scene) {
-
     scene.shader->use();
-
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.shader->setUniform("Texture", *texture);
 
-    // Render the mesh
     mesh->render();
 
     for (auto& child : children) {

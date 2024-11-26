@@ -4,22 +4,18 @@
 #include "src/generator.h"
 #include "../objects/stone.h"
 
-// Static resources (shared among all instances of Apple)
 std::unique_ptr<ppgso::Mesh> GoldenApple::mesh;
 std::unique_ptr<ppgso::Texture> GoldenApple::texture;
 
-// Constructor
 GoldenApple::GoldenApple() {
-    // Generate a random position with each axis offset by a random value in the range [-1, 1]
     float baseX = -0.0f, baseY = 3.0f, baseZ = -0.0f;
     constructorPosition = glm::vec3{
-        baseX + randomFloat(-2.0f, 2.0f),  // Random offset from baseX
-        baseY + randomFloat(-2.0f, 2.0f),  // Random offset from baseY
-        baseZ + randomFloat(-2.0f, 2.0f)   // Random offset from baseZ
+        baseX + randomFloat(-2.0f, 2.0f),
+        baseY + randomFloat(-2.0f, 2.0f),
+        baseZ + randomFloat(-2.0f, 2.0f)
     };
     position = constructorPosition;
 
-    // Load texture once and reuse across all instances
     if (!texture) {
         auto image = ppgso::image::loadBMP("golden_apple.bmp");
         if (image.width == 0 || image.height == 0) {
@@ -29,7 +25,6 @@ GoldenApple::GoldenApple() {
         texture = std::make_unique<ppgso::Texture>(std::move(image));
     }
 
-    // Load mesh once and reuse across all instances
     if (!mesh) {
         mesh = std::make_unique<ppgso::Mesh>("apple.obj");
         if (!mesh) {
@@ -47,16 +42,13 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
     dt = dTime;
 
     if (isFalling) {
-        // Apply gravity and wind forces
         glm::vec3 gravity_force = glm::vec3(0.0f, -gravity * mass, 0.0f);
         glm::vec3 total_force = gravity_force + wind_force;
 
-        // Update acceleration, velocity, and position
         acceleration = total_force / mass;
         velocity += acceleration * dt;
         position += velocity * dt;
 
-        // Update the model matrix to get the current world position
         glm::mat4 localModelMatrix = glm::translate(glm::mat4(1.0f), position);
         localModelMatrix = glm::scale(localModelMatrix, scale);
         modelMatrix = ParentModelMatrix * localModelMatrix;
@@ -83,7 +75,6 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
 
                                 // Check for collision
                                 if (distance < combinedRadius) {
-                                    // Normalize the collision normal
                                     glm::vec3 collisionNormal = glm::normalize(diff);
 
                                     // Calculate relative velocity
@@ -137,7 +128,6 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
             }
         }
 
-        // Ground collision handling
         if (position.y < 0.1f) {
             position.y = 0.1f + std::abs(velocity.y * 0.01f);
             float variedRestitution = restitution * randomFloat(0.9f, 1.1f);
@@ -147,8 +137,8 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
 
             if (std::abs(velocity.y) < 0.1f) {
                 isFalling = false;
-                respawnTime = randomFloat(1.0f, 2.0f);  // Random delay between 1 and 2 seconds
-                elapsedTime = 0.0f;  // Reset elapsed time for the respawn delay
+                respawnTime = randomFloat(1.0f, 2.0f);
+                elapsedTime = 0.0f;
 
                 position = constructorPosition;
                 velocity = glm::vec3(0.0f);
@@ -157,16 +147,13 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
         }
 
     } else {
-        // Waiting for respawn
         elapsedTime += dt;
 
-        // If enough time has passed, reset apple's position and start falling again
         if (elapsedTime >= respawnTime) {
-            isFalling = true;  // Set back to falling state
+            isFalling = true;
         }
     }
 
-    // Update the model matrix after position changes
     glm::mat4 localModelMatrix = glm::translate(glm::mat4(1.0f), position);
     localModelMatrix = glm::scale(localModelMatrix, scale);
     modelMatrix = ParentModelMatrix * localModelMatrix;
@@ -176,10 +163,8 @@ bool GoldenApple::update_child(float dTime, Scene &scene, glm::mat4 ParentModelM
 
 
 void GoldenApple::render(Scene &scene) {
-    // Use the shader program
     scene.shader->use();
 
-    // Set shader uniforms
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
@@ -187,7 +172,6 @@ void GoldenApple::render(Scene &scene) {
         scene.shader->setUniform("Texture", *texture);
     }
 
-    // Render the mesh
     if (mesh) {
         mesh->render();
     }

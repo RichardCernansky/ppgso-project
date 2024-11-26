@@ -1,8 +1,3 @@
-//
-// Created by Bruno Kristian on 18/10/2024.
-//
-// apple.h
-
 #ifndef GOLDEN_APPLE_H
 #define GOLDEN_APPLE_H
 
@@ -14,17 +9,13 @@
 #include "../objects/ground.h"
 
 class GoldenApple final : public Renderable {
-    // Transformation matrices
     glm::mat4 modelMatrix{1.0f};
-
-    // Static resources shared by all apples
     static std::unique_ptr<ppgso::Mesh> mesh;
     static std::unique_ptr<ppgso::Texture> texture;
 
 public:
     glm::vec3 scale{0.02f, 0.02f, 0.02f};
     glm::vec3 position{0, 0, 0};
-
     glm::vec3 constructorPosition{0, 0, 0};
     glm::vec3 velocity{0.0f, 0.0f, 0.0f};
     glm::vec3 acceleration{0.0f, 0.0f, 0.0f};
@@ -40,7 +31,6 @@ public:
 
     Stone* stone = nullptr;
 
-    //float timeSinceStopped = 0.0f;
     bool landed = false;
     float timeSinceAttached = 0.0f;
     float timeBeforeFall = 0.0f;
@@ -52,4 +42,4 @@ public:
     bool update_child(float dTime, Scene &scene, glm::mat4 ParentModelMatrix) override;
 
 };
-#endif // GOLDEN_APPLE_H
+#endif

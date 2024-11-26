@@ -1136,30 +1136,6 @@ src/objects/pig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/pig.cpp.s
 .PHONY : src/objects/pig.cpp.s
 
-src/objects/smoke.o: src/objects/smoke.cpp.o
-.PHONY : src/objects/smoke.o
-
-# target to build an object file
-src/objects/smoke.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/smoke.cpp.o
-.PHONY : src/objects/smoke.cpp.o
-
-src/objects/smoke.i: src/objects/smoke.cpp.i
-.PHONY : src/objects/smoke.i
-
-# target to preprocess a source file
-src/objects/smoke.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/smoke.cpp.i
-.PHONY : src/objects/smoke.cpp.i
-
-src/objects/smoke.s: src/objects/smoke.cpp.s
-.PHONY : src/objects/smoke.s
-
-# target to generate assembly for a file
-src/objects/smoke.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/objects/smoke.cpp.s
-.PHONY : src/objects/smoke.cpp.s
-
 src/objects/stone.o: src/objects/stone.cpp.o
 .PHONY : src/objects/stone.o
 
@@ -1415,9 +1391,6 @@ help:
 	@echo "... src/objects/pig.o"
 	@echo "... src/objects/pig.i"
 	@echo "... src/objects/pig.s"
-	@echo "... src/objects/smoke.o"
-	@echo "... src/objects/smoke.i"
-	@echo "... src/objects/smoke.s"
 	@echo "... src/objects/stone.o"
 	@echo "... src/objects/stone.i"
 	@echo "... src/objects/stone.s"

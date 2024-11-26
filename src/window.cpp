@@ -31,7 +31,6 @@
 #include "objects/AppleTree.h"
 #include "objects/fire.h"
 #include "objects/goldenApple.h"
-#include "objects/smoke.h"
 #include "objects/particles.h"
 #include "objects/stone.h"
 #include "objects/wolf.h"
@@ -78,10 +77,13 @@ private:
 
 
 
-		//SCENE GRAPH
-		//GROUND
-			//TREES
+		//scene graph
+
+		//ground
 		auto ground = std::make_unique<Ground>();
+
+
+		//trees wit apples
 		auto tree = std::make_unique<Tree>();
 		for (int i = 0 ; i < 100; i++) {
 			auto tree_instance = std::make_unique<Tree>();
@@ -95,19 +97,19 @@ private:
 			ground->children.push_back(std::move(tree_instance));
 		}
 
-		//APPLE TREE
+
+		//spacial tree - apple tree with apples and and a stone
 		 auto tree_of_life = std::make_unique<AppleTree>();
-		 for (int i = 0; i < 20; i++) { //generate and add 5 apple instances to the single tree
+		 for (int i = 0; i < 40; i++) { //generate and add 5 apple instances to the single tree
 		 	auto golden_apple = std::make_unique<GoldenApple>();
 		 	tree_of_life->children.push_back(std::move(golden_apple));
 		 }
-
 		auto stone1 = std::make_unique<Stone>();
 		tree_of_life->children.push_back(std::move(stone1));
 		ground->children.push_back(std::move(tree_of_life));
 
 
-		//fire
+		//fire with smoke - particles
 		auto fire = std::make_unique<Fire>();
 		for (int i = 0; i < 50; i++) {
 			auto particles = std::make_unique<Particles>();
@@ -116,7 +118,7 @@ private:
 		ground->children.push_back(std::move(fire));
 
 
-			//CRYSTAL_STONE
+		//stone structure with crystal
 		auto crystal_stone = std::make_unique<Stone>();
 		auto levitating_stone = std::make_unique<Stone>();
 		auto back_stone = std::make_unique<Stone>();
@@ -129,23 +131,29 @@ private:
 		crystal_stone->children.push_back(std::move(levitating_stone));
 		crystal_stone->children.push_back(std::move(back_stone));
 		ground->children.push_back(std::move(crystal_stone));
-			//GRASS
+
+
+		//grass
 		ground->children.push_back(std::make_unique<GrassPatch>(initControlPoints));
-			//LIGHTHOUSE
+
+		//lighthouse
 		ground->children.push_back(std::move(std::make_unique<Lighthouse>()));
 
-		//PUSH THE BRANCH OF NODE GROUND TO THE SCENE
+
 		scene.objects.push_back(std::move(ground));
-		// MOON
+
+		// moon
 		auto sphere = std::make_unique<MySphere>();
 		scene.objects.push_back(std::move(sphere));
-		// BEE
+
+		// bee
 		scene.objects.push_back(std::make_unique<Bee>());
-		// PIGS
+
+
+		// pigs and wolves
 		for (int i = 0; i < 8; ++i) {
 			auto pig = std::make_unique<Pig>();
 			if (i < 3) {
-				//WOLF
 				scene.objects.push_back(std::make_unique<Wolf>());
 				auto gas = std::make_unique<Gas>();
 				auto horseFly = std::make_unique<HorseFly>();
@@ -154,12 +162,6 @@ private:
 			}
 			scene.objects.push_back(std::move(pig));
 		}
-
-
-		//
-		// auto stone1 = std::make_unique<Stone>();
-		// scene.objects.push_back(std::move(stone1));
-
 
 
 		auto shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
@@ -178,7 +180,6 @@ public:
 
 	ProjectWindow(int size)
 	: Window{"project", size, size},
-	  // Initialize shaders here
 	  horizontalBlurShader{texture_vert_glsl, horizontal_blur_frag_glsl},
 	  verticalBlurShader{texture_vert_glsl, vertical_blur_frag_glsl}
 	{
@@ -191,20 +192,16 @@ public:
 	    glEnable(GL_DEPTH_TEST);
 	    glDepthFunc(GL_LEQUAL);
 
-	    // Initialize the main framebuffer and its texture
 	    glGenFramebuffers(1, &fbo);
 	    glBindFramebuffer(GL_FRAMEBUFFER, fbo);
 
-	    // Create the texture to render the scene into
 	    glBindTexture(GL_TEXTURE_2D, quadTexture.getTexture());
 	    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, quadTexture.image.width, quadTexture.image.height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
 	    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-	    // Attach the texture to the framebuffer
 	    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, quadTexture.getTexture(), 0);
 
-	    // Create a renderbuffer object for depth and stencil attachment
 	    glGenRenderbuffers(1, &rbo);
 	    glBindRenderbuffer(GL_RENDERBUFFER, rbo);
 	    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, quadTexture.image.width, quadTexture.image.height);
@@ -213,11 +210,8 @@ public:
 	    if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 	        throw std::runtime_error("Cannot create framebuffer!");
 
-	    // Unbind the framebuffer
 	    glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-	    // Initialize blur framebuffers and textures
-	    // Horizontal blur
 	    glGenFramebuffers(1, &blurFbo1);
 	    glBindFramebuffer(GL_FRAMEBUFFER, blurFbo1);
 
@@ -232,7 +226,6 @@ public:
 	    if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 	        throw std::runtime_error("Cannot create blur framebuffer 1!");
 
-	    // Vertical blur
 	    glGenFramebuffers(1, &blurFbo2);
 	    glBindFramebuffer(GL_FRAMEBUFFER, blurFbo2);
 
@@ -247,7 +240,6 @@ public:
 	    if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
 	        throw std::runtime_error("Cannot create blur framebuffer 2!");
 
-	    // Unbind the framebuffer
 	    glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	}
 
@@ -265,17 +257,14 @@ public:
 		resetViewport();
 		glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-		// Clear the framebuffer
 		glClearColor(0, 0, 0, 0);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		auto quadViewMatrix = glm::mat4{1.0f};
 		quadViewMatrix = glm::lookAt(glm::vec3{0.0f, 0.0f, -1.0f}, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec3{0.0f, -1.0f, -1.0f});
 
-		// Animate rotation of the quad
 		auto quadModelMatrix = glm::mat4{1.0f};
 
-		// Set shader inputs
 		quadShader.use();
 		quadShader.setUniform("ProjectionMatrix", scene.camera->perspective);
 		quadShader.setUniform("ViewMatrix", quadViewMatrix);
@@ -284,8 +273,8 @@ public:
 		quadMesh.render();
 	}
 
+	//blur on key press "b"
 	void onKey(int key, int scanCode, int action, int mods) override {
-		// Toggle blur effect when 'B' key is pressed
 		if (key == GLFW_KEY_B && action == GLFW_PRESS) {
 			applyBlur = !applyBlur;
 		}
@@ -294,12 +283,10 @@ public:
 
 	void onIdle()
 	{
-	    // Track time
 	    static auto time = (float)glfwGetTime();
 	    float dTime = (float)glfwGetTime() - time;
 	    time = (float)glfwGetTime();
 
-	    // ---- Step 1: Render the Scene to fbo ----
 	    glViewport(0, 0, quadTexture.image.width, quadTexture.image.height);
 	    glBindFramebuffer(GL_FRAMEBUFFER, fbo);
 	    glClearColor(0.0f, 0.0f, 0.0f, 0);
@@ -310,21 +297,18 @@ public:
 
 	    if (applyBlur)
 	    {
-	        // ---- Step 2: Horizontal Blur Pass ----
 	        glBindFramebuffer(GL_FRAMEBUFFER, blurFbo1);
 	        glClear(GL_COLOR_BUFFER_BIT);
 
 	        horizontalBlurShader.use();
 	        horizontalBlurShader.setUniform("image", 0);
 
-	        // Set Gaussian weights
 	        float weight[5] = {0.227027f, 0.1945946f, 0.1216216f, 0.054054f, 0.016216f};
 	        for (int i = 0; i < 5; ++i)
 	        {
 	            horizontalBlurShader.setUniform(("weight[" + std::to_string(i) + "]").c_str(), weight[i]);
 	        }
 
-	        // Set the matrix uniforms on the horizontal blur shader
 	        horizontalBlurShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
 	        horizontalBlurShader.setUniform("ViewMatrix", glm::mat4(1.0f));
 	        horizontalBlurShader.setUniform("ModelMatrix", glm::mat4(1.0f));
@@ -334,20 +318,17 @@ public:
 
 	        quadMesh.render();
 
-	        // ---- Step 3: Vertical Blur Pass ----
 	        glBindFramebuffer(GL_FRAMEBUFFER, blurFbo2);
 	        glClear(GL_COLOR_BUFFER_BIT);
 
 	        verticalBlurShader.use();
 	        verticalBlurShader.setUniform("image", 0);
 
-	        // Set Gaussian weights
 	        for (int i = 0; i < 5; ++i)
 	        {
 	            verticalBlurShader.setUniform(("weight[" + std::to_string(i) + "]").c_str(), weight[i]);
 	        }
 
-	        // Set the matrix uniforms on the vertical blur shader
 	        verticalBlurShader.setUniform("ProjectionMatrix", glm::mat4(1.0f));
 	        verticalBlurShader.setUniform("ViewMatrix", glm::mat4(1.0f));
 	        verticalBlurShader.setUniform("ModelMatrix", glm::mat4(1.0f));
@@ -358,7 +339,6 @@ public:
 	        quadMesh.render();
 	    }
 
-	    // ---- Step 4: Render to Screen ----
 	    resetViewport();
 	    glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

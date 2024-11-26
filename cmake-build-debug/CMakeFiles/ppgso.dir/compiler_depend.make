@@ -10992,7 +10992,6 @@ CMakeFiles/ppgso.dir/src/window.cpp.o: /Users/brunokristian/Documents/skola/ppgs
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/lighthouse.cpp \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.h \
@@ -12098,8 +12097,6 @@ shaders/horizontal_blur_frag_glsl.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/ranges_is_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__type_traits/is_nothrow_constructible.h:
-
-/Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/_types/_uint64_t.h:
 

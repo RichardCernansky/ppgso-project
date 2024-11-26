@@ -1,11 +1,9 @@
 #include "horseFly.h"
 #include "src/globals.h"
 
-// Static resources (shared among all instances of Pig)
 std::unique_ptr<ppgso::Mesh> HorseFly::mesh;
 std::unique_ptr<ppgso::Texture> HorseFly::texture;
 
-// Constructor
 HorseFly::HorseFly() {
     if (!texture) {
         auto image = ppgso::image::loadBMP("bricks.bmp");  // Assuming a texture for boar
@@ -24,32 +22,28 @@ HorseFly::HorseFly() {
     }
 }
 
-// Update method
 bool HorseFly::update(float dTime, Scene &scene) {
     return true;
 }
 
-// Update method
 bool HorseFly::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
     timeInState += dTime;
 
     if (timeInState >= 2.0f) {
-        goingUp = !goingUp;    // Toggle the direction
-        timeInState = 0.0f;    // Reset the timer
+        goingUp = !goingUp;
+        timeInState = 0.0f;
     }
 
     if (goingUp) {
-        position.y += 1.0f * dTime;  // Move up at a speed of 1 unit per second
+        position.y += 1.0f * dTime;
     } else {
-        position.y -= 1.0f * dTime;  // Move down at a speed of 1 unit per second
+        position.y -= 1.0f * dTime;
     }
     modelMatrix = glm::mat4(1.0f);
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::rotate(modelMatrix, glm::radians(90.0f), glm::vec3{-1, 0, 0});
     modelMatrix = glm::scale(modelMatrix, scale);
-    // combine the parent's transformation matrix with the child's local transformation
     modelMatrix = parentModelMatrix * modelMatrix;
-
 
     return true;
 }
@@ -58,26 +52,21 @@ void HorseFly::render(Scene &scene) {
 
     glm::mat4 shadowMatrix = calculateShadowMatrix(moonLight_position, glm::vec4(0.0f, 1.0f, 0.0f, 0.0f));
 
-    // Move the shadow 0.1 up on the Y-axis
-    shadowMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.1f, 0.0f)) * shadowMatrix;
+    shadowMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, shadow_y_offset, 0.0f)) * shadowMatrix;
 
-    // Render the shadow
     scene.colorShader->use();
     scene.colorShader->setUniform("ModelMatrix", shadowMatrix * modelMatrix);
     scene.colorShader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.colorShader->setUniform("ProjectionMatrix", scene.camera->perspective);
 
-    // Render the pig's shadow as a black silhouette
-    scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f)); // Black shadow
+    scene.colorShader->setUniform("Color", glm::vec3(0.0f, 0.0f, 0.0f));
     mesh->render();
 
-    // Use the shader and set the transformation matrices
     scene.shader->use();
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
     scene.shader->setUniform("Texture", *texture);
 
-    // Render the mesh
     mesh->render();
 }

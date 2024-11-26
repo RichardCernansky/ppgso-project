@@ -229,12 +229,6 @@
 },
 {
   "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/smoke.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp",
-  "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp",
-  "output": "CMakeFiles/project.dir/src/objects/smoke.cpp.o"
-},
-{
-  "directory": "/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DGLEW_STATIC -DGLM_FORCE_RADIANS -I/Users/brunokristian/Documents/skola/ppgso-project/ppgso -I/opt/homebrew/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -I/Users/brunokristian/Documents/skola/ppgso-project -I/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics -o CMakeFiles/project.dir/src/objects/particles.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp",
   "file": "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp",
   "output": "CMakeFiles/project.dir/src/objects/particles.cpp.o"

@@ -1,6 +1,3 @@
-//
-// Created by Bruno Kristián on 27/10/2024.
-//
 #include <ppgso/ppgso.h>
 #include "../scene.cpp"
 #include "src/renderable.h"
@@ -17,7 +14,7 @@ public:
     glm::vec3 position{0.5f, 0.0f, -2.0f};
     glm::vec3 scale{0.04, 0.04, 0.04};
     float radius = 20*scale.x;
-    std::vector<std::unique_ptr<Renderable>> children;  // scene hierarchy children objects
+    std::vector<std::unique_ptr<Renderable>> children;
 
 
     Stone();

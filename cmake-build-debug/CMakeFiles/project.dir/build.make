@@ -251,24 +251,10 @@ CMakeFiles/project.dir/src/objects/fire.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/fire.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/fire.cpp -o CMakeFiles/project.dir/src/objects/fire.cpp.s
 
-CMakeFiles/project.dir/src/objects/smoke.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/objects/smoke.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp
-CMakeFiles/project.dir/src/objects/smoke.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project.dir/src/objects/smoke.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/smoke.cpp.o -MF CMakeFiles/project.dir/src/objects/smoke.cpp.o.d -o CMakeFiles/project.dir/src/objects/smoke.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp
-
-CMakeFiles/project.dir/src/objects/smoke.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/objects/smoke.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp > CMakeFiles/project.dir/src/objects/smoke.cpp.i
-
-CMakeFiles/project.dir/src/objects/smoke.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/objects/smoke.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp -o CMakeFiles/project.dir/src/objects/smoke.cpp.s
-
 CMakeFiles/project.dir/src/objects/particles.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/objects/particles.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp
 CMakeFiles/project.dir/src/objects/particles.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project.dir/src/objects/particles.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/project.dir/src/objects/particles.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/particles.cpp.o -MF CMakeFiles/project.dir/src/objects/particles.cpp.o.d -o CMakeFiles/project.dir/src/objects/particles.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp
 
 CMakeFiles/project.dir/src/objects/particles.cpp.i: cmake_force
@@ -282,7 +268,7 @@ CMakeFiles/project.dir/src/objects/particles.cpp.s: cmake_force
 CMakeFiles/project.dir/src/objects/wolf.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/objects/wolf.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp
 CMakeFiles/project.dir/src/objects/wolf.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project.dir/src/objects/wolf.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/project.dir/src/objects/wolf.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/wolf.cpp.o -MF CMakeFiles/project.dir/src/objects/wolf.cpp.o.d -o CMakeFiles/project.dir/src/objects/wolf.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp
 
 CMakeFiles/project.dir/src/objects/wolf.cpp.i: cmake_force
@@ -296,7 +282,7 @@ CMakeFiles/project.dir/src/objects/wolf.cpp.s: cmake_force
 CMakeFiles/project.dir/src/objects/stone.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/objects/stone.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp
 CMakeFiles/project.dir/src/objects/stone.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project.dir/src/objects/stone.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/project.dir/src/objects/stone.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/stone.cpp.o -MF CMakeFiles/project.dir/src/objects/stone.cpp.o.d -o CMakeFiles/project.dir/src/objects/stone.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp
 
 CMakeFiles/project.dir/src/objects/stone.cpp.i: cmake_force
@@ -310,7 +296,7 @@ CMakeFiles/project.dir/src/objects/stone.cpp.s: cmake_force
 CMakeFiles/project.dir/src/objects/grass.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/objects/grass.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp
 CMakeFiles/project.dir/src/objects/grass.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project.dir/src/objects/grass.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/project.dir/src/objects/grass.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/grass.cpp.o -MF CMakeFiles/project.dir/src/objects/grass.cpp.o.d -o CMakeFiles/project.dir/src/objects/grass.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/grass.cpp
 
 CMakeFiles/project.dir/src/objects/grass.cpp.i: cmake_force
@@ -324,7 +310,7 @@ CMakeFiles/project.dir/src/objects/grass.cpp.s: cmake_force
 CMakeFiles/project.dir/src/objects/MySphere.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/objects/MySphere.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/MySphere.cpp
 CMakeFiles/project.dir/src/objects/MySphere.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/project.dir/src/objects/MySphere.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/MySphere.cpp.o -MF CMakeFiles/project.dir/src/objects/MySphere.cpp.o.d -o CMakeFiles/project.dir/src/objects/MySphere.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/MySphere.cpp
 
 CMakeFiles/project.dir/src/objects/MySphere.cpp.i: cmake_force
@@ -338,7 +324,7 @@ CMakeFiles/project.dir/src/objects/MySphere.cpp.s: cmake_force
 CMakeFiles/project.dir/src/globals.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/globals.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/globals.cpp
 CMakeFiles/project.dir/src/globals.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/project.dir/src/globals.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/project.dir/src/globals.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/globals.cpp.o -MF CMakeFiles/project.dir/src/globals.cpp.o.d -o CMakeFiles/project.dir/src/globals.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/globals.cpp
 
 CMakeFiles/project.dir/src/globals.cpp.i: cmake_force
@@ -352,7 +338,7 @@ CMakeFiles/project.dir/src/globals.cpp.s: cmake_force
 CMakeFiles/project.dir/src/objects/crystal.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/objects/crystal.cpp.o: /Users/brunokristian/Documents/skola/ppgso-project/src/objects/crystal.cpp
 CMakeFiles/project.dir/src/objects/crystal.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/project.dir/src/objects/crystal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/project.dir/src/objects/crystal.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/objects/crystal.cpp.o -MF CMakeFiles/project.dir/src/objects/crystal.cpp.o.d -o CMakeFiles/project.dir/src/objects/crystal.cpp.o -c /Users/brunokristian/Documents/skola/ppgso-project/src/objects/crystal.cpp
 
 CMakeFiles/project.dir/src/objects/crystal.cpp.i: cmake_force
@@ -378,7 +364,6 @@ project_OBJECTS = \
 "CMakeFiles/project.dir/src/objects/AppleTree.cpp.o" \
 "CMakeFiles/project.dir/src/objects/goldenApple.cpp.o" \
 "CMakeFiles/project.dir/src/objects/fire.cpp.o" \
-"CMakeFiles/project.dir/src/objects/smoke.cpp.o" \
 "CMakeFiles/project.dir/src/objects/particles.cpp.o" \
 "CMakeFiles/project.dir/src/objects/wolf.cpp.o" \
 "CMakeFiles/project.dir/src/objects/stone.cpp.o" \
@@ -403,7 +388,6 @@ project: CMakeFiles/project.dir/src/objects/apple.cpp.o
 project: CMakeFiles/project.dir/src/objects/AppleTree.cpp.o
 project: CMakeFiles/project.dir/src/objects/goldenApple.cpp.o
 project: CMakeFiles/project.dir/src/objects/fire.cpp.o
-project: CMakeFiles/project.dir/src/objects/smoke.cpp.o
 project: CMakeFiles/project.dir/src/objects/particles.cpp.o
 project: CMakeFiles/project.dir/src/objects/wolf.cpp.o
 project: CMakeFiles/project.dir/src/objects/stone.cpp.o
@@ -417,7 +401,7 @@ project: libshaders.a
 project: /opt/homebrew/lib/libglfw3.a
 project: /opt/homebrew/lib/libGLEW.dylib
 project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 	/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E copy_directory /Users/brunokristian/Documents/skola/ppgso-project/data/ /Users/brunokristian/Documents/skola/ppgso-project/cmake-build-debug
 

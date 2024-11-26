@@ -1,13 +1,11 @@
 #include "gas.h"
-// Static resources (shared among all instances of Pig)
 std::unique_ptr<ppgso::Mesh> Gas::mesh;
 std::unique_ptr<ppgso::Texture> Gas::texture;
 
-// Constructor
 Gas::Gas(){
 
     if (!texture) {
-        auto image = ppgso::image::loadBMP("green.bmp");  // Assuming a texture for boar
+        auto image = ppgso::image::loadBMP("green.bmp");
         if (image.width == 0 || image.height == 0) {
             std::cerr << "Failed to load texture: boar_texture.bmp" << std::endl;
             return;
@@ -16,7 +14,7 @@ Gas::Gas(){
     }
 
     if (!mesh) {
-        mesh = std::make_unique<ppgso::Mesh>("gas.obj");  // Load the boar model
+        mesh = std::make_unique<ppgso::Mesh>("gas.obj");
         if (!mesh) {
             std::cerr << "Failed to load mesh: gas.obj" << std::endl;
         }
@@ -36,18 +34,14 @@ float Gas::calculateDepthFromCamera(const glm::vec3& cameraPosition) const {
     return glm::length(cameraPosition - globalPosition);
 }
 
-// Update method
 bool Gas::update(float dTime, Scene &scene) {
     return true;
 }
 
-// Update method
 bool Gas::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
-    // Initialize the model matrix to identity matrix
-    modelMatrix = glm::mat4(1.0f);  // Identity matrix to reset transformations
+    modelMatrix = glm::mat4(1.0f);
 
-    // Apply the child's local transformations (relative to its parent)
-    modelMatrix = glm::translate(modelMatrix, position);  // Apply Gas's local position
+    modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = parentModelMatrix * modelMatrix;
     for (auto& child : children) {
         child->update_child(dTime,scene, modelMatrix);
@@ -59,8 +53,6 @@ bool Gas::update_child(float dTime, Scene &scene, glm::mat4 parentModelMatrix) {
 
 void Gas::render(Scene &scene) {
     scene.shader->use();
-
-    // Set shader uniforms
     scene.shader->setUniform("ModelMatrix", modelMatrix);
     scene.shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
     scene.shader->setUniform("ProjectionMatrix", scene.camera->perspective);
@@ -72,7 +64,6 @@ void Gas::render(Scene &scene) {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glDepthMask(GL_FALSE);
 
-    // Render the mesh
     mesh->render();
 
     glDepthMask(GL_TRUE);

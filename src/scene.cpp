@@ -28,7 +28,6 @@ public:
 
 	float Dtime;
 
-	// update function
 	void update(float time)
 	{
 		set_up_lights(shader->getProgram());
@@ -47,58 +46,56 @@ public:
 		camera->update(Dtime);
 	}
 
+
+	//check if the object is transparent
 	template <typename T>
 	auto checkTransparency(T* object) -> decltype(object->isTransparent(), bool()) {
 		return object->isTransparent();
 	}
 
-	// Fallback helper function if isTransparent() does not exist
 	template <typename T>
 	bool checkTransparency(...) {
 		return false; // Default to opaque
 	}
 
-	// render function
 	void render() {
-		// Temporary lists holding raw pointers to Renderable objects
+		//list to hold objects
 		std::list<Renderable*> transparentObjects;
 		std::list<Renderable*> opaqueObjects;
 
-		// Helper function to recursively traverse the tree
+		// traverse the tree
 		auto categorizeObjects = [&](Renderable* object, auto& self) -> void {
 			if (!object) return;
 
-			// Categorize the current object
 			if (checkTransparency(object)) {
 				transparentObjects.push_back(object);
 			} else {
 				opaqueObjects.push_back(object);
 			}
 
-			// Recursively process children
+			// recursively call the function
 			const auto& children = object->getChildren();
 			for (const auto& child : children) {
 				self(child.get(), self); // Recurse into children
 			}
 		};
 
-		// Start traversal from top-level objects
 		for (const auto& object : objects) {
 			categorizeObjects(object.get(), categorizeObjects);
 		}
 
-		// Render opaque objects first
+		// render opaque objects first
 		for (const auto& object : opaqueObjects) {
 			object->render(*this);
 		}
 
-		// Sort transparent objects by depth from the camera (furthest first)
+		// sort transparent objects
 		glm::vec3 cameraPosition = camera->position;
 		transparentObjects.sort([cameraPosition](const Renderable* a, const Renderable* b) {
 			return a->calculateDepthFromCamera(cameraPosition) > b->calculateDepthFromCamera(cameraPosition);
 		});
 
-		// Render transparent objects in sorted order
+		// render transparent objects
 		for (const auto& object : transparentObjects) {
 			object->render(*this);
 		}

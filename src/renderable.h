@@ -10,11 +10,10 @@ class Scene;
 
 class Renderable {
 public:
-    // Virtual destructor is needed for abstract interfaces
     virtual ~Renderable() = default;
 
     glm::vec3 position;
-    std::vector<std::unique_ptr<Renderable>> children; // Scene hierarchy children objects
+    std::vector<std::unique_ptr<Renderable>> children;
 
 
     /// Render the object

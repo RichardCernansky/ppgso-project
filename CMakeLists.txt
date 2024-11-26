@@ -143,8 +143,6 @@ add_executable(project
         src/objects/goldenApple.h
         src/objects/fire.cpp
         src/objects/fire.h
-        src/objects/smoke.h
-        src/objects/smoke.cpp
         src/objects/particles.cpp
         src/objects/particles.h
         src/objects/wolf.cpp

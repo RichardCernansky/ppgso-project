@@ -7,16 +7,13 @@
 #include "../renderable.h"
 
 class Wolf final : public Renderable {
-    // Transformation matrices
-    glm::mat4 modelMatrix{1.0f};  // Model transformation matrix
 
-    // Static resources shared by all wolves
+    glm::mat4 modelMatrix{1.0f};
     static std::unique_ptr<ppgso::Mesh> mesh;
     static std::unique_ptr<ppgso::Texture> texture;
 
-
 public:
-    glm::vec3 scale{0.01, 0.01, 0.01}; // Adjust scale as needed
+    glm::vec3 scale{0.01, 0.01, 0.01};
     glm::vec3 velocity{0.0f, 0.0f, 0.0f};
     glm::vec3 acceleration{0.0f, 0.0f, 0.0f};
     float mass = 1.0f;
@@ -33,4 +30,4 @@ public:
         return children;
     }
 };
-#endif // WOLF_H
+#endif

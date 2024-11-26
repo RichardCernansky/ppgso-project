@@ -1225,7 +1225,6 @@ CMakeFiles/project.dir/src/window.cpp.o: \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/AppleTree.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/../objects/ground.h \
-  /Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.h \
   /Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.h \

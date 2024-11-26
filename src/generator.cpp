@@ -1,14 +1,9 @@
-//
-// Created by Richard Čerňanský on 12/10/2024.
-//
-//my files
 #include "src/window.cpp"
 #include <glm/fwd.hpp>
 #include <random>
 #include "objects/tree.h"
 #include "globals.h"
 
-// Function to generate a random float between min and max
 float randomFloat(float min, float max) {
     return min + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (max - min)));
 }

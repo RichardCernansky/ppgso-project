@@ -23,6 +23,5 @@ public:
     void render(Scene &scene) override;
     bool isTransparent() const override;
     glm::vec3 getGlobalPosition() const;
-
     float calculateDepthFromCamera(const glm::vec3& cameraPosition) const override;
 };

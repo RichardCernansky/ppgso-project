@@ -16,11 +16,8 @@
 
 #include "src/scene.cpp"
 #include "src/renderable.h"
-
 #define INSTANCE_COUNT 30000
 
-
-// Object to represent Bezier patch
 class GrassPatch : public Renderable {
 private:
   std::vector<glm::vec3> vertices;
@@ -77,17 +74,14 @@ public:
       for (unsigned int j = 0; j < PATCH_SIZE; j++) {
         float v = (float)j / (PATCH_SIZE - 1);
 
-        // Compute the Bezier point in the u direction
         glm::vec3 curveU[4];
         for (int k = 0; k < 4; k++) {
           curveU[k] = bezierPoint(controlPoints[k], u);
         }
 
-        // Compute the point on the surface in the v direction
         glm::vec3 surfacePoint = bezierPoint(curveU, v);
         vertices.push_back(surfacePoint);
 
-        // Generate texture coordinates based on u, v
         texCoords.push_back({u, v});
       }
     }
@@ -104,7 +98,6 @@ public:
       }
     }
 
-    // Copy data to OpenGL buffers
 
 
     glBindVertexArray(vao);
@@ -130,36 +123,29 @@ public:
     instancePositions.resize(INSTANCE_COUNT);
     std::default_random_engine generator;
 
-    // Distributions for x and z coordinates within the square
     std::uniform_real_distribution<float> distribution_x(50.0f, 70.0f);
     std::uniform_real_distribution<float> distribution_z(-20.0f, 20.0f);
 
-    // Generate random positions within the square
     for (int i = 0; i < INSTANCE_COUNT; ++i) {
-      // Randomly generate x and z within the range [-20, 20]
       float x = distribution_x(generator);
       float z = distribution_z(generator);
       float y = 0.0f; // Assuming ground level
 
-      // Store the position
       glm::vec3 randomPos{y, x, z};
       instancePositions[i] = randomPos;
     }
 
-    // Upload instance data (positions) to OpenGL
     glGenBuffers(1, &instanceVBO);
     glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
     glBufferData(GL_ARRAY_BUFFER, INSTANCE_COUNT * sizeof(glm::vec3), instancePositions.data(), GL_STATIC_DRAW);
 
-    // Bind the VAO and set up the instance attribute
     glBindVertexArray(vao);
 
-    // Layout location 2 for instance position attribute
     glEnableVertexAttribArray(2);
     glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(glm::vec3), (void*)0);
     glVertexAttribDivisor(2, 1); // This makes the attribute instanced
 
-    glBindVertexArray(0); // Unbind the VAO to prevent accidental changes
+    glBindVertexArray(0);
   }
 
   bool update(float dTime, Scene &scene) override{
@@ -167,16 +153,15 @@ public:
   }
 
   bool update_child(float dTime, Scene &scene, glm::mat4 parentMatrix) override {
-    static float accumulatedTime = 0.0f;  // Accumulate total time over frames
-    accumulatedTime += dTime;  // Update accumulated time with delta time
+    static float accumulatedTime = 0.0f;
+    accumulatedTime += dTime;
 
     float frequency = 2.5f;
     float amplitude = 0.01f;
-    float spatialFrequency = 3.0f; // Controls the number of oscillations along the j-axis
+    float spatialFrequency = 3.0f;
 
     for (int i = 0; i < 4; i++) {
       for (int j = 0; j < 4; j++) {
-        // Use accumulatedTime for a continuous wave effect and spatialFrequency for oscillations along j-axis
         float wave = amplitude * sinf(frequency * accumulatedTime + spatialFrequency * j);
         controlPoints[i][j].z = wave;
       }

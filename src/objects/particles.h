@@ -1,7 +1,3 @@
-//
-// Created by Bruno Kristián on 23/10/2024.
-//
-
 #ifndef PARTICLES_H
 #define PARTICLES_H
 
@@ -36,4 +32,4 @@ public:
     float calculateDepthFromCamera(const glm::vec3& cameraPosition) const override;
 };
 
-#endif // PARTICLES_H
+#endif

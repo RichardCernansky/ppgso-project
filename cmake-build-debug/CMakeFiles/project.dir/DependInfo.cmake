@@ -23,7 +23,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/horseFly.cpp" "CMakeFiles/project.dir/src/objects/horseFly.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/horseFly.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/particles.cpp" "CMakeFiles/project.dir/src/objects/particles.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/particles.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/pig.cpp" "CMakeFiles/project.dir/src/objects/pig.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/pig.cpp.o.d"
-  "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/smoke.cpp" "CMakeFiles/project.dir/src/objects/smoke.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/smoke.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/stone.cpp" "CMakeFiles/project.dir/src/objects/stone.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/stone.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/tree.cpp" "CMakeFiles/project.dir/src/objects/tree.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/tree.cpp.o.d"
   "/Users/brunokristian/Documents/skola/ppgso-project/src/objects/wolf.cpp" "CMakeFiles/project.dir/src/objects/wolf.cpp.o" "gcc" "CMakeFiles/project.dir/src/objects/wolf.cpp.o.d"
